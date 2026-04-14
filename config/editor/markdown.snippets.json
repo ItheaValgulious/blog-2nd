@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Article Frontmatter",
+    "scope": "markdown",
+    "prefix": [
+      "frontmatter"
+    ],
+    "key": "Ctrl+Alt+F",
+    "body": [
+      "---",
+      "title: ",
+      "tags: [${1:knowledge-base}]",
+      "status: draft",
+      "top: 0",
+      "---",
+      "",
+      "# ${2:Heading}",
+      "",
+      "$0"
+    ],
+    "description": "Insert the default article frontmatter block"
+  },
+  {
+    "name": "Code Block",
+    "scope": "markdown",
+    "prefix": [
+      "codeblock"
+    ],
+    "key": "Ctrl+Alt+C",
+    "body": [
+      "```$1",
+      "$2",
+      "```",
+      "$0"
+    ],
+    "description": "Insert a fenced code block"
+  }
+]

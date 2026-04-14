@@ -1,0 +1,44 @@
+[
+  {
+    "key": "Ctrl+S",
+    "command": "workbench.saveActiveDocument"
+  },
+  {
+    "key": "Ctrl+Shift+P",
+    "command": "workbench.showCommandPalette"
+  },
+  {
+    "key": "F1",
+    "command": "workbench.showCommandPalette"
+  },
+  {
+    "key": "Ctrl+B",
+    "command": "workbench.toggleSidebar"
+  },
+  {
+    "key": "Ctrl+Backslash",
+    "command": "workbench.togglePreview"
+  },
+  {
+    "key": "Tab",
+    "command": "editor.expandMatchingSnippet"
+  },
+  {
+    "key": "Enter",
+    "command": "editor.expandMatchingSnippet"
+  },
+  {
+    "key": "Ctrl+Alt+T",
+    "command": "editor.insertSnippet",
+    "args": {
+      "snippetName": "Article Frontmatter"
+    }
+  },
+  {
+    "key": "Ctrl+Alt+K",
+    "command": "editor.insertSnippet",
+    "args": {
+      "snippetName": "Code Block"
+    }
+  }
+]

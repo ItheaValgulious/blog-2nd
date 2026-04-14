@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Inline Math",
+    "scope": "latex",
+    "prefix": [
+      "imath",
+      "$"
+    ],
+    "key": "Ctrl+Alt+I",
+    "body": "$1",
+    "description": "Insert inline math content"
+  },
+  {
+    "name": "Math Block",
+    "scope": "latex",
+    "prefix": [
+      "mathblock",
+      "$$"
+    ],
+    "key": "Ctrl+Alt+M",
+    "body": [
+      "$$",
+      "$1",
+      "$$",
+      "$0"
+    ],
+    "description": "Insert a block math environment"
+  },
+  {
+    "name": "sum range",
+    "scope": "latex",
+    "prefix": [
+      "\\sumr"
+    ],
+    "body": [
+      "\\sum_{$1 = $2}^{$3} $0"
+    ]
+  }
+]
