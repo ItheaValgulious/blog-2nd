@@ -1,0 +1,12 @@
+{
+  "styles": [
+    {
+      "directory": "create.css",
+      "enable": true
+    },
+    {
+      "directory": "dark.css",
+      "enable": true
+    }
+  ]
+}

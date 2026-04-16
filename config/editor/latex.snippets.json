@@ -1,39 +1,319 @@
-[
-  {
-    "name": "Inline Math",
-    "scope": "latex",
+{
+  "divide": {
+    "body": "\\dfrac{$1}{$2} $0",
     "prefix": [
-      "imath",
-      "$"
-    ],
-    "key": "Ctrl+Alt+I",
-    "body": "$1",
-    "description": "Insert inline math content"
+      "/",
+      "\\frac"
+    ]
   },
-  {
-    "name": "Math Block",
-    "scope": "latex",
+  "lim": {
+    "body": "\\lim_{$1 \\to $2} $0",
+    "prefix": "\\lim"
+  },
+  "limn": {
+    "body": "\\lim_{n \\to \\infty} $0",
+    "prefix": "limn"
+  },
+  "limx0": {
+    "body": "\\lim_{$1 \\to $1_0} $0",
+    "prefix": "limx0"
+  },
+  "limx": {
+    "body": "\\lim_{$1 \\to $2} $0",
+    "prefix": "limx"
+  },
+  "ls": {
+    "body": "\\limsup_{$1 \\to \\infty} $0",
     "prefix": [
-      "mathblock",
-      "$$"
-    ],
-    "key": "Ctrl+Alt+M",
+      "ls",
+      "\\ls"
+    ]
+  },
+  "li": {
+    "body": "\\liminf_{$1 \\to \\infty} $0",
+    "prefix": [
+      "li",
+      "\\li"
+    ]
+  },
+  "sum_range": {
+    "body": "\\sum _{$1 = $2} ^{$3}  $0",
+    "prefix": "\\sumr"
+  },
+  "sum_cond": {
+    "body": "\\sum _{$1} $0",
+    "prefix": "\\sumc"
+  },
+  "prod_range": {
+    "body": "\\prod _{$1 = $2} ^{$3}  $0",
+    "prefix": "\\prodr"
+  },
+  "prod_cond": {
+    "body": "\\prod _{$1} $0",
+    "prefix": "\\prodc"
+  },
+  "text": {
+    "body": "\\text{$1} $0",
+    "prefix": "t"
+  },
+  "fromto": {
+    "body": "\\Leftrightarrow ",
+    "prefix": "ft"
+  },
+  "any": {
+    "body": "\\forall ",
+    "prefix": [
+      "any",
+      "all",
+      "forall"
+    ]
+  },
+  "exists": {
+    "body": "\\exists ",
+    "prefix": [
+      "exists",
+      "\\ex"
+    ]
+  },
+  "s.t.": {
+    "body": "\\ s.t.\\ \n",
+    "prefix": "st"
+  },
+  "big s.t.": {
+    "body": "\\\\\\ s.t.\\\\\\ \n",
+    "prefix": "stt"
+  },
+  "abs": {
+    "body": "\\vert $1 \\vert $0",
+    "prefix": [
+      "|",
+      "\\abs"
+    ]
+  },
+  "absb": {
+    "body": "{\\left \\vert $1 \\right \\vert} $0",
+    "prefix": [
+      "|",
+      "\\absb"
+    ]
+  },
+  "small_bracket": {
+    "body": "{\\left( $1 \\right)} $0",
+    "prefix": "bsb"
+  },
+  "middle_bracket": {
+    "body": "{\\left[ $1 \\right]} $0",
+    "prefix": "bmb"
+  },
+  "big_bracket": {
+    "body": "\\{ $1 \\\\} $0",
+    "prefix": "bb"
+  },
+  "bbig_bracket": {
+    "body": "{\\left\\{ $1 \\right\\\\}} $0",
+    "prefix": "bbb"
+  },
+  "from": {
+    "body": "\\Leftarrow ",
+    "prefix": "from"
+  },
+  "fromt": {
+    "body": "\\xLeftarrow{ $1 } $0",
+    "prefix": "fromt"
+  },
+  "fromte": {
+    "body": "\\xLeftarrow{\\text{ $1 }} $0",
+    "prefix": "fromte"
+  },
+  "to": {
+    "body": "\\Rightarrow ",
+    "prefix": "to"
+  },
+  "cases": {
+    "body": "\\begin{cases}\n$1\n\\end{cases}\n$0",
+    "prefix": "cases"
+  },
+  "tot": {
+    "body": "\\xRightarrow{ $1 } $0",
+    "prefix": "tot"
+  },
+  "tote": {
+    "body": "\\xRightarrow{\\text{ $1 }} $0",
+    "prefix": "tote"
+  },
+  "longeq": {
+    "body": "\\xlongequal{ $1 } $0",
+    "prefix": [
+      "eq",
+      "equal"
+    ]
+  },
+  "longeqe": {
+    "body": "\\xlongequal{\\text{ $1 }} $0",
+    "prefix": [
+      "eqe",
+      "equale"
+    ]
+  },
+  "rcases": {
+    "body": "\\left. \\begin{array}{ll}\n$1\n\\end{array} \\right\\\\}$0",
+    "prefix": "rcases"
+  },
+  "qed": {
+    "body": "\\\\\\\n\\text{Q.E.D}",
+    "prefix": "qed"
+  },
+  "colvector": {
+    "body": "\\begin{bmatrix}\n$1\n\\end{bmatrix}\n$0",
+    "prefix": "colvector"
+  },
+  "length": {
+    "body": "\\Vert $1 \\Vert $2",
+    "prefix": "length"
+  },
+  "otherwise": {
+    "body": "\\text{otherwise}",
+    "prefix": "otherwise"
+  },
+  "arrayc": {
     "body": [
-      "$$",
+      "\\begin{array}{c}",
+      "$0",
+      "\\end{array}"
+    ],
+    "prefix": "arrayc"
+  },
+  "sqrt": {
+    "body": "\\sqrt{ $1 } $0",
+    "prefix": "sqrt"
+  },
+  "sqrtn": {
+    "body": "\\sqrt[ $1 ]{ $2 } $0",
+    "prefix": "sqrtn"
+  },
+  "span": {
+    "body": "\\operatorname{span}( $1 ) $0",
+    "prefix": "span"
+  },
+  "dots": {
+    "body": "\\ldots ",
+    "prefix": [
+      "dt",
+      "dots"
+    ]
+  },
+  "range": {
+    "body": "\\operatorname{range} ",
+    "prefix": "range"
+  },
+  "null": {
+    "body": "\\operatorname{null} ",
+    "prefix": "null"
+  },
+  "exist!": {
+    "body": "\\exists\\!",
+    "prefix": [
+      "exist1",
+      "exist!"
+    ]
+  },
+  "LinearMapOp": {
+    "body": "\\mathcal L( $1 , $2 ) $0",
+    "prefix": "\\L"
+  },
+  "MatrixOp": {
+    "body": "\\mathcal M( $1 ) $0",
+    "prefix": "\\M"
+  },
+  "overline": {
+    "body": "\\overline{ $1 } $0",
+    "prefix": "ov"
+  },
+  "floor": {
+    "body": "\\lbrack $1 \\rbrack $0",
+    "prefix": [
+      "floor",
+      "\\floor"
+    ]
+  },
+  "trace": {
+    "body": "\\operatorname{trace} ",
+    "prefix": [
+      "trace",
+      "\\trace"
+    ]
+  },
+  "rank": {
+    "body": "\\operatorname{rank} ",
+    "prefix": [
+      "rank",
+      "\\rank"
+    ]
+  },
+  "dd": {
+    "body": "\\Delta ",
+    "prefix": "dd"
+  },
+  "matrix": {
+    "body": "\\begin{bmatrix} $1 \\end{bmatrix} $0",
+    "prefix": "mat"
+  },
+  "sign": {
+    "body": "\\operatorname{sign} ",
+    "prefix": "sign"
+  },
+  "mathbb": {
+    "body": "{\\mathbb $1}$0",
+    "prefix": "set"
+  },
+  "innerpart": {
+    "body": "\\operatorname{Int}",
+    "prefix": "int"
+  },
+  "closepart": {
+    "body": "\\operatorname{Cl}",
+    "prefix": [
+      "cl",
+      "\\cl"
+    ]
+  },
+  "Id": {
+    "body": "\\mathrm{Id}",
+    "prefix": "id"
+  },
+  "header": {
+    "body": [
+      "% tags:[$2]",
+      "",
+      "\\documentclass[UTF8]{ctexart} % 使用 ctexart 文档类，自动处理中文",
+      "",
+      "\\usepackage{fireinice}",
+      "",
+      "\\title{$1}",
+      "\\author{Ithea}",
+      "\\date{\\today}",
+      "",
+      "\\begin{document}",
+      "",
+      "$0",
+      "",
+      "\\end{document}"
+    ],
+    "prefix": "header"
+  },
+  "inline math": {
+    "body": " \\($1\\) $0",
+    "prefix": "$"
+  },
+  "multiline math": {
+    "body": [
+      "\\[",
+      "\\begin{gathered}",
       "$1",
-      "$$",
+      "\\end{gathered}",
+      "\\]",
       "$0"
     ],
-    "description": "Insert a block math environment"
-  },
-  {
-    "name": "sum range",
-    "scope": "latex",
-    "prefix": [
-      "\\sumr"
-    ],
-    "body": [
-      "\\sum_{$1 = $2}^{$3} $0"
-    ]
+    "prefix": "$$"
   }
-]
+}

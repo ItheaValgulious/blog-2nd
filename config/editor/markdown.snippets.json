@@ -1,11 +1,5 @@
 [
   {
-    "name": "Article Frontmatter",
-    "scope": "markdown",
-    "prefix": [
-      "frontmatter"
-    ],
-    "key": "Ctrl+Alt+F",
     "body": [
       "---",
       "title: ",
@@ -18,21 +12,23 @@
       "",
       "$0"
     ],
+    "name": "Article Frontmatter",
+    "scope": "markdown",
+    "prefix": "frontmatter",
+    "key": "Ctrl+Alt+F",
     "description": "Insert the default article frontmatter block"
   },
   {
-    "name": "Code Block",
-    "scope": "markdown",
-    "prefix": [
-      "codeblock"
-    ],
-    "key": "Ctrl+Alt+C",
     "body": [
       "```$1",
       "$2",
       "```",
       "$0"
     ],
+    "name": "Code Block",
+    "scope": "markdown",
+    "prefix": "codeblock",
+    "key": "Ctrl+Alt+C",
     "description": "Insert a fenced code block"
   }
 ]
