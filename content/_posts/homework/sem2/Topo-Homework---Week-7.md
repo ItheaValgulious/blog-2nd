@@ -4,8 +4,9 @@ tags:
   - topo
   - homework
   - math
-status: draft
+status: published
 top: 0
+date: '2026-04-16T14:35:37.718Z'
 ---
 
 # Topo Homework - Week 7

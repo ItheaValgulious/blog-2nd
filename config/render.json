@@ -2,10 +2,14 @@
   "styles": [
     {
       "directory": "create.css",
-      "enable": true
+      "enable": false
     },
     {
       "directory": "dark.css",
+      "enable": false
+    },
+    {
+      "directory": "basic_style.css",
       "enable": true
     }
   ]

@@ -1,0 +1,32 @@
+/* config/render/basic_style.css */
+:root {
+    --primary-color: rgb(255 130 130);
+    --secondary-color: rgb(255 231 231);
+    color-scheme: light;
+}
+.cbox,.pbox,.bbox,.dbox{
+    padding: 1em !important;
+    border: solid !important;
+    border-color: var(--primary-color) !important;
+    overflow-x: auto !important;
+}
+
+.cbox {
+    border-width: .5em 0em 0em .5em !important;
+    border-radius: 1em 0 0 0 !important;
+    margin: 1em 0em 1em 0em !important;
+}
+
+.pbox {
+    border-width: 0em .5em .5em 0em !important;
+    border-radius: 0 0 1em 0 !important;
+    margin: 1em 0em 1em 0em !important;
+}
+.bbox,.dbox {
+    border-width: .5em .5em .5em .5em !important;
+    border-radius: 1em 1em 1em 1em !important;
+    margin: 1em 0em 1em 0em !important;
+}
+.bbox{
+    border-style:dashed !important;
+}
