@@ -3,43 +3,7 @@
 :root {
     --primary-color: rgb(255 130 130);
     --secondary-color: rgb(255 231 231);
-    --bg-color:white;
-    --title-color:var(--primary-color);
-    
-    --body-bg-color: #fff;
-    --content-bg-color: #fff;
-    --card-bg-color: #f5f5f5;
-    --text-color: #555;
-    --selection-bg: var(--primary-color);
-    --selection-color: white;
-    --blockquote-color: #666;
-    --link-color: #555;
-    --link-hover-color: var(--primary-color);
-    --brand-color: #fff;
-    --brand-hover-color: #fff;
-    --table-row-odd-bg-color: #f9f9f9;
-    --table-row-hover-bg-color: #f5f5f5;
-    --menu-item-bg-color: #f5f5f5;
-    --theme-color: var(--primary-color);
-    --btn-default-bg: var(--primary-color);
-    --btn-default-color: #fff;
-    --btn-default-border-color: var(--primary-color);
-    --btn-default-hover-bg: #fff;
-    --btn-default-hover-color: var(--primary-color);
-    --btn-default-hover-border-color: var(--primary-color);
-    --highlight-background: #f3f3f3;
-    --highlight-foreground: #444;
-    --highlight-gutter-background: #e1e1e1;
-    --highlight-gutter-foreground: #555;
     color-scheme: light;
-}
-
-h1.site-title{
-    color:var(--brand-color) !important;
-}
-
-h1,h2,h3,h4,h5,h6,.post-title>a{
-    color:var(--title-color) !important;
 }
 
 .cbox,.pbox,.bbox,.dbox{
@@ -70,39 +34,3 @@ h1,h2,h3,h4,h5,h6,.post-title>a{
     border-style:dashed !important;
 }
 
-.nav-link,.sidebar-toc-active .sidebar-nav-toc, .sidebar-overview-active .sidebar-nav-overview{
-    color:var(--secondary-color) !important;
-    border-bottom-color:var(--secondary-color) !important;
-}
-.nav-link:hover,.sidebar-toc-active .sidebar-nav-toc:hover, .sidebar-overview-active .sidebar-nav-overview:hover{
-    color:var(--primary-color) !important;
-    border-bottom-color:var(--primary-color) !important;
-}
-
-
-.pdf-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    box-sizing: border-box;
-}
-.pdf-page-container {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-.pdf-wrapper canvas {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.pdf-wrapper .loading {
-    text-align: center;
-    padding: 50px;
-    color: #666;
-}

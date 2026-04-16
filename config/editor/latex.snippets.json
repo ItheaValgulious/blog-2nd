@@ -300,20 +300,5 @@
       "\\end{document}"
     ],
     "prefix": "header"
-  },
-  "inline math": {
-    "body": " \\($1\\) $0",
-    "prefix": "$"
-  },
-  "multiline math": {
-    "body": [
-      "\\[",
-      "\\begin{gathered}",
-      "$1",
-      "\\end{gathered}",
-      "\\]",
-      "$0"
-    ],
-    "prefix": "$$"
   }
 }

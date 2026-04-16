@@ -1,34 +1,52 @@
-[
-  {
+{
+  "block latex": {
     "body": [
-      "---",
-      "title: ",
-      "tags: [${1:knowledge-base}]",
-      "status: draft",
-      "top: 0",
-      "---",
-      "",
-      "# ${2:Heading}",
-      "",
-      "$0"
+      "$$",
+      "\\begin{gathered}",
+      "$0",
+      "\\end{gathered}",
+      "$$"
     ],
-    "name": "Article Frontmatter",
-    "scope": "markdown",
-    "prefix": "frontmatter",
-    "key": "Ctrl+Alt+F",
-    "description": "Insert the default article frontmatter block"
+    "prefix": [
+      "$$",
+      "math"
+    ]
   },
-  {
+  "inline latex": {
     "body": [
-      "```$1",
-      "$2",
-      "```",
+      " $$1$ $0"
+    ],
+    "prefix": "$"
+  },
+  "conclusion": {
+    "body": "<div class='cbox'>\n\n$0\n\n</div>\n\n",
+    "prefix": "conclusion"
+  },
+  "process": {
+    "body": "<div class='pbox'>\n\n$0\n\n</div>\n\n",
+    "prefix": "proc"
+  },
+  "def": {
+    "body": "<div class='dbox'>\n\n$0\n\n</div>\n\n",
+    "prefix": "def"
+  },
+  "bbox": {
+    "body": "<div class='bbox'>\n\n$0\n\n</div>\n\n",
+    "prefix": "bbox"
+  },
+  "think": {
+    "body": "[think] $0",
+    "prefix": "think"
+  },
+  "header": {
+    "body": [
+      "---",
+      "title: $1",
+      "tags: [$2]",
+      "---",
+      "# $1",
       "$0"
     ],
-    "name": "Code Block",
-    "scope": "markdown",
-    "prefix": "codeblock",
-    "key": "Ctrl+Alt+C",
-    "description": "Insert a fenced code block"
+    "prefix": "header"
   }
-]
+}
