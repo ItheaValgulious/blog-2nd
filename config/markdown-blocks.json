@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "start": "[conc]",
+      "end": "[conc]",
+      "tag": "div",
+      "class": [
+        "cbox"
+      ]
+    }
+  ]
+}
