@@ -1,6 +1,6 @@
 /* config/render/basic_style.css */
 :root {
-    --primary-color: rgb(255 130 130);
+    --primary-color: var(--text-color);
     --secondary-color: rgb(255 231 231);
     color-scheme: light;
 }

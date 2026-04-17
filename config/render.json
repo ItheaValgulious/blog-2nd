@@ -6,7 +6,7 @@
     },
     {
       "directory": "basic_style.css",
-      "enable": false
+      "enable": true
     }
   ]
 }
