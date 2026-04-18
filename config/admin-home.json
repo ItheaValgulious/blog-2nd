@@ -1,0 +1,10 @@
+{
+  "widgetOrder": [
+    "todo-list"
+  ],
+  "widgets": {
+    "todo-list": {
+      "items": []
+    }
+  }
+}

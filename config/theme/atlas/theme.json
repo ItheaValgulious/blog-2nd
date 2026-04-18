@@ -1,0 +1,16 @@
+{
+  "enable": true,
+  "files": [
+    {
+      "fileName": "chrome.css",
+      "type": "css",
+      "adminPreview": false
+    },
+    {
+      "fileName": "prose.css",
+      "type": "css",
+      "adminPreview": true
+    }
+  ],
+  "label": "Atlas"
+}

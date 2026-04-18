@@ -1,0 +1,11 @@
+{
+  "enable": false,
+  "files": [
+    {
+      "fileName": "dark.css",
+      "type": "css",
+      "adminPreview": true
+    }
+  ],
+  "label": "Render dark"
+}

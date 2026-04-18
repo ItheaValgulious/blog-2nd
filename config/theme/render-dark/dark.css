@@ -1,0 +1,17 @@
+/* config/render/dark.css */
+
+:root {
+    --primary-color: rgb(120 170 255);
+    --secondary-color: rgb(25 35 55);
+    color-scheme: dark;
+}
+
+body {
+    background-color: var(--body-bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+.cbox,.pbox,.bbox,.dbox{
+    background-color: var(--secondary-color) !important;
+    border-color: var(--primary-color) !important;
+}

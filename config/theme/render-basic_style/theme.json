@@ -1,0 +1,11 @@
+{
+  "enable": false,
+  "files": [
+    {
+      "adminPreview": true,
+      "fileName": "basic_style.css",
+      "type": "css"
+    }
+  ],
+  "label": "Render basic_style"
+}
