@@ -440,3 +440,148 @@ $$
 **看起来这其中最重要的是满足两个多项式的乘积的最大项一定是原来各自最大项的乘积**.
 
 然后讲了一下手算分解的方法就是你先把可能的$\prod_i e_i$项写出来然后待定系数.待定系数的时候用代入值快速拿等式.
+
+<div class='cbox'>
+
+也是牛顿的定理
+
+$$
+\begin{gathered}
+\text{let } s_k=\sum _{i = 1} ^{n}  x_i^k \\
+k> n\Rightarrow \sum _{i = 0} ^{n}  (-1)^i s_{k-i}e_i=0 \\
+k\le n \Rightarrow \sum _{i = 0} ^{k-1}  (-1)^i s_{k-i}e_i+(-1)^k ke_k=0
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+其实直接提取系数就做完了啊.
+
+考虑单项式的形式因为是一个基本多项式乘一个$s$,一定是
+
+$$
+\begin{gathered}
+\prod_{i=1}^n x_i^{c_i},c_i=\begin{cases}
+1,i\ne k \\
+m,i=k
+\end{cases}
+\end{gathered}
+$$
+
+就一定是一堆次数是$1$的乘一个次数高的.次数高的次数记为$m$.
+
+则你发现他只能在$s_me_{k-m}$和$s_{m-1}e_{k-m+1}$这两项中系数为$1$,其余项中系数都为$k-m+1$(这个单项一共有$k-m+1$个变元,其中选出一个次数高的).这两项乘上$(-1)^i$后符号相反,于是这个单项式的系数是$0$.
+
+每个单项式都是$0$,整体也是$0$.
+
+那么由于系数是$k-m+1$,自然就发现$k-1$项的对应系数会是$k-1+1=k$所以$k\le n$时最后一个系数是$k$.
+
+而如果$k>n$,其实和上面一样,只不过$e_i=0\forall i>n$.
+
+</div>
+
+## 20260420
+
+<div class='dbox'>
+
+Resultant(结式)
+
+对两个一元多项式:$f(x)=\sum_{i=0}^n f_ix^i,g(x)=\sum_{i=0}^m g_ix^i$.
+
+可以定义$\varphi:{\mathbb F}_{<n}[x]\times {\mathbb F}_{<m}[x]\to {\mathbb F}_{<n+m}[x],\varphi(x)=(u,v)\mapsto u(x)f(x)+v(x)g(x)$.
+
+则 $\operatorname{im} \varphi={{\mathbb F}[x]\gcd(f(x),g(x))}_{<n+m}$.而选用标准基把$\varphi$表示出来的话矩阵是:
+
+$$
+\begin{gathered}
+A_{i,j}=\begin{cases}
+a_{i-j},j\le m \\
+b_{i-j+m},j>m
+\end{cases}
+\end{gathered}
+$$
+
+($\forall i<0\lor i>n,a_i=0$).
+
+那么定义结式$\operatorname{Res}(f,g)=\det A$.
+
+</div>
+
+<div class='cbox'>
+
+$f,g$有公共解则结式为$0$.
+
+</div>
+
+<div class='pbox'>
+
+由于裴蜀定理,结式为$0$等价于$A$不可逆,等价于$\varphi$不是满射,等价于$\gcd(f,g)\ne 1$.
+
+由于原方程有公共解,$(x-x_{\text{common}})$理应是公因式,所以结式是$0$.
+
+</div>
+
+<div class='cbox'>
+
+用结式解方程
+
+</div>
+
+<div class='pbox'>
+
+设方程组为$\forall i\in [1,m]\cap Z,f_i(x_1,\ldots,x_n)=0$.
+
+任取$f_i,f_j$,从中选一个主元把它看成一元多项式,那么由于公共解所以$\operatorname{Res}(f_i,f_j)=0$,可以用它代替掉.
+
+这就是在消元.
+
+可能产生增根
+
+</div>
+
+<div class='cbox'>
+
+若
+
+$$
+\begin{gathered}
+f(x)=\prod_{i} (x-x_i) \\
+g(x)=\prod_i (x-y_i)
+\end{gathered}
+$$
+
+则$\operatorname{Res}(f,g)=\prod_i g(x_i)=\prod_i f(y_i)$.
+
+</div>
+
+<div class='pbox'>
+
+证明方法是考虑$\operatorname{Res}(f,g)=0 \Leftrightarrow \exists x_i=y_j$.
+
+把$\operatorname{Res}(f,g)$当成$x_i$的函数$r(x_1,\dots ,x_n)$,系数是$x$,那么由于$x_i=y_j$是解所以$(x_i-y_j)$一定是因式,就拿到$\prod_{i,j} (x_i-y_j)|r$.
+
+同时两边都是$mn$次的,就解决了(矩阵那边,系数关于根是$n$次,然后矩阵里有$m$行).所以只差常数.
+
+最后提取个系数看看证明系数是$1$.
+
+</div>
+
+<div class='cbox'>
+
+$\operatorname{Res}(f,f')=C\Delta(f)$
+
+</div>
+
+<div class='pbox'>
+
+也用那个根的差的乘积的方法就好了?
+
+有重根时显然这个截式为$0$.
+
+没重根时$f'=\sum_i \prod_{j\ne i} (x-x_j)$,容易发现任意$x_i$不为零点,于是截式不为$0$.
+
+零点相同,再验证次数上结式和$\Delta=\prod_{i,j}(x_i-x_j)^2$关于$x_i$都是$n(n-1)$,于是只差常数就完事了.
+
+</div>

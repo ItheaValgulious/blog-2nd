@@ -308,21 +308,66 @@ $$
 
 <div class='cbox'>
 
+一阶偏导在$(a,b)$邻域内连续且在$(a,b)$处可微则$(a,b)$处混合偏导相等.
+
+</div>
+
+<div class='pbox'>
+
+
+设$W(x,y)=f(a+x,b+y)-f(a,b+y)-f(a+x,b)+f(a,b)$.
+
+然后为了一致,对$\varphi(t)=f(t,b+y)-f(t,b)$,则
+
+$$
+\begin{gathered}
+W(x,y)=\phi'(a+\xi_1)x=xf_x(a+\xi_1,b+y)-xf_x(a+\xi_1,b) \\
+=f_{xy}(a,b)xy+o(x\sqrt{x^2+y^2})
+\end{gathered}
+$$
+
+同理还可以得到
+
+$$
+\begin{gathered}
+W(x,y)=f_{yx}(a,b)xy+o(y\sqrt{x^2+y^2})
+\end{gathered}
+$$
+
+那么极限
+
+$$
+\begin{gathered}
+\lim_{x \to 0} \dfrac{W(x,x)}{x^2} =f_{xy}(a,b)=f_{yx}(a,b)
+\end{gathered}
+$$
+
+得证.
+
+</div>
+
+
+
+<div class='cbox'>
+
 混合偏导中任意一个连续,且混合偏导都存在,则全都相等
 
 </div>
 
 <div class='pbox'>
 
-设$f_{x,y}$连续,考虑证明$f_{x,y}=f_{y,x}$.
+多元的情况,可以每次交换两元.所以等价于二元情况.
+
+不妨设是$f_{xy}$连续.
 
 $$
 \begin{gathered}
-f_{x,y}(x,y)=\lim_{\Delta y \to 0} \lim_{\Delta x\to 0} \dfrac{1}{\Delta y} (\dfrac{f(x+\Delta x,y+\Delta y)-f(x,y+\Delta y)}{\Delta x}-\dfrac{f(x+\Delta x,y)-f(x,y)}{\Delta x} ) \\
-=\lim_{\Delta y \to 0} \lim_{\Delta x\to 0} \dfrac{f(x+\Delta x,y+\Delta y)-f(x,y+\Delta y)-f(x+\Delta x,y)+f(x,y)}{\Delta x\Delta y}  \\
-=\lim_{\Delta y \to 0} \lim_{\Delta x\to 0} \dfrac{1}{\Delta x} (\dfrac{f(x+\Delta x,y+\Delta y)-f(x+\Delta x,y)}{\Delta y} -\dfrac{f(x,y+\Delta y)-f(x,y)}{\Delta y} ) \\
-=\lim_{\Delta y \to 0} \lim_{\Delta x\to 0} \dfrac{f_y(x+\Delta x,y+\xi_1)-f_y(x,y+\xi_2)}{\Delta x} ,(\xi_1,\xi_2\in (0,\Delta y)) \\
+f_{yx}(x_0,y_0)=\lim_{\Delta x \to 0}\lim_{\Delta y \to 0}  \dfrac{f(x_0+\Delta x,y_0+\Delta y)-f(x_0+\Delta x,y_0)-f(x_0,y_0+\Delta y)+f(x_0,y_0)}{\Delta x\Delta y}  \\
 
+\xlongequal{ \text{use lagrange for } \varphi(t)=f(x,y_0+\Delta y)-f(x,y_0) }  \\
+\lim_{\Delta x \to 0} \lim_{\Delta y \to 0} \dfrac{f_x(x_0+\theta_1\Delta x,y_0+\Delta y)-f_x(x_0+\theta_1\Delta x,y_0)}{\Delta y} \\
+=\lim_{\Delta x \to 0} \lim_{\Delta y \to 0} f_{xy}(x_0+\theta_1\Delta x,y_0+\theta_2\Delta y) \\
+=f_{xy}(x_0,y_0)
 \end{gathered}
 $$
 

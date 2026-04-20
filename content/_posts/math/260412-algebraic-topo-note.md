@@ -416,11 +416,19 @@ $$
 
 $$
 \begin{gathered}
-p^{-1}(X)\cong \pi_1(X,x_0)/(\pi_1(p)\pi_1(\tilde X,\tilde x_0))
+p^{-1}(x_0)\cong \pi_1(X,x_0)/(\pi_1(p)\pi_1(\tilde X,\tilde x_0))
 \end{gathered}
 $$
 
-这里不是商群而是集合意义上的等价类.
+这里不是商群而是集合意义上的等价类.因为右边不保证除的是正规子群,导致得到的不是群.
+
+</div>
+
+<div class='def'>
+
+Simply Connected
+
+$\pi_1(X)=\{1\}$则它单连通.
 
 </div>
 
@@ -428,15 +436,15 @@ $$
 
 Universal Covering Space
 
-如果$\tilde X$中任意两条路径同伦,或者说$\pi_1(\tilde X)\cong \{1\}$,则称$\tilde X$是$X$的 普遍覆叠空间.
+单连通的覆叠空间.
 
 </div>
 
-则此时$p^{-1}(X)\cong \pi_1(X,x_0)$.
+则此时$p^{-1}(x_0)\cong \pi_1(X,x_0)$.因为固定了起点后每个$p^{-1}(x_0)$都是一个不同的同伦类走出来的.
 
 <div class='cbox'>
 
-$\pi_1(X,x_0)$的子群与覆叠空间一一对应.
+在有Universal Covering Space时,$\pi_1(X,x_0)$的子群与覆叠空间一一对应.
 
 </div>
 
@@ -445,6 +453,44 @@ $\pi_1(X,x_0)$的子群与覆叠空间一一对应.
 首先,对任意$\tilde X$,定义$\varphi:\pi_1(\tilde X,\tilde x_0)\to \pi_1(X,x_0),\varphi=a\mapsto p\circ a$,它是同态是显然的,是单的也是显然的.于是令子群 $H=\operatorname{im} \varphi$.
 
 那么反过来,对任意子群,如何生成其覆叠空间呢?
+
+考虑先拿过来普遍覆叠空间$\tilde X$,$\pi_1(X,x_0)$同构于$p^{-1}(x_0)$的变换群.这个空间的$\pi_1$是只有一个元素的平凡群:因为它把所有$X$里的大量闭环都拆开的不闭环了.
+
+现在你希望你的空间的基本群长的像$H$,那我们只要要求$H$中这些路径是闭环的,于是你通过粘合上面的覆叠空间,就把原本不是闭环的粘贴成了闭环.所以你想到定义$\tilde X/\sim_H$为你想要的空间,其中$x\sim_H y \Leftrightarrow \exists [h]\in H,\tilde h(0)=x,\tilde h(1)=y$.
+
+容易验证它的基本群投影到$X$后就是子群$H$.
+
+</div>
+
+刚才都是在有基点的情况讨论.因为变换基点相当于把子群变成他的一个共轭子群,所以你会的得到共轭子群类与覆叠空间一一对应.
+
+我们想知道什么时候Universal Covering Space存在.
+
+<div class='dbox'>
+
+locally connected: 存在一个邻域是单连通的.
+
+semi-locally simply connected: 邻域内的一条回路在整个空间内可以同伦到常路径.
+
+</div>
+
+这是因为如果$X$有普遍覆叠空间$\tilde X$,那么存在一个$p:\tilde X\to X$,则对任意一点$x$,存在一个邻域$U$是和任意$V_\lambda,\lambda\in A$同胚的,而这些$V_\lambda$是$X$的子空间啊.所以这里面的路径一定可以在整个空间$\tilde X$中同伦到常路径,再把这个同伦用$p$映射下来就成了semi-locally simply connected.
+
+所以反过来,我们会这样希望
+
+<div class='cbox'>
+
+Universal Covering Space存在性
+
+semi-locally simply connected,locally path connected,path connected 则 $X$有Universal Covering Space
+
+</div>
+
+<div class='pbox'>
+
+考虑Universal Covering Space表明任意一个其中的点$\tilde x$可以被唯一一个$\tilde x_0$开始的路径(不是回路)同伦等价类确定.而因为确定了起点,那么这样的路径还双射到$X$中$x_0$开始的一条路径.所以我们直接定义$\tilde X=\{[p]|p \text{ is a path in }X \}$.
+
+然后需要给他赋予一个靠谱的拓扑.什么是开集?
 
 
 

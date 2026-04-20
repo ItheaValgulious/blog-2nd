@@ -1,8 +1,5 @@
 {
-  "siteTitle": "Eternal Dreamer",
-  "siteDescription": "Will you save us?",
   "backgroundImage": "",
-  "theme": "atlas",
   "enabledPlugins": [
     "top-order",
     "home",
@@ -12,8 +9,6 @@
     "about",
     "search"
   ],
-  "about": {
-    "title": "About",
-    "body": "Write your About page content here."
-  }
+  "siteDescription": "Will you save us?",
+  "siteTitle": "Eternal Dreamer"
 }

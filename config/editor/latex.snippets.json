@@ -300,5 +300,24 @@
       "\\end{document}"
     ],
     "prefix": "header"
+  },
+  "block latex": {
+    "body": [
+      "$$",
+      "\\begin{gathered}",
+      "$0",
+      "\\end{gathered}",
+      "$$"
+    ],
+    "prefix": [
+      "$$",
+      "math"
+    ]
+  },
+  "inline latex": {
+    "body": [
+      " $$1$ $0"
+    ],
+    "prefix": "$"
   }
 }

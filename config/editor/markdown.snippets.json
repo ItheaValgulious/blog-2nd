@@ -1,23 +1,4 @@
 {
-  "block latex": {
-    "body": [
-      "$$",
-      "\\begin{gathered}",
-      "$0",
-      "\\end{gathered}",
-      "$$"
-    ],
-    "prefix": [
-      "$$",
-      "math"
-    ]
-  },
-  "inline latex": {
-    "body": [
-      " $$1$ $0"
-    ],
-    "prefix": "$"
-  },
   "conclusion": {
     "body": "<div class='cbox'>\n\n$0\n\n</div>\n\n",
     "prefix": "conclusion"
