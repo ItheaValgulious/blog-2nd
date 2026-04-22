@@ -9,6 +9,9 @@ top: 0
 ---
 
 # Math Analysis Homework - Sem2 Week 7
+
+## Class 1
+
 ### T1
 
 <div class="cbox">
@@ -21,8 +24,8 @@ top: 0
 
 $$
 \begin{gathered}
-f_x(x,1)=x+(1-1)(\arcsin\sqrt\dfrac{x}{y} )^{-1} \\
-=x
+f_x(x,1)=1+(1-1)(\arcsin\sqrt\dfrac{x}{y} )^{-1} \\
+=1
 \end{gathered}
 $$
 
@@ -122,7 +125,7 @@ $$
 $$
 \begin{gathered}
 f_x=(\dfrac1{x^2+y^2})(\sqrt{x^2+y^2}-\dfrac{x^2}{\sqrt{x^2+y^2}}) \\
-f_y=-\dfrac{x}{2(x^2+y^2)^{\frac32}} 
+f_y=-\dfrac{2xy}{2(x^2+y^2)^{\frac32}} 
 \end{gathered}
 $$
 
@@ -130,9 +133,9 @@ $$
 
 $$
 \begin{gathered}
-f_x(1,0)=(\dfrac{x}{|x|})' |_{x=1}=1 \\
-f_y(1,0)=(\dfrac{1}{\sqrt{1+y^2}} )'=-\dfrac{1}{2(1+y^2)^{\frac32}} =-\dfrac12 \\
-f(x,y)=(x-1)-\dfrac12 y+o(\sqrt{(x-1)^2+y^2}), (x,y)\in U(1,0)
+f_x(1,0)=(\dfrac{x}{|x|})' |_{x=1}=0 \\
+f_y(1,0)=0 \\
+f(x,y)=o(\sqrt{(x-1)^2+y^2}), (x,y)\in U(1,0)
 \end{gathered}
 $$
 
@@ -162,10 +165,9 @@ $$
 $$
 \begin{gathered}
 f(x,y,z) \\
-=f_x(x_0,y_0,z_0)(x-x_0) \\
-+f_y(x_0,y_0,z_0)(y-y_0) \\
-+f_z(x_0,y_0,z_0)(z-z_0) \\
-+o(\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2})
+=f_x(x_0,y_0,z_0)dx \\
++f_y(x_0,y_0,z_0)dy \\
++f_z(x_0,y_0,z_0)dz
 \end{gathered}
 $$
 
@@ -276,8 +278,8 @@ $$
 $$
 \begin{gathered}
 \lim_{(x,y) \to (x_0,y_0)} |f(x,y)-f(x_0,y_0)| \\
-\le \lim_{(x,y) \to (x_0,y_0)} |f(x,y)-f(x_0,y)|+|f(x_0,y)-f(x_0,y_0)| \\
-=\lim_{(x,y) \to (x_0,y_0)} 0+|(y-y_0)f_y(x_0,\xi)| \\
+\le \lim_{(x,y) \to (x_0,y_0)} |f(x,y)-f(x,y_0)|+|f(x,y_0)-f(x_0,y_0)| \\
+=\lim_{(x,y) \to (x_0,y_0)} |(y-y_0)f_y(x,\xi)|+0 \\
 \le \lim_{(x,y) \to (x_0,y_0)} |y-y_0|M \\
 =0
 \end{gathered}
@@ -361,7 +363,7 @@ u_x(1,1)=1,u_y(1,1)=1
 \end{gathered}
 $$
 
-则方向导数$u_l=2(\cos\alpha+\sin\alpha)$当$\alpha=\dfrac\pi4$时取最大值$\sqrt 2$.$\alpha=-\dfrac\pi4$时取最小值$\sqrt 2$,$\alpha=\dfrac34\pi,-\dfrac14\pi$时为$0$.
+则方向导数$u_l=(\cos\alpha+\sin\alpha)$当$\alpha=\dfrac\pi4$时取最大值$\sqrt 2$.$\alpha=-\dfrac\pi4$时取最小值$\sqrt 2$,$\alpha=\dfrac34\pi,-\dfrac14\pi$时为$0$.
 
 
 $$
@@ -442,11 +444,11 @@ $$
 $$
 \begin{gathered} \\
 u_x=r\cdot (-\dfrac1{r^2})\dfrac{dr}{dx} \\
-=-\dfrac1r \dfrac{x-a}{\sqrt r} \\
-u_y=-\dfrac1r \dfrac{y-b}{\sqrt r} \\
-u_z=-\dfrac1r \dfrac{y-z}{\sqrt r} \\
-\Rightarrow \nabla u=-r^{-\frac32}(x-a,y-b,z-c) \\
-\|\nabla u\|=1 \Rightarrow r^{-\frac32} \|(x-a,y-b,z-c)\|=r^{-\frac12}=1 \\
+=-\dfrac1r \dfrac{x-a}{r} \\
+u_y=-\dfrac1r \dfrac{y-b}{r} \\
+u_z=-\dfrac1r \dfrac{y-z}{r} \\
+\Rightarrow \nabla u=-r^{-2}(x-a,y-b,z-c) \\
+\|\nabla u\|=1 \Rightarrow r^{-2} \|(x-a,y-b,z-c)\|=r^{-1}=1 \\
 \end{gathered}
 $$
 
@@ -515,5 +517,277 @@ $$
 $$
 
 得证.
+
+</div>
+
+## Class 2
+
+### T1
+
+<div class="cbox">
+
+**3.** 设 $f(x, y)$ 可微, $f(1, 1) = 1, f_x(1, 1) = a, f_y(1, 1) = b$. 令 $\varphi(x) = f(x, f(x, x))$, 求 $\varphi'(1)$.
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+\varphi'(1)=\dfrac{\partial f}{\partial x} +\dfrac{\partial f}{\partial y} (\dfrac{\partial f}{\partial x} +\dfrac{\partial f}{\partial y} ) \\
+=a+ab+b^2
+\end{gathered}
+$$
+
+</div>
+
+### T2
+
+<div class="cbox">
+
+**4.** 已知 $z = u^2 \ln v, u = \frac{x}{y}, v = 3x - 2y$, 求 $\frac{\partial z}{\partial x}, \frac{\partial z}{\partial y}$.
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+z_x=z_uu_x+z_vv_x \\
+=2u\ln v\dfrac{1}{y} +\dfrac{u^2}{v} 3 \\
+=\dfrac{2x\ln(3x-2y)}{y^2} +\dfrac{3x^2}{y^2(3x-2y)} 
+\end{gathered} \\
+z_y=z_uu_y+z_vv_y \\
+=2u\ln v \cdot (-\dfrac{x}{y^2} )-2\dfrac{u^2}{v}  \\
+=-\dfrac{2x^2\ln(3x-2y)}{y^3} -\dfrac{2x^2}{y^2(3x-2y)} 
+$$
+
+</div>
+
+### T3
+
+<div class="cbox">
+
+**6.** 设 $z = \sin y + f(\sin x - \sin y)$, 其中 $f$ 为可微函数, 证明: 
+$$\frac{\partial z}{\partial x} \sec x + \frac{\partial z}{\partial y} \sec y = 1.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+z_x\sec x+z_y\sec y \\
+=f'(\sin x-\sin y)\cos x\sec x \\
++(\cos y-f'(\sin x-\sin y)\cos y)\sec y \\
+=1
+\end{gathered}
+$$
+
+</div>
+
+### T4
+
+<div class="cbox">
+
+**7.** 在方程 $x \frac{\partial z}{\partial x} + y \frac{\partial z}{\partial y} = z^2$ 中作变换 $u = x, v = \frac{1}{y} - \frac{1}{x}, w = \frac{1}{z} - \frac{1}{x}$, 求变换后的方程.
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+w_x=-\dfrac{z_x}{z^2} +\dfrac{1}{x^2}=w_uu_x+w_vv_x=w_u+\dfrac{1}{u^2} w_v  \\
+w_y=-\dfrac{z_y}{z^2} =w_vv_y+w_uu_y=-\dfrac{w_v}{y^2}  \\
+z_x=\dfrac{z^2}{x^2} -w_uz^2-\dfrac{z^2}{u^2} w_v \\
+z_y=\dfrac{z^2}{y^2} w_v \\
+\end{gathered}
+$$
+
+原式变成
+
+$$
+\begin{gathered}
+1=\dfrac{1}{u} -uw_u-\dfrac{w_v}{x} +\dfrac{w_v}{y}  \\
+\Leftrightarrow \dfrac{1}{u} -uw_u+w_vv=1
+\end{gathered}
+$$
+
+</div>
+
+### T5
+
+<div class="cbox">
+
+**11.** 设 $u = u(x, y), x = r \cos \theta, y = r \sin \theta$. 证明: 
+$$\frac{\partial^2 u}{\partial r^2} + \frac{1}{r} \frac{\partial u}{\partial r} + \frac{1}{r^2} \frac{\partial^2 u}{\partial \theta^2} = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+u_r=u_x\cos\theta+u_y\sin\theta \\
+u_\theta=-u_xr\sin\theta+u_yr\cos\theta \\
+u_{rr}=\cos\theta(u_{xx}\cos\theta+u_{xy}\sin\theta)+\sin\theta(u_{yx}\cos\theta+u_{yy}\sin\theta) \\
+u_{\theta\theta}=-r\cos\theta u_x-r\sin\theta(-u_{xx}r\sin\theta+u_{xy}r\cos\theta) \\
+-r\sin\theta u_y+r\cos\theta(-u_{yx}r\sin\theta+u_{yy}r\cos\theta) \\
+u_{rr}+\dfrac{1}{r} u_r+\dfrac{1}{r^2} u_{\theta\theta} \\
+=u_{xx}(\cos^2\theta+\dfrac{r^2}{r^2} \sin^2\theta) \\
++u_{yy}(\sin^2\theta+\dfrac{r^2}{r^2} \cos^2\theta) \\
++u_{xy}(\sin\theta\cos\theta-\sin\theta\cos\theta) \\
++u_{yx}(\sin\theta\cos\theta-\sin\theta\cos\theta) \\
++\dfrac{u_x\cos\theta+u_y\sin\theta}{r} -\dfrac{r}{r^2} (u_x\cos\theta+u_y\sin\theta) \\
+=u_{xx}+u_{yy}
+\end{gathered}
+$$
+
+</div>
+
+### T6
+
+<div class="cbox">
+
+**12.** 证明函数 $u = \frac{1}{2a\sqrt{\pi t}} e^{-\frac{(x-b)^2}{4a^2t}}$ ($a, b$ 为常数) 满足热传导方程: 
+$$\frac{\partial u}{\partial t} = a^2 \frac{\partial^2 u}{\partial x^2}.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+u_t=\dfrac{1}{2a\sqrt\pi}((-\dfrac12t^{-\frac32} )e^{-\frac{(x-b)^2}{4a^2t}}+t^{-\frac12}e^{-\frac{(x-b)^2}{4a^2t}}(\dfrac{1}{t^2}\dfrac{(x-b)^2}{4a^2} )) \\
+=u(-\dfrac{1}{2t} + \dfrac{(x-b)^2}{4a^2t^2} ) \\
+u_{x}=-\dfrac{(x-b)}{2a^2t} u \\
+u_{xx}=-\dfrac{1}{2a^2t} u+\dfrac{(x-b)}{2a^2t}\dfrac{(x-b)}{2a^2t} u \\
+\text{so } 
+a^2u_{xx}=u(-\dfrac{1}{2t} +\dfrac{(x-b)^2}{4a^2t^2})=u_t
+\end{gathered}
+$$
+
+</div>
+
+### T7
+
+<div class="cbox">
+
+**13.** 证明函数 $u = \ln \sqrt{(x-a)^2 + (y-b)^2}$ ($a, b$ 为常数) 满足拉普拉斯方程: 
+$$\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+\text{let } r=(x-a)^2+(y-b)^2 \\
+u_x=\dfrac{1}{2} \dfrac{1}{r} 2(x-a)=\dfrac{x-a}{r}  \\
+u_{xx}=\dfrac{r-2(x-a)(x-a)}{r^2} =\dfrac{(y-b)^2-(x-a)^2}{r^2}  \\
+u_y=\dfrac{1}{2} \dfrac{1}{r} 2(y-b)=\dfrac{y-b}{r}  \\
+u_{yy}=\dfrac{r-2(y-b)(y-b)}{r^2} =\dfrac{(x-a)^2-(y-b)^2}{r^2}  \\
+\text{so } u_{xx}+u_{yy}=0
+\end{gathered}
+$$
+
+</div>
+
+### T8
+
+<div class="cbox">
+
+**16.** 设 $u = f(r), r = \sqrt{x_1^2 + x_2^2 + \dots + x_n^2}$, 证明: 
+$$\frac{\partial^2 u}{\partial x_1^2} + \frac{\partial^2 u}{\partial x_2^2} + \dots + \frac{\partial^2 u}{\partial x_n^2} = \frac{d^2 u}{d r^2} + \frac{n-1}{r} \frac{d u}{d r}.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+u_{x_i}=u_r r_{x_i}=u_r \dfrac{x_i}{r}  \\
+u_{x_ix_i}=(u_{rr}r_{x_i})\dfrac{x_i}{r} +u_r(\dfrac{x_i}{r} )_{x_i} \\
+=u_{rr}\dfrac{x_i^2}{r^2} +u_r\dfrac{r-x_i \dfrac{x_i}{r} }{r^2}  \\
+=u_{rr}\dfrac{x_i^2}{r^2} +u_r (\dfrac{1}{r} -\dfrac{x_i^2}{r^3} ) \\
+\text{so } \sum_{i=1}^n u_{x_ix_i} \\
+=u_{rr} \dfrac{\sum_{i=1}^n x_i^2}{r^2} +\dfrac{nu_r}{r} -u_r\dfrac{\sum_{i=1}^n x_i^2}{r^3}  \\
+=u_{rr}+\dfrac{n-1}{r} u_r
+\end{gathered}
+$$
+
+</div>
+
+### T9
+
+<div class="cbox">
+
+**17.** 设 $z = f[x + \varphi(y)]$, 其中 $\varphi$ 可微, $f$ 有二阶连续导数. 证明: 
+$$\frac{\partial z}{\partial x} \frac{\partial^2 z}{\partial x \partial y} = \frac{\partial z}{\partial y} \frac{\partial^2 z}{\partial x^2}.$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+z_x=f'(x+\varphi(y)) \\
+z_y=f'(x+\varphi(y))\varphi'(y) \\
+z_{xx}=f''(x+\varphi(y)) \\
+z_{xy}=f''(x+\varphi(y))\varphi'(y) \\
+\text{so } z_xz_{xy}=f'f''\varphi'=z_yz_{xx}
+\end{gathered}
+$$
+
+</div>
+
+### T10
+
+<div class="cbox">
+
+**18.** 证明: 若函数 $u = f(x, y)$ 满足拉普拉斯方程 $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0$, 则函数 $v = f\left(\frac{x}{x^2 + y^2}, \frac{y}{x^2 + y^2}\right)$ 也满足拉普拉斯方程.
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered} \\
+\text{let } r=x^2+y^2,a=\dfrac{x}{r} ,b=\dfrac{y}{r}  \\
+v_x=v_aa_x+v_bb_x \\
+v_{xx}=(v_{aa}a_x+v_{ab}b_x)a_x+v_a(a_{xx})+(v_{ba}a_x+v_{bb}b_x)b_x+v_b(b_{xx}) \\
+=v_{aa}(a_x^2-b_x^2)+a_xb_x(v_{ab}+v_{ba})+v_aa_{xx}+v_bb_{xx} \\
+\text{Similarily, } \\
+v_{yy}=v_{bb}(b_y^2-a_y^2)+a_yb_y(v_{ab}+v_{ba})+v_bb_{yy}+v_aa_{yy}
+\end{gathered}
+$$
+
+因为
+
+$$
+\begin{gathered}
+a_x^2-b_x^2-b_y^2+a_y^2 \\
+=(\dfrac{y^2-x^2}{r^2})^2-(\dfrac{-2xy}{r^2} )^2-(\dfrac{x^2-y^2}{r^2} )^2+(\dfrac{-2xy}{r^2} )^2=0 \\
+a_xb_x+a_yb_y=\dfrac{-2xy(y^2-x^2)}{r^4} +\dfrac{-2xy(x^2-y^2)}{r^4} =0 \\
+a_{xx}+a_{yy} \\
+=\dfrac{-2xr^2-(y^2-x^2)2r2x}{r^4} +\dfrac{-2xr^2+2xy2r2y}{r^4}  \\
+=2\dfrac{-2x(x^2+y^2)-2x(y^2-x^2)+4xy^2}{r^3}  \\
+=0 \\
+\text{Similarily} b_xx+b_yy=0 \\
+\end{gathered}
+$$
+
+则有
+
+$$
+\begin{gathered}
+v_{xx}+v_{yy} \\
+=v_{aa}(a_x^2-b_x^2-b_y^2+a_y^2) \\
++(v_{ab}+v_{ba})(a_xb_x+a_yb_y) \\
++v_a(a_{xx}+a_{yy})+v_b(b_{xx}+b_{yy}) \\
+=0
+\end{gathered}
+$$
 
 </div>

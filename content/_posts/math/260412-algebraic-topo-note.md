@@ -492,6 +492,55 @@ semi-locally simply connected,locally path connected,path connected 则 $X$有Un
 
 然后需要给他赋予一个靠谱的拓扑.什么是开集?
 
+不会了,AI帮忙:开集的结构太复杂,考虑拓扑基.
+
+于是$\forall p=x_0\rightsquigarrow y,U_y \text{ is a neighborood of } y$,由条件,我们可以让$U$是semi-locally simply connected和path connected.则定义$V_p=\{[p(y\rightsquigarrow z)]|z\in U_y\}$.而拓扑基自然就是$\{ V_p \} _{[p]\in \tilde X}$.
+
+然后你可以验证,$U$在$\tilde X$中就会被复制$\pi_1$份,实际上是$x_0\to U$的同伦类数量.且$U$对应的任意两个切片不交:否则就存在一个路径$\gamma=\alpha\beta=\omega\theta$,其中$[\alpha]\ne [\omega]$,但由刚才保证$U$ semi-locally simply connected你知道$[\beta]=[\theta]$,就矛盾了.
+
+</div>
+
+<div class='cbox'>
+
+Lifting criterion
+
+给定空间$X,Y$,映射$f:Y\to X$.$\tilde X$是$X$的覆叠空间.
+
+$Y$路径连通,局部路径连通.
+
+则给定起点$\tilde f(y_0)=\tilde x_0$后存在唯一$\tilde f:Y\to \tilde X$满足$f=p\circ \tilde f$当且仅当
+
+$$
+\begin{gathered}
+f_*(\pi_1(Y,y_0))\subset p_* \pi_1(\tilde X,\tilde x_0)
+\end{gathered}
+$$
+
+</div>
+
+<div class='cbox'>
+
+首先,假设$\tilde f$存在,则$f_*(\pi_1(Y,y_0))=p_*\circ {\tilde f}_*(\pi_1(Y, y_0))\subset p_*(\pi_1(\tilde X,\tilde x_0))$.是显然的.
+
+反过来,如果已知$f_*\pi_1(Y,y_0)\subset p_*\pi_1(\tilde X,\tilde x_0)$,需要证明存在性.
+
+则对任意一条$Y$中的路径$\alpha=y_0\rightsquigarrow y$,$f(\alpha)$有唯一的提升$\widetilde {f(\alpha)}$,那么我们定义$\tilde f(y_0)=\widetilde {f(\alpha)}(1)$.
+
+首先证明其良定义.
+
+我们知道不同的$X$中的路径可以被提升成终点不同的路径,具体地说$\pi_1(X,x_0)/\pi_1(\tilde X,\tilde x_0)$中的每个等价类对应了一个路径终点.
+
+那么你要保证两条路被提升到同一终点:若又有$\beta=y_0\rightsquigarrow y$,则因为$f_*([\alpha\beta^{-1}])\in f_*(\pi_1(Y,y_0))\subset p_*\pi_1(\tilde X,\tilde x_0)$,所以这条路径被提升后的$\widetilde {(f_*(\alpha\beta^{-1}))}$在$\pi_1(\tilde X,\tilde x_0)$里相当于说回到自身,即:$\widetilde {f_*(\alpha)}(1)=\widetilde {f_*(\beta^{-1})}(0)$,反过来就是$\widetilde {f_*(\alpha)}(1)=\widetilde {f_*(\beta^{-1})}^{-1}(1)$.然后把它投影回去,你可以确信$\widetilde {f_*(\beta^{-1})}^{-1}=\widetilde {f_*(\beta)}$.于是确实到同一个终点.
+
+
+
+</div>
+
+最后是学完这个章节后你可以会的一个应用
+
+<div class='cbox'>
+
+Brouwer’s fixed point theorem
 
 
 </div>
