@@ -319,5 +319,14 @@
       " $$1$ $0"
     ],
     "prefix": "$"
+  },
+  "Im": {
+    "body": [
+      "\\operatorname{Im} $0"
+    ],
+    "prefix": [
+      "Im",
+      "\\Im"
+    ]
   }
 }

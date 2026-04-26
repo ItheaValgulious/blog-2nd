@@ -4,7 +4,48 @@
   ],
   "widgets": {
     "todo-list": {
-      "items": []
+      "items": [
+        {
+          "completed": false,
+          "id": "51fc7b3e-7a69-4e9f-a78e-a82f5ce0b812",
+          "text": "交龙"
+        },
+        {
+          "completed": false,
+          "id": "f86b74c7-9c8d-42bd-b925-64bfd58704ad",
+          "text": "minigame"
+        },
+        {
+          "completed": false,
+          "id": "ef98d285-58e1-4b4d-88d7-51f277018acd",
+          "text": "English Homework"
+        },
+        {
+          "completed": false,
+          "id": "2e5f4d25-ccfe-4b50-a633-4083424ddafd",
+          "text": "DDL投稿"
+        },
+        {
+          "completed": false,
+          "id": "aa1f18d0-3712-4fc0-9095-98689b045ba1",
+          "text": "范畴论学习"
+        },
+        {
+          "completed": false,
+          "id": "1d181206-03b0-4e6a-b95d-ce871ead3950",
+          "text": "抽象代数学习"
+        },
+        {
+          "completed": false,
+          "id": "e6b6b935-772f-4af5-b7eb-73a206bc7b1c",
+          "text": "形式与政策作业"
+        },
+        {
+          "completed": false,
+          "id": "7d11aa62-6667-4fb6-9c14-15da6ca8ebdc",
+          "text": "新时代社会实践小组汇报"
+        }
+      ]
     }
   }
 }

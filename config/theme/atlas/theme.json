@@ -2,15 +2,30 @@
   "enable": true,
   "files": [
     {
-      "fileName": "chrome.css",
-      "type": "css",
-      "adminPreview": false
+      "adminPreview": true,
+      "colorMode": "light",
+      "fileName": "chrome.light.css",
+      "type": "css"
     },
     {
-      "fileName": "prose.css",
-      "type": "css",
-      "adminPreview": true
+      "adminPreview": false,
+      "colorMode": "dark",
+      "fileName": "chrome.dark.css",
+      "type": "css"
+    },
+    {
+      "adminPreview": true,
+      "colorMode": "light",
+      "fileName": "prose.light.css",
+      "type": "css"
+    },
+    {
+      "adminPreview": true,
+      "colorMode": "dark",
+      "fileName": "prose.dark.css",
+      "type": "css"
     }
   ],
-  "label": "Atlas"
+  "label": "Atlas",
+  "mode": "light"
 }

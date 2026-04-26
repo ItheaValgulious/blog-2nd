@@ -4,8 +4,9 @@ tags:
   - math
   - math-analysis
   - homework
-status: draft
+status: published
 top: 0
+date: '2026-04-22T05:27:17.490Z'
 ---
 
 # Math Analysis Homework - Sem2 Week 7

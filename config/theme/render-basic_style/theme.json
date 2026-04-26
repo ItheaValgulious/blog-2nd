@@ -3,9 +3,17 @@
   "files": [
     {
       "adminPreview": true,
-      "fileName": "basic_style.css",
+      "colorMode": "light",
+      "fileName": "basic_style.light.css",
+      "type": "css"
+    },
+    {
+      "adminPreview": true,
+      "colorMode": "dark",
+      "fileName": "basic_style.dark.css",
       "type": "css"
     }
   ],
-  "label": "Render basic_style"
+  "label": "Render basic_style",
+  "mode": "light"
 }

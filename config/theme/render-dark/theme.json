@@ -2,10 +2,18 @@
   "enable": false,
   "files": [
     {
-      "fileName": "dark.css",
-      "type": "css",
-      "adminPreview": true
+      "adminPreview": true,
+      "colorMode": "light",
+      "fileName": "dark.light.css",
+      "type": "css"
+    },
+    {
+      "adminPreview": true,
+      "colorMode": "dark",
+      "fileName": "dark.dark.css",
+      "type": "css"
     }
   ],
-  "label": "Render dark"
+  "label": "Render dark",
+  "mode": "dark"
 }

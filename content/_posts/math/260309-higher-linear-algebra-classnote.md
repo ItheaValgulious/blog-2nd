@@ -585,3 +585,30 @@ $\operatorname{Res}(f,f')=C\Delta(f)$
 零点相同,再验证次数上结式和$\Delta=\prod_{i,j}(x_i-x_j)^2$关于$x_i$都是$n(n-1)$,于是只差常数就完事了.
 
 </div>
+
+## 20260423
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+p\in R[x],\deg p=2d,p(x)\ge 0 \\
+\Leftrightarrow \exists p_1,p_2\in R[x],p(x)=p_1^2(x)+p_2^2(x) \\
+\Leftrightarrow \exists P\in R^{d\times d},\ s.t.\ 
+p(x)=\begin{bmatrix} 1&x&\cdots&x^d \end{bmatrix}  P\begin{bmatrix} 1\\x\\\vdots\\x^d \end{bmatrix} 
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+若$p(x)\ge 0$,则$p(x)=C\prod_i (x-x_i)(x-\overline x_i)=(\sqrt C\prod |x-x_i|)^2=|\sqrt{C}\prod |x-x_i| |^2$.
+
+于是令$p_1=\Re(\sqrt C\prod (x-x_i)),p_2=\Im(\sqrt C\prod (x-x_i))$.于是$p=p_1^2+p_2^2$.
+
+第二个反而好办:$p_1^2(x)=(x^Tp_1)(p_1^Tx)$,这里$x$是$x$的次幂组成的向量,$p_1$是$p$的系数组成的向量.
+
+从而$P=\begin{bmatrix} p_1&p_2 \end{bmatrix} \begin{bmatrix} p_1&p_2 \end{bmatrix}^T$就行了.
+
+</div>

@@ -532,15 +532,27 @@ $$
 
 那么你要保证两条路被提升到同一终点:若又有$\beta=y_0\rightsquigarrow y$,则因为$f_*([\alpha\beta^{-1}])\in f_*(\pi_1(Y,y_0))\subset p_*\pi_1(\tilde X,\tilde x_0)$,所以这条路径被提升后的$\widetilde {(f_*(\alpha\beta^{-1}))}$在$\pi_1(\tilde X,\tilde x_0)$里相当于说回到自身,即:$\widetilde {f_*(\alpha)}(1)=\widetilde {f_*(\beta^{-1})}(0)$,反过来就是$\widetilde {f_*(\alpha)}(1)=\widetilde {f_*(\beta^{-1})}^{-1}(1)$.然后把它投影回去,你可以确信$\widetilde {f_*(\beta^{-1})}^{-1}=\widetilde {f_*(\beta)}$.于是确实到同一个终点.
 
+</div>
+
+<div class='cbox'>
+
+两个空间同胚的证明
+
+</div>
+
+<div class='pbox'>
+
 
 
 </div>
+
+
+
 
 最后是学完这个章节后你可以会的一个应用
 
 <div class='cbox'>
 
 Brouwer’s fixed point theorem
-
 
 </div>
