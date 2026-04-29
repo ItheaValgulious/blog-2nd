@@ -536,18 +536,30 @@ $$
 
 <div class='cbox'>
 
-两个空间同胚的证明
+两个覆叠空间同胚的证明
+
+$(X,x_0)$有覆叠空间$(\tilde X_i,\tilde x_i)$,对应映射$p_i$.则
+
+$$
+\begin{gathered}
+p_1\pi_1(\tilde X_1,\tilde x_1)\cong p_2\pi_1(\tilde X_2,\tilde x_2) \\
+\Leftrightarrow \exists! h:\tilde X_1\to \tilde X_2 \text{ is homeomorphism}  \ s.t.\ 
+p_1=p_2\circ h
+\end{gathered}
+$$
 
 </div>
 
 <div class='pbox'>
 
+首先如果存在同胚那么基本群肯定相同.只要证另一边了.
 
+反过来,假设群是同构的.
+
+
+对一个$\tilde X_1$中的点$\tilde x_1$,考虑有两条路径:$\beta_i=\tilde x_1\rightsquigarrow \tilde x_1,i\in \{1,2\}$.那么$[\beta_1\beta_2^{-1}]\in\pi_1(X_1)$.
 
 </div>
-
-
-
 
 最后是学完这个章节后你可以会的一个应用
 

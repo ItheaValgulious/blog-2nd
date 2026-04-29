@@ -1,6 +1,8 @@
 {
   "widgetOrder": [
-    "todo-list"
+    "project-home:robomaster",
+    "project-home:math-2",
+    "project-home:minigame"
   ],
   "widgets": {
     "todo-list": {
@@ -46,6 +48,18 @@
           "text": "新时代社会实践小组汇报"
         }
       ]
+    },
+    "project-home:robomaster": {
+      "kind": "project-home",
+      "projectId": "robomaster"
+    },
+    "project-home:minigame": {
+      "kind": "project-home",
+      "projectId": "minigame"
+    },
+    "project-home:math-2": {
+      "kind": "project-home",
+      "projectId": "math-2"
     }
   }
 }

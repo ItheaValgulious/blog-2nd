@@ -24,29 +24,20 @@ date: '2026-04-24T12:08:12.079Z'
 
 <div class="pbox">
 
-设$|1|=I$.那么容易得到$I^n=1$从而$|1|=|-1|=1$
-
-那么因为$n=\prod_i p_i^{c_i}$,所以$|n|=\prod_i |p_i|^{c_i}$.或者说整数处取值被质数处的确定.
-
-然后显然$|p_i^c|=|p_i|^c\le 1$得$|p_i|\le 1$.
-
-那么假设恰有两个质数模长不为$1$:$|p|\ne 1,|q|\ne 1$.
-
-于是由裴蜀定理,$\forall c,d,\exists a,b$使得$ap^c+bq^d=1$,于是
-
 $$
 \begin{gathered}
-1=|1|=|ap^c+bq^d|\ge |ap^c|+|bq^d|=|a||p|^c+|b||q|^d\le |p|^c+|q|^d
+(a+b)^n=\sum_{i=0}^n \binom nia^ib^{n-i} \\
+|a+b|^n\le \sum_{i=0}^n |\binom ni| |a|^i|b|^{n-i} \\
+\le (n+1)(\max(|a|,|b|))^n \\
+\Rightarrow |a+b|\le \sqrt[n]{n+1}\max(|a|,|b|) \\
+\Rightarrow |a+b| \\
+= \lim_{n \to \infty} |a+b| \\
+\le \lim_{n \to \infty} \sqrt[ n ]{ n+1 } \max(|a|,|b|) \\
+=\max(|a|,|b|)
 \end{gathered}
 $$
 
-但我们可以取$c,d$很大让右边小于$1$,于是矛盾.
-
-所以至多有一个模长不为$1$.
-
 </div>
-
-[think] 其实在于构造一个数不整除一列素数,此时在整数而非正整数的时候应该想到$1$.
 
 ### T2
 
@@ -100,11 +91,12 @@ $$
 \begin{gathered}
 c_0=1,x_0=2 \\
 c_1=-1=4,x_1=3 \\
-c_2=4,x_2=3
+c_2=-2,x_2=1 \\
+c_3=-1,x_3=3
 \end{gathered}
 $$
 
-从而$x=2\dot 3$.
+从而$x=2\dot 3\dot 1$.
 
 (2):
 
@@ -149,11 +141,13 @@ $$
 
 <div class="pbox">
 
-考虑把整数列写成$a_i=p^{k_i} c_i,c_i\perp p$的形式.显然$c_i$不重要,我们只要考虑$k_i$那边.
+考虑把每个整数$z\in {\mathbb Z}_p$写成$\sum_i c_ip^i$.记$z^{(i)}=c_i$.
 
-那么如果$k_i$无界,则存在一列$k_{x_i}\to \infty$,从而这一列收敛到$0$.
+则任意一个数列$\{ z_n \}$,可以取子列$\{ z_{x_{1,n}} \} $满足$z_{x_{1,n}}^{(0)}$全部相等.(无限个元素分到有限个$z^{(0)}$取值必然有无限个落到同一类).
 
-反之$k_i$有界,那么无限项分到有限个$k_i$取值中,必然存在一个取值分到了无数个$k_i$,即存在无数个$i$使得$k_i=y$,则他们构成了收敛到$p^y$的子列.
+对子列$z_{x_{k,n}}$,可以取子列$z_{x_{k+1,n}}$满足$z_{x_{k,n}}^{(k)}$全部相等,且可额外限制$x_{k+1,n}>x_{k,n}$.
+
+于是可以取子列$z_{x_{k,k}}$为收敛子列.
 
 </div>
 
@@ -179,6 +173,8 @@ nx_i=c_i \pmod p
 $$
 
 那么对任意$\dfrac{c_0}n$展开成$x$的过程中,若存在$c_i=c_j$,则必有$x_i=x_j,c_{i+1}=c_{j+1}$,从而归纳得$c_{i+k}=c_{j+k}$,即$\forall n>i,c_n=c_{n+j-i}$,存在一个周期.
+
+那么若$c_i\in [-n,n]$,则$c_{i+1}=\dfrac{c_{i-1}-nx_{i-1}}p\in [\dfrac{-n-n(p-1)}{p},\dfrac{n}{p}]\subset [-n,n]$.而可以通过拆带分数的方法让$c_i\in [-n,n]$.于是$c$有界,一定会重复.
 
 $\Leftarrow$:
 

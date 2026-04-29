@@ -612,3 +612,29 @@ $$
 从而$P=\begin{bmatrix} p_1&p_2 \end{bmatrix} \begin{bmatrix} p_1&p_2 \end{bmatrix}^T$就行了.
 
 </div>
+
+## 20260427
+
+<div class='cbox'>
+
+内积导出的范数满足柯西不等式$\|a\|\|b\|\ge (a,b)$
+
+</div>
+
+<div class='pbox'>
+
+对任意向量$a,b$,$\exists r \ s.t.\ r\cdot (a,b)\in R,|r|=1$.于是$\forall t\in R$
+
+$$
+\begin{gathered}
+\|at+br\|^2=(at+br,at+br) \\
+=(at)^2+(br)^2+t(a,br)+t(br,a) \\
+=\|a\|^2t^2+\|b\|^2|r|^2+tr(a,b)+t\overline{r(a,b)} \\
+\ge 0 \\
+\text{Since } \Re(tr(a,b)+t\overline{r(a,b)})=2t\Re(r(a,b))=2t|(a,b)| \\
+\Delta=4|(a,b)|^2-4\|a\|^2\|b\|^2<0 \\
+\Rightarrow (a,b)<\|a\|\|b\|
+\end{gathered}
+$$
+
+</div>
