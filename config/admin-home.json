@@ -2,7 +2,8 @@
   "widgetOrder": [
     "project-home:robomaster",
     "project-home:math-2",
-    "project-home:minigame"
+    "project-home:minigame",
+    "project-home:ideas"
   ],
   "widgets": {
     "todo-list": {
@@ -60,6 +61,10 @@
     "project-home:math-2": {
       "kind": "project-home",
       "projectId": "math-2"
+    },
+    "project-home:ideas": {
+      "kind": "project-home",
+      "projectId": "ideas"
     }
   }
 }

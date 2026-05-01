@@ -554,10 +554,9 @@ $$
 
 首先如果存在同胚那么基本群肯定相同.只要证另一边了.
 
-反过来,假设群是同构的.
+反过来,假设群是同构的.最直接的证法是用刚才的提升准则:把$\tilde X_1$看成$Y$,对$p_1$使用提升准则会存在唯一$\tilde f:\tilde X_1\to \tilde X_2$满足$p_1=p_2\circ f$.然后对$\tilde X_2$和$p_2$用一次会得到$\exists !g:\tilde X_2\to \tilde X_1$满足$p_2=p_1\circ g$.
 
-
-对一个$\tilde X_1$中的点$\tilde x_1$,考虑有两条路径:$\beta_i=\tilde x_1\rightsquigarrow \tilde x_1,i\in \{1,2\}$.那么$[\beta_1\beta_2^{-1}]\in\pi_1(X_1)$.
+于是$p_1=p_1\circ g\circ f$,因为我们对$p_1$用提升引理提升到$X_1$得到存在唯一$\varphi$使得$p_1\circ \varphi=p_1$,而$\varphi$可以取$\mathrm{Id}$,故$g\circ f=\mathrm{Id}$.反过来$f\circ g=\mathrm{Id}$一样.于是这两个空间同胚.
 
 </div>
 
@@ -565,6 +564,40 @@ $$
 
 <div class='cbox'>
 
-Brouwer’s fixed point theorem
+Brouwer’s fixed point theorem(2d)
+
+$$
+\begin{gathered}
+f:D^2\to D^2
+\end{gathered}
+$$
+
+一定有不动点$x_0\in D^2$满足$f(x_0)=x_0$.
 
 </div>
+
+<div class='pbox'>
+
+反证法.考虑如果不存在这样的$x_0$,那么对任意$x\in D^2$,可以定义$f:D^2\to S^1$把$x$映到$x,f(x)$所在直线与圆盘边界$S^1$的交点.且满足$f(S^1)=S^1$.
+
+则设$i$为$S^1\to D^2$的含入映射,就有$f\circ i=\mathrm{Id}$.
+
+但同时取其基本群上诱导的映射,就成了$i^*:{\mathbb Z}\to \{ 0 \},f^*:\{ 0 \} \to {\mathbb Z},f^*\circ i^*=\mathrm{Id}$,然而这是不可能的.所以矛盾.所以一定存在不动点.
+
+</div>
+
+## SVK
+
+## Simplicial Complex
+
+<div class='dbox'>
+
+Simplicial Complex
+
+
+
+</div>
+
+
+
+## Homology

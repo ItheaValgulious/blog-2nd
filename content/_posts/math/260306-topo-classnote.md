@@ -430,3 +430,167 @@ $(Y,T')$是紧的:对一个$Y$的开覆盖,你包含了$\infty$的那个开集�
 如果$X$不是紧的,则$\overline{X}=Y$:转成找 $\operatorname{Int}\{ \infty \}$,而因为$X$不紧所以这个点不是开集,于是只能是空集.
 
 </div>
+
+## 20260430
+
+轨道空间
+
+
+<div class='dbox'>
+
+曲面(surface):定义曲面是拓扑空间满足$T_2,C_2$且任意一点都有一个与$E^2$或$E^2_+$同胚的邻域,且这个同胚把该点映射到原点.($E^2_+$是正半平面包含x轴)
+
+曲面的可定向性:曲面可定向当且仅当不能把莫比乌斯带嵌入曲面
+
+连接和(connected sum):两个曲面$A,B$的连接和$A\#B$是在其中各取一个开圆盘,把两个曲面分别挖掉这个开圆盘再粘合开圆盘的边界得到的新曲面.
+
+</div>
+
+<div class='cbox'>
+
+连接和与取的圆盘和粘合方式无关
+
+</div>
+
+<div class='pbox'>
+
+这个的证明思路大概是考虑:
+- 一个曲面上选定一个开圆盘,可以通过自同构把这个开圆盘移动到另一个地方
+- 粘合$S^1$只有正反两种粘法
+
+然后仔细考虑每一条.
+
+</div>
+
+<div class='dbox'>
+
+定义$T^2\#T^2\ldots \#T^2=nT^2$.
+
+</div>
+
+<div class='cbox'>
+
+每个定向连通紧致(闭)曲面都同胚于$nT^2$,(定义$n=0$时是球面).定义$n$为曲面的亏格.
+
+每个不定向连通紧致(闭)曲面都同胚于$n {\mathbb P}^2$.定义$n$为曲面的亏格.
+
+</div>
+
+<div class='pbox'>
+
+todo
+
+</div>
+
+<div class='cbox'>
+
+${\mathbb P}^2\#{\mathbb P}^2$是克莱因瓶.
+
+</div>
+
+<div class='pbox'>
+
+${\mathbb P}^2$删掉一个开圆盘是莫比乌斯环,两个莫比乌斯环的边界粘合是克莱因瓶.
+
+todo more
+
+</div>
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+T^2\# {\mathbb P}^2=3 {\mathbb P}^2
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+todo
+
+</div>
+
+<div class='dbox'>
+
+三角形
+
+曲面上的三角形是其一个同胚于$E^2$上一个三角形闭区域的子空间.且这个$E^2$三角形区域的点的同胚对应点是三角形的顶点,边的同胚对应的边是三角形的边.
+
+三角剖分
+
+有限多个三角形覆盖整个平面,且任意两个三角形不交或交于公共边或交于公共点.
+
+</div>
+
+
+<div class='cbox'>
+
+闭曲面都有三角剖分
+
+</div>
+
+<div class='pbox'>
+
+感觉你先证 ${\mathbb P}^2$和$T^2$有,那么连接和也有是比较明显的.
+
+</div>
+
+<div class='cbox'>
+
+欧拉示性数(Euler characteristic)
+
+定义$\chi(S)=$三角剖分的$V-E+F$.
+
+</div>
+
+<div class='pbox'>
+
+欧拉示性数不依赖三角剖分的选取.
+
+</div>
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+\chi(S_1\#S_2)=\chi(S_1)+\chi(S_2)-2
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+你的开圆盘就各取一个小三角形.
+
+显然比粘贴之前少了$2$个面,少了$3$个点,$3$条边.于是就是少了$2$.
+
+</div>
+
+<div class='cbox'>
+
+多边形表示:
+
+二维的一个多边形$p$把边成对粘合$p/\sim$得到一个闭曲面,则这$(p,\sim)$是这个闭曲面的 多边形表示.
+
+</div>
+
+<div class='pbox'>
+
+todo
+
+</div>
+
+<div class='cbox'>
+
+任意闭曲面都有多边形表示
+
+</div>
+
+<div class='pbox'>
+
+todo
+
+</div>

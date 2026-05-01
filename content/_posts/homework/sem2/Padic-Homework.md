@@ -20,7 +20,7 @@ date: '2026-04-24T12:08:12.079Z'
 
 </div>
 
-首先看起来这个范数同构于padic不对.比如$|x|=[x\ne 0]$不满足()
+首先看起来这个范数同构于p-adic不对.比如$|x|=[x\ne 0]$不满足()
 
 <div class="pbox">
 
@@ -163,7 +163,7 @@ $$
 
 <div class="pbox">
 
-$\Rightarrow$:考虑前面推过的padic的过程:
+$\Rightarrow$:考虑前面推过的p-adic的过程:
 
 $$
 \begin{gathered}
@@ -188,7 +188,7 @@ $$
 \end{gathered}
 $$
 
-(考虑padic范数下收敛即可,不用考虑小数展开过程)
+(考虑p-adic范数下收敛即可,不用考虑小数展开过程)
 
 其中$0$的个数为$k-1$.
 
