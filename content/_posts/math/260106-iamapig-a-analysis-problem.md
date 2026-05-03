@@ -3,7 +3,7 @@ title: I am a pig
 tags:
   - math-analysis
   - whims
-date: '2026-04-16T07:29:14.679Z'
+date: '2026-01-06T12:00:00+08:00'
 status: published
 top: 0
 ---

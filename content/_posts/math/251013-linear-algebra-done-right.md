@@ -5,7 +5,7 @@ tags:
   - linear-algebra
   - note
   - self-study
-date: '2026-04-16T07:29:14.576Z'
+date: '2025-10-13T12:00:00+08:00'
 status: published
 top: 0
 ---

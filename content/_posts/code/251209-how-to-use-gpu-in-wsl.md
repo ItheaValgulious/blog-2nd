@@ -3,7 +3,7 @@ title: How to use GPU in WSL2
 tags:
   - programming
   - tips
-date: '2026-04-16T07:29:14.185Z'
+date: '2025-12-09T12:00:00+08:00'
 status: published
 top: 0
 ---

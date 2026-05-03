@@ -4,7 +4,7 @@ tags:
   - math-analysis
   - math
   - homework
-date: '2026-04-16T07:29:14.353Z'
+date: '2025-12-08T12:00:00+08:00'
 status: published
 top: 0
 ---

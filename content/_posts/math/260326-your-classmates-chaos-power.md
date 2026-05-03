@@ -5,7 +5,7 @@ tags:
   - note
   - chaos
   - math-analysis
-date: '2026-04-16T07:29:14.768Z'
+date: '2026-03-26T12:00:00+08:00'
 status: published
 top: 0
 ---

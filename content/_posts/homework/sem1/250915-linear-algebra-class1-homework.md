@@ -4,7 +4,7 @@ tags:
   - math
   - linear-algebra
   - homework
-date: '2026-04-16T07:29:14.219Z'
+date: '2025-09-15T12:00:00+08:00'
 status: published
 top: 0
 ---

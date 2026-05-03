@@ -4,7 +4,7 @@ tags:
   - math-analysis
   - homework
   - math
-date: '2026-04-16T07:29:14.269Z'
+date: '2025-10-11T12:00:00+08:00'
 status: published
 top: 0
 ---
@@ -719,8 +719,6 @@ f(1)=\lim_{x \to 1} f(x)=\lim_{n \to \infty} f(a_n) \\
 $$
 
 </div>
-
-
 
 ### T10
 

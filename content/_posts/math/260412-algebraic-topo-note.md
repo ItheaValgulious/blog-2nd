@@ -4,7 +4,7 @@ tags:
   - math
   - topo
   - self-study
-date: '2026-04-16T07:29:14.782Z'
+date: '2026-04-12T12:00:00+08:00'
 status: published
 top: 0
 ---
@@ -590,13 +590,131 @@ $$
 
 ## Simplicial Complex
 
+感觉这一节就是一些语言定义.
+
+<div class='dbox'>
+
+Affine Independnece
+
+对$n$个点$\{ v_i \}$,若$\sum_i c_iv_i=0,\sum_i c_i=0$当且仅当$\forall i,c_i=0$则称这些点仿射无关.
+
+</div>
+
+<div class='dbox'>
+n-Simplex
+
+对$n+1$个仿射无关的点$\{ v_i \}$,$\sigma=\{ \sum_{i=0}^n c_iv_i | \sum_{i=0}^n c_i=1 \} $是一个simplex.
+
+</div>
+
+<div class='dbox'>
+
+Face,Boundry,Interior
+
+若simplex $\sigma$由仿射无关点集$S$仿射张成,则任意$T\subset S$仿射张成的simplex$\sigma'$是$\sigma$的一个face.记作$\sigma'\le \sigma$.若$T\ne S$则$\sigma'<\sigma$
+
+所有的face的并是Boundry$\partial \sigma$.Boundry的补是Interior $\operatorname{Int} \sigma$
+
+</div>
+
 <div class='dbox'>
 
 Simplicial Complex
 
-
+一个Simplex的集合$K=\{ \sigma_i \}_i$,要求
+- 其中任意$\sigma_i,\sigma_j$满足$\sigma_i\cap \sigma_j$只能是空集或一个公共face
+- $\forall \sigma_i\in K,\forall \sigma'\le \sigma_i,\sigma'\in K$.
 
 </div>
+
+<div class='dbox'>
+
+Vertices,Polyhedron
+
+一个simplicial complex$K$的polyhedron$|K|=\bigcup_{\sigma \in K}\sigma$.
+
+一个simplicial complex$K$的所有simplex的所有顶点构成点集$V_K$.
+
+</div>
+
+<div class='dbox'>
+
+Simplicial map
+
+$f:V_K\to V_L$ 是$K$到$L$的simplicial map如果 $f$ 把simplex映到simplex.即若$S$在$K$中张成一个simplex,则$f(S)$在$L$中张成simplex.
+
+</div>
+
+容易注意到Simplicial map唯一确定了一个连续映射$|f|:|K|\to |L|$
+
+$$
+\begin{gathered}
+\forall x\in |K|,x=\sum_{v\in V_K} c_v v \ s.t.\ 
+\sum_{v\in V_K} c_v=1 \\
+\text{then } |f|=x\mapsto \sum_{v\in V_K} c_v f(v)
+\end{gathered}
+$$
+
+<div class='dbox'>
+
+Star,Link
+
+对一个$|K|$中的点$x$:
+
+- $\operatorname{St} x=\bigcup_{\sigma\in K,x\in \sigma}\operatorname{Int}\sigma $.即所有包含这个点的simplex的内部.
+- $\operatorname{Lk} x=\bigcup_{\sigma\in K,x\in \sigma,\alpha\le \sigma,x\notin \alpha} \alpha$.即所有在一个包含这个点的simplex上的面,但这个面本身不包含这个点.
+
+</div>
+
+感觉需要注意到$|K|$中的一个点最多在一个simplex的interior里.可以更好的理解为什么Star/Link是这样的.
+
+<div class='dbox'>
+
+Simplicial Approximation
+
+$g:|K|\to |L|$是$f:|K|\to |L|$的一个simplicial approximation若$f(\operatorname{St} x)\subset St(g(x))$.
+
+</div>
+
+第一次见这个定义的时候感觉定义的很奇怪,但仔细看发现它长得很像连续的定义.如果你定义simplicial complex的拓扑是拓扑基是所有Star,那么这正是连续的定义.
+
+<div class='dbox'>
+
+Barycentric subdivision 
+
+定义一个n-simplex $\sigma$的barycenter是$\dfrac1{n+1} \sum_{i=0}^n v_i$,记为$\overline \sigma$.
+
+则一个simplicial complex的barycentric subdivision $K^{(1)}=\{ <\overline \sigma_1,\ldots,\overline \sigma_n> | \sigma_i< \sigma_{i+1}\} $.
+
+定义$K^{(k)}=(K^{(k-1)})^{(1)}$.
+
+</div>
+
+<div class='cbox'>
+
+$|K|=|K^{(k)}|$.
+
+</div>
+
+<div class='pbox'>
+
+首先只需要证$k=1$.
+
+考虑$\forall x\in |K|,x=\sum_{v\in V_K} v$.
+
+</div>
+
+
+
+<div class='cbox'>
+
+任何映射都有 simplicial approximation
+
+且如果$f$在某个子集上是implicial map,则这个approximation在这个子集上等于$f$.
+
+</div>
+
+
 
 
 
