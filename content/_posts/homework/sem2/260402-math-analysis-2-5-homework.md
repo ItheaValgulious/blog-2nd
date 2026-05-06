@@ -123,10 +123,10 @@ $$
 
 $$
 \begin{gathered}
-x\in (E_1\cap E_2) \Rightarrow x\in E_1,x\in E_2 \\
-\Rightarrow \exists x\in B(x,r_1)\subset E_1,x\in B(x,r_2)\subset E_2 \\
-\Rightarrow x\in B(x,\min (r_1,r_2))\subset (E_1\cap E_2) \\
-\Rightarrow E_1\cap E_2 \text{ is open} 
+x\in (E_1\cap E_2) \implies x\in E_1,x\in E_2 \\
+\implies \exists x\in B(x,r_1)\subset E_1,x\in B(x,r_2)\subset E_2 \\
+\implies x\in B(x,\min (r_1,r_2))\subset (E_1\cap E_2) \\
+\implies E_1\cap E_2 \text{ is open} 
 \end{gathered}
 $$
 
@@ -161,7 +161,7 @@ $$
 \exists \{ y_{n,m} \},y_{n,m}\in E ,\lim_{n \to \infty} y_{n,m}=x_m  \\
 \text{construct } z_n=y_{k,n}, \text{where } \forall i>k-1,|y_{n,m}-x_m| <\dfrac1{2^n} \\
 \text{then } z_n\in E,\lim_{n \to \infty} z_n=\lim_{n \to \infty} x_n=x\in E' \\
-\Rightarrow E''\subset  E',E' \text{ is open} 
+\implies E''\subset  E',E' \text{ is open} 
 \end{gathered}
 $$
 

@@ -92,7 +92,7 @@ $$
 \begin{gathered}
 f(x,y)=\dfrac 23+\dfrac{5}{3} \dfrac{x}{2x-3y} \\
 \text{let } y=kx \\
-\Rightarrow \lim_{(x,y) \to (0,0)} f(x,y) \\
+\implies \lim_{(x,y) \to (0,0)} f(x,y) \\
 =\dfrac{2}{3} +\lim_{(x,y) \to (0,0)} \dfrac{5}{3} \dfrac{x}{(2-3k)x}  \\
 =\dfrac{2}{3} +\dfrac{5}{3} \dfrac{1}{2-3k} 
 \end{gathered}
@@ -227,7 +227,7 @@ $$
 \begin{gathered}
 \forall (x_0,y_0)\ne (0,0) \\
 \lim_{(x,y) \to (x_0,y_0)} f(x,y)=\dfrac{1}{\sqrt{ x_0^2+y_0^2 } } =f(x_0,y_0)  \\
-\Rightarrow f(x,y)\in C(R^2-\{ 0 \})
+\implies f(x,y)\in C(R^2-\{ 0 \})
 \end{gathered}
 $$
 
@@ -253,7 +253,7 @@ x_0+y_0\notin Z \\
 \text{let } m=\min(x_0+y_0-[x_0+y_0],[x_0+y_0+1]-x_0-y_0) \\
 \forall (x,y)\in B((x_0,y_0),\dfrac m2) \\
 x+y\in ([x_0+y_0],[x_0+y_0+1]) \\
-\Rightarrow f(x,y)=[x_0+y_0] \\
+\implies f(x,y)=[x_0+y_0] \\
 \text{else if } x_0+y_0\in Z \\
 \lim_{(x,y) \to (x_0,y_0),y=y_0+x_0-x} f(x,y)=f(x_0+y_0) \\
 \lim_{(x,y) \to (x_0,y_0),y=y_0+x-x_0} f(x,y)=[2x-x_0+y_0]=[x_0+y_0]+1\ne f(x_0,y_0) \\
@@ -344,10 +344,10 @@ $$
 $$
 \begin{gathered}
 \lim_{x \to 0} \dfrac{\sin x}{x} =1 \\
-\Rightarrow \forall \epsilon>0,\exists \delta \in (0,\min(1,\epsilon)) \ s.t.\ 
-x<\delta \Rightarrow \sin x\in (1-\epsilon x,1+\epsilon x) \\
-\Rightarrow \forall x<\delta,|y-a|<\delta ,\sin(xy)\in ((1-\epsilon)xy,(1+\epsilon)xy) \\
-\Rightarrow \dfrac{\sin xy}{x} \in ((1-\epsilon)(a-\delta),(1+\epsilon)(a+\delta))
+\implies \forall \epsilon>0,\exists \delta \in (0,\min(1,\epsilon)) \ s.t.\ 
+x<\delta \implies \sin x\in (1-\epsilon x,1+\epsilon x) \\
+\implies \forall x<\delta,|y-a|<\delta ,\sin(xy)\in ((1-\epsilon)xy,(1+\epsilon)xy) \\
+\implies \dfrac{\sin xy}{x} \in ((1-\epsilon)(a-\delta),(1+\epsilon)(a+\delta))
 \end{gathered}
 $$
 
@@ -378,8 +378,8 @@ $$
 \forall x<\delta,\ln x\in ((1-\epsilon)(x-1),(1+\epsilon)(x-1)) \\
 \text{let } \delta_0<\min(\dfrac{\delta}{2a},\epsilon) ,\delta_0(a+\delta_0)<\delta \\
 L(x,y)\in (\dfrac{x+y}{y} (1-\epsilon)\dfrac{y}{x} ,\dfrac{x+y}{y} (1+\epsilon)\dfrac{y}{x} ) \\
-\Leftrightarrow L(x,y)\in ((1-\epsilon)(1+\dfrac{y}{x} ),(1+\epsilon)(1+\dfrac{y}{x})) \\
-\Rightarrow L(x,y)\in ((1-\epsilon)(1+\delta_0(a-\delta_0)),(1+\epsilon)(1+\delta_0(a+\delta_0)))
+\iff L(x,y)\in ((1-\epsilon)(1+\dfrac{y}{x} ),(1+\epsilon)(1+\dfrac{y}{x})) \\
+\implies L(x,y)\in ((1-\epsilon)(1+\delta_0(a-\delta_0)),(1+\epsilon)(1+\delta_0(a+\delta_0)))
 \end{gathered}
 $$
 
@@ -411,7 +411,7 @@ $$
 \le 2\sqrt{(x_1-x_2)^2+(y_1-y_2)^2} \\
 =2\delta \\
 \text{so } \forall \epsilon>0,\text{let } \delta=\dfrac\epsilon 2 \\
-\Rightarrow |(x_1,y_1)-(x_2,y_2)|<\delta \Rightarrow |f(x_1,y_1)-f(x_2,y_2)|<\epsilon
+\implies |(x_1,y_1)-(x_2,y_2)|<\delta \implies |f(x_1,y_1)-f(x_2,y_2)|<\epsilon
 \end{gathered}
 $$
 

@@ -33,7 +33,7 @@ And we notice that: if two vector's shadow on plane A construct a acute angle, t
 
 We choose a vector $v_1$, and it can be written as $[1,0,\ldots 0]$(with some rotation)
 
-so $\forall  v_i,i>1, v_iv_1<0 \Rightarrow v_{i,1} < 0 \Rightarrow v_{i,1}v_{j,1}>0 \Rightarrow v_iv_j-v_{i,1}v_{j,1} < 0$
+so $\forall  v_i,i>1, v_iv_1<0 \implies v_{i,1} < 0 \implies v_{i,1}v_{j,1}>0 \implies v_iv_j-v_{i,1}v_{j,1} < 0$
 
 then transformed it into the (n-1)-D situation.
 
@@ -174,8 +174,8 @@ $A$做行变换+列变换消元易得.
 $$
 \begin{gathered}
 \exists x,Ax=b \\
-\Leftrightarrow \operatorname{rank} A=\operatorname{rank} [A,b] \\
-\Leftrightarrow b\in \operatorname{range} A
+\iff \operatorname{rank} A=\operatorname{rank} [A,b] \\
+\iff b\in \operatorname{range} A
 \end{gathered}
 $$
 
@@ -189,7 +189,7 @@ $$
 $$
 \begin{gathered}
 A \text{ is a real matrix} , \\
-A^TAu=0 \Rightarrow Au=0
+A^TAu=0 \implies Au=0
 \end{gathered}
 $$
 
@@ -201,9 +201,9 @@ $$
 \begin{gathered}
 A=\mathcal M( T )  \\
 T^*Tu=0 \\
-\Leftrightarrow \forall v,<v,T^*Tu>=0 \\
-\Leftrightarrow \forall v,<Tv,Tu>=0 \\
-\Leftrightarrow Tu\in (\operatorname{range} T)^\perp \\
+\iff \forall v,<v,T^*Tu>=0 \\
+\iff \forall v,<Tv,Tu>=0 \\
+\iff Tu\in (\operatorname{range} T)^\perp \\
 \because Tu\in \operatorname{range} T \\
 \therefore <Tu,Tu>=0,u=0
 \end{gathered}
@@ -225,7 +225,7 @@ $$
 \begin{gathered}
 \operatorname{rank} A+B \le \operatorname{rank} A+\operatorname{rank} B \\
 \operatorname{rank} AB \le \min \operatorname{rank} A,\operatorname{rank} B \\
-A_{m\times n}B_{n\times s}=0 \Rightarrow \operatorname{rank} A+\operatorname{rank} B\le  n
+A_{m\times n}B_{n\times s}=0 \implies \operatorname{rank} A+\operatorname{rank} B\le  n
 \end{gathered}
 $$
 
@@ -374,7 +374,7 @@ $$
 $$
 \begin{gathered}
 A^2=I \\
-\Rightarrow \operatorname{rank} (A-I)+\operatorname{rank} (A+I)=n
+\implies \operatorname{rank} (A-I)+\operatorname{rank} (A+I)=n
 \end{gathered}
 $$
 
@@ -385,9 +385,9 @@ $$
 $$
 \begin{gathered}
 (A-I)(A+I)=0  \\
-\Rightarrow \operatorname{rank} (A-I)+\operatorname{rank} A+I \le n \\
+\implies \operatorname{rank} (A-I)+\operatorname{rank} A+I \le n \\
 (A+I) - (A-I)=2I  \\
-\Rightarrow \operatorname{rank} (A+I)+\operatorname{rank} (A-I)\ge n
+\implies \operatorname{rank} (A+I)+\operatorname{rank} (A-I)\ge n
 \\
 \text{Q.E.D}
 \end{gathered}
@@ -422,7 +422,7 @@ $$
 $$
 \begin{gathered}
 M=\begin{bmatrix} A,C \\0,B \end{bmatrix}  \\
-\operatorname{rank}  M=\operatorname{rank}  A+\operatorname{rank}  B \Leftrightarrow \exists X,Y:AX+YB=C
+\operatorname{rank}  M=\operatorname{rank}  A+\operatorname{rank}  B \iff \exists X,Y:AX+YB=C
 \end{gathered}
 $$
 
@@ -497,7 +497,7 @@ $$
 
 考虑$b$的投影$p\in C(A)$有$(b-p)\in C(A)^\perp$,于是$b-p \in N(A^T)$.
 
-于是$A^Tb=A^Tp$,又$p\in C(A) \Rightarrow \exists x,Ax=p$.
+于是$A^Tb=A^Tp$,又$p\in C(A) \implies \exists x,Ax=p$.
 
 于是$A^Tb=A^TAx$,$A$一定可以用一个满秩的,于是除过去.于是得证.
 
@@ -537,7 +537,7 @@ $$
 
 $$
 \begin{gathered}
-P^2=P,P^*=P \Rightarrow P \text{ is a projection}
+P^2=P,P^*=P \implies P \text{ is a projection}
 \end{gathered}
 $$
 
@@ -552,7 +552,7 @@ $$
 $$
 \begin{gathered}
 \forall v,<Pu-u,Pv>=<PPu-Pu,v>=<Pu-Pu,v>=<0,v> \\
-\Rightarrow Pu-u\in (\operatorname{range} P)^\perp
+\implies Pu-u\in (\operatorname{range} P)^\perp
 \end{gathered}
 $$
 
@@ -667,7 +667,7 @@ $$
 $$
 \begin{gathered}
 \operatorname{rank} A=a \\
-\Leftrightarrow \begin{cases}
+\iff \begin{cases}
 \vert T \vert =\forall \vert S \vert > a,\det A_{S,T}=0 \\
 \exists \vert S \vert =\vert T \vert =a,\det A_{S,T}\ne 0
 \end{cases}
@@ -691,8 +691,8 @@ $$
 
 $$
 \begin{gathered}
-\operatorname{rank} A=n-1 \Leftrightarrow \operatorname{rank} C=1 \\
-\operatorname{rank} A<n-1 \Leftrightarrow \operatorname{rank} C=0
+\operatorname{rank} A=n-1 \iff \operatorname{rank} C=1 \\
+\operatorname{rank} A<n-1 \iff \operatorname{rank} C=0
 \end{gathered}
 $$
 
@@ -711,7 +711,7 @@ $$
 $$
 \begin{gathered}
 A_{m\times n},B_{n\times m},m\le n \\
-\Rightarrow \det AB=\sum _{\vert S \vert =m,S\subset [1,n]} \det A_{[1,m]\cap Z,S}\det B_{S,[1,m]\cap Z}
+\implies \det AB=\sum _{\vert S \vert =m,S\subset [1,n]} \det A_{[1,m]\cap Z,S}\det B_{S,[1,m]\cap Z}
 \end{gathered}
 $$
 
@@ -801,7 +801,7 @@ $$
 \begin{gathered}
 \forall a_0\ldots a_{n-1} \\
 A_{i,j}=a_{i+j-2\bmod n} \\
-\Rightarrow \det A=\prod _{i = 1} ^{n} \sum _{j = 1} ^{n} w_n^{ij}c_j
+\implies \det A=\prod _{i = 1} ^{n} \sum _{j = 1} ^{n} w_n^{ij}c_j
 \end{gathered}
 $$
 
@@ -1068,7 +1068,7 @@ $A=U\Sigma V^T$,$A^+=V\Sigma^+ U^T$,其中$\Sigma^+$是把所有非零对角线�
 $$
 \begin{gathered}
 A=UDV^T=\sum_i u_is_iv_i^T \\
-\Rightarrow \min_{\operatorname{rank} C=k} \Vert A-C \Vert =  s_{k+1}
+\implies \min_{\operatorname{rank} C=k} \Vert A-C \Vert =  s_{k+1}
 \end{gathered}
 $$
 
@@ -1110,7 +1110,7 @@ $$
 $$
 \begin{gathered}
 f(x)= \sum _{i = 0} ^{n}  a_ix^i \text{ is primitive }  \\
-\Leftrightarrow \gcd(a_0,\ldots ,a_n)=1
+\iff \gcd(a_0,\ldots ,a_n)=1
 \end{gathered}
 $$
 
@@ -1124,7 +1124,7 @@ Gauss's Lemma
 
 $$
 \begin{gathered}
-f,g \text{ are primitive } \Rightarrow fg \text{ are primitive} 
+f,g \text{ are primitive } \implies fg \text{ are primitive} 
 \end{gathered}
 $$
 
@@ -1149,8 +1149,8 @@ $$
 $$
 \begin{gathered}
 f(x)\in Z[x],f \text{ is primitive}  \\
-\Rightarrow
-(f(x) \text{ is inreducible in Z[x]}  \Leftrightarrow f(x) \text{ is inreducible in Q[x]} )
+\implies
+(f(x) \text{ is inreducible in Z[x]}  \iff f(x) \text{ is inreducible in Q[x]} )
 \end{gathered}
 $$
 
@@ -1178,7 +1178,7 @@ f(x)=x^n+\sum _{i = 0} ^{n-1}  a_ix^i,a_i\in Z \\
 \forall 0\le i\le n-1 ,p | a_i \\
 p^2 \not| a_0
 \end{cases} \\
-\Rightarrow f(x) \text{ is irreducible in Q[x]} 
+\implies f(x) \text{ is irreducible in Q[x]} 
 \end{gathered}
 $$
 
@@ -1199,7 +1199,7 @@ $$
 $$
 \begin{gathered}
 p\in P,f(x)=\sum _{i = 0} ^{p-1}  x^i \\
-\Rightarrow  f(x) \text{ is irreducible}
+\implies  f(x) \text{ is irreducible}
 \end{gathered}
 $$
 
@@ -1448,12 +1448,12 @@ $$
 \begin{gathered}
 \text{let } f_i=\dfrac{m(x)}{p_i^{c_i}(x)}  \\
 \text{if } u\in W_1\cap W_2\oplus \ldots\oplus W_n\ne \emptyset \\
-u\in W_1 \Rightarrow p_1^{c_1}(T)u=0 \\
-u\in W_2\oplus \ldots\oplus W_n \Rightarrow f_i(T)u=0 \\
+u\in W_1 \implies p_1^{c_1}(T)u=0 \\
+u\in W_2\oplus \ldots\oplus W_n \implies f_i(T)u=0 \\
 \because f_i \perp p_1^{c_1} \\
 \therefore \exists s(x),t(x),s(x)p_1^{c_1}(x)+t(x)f_i(x)=1 \\
 s(T)p_1^{c_1}(T)u+t(T)f_i(T)u=Iu=u \\
-\Rightarrow u=0
+\implies u=0
 \end{gathered}
 $$
 
@@ -1462,8 +1462,8 @@ $$
 $$
 \begin{gathered}
 \gcd(f_1,\ldots,f_n)=1 \\
-\Rightarrow \exists a_i,\sum_i a_i(x)f_i(x)=1 \\
-\Rightarrow \sum_i a_i(T)f_i(T)=I \\
+\implies \exists a_i,\sum_i a_i(x)f_i(x)=1 \\
+\implies \sum_i a_i(T)f_i(T)=I \\
 \text{let } E_i=a_i(T)f_i(T) \\
 \end{gathered}
 $$
@@ -1475,8 +1475,8 @@ $$
 \text{let } E_i(v)=w \\
 p_i^{c_i}(T)w=p_i^{c_i}(T)a_i(T)f_i(T)v \\
 =a_i(T)m(T)=0 \\
-\Rightarrow \operatorname{range} E_i \subset W_i \\
-(\sum_j E_j)E_i=E_i \Rightarrow E_i^2=E_i \\
+\implies \operatorname{range} E_i \subset W_i \\
+(\sum_j E_j)E_i=E_i \implies E_i^2=E_i \\
 \forall w\in W_i,
 \sum_j E_j(T)w=w \\
 \end{gathered}
@@ -1493,7 +1493,7 @@ Lemma
 
 $$
 \begin{gathered}
-(f(x),g(x))=1 \Rightarrow \operatorname{null} fg(T)=\operatorname{null} f(T) \oplus \operatorname{null} g(T)
+(f(x),g(x))=1 \implies \operatorname{null} fg(T)=\operatorname{null} f(T) \oplus \operatorname{null} g(T)
 \end{gathered}
 $$
 
@@ -1533,7 +1533,7 @@ $0=g(T)\sum_i v_i=\sum_i g(T)v_i$,因为后面每一项分别在$W_i$中,所以�
 
 <div class='cbox'>
 
-对线性变换$T$,找到$v$使得 $g(T)v=0 \Rightarrow p|g$,其中$p$为极小多项式.然后找到最大的$k$使得$v,Tv,\ldots T^kv$线性无关,设 $W_1=\operatorname{span}( v,Tv,\ldots T^kv )$,设$W_1\oplus W=V$,则继续对$W$重复就得到一串不变子空间,且极小多项式构成整除链.
+对线性变换$T$,找到$v$使得 $g(T)v=0 \implies p|g$,其中$p$为极小多项式.然后找到最大的$k$使得$v,Tv,\ldots T^kv$线性无关,设 $W_1=\operatorname{span}( v,Tv,\ldots T^kv )$,设$W_1\oplus W=V$,则继续对$W$重复就得到一串不变子空间,且极小多项式构成整除链.
 
 </div>
 
@@ -1623,7 +1623,7 @@ A,B,C,D\in R^{n \times n}, \\
 AB^T,CD^T \text{ is symmetric}  \\
 AD^T-BC^T=I_n \\
 \end{cases} \\
-\Rightarrow A^TD-C^TB=I_n
+\implies A^TD-C^TB=I_n
 \end{gathered}
 $$
 
@@ -1675,7 +1675,7 @@ $$
 $$
 \begin{gathered}
 A^2+B^2=2AB \\
-\Rightarrow \det A=\det B
+\implies \det A=\det B
 \end{gathered}
 $$
 

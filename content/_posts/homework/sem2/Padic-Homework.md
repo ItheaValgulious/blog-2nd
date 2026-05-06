@@ -29,8 +29,8 @@ $$
 (a+b)^n=\sum_{i=0}^n \binom nia^ib^{n-i} \\
 |a+b|^n\le \sum_{i=0}^n |\binom ni| |a|^i|b|^{n-i} \\
 \le (n+1)(\max(|a|,|b|))^n \\
-\Rightarrow |a+b|\le \sqrt[n]{n+1}\max(|a|,|b|) \\
-\Rightarrow |a+b| \\
+\implies |a+b|\le \sqrt[n]{n+1}\max(|a|,|b|) \\
+\implies |a+b| \\
 = \lim_{n \to \infty} |a+b| \\
 \le \lim_{n \to \infty} \sqrt[ n ]{ n+1 } \max(|a|,|b|) \\
 =\max(|a|,|b|)
@@ -68,8 +68,8 @@ $$
 $$
 \begin{gathered}
 nx=1 \\
-\Leftrightarrow |nx-1|_p=0 \\
-\Leftrightarrow \forall i\ge 1,p^i|(\sum_{0\le j<i} 3x_ip^i-1)
+\iff |nx-1|_p=0 \\
+\iff \forall i\ge 1,p^i|(\sum_{0\le j<i} 3x_ip^i-1)
 \end{gathered}
 $$
 
@@ -163,7 +163,7 @@ $$
 
 <div class="pbox">
 
-$\Rightarrow$:考虑前面推过的p-adic的过程:
+$\implies$:考虑前面推过的p-adic的过程:
 
 $$
 \begin{gathered}
@@ -176,7 +176,7 @@ $$
 
 那么若$c_i\in [-n,n]$,则$c_{i+1}=\dfrac{c_{i-1}-nx_{i-1}}p\in [\dfrac{-n-n(p-1)}{p},\dfrac{n}{p}]\subset [-n,n]$.而可以通过拆带分数的方法让$c_i\in [-n,n]$.于是$c$有界,一定会重复.
 
-$\Leftarrow$:
+$\impliedby$:
 
 如果已知存在周期.设$x=\overline{a_1\ldots a_kb_1\ldots b_mb_1\ldots b_m\ldots}$.则$z=\overline{a_1\ldots a_k}\in Z,y=(x-z)p^{-k}=\overline{b_1\ldots b_mb_1\ldots b_m\ldots}$.所以只要证明纯循环数是有理数.
 

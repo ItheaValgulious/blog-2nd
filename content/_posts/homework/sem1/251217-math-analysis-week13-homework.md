@@ -52,7 +52,7 @@ $$
 $$
 \begin{gathered}
 \sqrt{n^2+1}-n=\dfrac{1}{\sqrt{n^2+1}+n} \text{ is decreasing}  \\
-\Rightarrow \sin(\pi \sqrt{n^2+1})=\sin(\pi (\sqrt{n^2+1}-n))(-1)^n
+\implies \sin(\pi \sqrt{n^2+1})=\sin(\pi (\sqrt{n^2+1}-n))(-1)^n
 \end{gathered}
 $$
 

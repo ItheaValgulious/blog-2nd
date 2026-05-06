@@ -1,0 +1,15 @@
+{
+  "daily": [
+    {
+      "activeMilliseconds": 18686,
+      "documents": [],
+      "periodKey": "2026-05-05",
+      "totalNetCharacterDelta": 0,
+      "updatedAt": "2026-05-05T12:41:04.522Z"
+    }
+  ],
+  "documents": [],
+  "totalActiveMilliseconds": 18686,
+  "totalNetCharacterDelta": 0,
+  "updatedAt": "2026-05-05T12:41:04.522Z"
+}

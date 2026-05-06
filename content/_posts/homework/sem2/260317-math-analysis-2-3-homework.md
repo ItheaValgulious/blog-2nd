@@ -111,7 +111,7 @@ $$
 $$
 \begin{gathered}
 \lim_{n \to \infty} \dfrac{c_{n}}{c_{n-1}}=\lim_{n \to \infty}  n\dfrac{(n-1)^{n-1}}{n^n}  =\lim_{n \to \infty} (1-\dfrac{1}{n} )^{n-1}=\frac1e \\
-\Rightarrow R=e
+\implies R=e
 \end{gathered}
 $$
 
@@ -150,13 +150,13 @@ $$
 R_a=\limsup_{n\to \infty} \sqrt[n]{|a_n|} =\dfrac1{r_1} \\
 R_b=\limsup_{n\to \infty} \sqrt[n]{|b_n|} =\dfrac1{r_2} \\
 R=\limsup_{n\to \infty} \sqrt[n]{|a_n+b_n|} \le \sqrt[ n ]{ 2\max(|a_n|,|b_n|) } \\
-\Rightarrow R \le \max(R_a,R_b) \\
-\Rightarrow r \ge \min(r_1,r_2) \\
+\implies R \le \max(R_a,R_b) \\
+\implies r \ge \min(r_1,r_2) \\
 \text{when } r_1 \ne r_2, \\
 \text{assume } r_1 < r_2, \\
 R=\limsup_{n\to \infty} \sqrt[n]{|a_n+b_n|}  \\
 \ge \limsup_{n\to \infty} \sqrt[n]{|a_n|} =R_a \\
-\Rightarrow r \le r_1 \Rightarrow r=r_1 \\
+\implies r \le r_1 \implies r=r_1 \\
 \text{when } r_1=r_2, \\
 \text{let  } a_n=1,b_n=-1,r=\infty>r_1=r_2=1 \\
 \end{gathered}
@@ -167,7 +167,7 @@ $$
 $$
 \begin{gathered}
 \limsup _{n\to \infty} \sqrt[n]{|a_nb_n|} \le \limsup_{n\to \infty} \sqrt[n]{|a_n|}\cdot \limsup_{n\to \infty} \sqrt[n]{|b_n|} =\dfrac{1}{r_1r_2}  \\
-\Rightarrow  r \ge r_1r_2
+\implies  r \ge r_1r_2
 \end{gathered}
 $$
 
@@ -317,7 +317,7 @@ $$
 $$
 \begin{gathered}
 \int \dfrac1x(\int \dfrac1x f)=\dfrac{x}{1+x}\\
-\Rightarrow f(x)=\dfrac{x(1-x)}{(1+x)^3} 
+\implies f(x)=\dfrac{x(1-x)}{(1+x)^3} 
 \end{gathered}
 $$
 
@@ -381,7 +381,7 @@ $$
 $$
 \begin{gathered}
 \int \dfrac1{x^3} \int f(x)  =\sum _{n = 2} ^{\infty}  x^{n-1}=\dfrac{1}{1-x}-1  \\
-\Rightarrow f(x)=\dfrac{3-x}{(1-x)^3}x^2  \\
+\implies f(x)=\dfrac{3-x}{(1-x)^3}x^2  \\
 Ans=f(\dfrac{1}{4} )=\dfrac{11}{27} 
 \end{gathered}
 $$
@@ -448,7 +448,7 @@ $$
 
 $$
 \begin{gathered}
-n>N \Rightarrow |f_n(x)-f(x)|<\delta \Rightarrow |f(f_n(x))-f(f(x))|<\epsilon
+n>N \implies |f_n(x)-f(x)|<\delta \implies |f(f_n(x))-f(f(x))|<\epsilon
 \end{gathered}
 $$
 

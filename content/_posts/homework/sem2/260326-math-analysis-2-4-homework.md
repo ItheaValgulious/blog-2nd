@@ -26,7 +26,7 @@ $$
 \begin{gathered}
 f(x)=x^{-2}  \\
 f^{(n)}= (-1)^n (n+1)! x^{-2-n}
-\Rightarrow  \\
+\implies  \\
 f(x)=\sum _{i = 0} ^{\infty}  \dfrac{f^{(i)}(1)}{i!} (x-1)^i \\
 =1+\sum _{i = 1} ^{\infty}(-1)^i(i+1)(x-1)^i
 \end{gathered}
@@ -85,7 +85,7 @@ $$
 \begin{gathered}
 f'(x)=\dfrac{2}{1+x^2}  \\
 =\sum _{i = 0} ^{\infty} 2\cdot (-1)^ix^{2i} \\
-\Rightarrow f(x)=\int f'(x)=\sum _{i = 0} ^{\infty}  \dfrac{2\cdot (-1)^i x^{2i+1}}{2i+1} ,x\in (-1,1)
+\implies f(x)=\int f'(x)=\sum _{i = 0} ^{\infty}  \dfrac{2\cdot (-1)^i x^{2i+1}}{2i+1} ,x\in (-1,1)
 \end{gathered}
 $$
 
@@ -111,12 +111,12 @@ $$
 $$
 \begin{gathered}
 f(x)(1-x-x^2)=1 \\
-\Rightarrow \forall n\ge 2,0=(f(x)(1-x-x^2))^{(n)}|_{x=0} \\
+\implies \forall n\ge 2,0=(f(x)(1-x-x^2))^{(n)}|_{x=0} \\
 =\sum _{i = 0} ^{n}  f^{(n-i)}(0)((1-x-x^2)^{(i)}|_{x=0})\binom ni \\
 =f^{(n)}(0)-nf^{n-1}(0)+\dfrac{n(n-1)}{2} \cdot -2 f^{n-2}(0) \\
 =n!a_n-n!a_{n-1}-n!(a_{n-2}) \\
 =0 \\
-\Rightarrow a_n=a_{n-1}+a_{n-2}
+\implies a_n=a_{n-1}+a_{n-2}
 \end{gathered}
 $$
 
@@ -131,7 +131,7 @@ $$
 S_n=\sum _{n = 0} ^{N}  \dfrac{a_{n+1}}{a_na_{n+2}}  \\
 =\sum _{n = 0} ^{N}  \dfrac{1}{a_n} -\dfrac{1}{a_{n+2}}  \\
 =2-\dfrac{1}{a_{N+1}} -\dfrac{1}{a_{N+2}}  \\
-\Rightarrow S=\lim_{n \to \infty} S_n =2
+\implies S=\lim_{n \to \infty} S_n =2
 \end{gathered}
 $$
 
@@ -154,7 +154,7 @@ $$\sin x + \sum_{n=1}^{\infty} \frac{(2n-1)!! \sin^{2n+1} x}{(2n)!! (2n+1)}$$
 $$
 \begin{gathered}
 f(x)=\arcsin(x) \\
-\Rightarrow f'(x)=\dfrac{1}{\sqrt{ 1-x^2 } } \\
+\implies f'(x)=\dfrac{1}{\sqrt{ 1-x^2 } } \\
 =(1-x^2)^{-\frac12} \\
 =1+\sum _{n = 1} ^{\infty} \dfrac{(2n-1)!!}{(2n)!!} x^{2n},\forall x\in[0,1)
 \end{gathered}
@@ -199,7 +199,7 @@ $$
 $$
 \begin{gathered}
 \sum _{n = 1} ^{\infty}  \dfrac{1}{n^2}-\sum _{i = 1} ^{\infty}  \dfrac{1}{(2n)^2}=\dfrac{\pi^2}{8}  \\
-\Rightarrow \sum _{n = 1} ^{\infty}  \dfrac{1}{n^2} =\dfrac{\pi^2}{6} 
+\implies \sum _{n = 1} ^{\infty}  \dfrac{1}{n^2} =\dfrac{\pi^2}{6} 
 \end{gathered}
 $$
 

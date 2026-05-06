@@ -158,7 +158,7 @@ x=y^2+2
 \end{gathered}
 $$
 
-切线:$y=\dfrac{1}{2} x-\dfrac{1}{2} \Leftrightarrow x=2y+1$
+切线:$y=\dfrac{1}{2} x-\dfrac{1}{2} \iff x=2y+1$
 
 绕y:
 
@@ -311,7 +311,7 @@ $$
 =\dfrac{1}{1+e^{-x}}+C \\
 \text{let } C=-1 \\
 
-\Rightarrow Ans=\dfrac{-xe^{-x}}{1+e^{-x}}\vert_0^{+\infty} -\int_0^{+\infty} \dfrac{-e^{-x}}{1+e^{-x}}dx \\
+\implies Ans=\dfrac{-xe^{-x}}{1+e^{-x}}\vert_0^{+\infty} -\int_0^{+\infty} \dfrac{-e^{-x}}{1+e^{-x}}dx \\
 =  0+\ln 2 \\
 =\ln 2
 \end{gathered}
@@ -370,8 +370,8 @@ $$
 \ln(1+\dfrac{1}{x^2} )-\dfrac{1}{1+x^2}  \\
 =\dfrac{1}{x^2}-\dfrac{1}{2x^4}+o(\dfrac{1}{x^5} ) -\dfrac{1}{x^2} +\dfrac{1}{x^4}  \\
 =\dfrac{1}{2x^4} +o(\dfrac{1}{x^5} ) \\
-\Rightarrow \lim_{x \to \infty} \dfrac{\left[ \ln\left(1+\frac{1}{x^2}\right) - \frac{1}{1+x^2} \right]}{\dfrac{1}{2x^4} } =1 \\
-\Rightarrow \text{Convergent} 
+\implies \lim_{x \to \infty} \dfrac{\left[ \ln\left(1+\frac{1}{x^2}\right) - \frac{1}{1+x^2} \right]}{\dfrac{1}{2x^4} } =1 \\
+\implies \text{Convergent} 
  
 \end{gathered}
 $$
@@ -397,7 +397,7 @@ $$
 $$
 \begin{gathered}
 \cos \dfrac{1}{x^2} =1-\dfrac{1}{2x^4}+o(x^5) \\
-\Rightarrow \lim_{x \to \infty} \dfrac{x(1-\cos \dfrac{1}{x^2} )^p}{x^{1-4p}} =C\in (0,\infty) \\
+\implies \lim_{x \to \infty} \dfrac{x(1-\cos \dfrac{1}{x^2} )^p}{x^{1-4p}} =C\in (0,\infty) \\
 \int_1^{+\infty} x(1-\cos \dfrac{1}{x^2} )^p\begin{cases}
 \text{ is convergent} ,p>\dfrac{1}{2}  \\
 \text{ isn't convergent} ,p\le \dfrac{1}{2} 
@@ -517,8 +517,8 @@ $$
 
 $$
 \begin{gathered}
-\exists X,x>X \Rightarrow \dfrac{P_m(x)}{P_n(x)} >B(B<A) \\
-\Rightarrow {\left \vert \int_{2n\pi+\frac\pi4}^{2n\pi+\frac\pi2} \dfrac{P_m(x)}{P_n(x)} \sin xdx \right \vert}  \\
+\exists X,x>X \implies \dfrac{P_m(x)}{P_n(x)} >B(B<A) \\
+\implies {\left \vert \int_{2n\pi+\frac\pi4}^{2n\pi+\frac\pi2} \dfrac{P_m(x)}{P_n(x)} \sin xdx \right \vert}  \\
 >\dfrac{\sqrt 2B\pi}{8}
 \end{gathered}
 $$
@@ -561,9 +561,9 @@ $$
 $$
 \begin{gathered}
 \lim_{x \to +\infty} \dfrac{\ln f(x)}{\ln x} =-\lambda \\
-\Rightarrow  \exists 1<a<\lambda,X \ s.t.\ 
-x>X \Rightarrow \dfrac{\ln f(x)}{\ln x} <-a, \\
-\Rightarrow f(x)<\dfrac{1}{x^a}
+\implies  \exists 1<a<\lambda,X \ s.t.\ 
+x>X \implies \dfrac{\ln f(x)}{\ln x} <-a, \\
+\implies f(x)<\dfrac{1}{x^a}
 \end{gathered}
 $$
 

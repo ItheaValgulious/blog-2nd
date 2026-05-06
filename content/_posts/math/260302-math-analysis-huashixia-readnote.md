@@ -122,7 +122,7 @@ $$
 
 在黎曼积分下呢?不会做了,发现这个叫 阿泽拉有界收敛定理（Arzelà's Bounded Convergence Theorem）并找到一个初等证明:
 
-首先简化到 $f_n:[0,1]\to [0,1],f_n\to 0,f_n\in R[0,1] \Rightarrow \int_0^1 f_n dx\to 0$.
+首先简化到 $f_n:[0,1]\to [0,1],f_n\to 0,f_n\in R[0,1] \implies \int_0^1 f_n dx\to 0$.
 
 反证,则存在$\epsilon$,使得$f_n$的一个子列(仍记为$f_n$)满足$\int_0^1 f_ndx>4\epsilon$.
 
@@ -130,7 +130,7 @@ $$
 
 此时经典令$V_n=\bigcup_{i>n} U_i$.我们的目标是说明$\bigcap V_n\ne \varnothing$.(这一步好像是处理被无限个包含的经典方法,仿照上下极限)
 
-显然$V_n\supset V_{n+1}$,此时一个结论说,$R$上的任意开集$V$可以被唯一分解成至多可数个不交开区间的并,方法是考虑对任意两个点$a,b$,定义等价关系 $a\sim b \Leftrightarrow [a,b]\subset V$,则每个等价类是一个开区间,就确定了分解.
+显然$V_n\supset V_{n+1}$,此时一个结论说,$R$上的任意开集$V$可以被唯一分解成至多可数个不交开区间的并,方法是考虑对任意两个点$a,b$,定义等价关系 $a\sim b \iff [a,b]\subset V$,则每个等价类是一个开区间,就确定了分解.
 
 分解之后,我们定义每个开区间是一个节点,如果这个节点被上层的某个开区间包含则连边,可以得到一棵树.
 
@@ -187,7 +187,7 @@ f_n(x)\in C^1[a,b] \\
 f_n'(x)\rightrightarrows g(x) \\
 \exists c\in [a,b],\lim_{n \to \infty} f_n(c)\exists
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 f_n(x)\rightrightarrows f(x)\in C^1[a,b] \\
 f'(x)=g(x)
 \end{cases}
@@ -384,7 +384,7 @@ f(\vec x^0,\vec u^0)=\vec 0 \\
 \text{在边长为$d$的闭超立方体D中,f连续且有连续偏导} \\
 \det J_{f,\vec u}((\vec x^0,\vec u^0) ) \ne 0
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 f(\vec x,\vec u)=\vec 0 \text{ defines the function } \vec u(\vec x) \\
 \vec u(\vec x) \in C(D) \\
 J_{\vec u,\vec x}(p)=J_{f,\vec u}(p)^{-1}\times J_{f,\vec x}(p) \\
@@ -417,10 +417,10 @@ $$
 $$
 \begin{gathered}
 f(x^1,u^1)=f(x,u)=0 \\
-\Rightarrow \exists \xi \ s.t.\ 
+\implies \exists \xi \ s.t.\ 
 \dfrac{df}{dx}(x^1-x)+\dfrac{df}{du}(u^1-u)=0 \\
-\Rightarrow \dfrac{u^1-u}{x^1-x}=-\dfrac{\dfrac{df}{dx}(\xi) }{\dfrac{df}{du}(\xi) }  \\
-\Rightarrow u'(x)=-\dfrac{\dfrac{df}{dx} }{\dfrac{df}{du} } (x,u)
+\implies \dfrac{u^1-u}{x^1-x}=-\dfrac{\dfrac{df}{dx}(\xi) }{\dfrac{df}{du}(\xi) }  \\
+\implies u'(x)=-\dfrac{\dfrac{df}{dx} }{\dfrac{df}{du} } (x,u)
 \end{gathered}
 $$
 
@@ -588,7 +588,7 @@ f(x)\in C(D) \\
 g(x) \text{ is a bijection on } D \\
 g(x)\in C^1(D)
 \end{cases} \\
-\Rightarrow \iint_{D} f(g(x))d\Sigma=\iint_{g(D)}f(x)d\Sigma
+\implies \iint_{D} f(g(x))d\Sigma=\iint_{g(D)}f(x)d\Sigma
 
 \end{gathered}
 $$

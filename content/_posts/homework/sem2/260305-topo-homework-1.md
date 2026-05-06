@@ -165,13 +165,13 @@ $$
 \begin{gathered}
 \forall x\in f(\bigcap_\lambda A_\lambda),\forall A_\lambda,\exists a\in A_\lambda \ s.t.\ 
 f(a)=x,x\in f(A_\lambda) \\
-\Rightarrow f(\bigcap_\lambda A_\lambda)\subset \bigcap_\lambda f(A_\lambda) \\
+\implies f(\bigcap_\lambda A_\lambda)\subset \bigcap_\lambda f(A_\lambda) \\
 \text{if } f \text{ is injective:} \\
 \forall x\in \bigcap_\lambda f(A_\lambda) \\
 \exists! a \ s.t.\ 
 f(a)=x \\
-\Rightarrow\forall \lambda, a\in A_\lambda \\
-\Rightarrow x\in f(\bigcap_\lambda A_\lambda) \\
+\implies\forall \lambda, a\in A_\lambda \\
+\implies x\in f(\bigcap_\lambda A_\lambda) \\
 \end{gathered}
 $$
 相互包含所以取等.
@@ -186,7 +186,7 @@ $$
 \text{if } f \text{ is surjective:} \\
 \forall b\in B \\
 \exists x\in f^{-1}(b)\subset f^{-1}(B),f(x)=b \\
-\Rightarrow b\in f(f^{-1}(B))
+\implies b\in f(f^{-1}(B))
 \end{gathered}
 $$
 

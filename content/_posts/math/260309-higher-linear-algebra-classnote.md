@@ -75,9 +75,9 @@ $$
 $$
 \begin{gathered}
 ax+by=ax+by \\
-\Rightarrow f\circ g(ax+by)=af\circ g(x)+bf\circ g(y) \\
+\implies f\circ g(ax+by)=af\circ g(x)+bf\circ g(y) \\
 =f(ag(x)+bg(y)) \\
-\Rightarrow g(ax+by)=ag(x)+bg(y)
+\implies g(ax+by)=ag(x)+bg(y)
 \end{gathered}
 $$
 
@@ -224,8 +224,8 @@ $$
 $$
 \begin{gathered}
 T:V\to W \\
-T \text{ is injective} \Leftrightarrow T' \text{ is surjective} \\
-T \text{ is surjective } \Leftrightarrow T' \text{ is injective} 
+T \text{ is injective} \iff T' \text{ is surjective} \\
+T \text{ is surjective } \iff T' \text{ is injective} 
 \end{gathered}
 $$
 
@@ -277,7 +277,7 @@ $$
 
 - alternating:$\varphi(v,v)=0,\forall v\in V$
 - symmetric:$\varphi(u,v)=\varphi(v,u)$
-- reflexive:$\varphi(u,v)=0 \Leftrightarrow \varphi(v,u)=0$
+- reflexive:$\varphi(u,v)=0 \iff \varphi(v,u)=0$
 
 </div>
 
@@ -288,7 +288,7 @@ AI似乎认为reflexive还有其他意思,但我们先按这个来.
 $$
 \begin{gathered}
 \varphi\in B(V,V,F) \\
-\varphi \text{ is reflexive} \Rightarrow \varphi \text{ is alternating or symmetric} 
+\varphi \text{ is reflexive} \implies \varphi \text{ is alternating or symmetric} 
 \end{gathered}
 $$
 
@@ -431,7 +431,7 @@ $$
 
 那么我们构造$g=\prod_{i=1}^n x_i^{c_i-c_{i+1}}$,则确实第一项相等,且多项式次数相等.我们只需要保证不存在一个字典序更大的项.然后你观察一下这个构造发现它确实能做到:考虑当你乘一个$e_i$的时候,让字典序最大的乘法一定是它自身那个字典序最大的项.而我们构造出来的$g$中的首项恰恰是每个字典序最大的项乘起来的,所以是对的.
 
-唯一性考虑假设你$P(e_1,\ldots e_n)$是分解目标,只需要证明$P(e_1,\ldots e_n)=0 \Leftrightarrow P=0$(这两个都是多项式意义等于$0$).
+唯一性考虑假设你$P(e_1,\ldots e_n)$是分解目标,只需要证明$P(e_1,\ldots e_n)=0 \iff P=0$(这两个都是多项式意义等于$0$).
 
 那么你发现$\prod e_i^{c_i}$的最大项一定是互不相同的,于是最大的最大项消不掉.于是就只有最大项等于$0$一条路了.
 
@@ -448,8 +448,8 @@ $$
 $$
 \begin{gathered}
 \text{let } s_k=\sum _{i = 1} ^{n}  x_i^k \\
-k> n\Rightarrow \sum _{i = 0} ^{n}  (-1)^i s_{k-i}e_i=0 \\
-k\le n \Rightarrow \sum _{i = 0} ^{k-1}  (-1)^i s_{k-i}e_i+(-1)^k ke_k=0
+k> n\implies \sum _{i = 0} ^{n}  (-1)^i s_{k-i}e_i=0 \\
+k\le n \implies \sum _{i = 0} ^{k-1}  (-1)^i s_{k-i}e_i+(-1)^k ke_k=0
 \end{gathered}
 $$
 
@@ -558,7 +558,7 @@ $$
 
 <div class='pbox'>
 
-证明方法是考虑$\operatorname{Res}(f,g)=0 \Leftrightarrow \exists x_i=y_j$.
+证明方法是考虑$\operatorname{Res}(f,g)=0 \iff \exists x_i=y_j$.
 
 把$\operatorname{Res}(f,g)$当成$x_i$的函数$r(x_1,\dots ,x_n)$,系数是$x$,那么由于$x_i=y_j$是解所以$(x_i-y_j)$一定是因式,就拿到$\prod_{i,j} (x_i-y_j)|r$.
 
@@ -593,8 +593,8 @@ $\operatorname{Res}(f,f')=C\Delta(f)$
 $$
 \begin{gathered}
 p\in R[x],\deg p=2d,p(x)\ge 0 \\
-\Leftrightarrow \exists p_1,p_2\in R[x],p(x)=p_1^2(x)+p_2^2(x) \\
-\Leftrightarrow \exists P\in R^{d\times d},\ s.t.\ 
+\iff \exists p_1,p_2\in R[x],p(x)=p_1^2(x)+p_2^2(x) \\
+\iff \exists P\in R^{d\times d},\ s.t.\ 
 p(x)=\begin{bmatrix} 1&x&\cdots&x^d \end{bmatrix}  P\begin{bmatrix} 1\\x\\\vdots\\x^d \end{bmatrix} 
 \end{gathered}
 $$
@@ -633,7 +633,7 @@ $$
 \ge 0 \\
 \text{Since } \Re(tr(a,b)+t\overline{r(a,b)})=2t\Re(r(a,b))=2t|(a,b)| \\
 \Delta=4|(a,b)|^2-4\|a\|^2\|b\|^2<0 \\
-\Rightarrow (a,b)<\|a\|\|b\|
+\implies (a,b)<\|a\|\|b\|
 \end{gathered}
 $$
 

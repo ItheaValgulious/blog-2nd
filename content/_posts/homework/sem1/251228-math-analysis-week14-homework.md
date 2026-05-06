@@ -184,7 +184,7 @@ S=1+\dfrac{1}{I} \\
 I=1+\dfrac{1}{S}  \\
 S\ge I>0
 \end{cases}
-\Rightarrow 
+\implies 
 S=I=\dfrac{1+\sqrt 5}{2} \in [1,2]
 \end{gathered}
 $$
@@ -208,8 +208,8 @@ $$
 $$
 \begin{gathered}
 n(\dfrac{1+a_{n+1}}{a_n} -1)<1 \\
-\Rightarrow \dfrac{a_{n+1}}{n+1} <\dfrac{a_n}{n} -\dfrac{1}{n+1}  \\
-\Rightarrow \dfrac{a_{n}}{n}<\dfrac{a_{N+1}}{N+1}-\sum _{i = N+2} ^{n}  \dfrac{1}{i}    \\
+\implies \dfrac{a_{n+1}}{n+1} <\dfrac{a_n}{n} -\dfrac{1}{n+1}  \\
+\implies \dfrac{a_{n}}{n}<\dfrac{a_{N+1}}{N+1}-\sum _{i = N+2} ^{n}  \dfrac{1}{i}    \\
 \end{gathered}
 $$
 

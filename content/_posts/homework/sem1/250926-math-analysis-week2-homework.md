@@ -25,7 +25,7 @@ top: 0
 
 $$
 \begin{gathered}
-x_n>1 \Rightarrow  1<x_{n+1}=\dfrac{3x_n+1}{x_n+3}<3 \\
+x_n>1 \implies  1<x_{n+1}=\dfrac{3x_n+1}{x_n+3}<3 \\
 \text{Inductively},x_n\in (1,3)
 x_{n+1}-x_n \\
 =\dfrac{3x_n+1-x_n^2-3x_n}{x_n+3} \\
@@ -34,8 +34,8 @@ x_{n+1}-x_n \\
 
 
 x_{n+1}=\dfrac{3x_n+1}{x_n+3} \\
-\Rightarrow \lim_{n \to \infty} x_{n}=\dfrac{3(\lim_{n \to \infty} x_n)+1}{(\lim_{n \to \infty} x_n)+3}  \\
-\Rightarrow \lim_{n \to \infty} x_n=1
+\implies \lim_{n \to \infty} x_{n}=\dfrac{3(\lim_{n \to \infty} x_n)+1}{(\lim_{n \to \infty} x_n)+3}  \\
+\implies \lim_{n \to \infty} x_n=1
 \end{gathered}
 $$
 
@@ -56,31 +56,31 @@ $$
 $$
 \begin{gathered}
 \forall n,a_n<b_n \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 b_n>a_{n+1}=\sqrt{a_n b_n}>a_n \\
 a_n<b_{n+1}=\frac{a_n+b_n}{2}<b_n
 \end{cases}
 \\
-\Rightarrow 
+\implies 
 \begin{cases}
 a_n<b_n<b_{n-1}<\ldots<b_1, \\
 b_n>a_n>a_{n-1}>\ldots>a_1
 \end{cases} \\
-\Rightarrow 
+\implies 
 \{ a_n \} ,\{ b_n \} \text{ is bounded and monotonic} \\
-\Rightarrow A=\lim_{n \to \infty} a_n,B=\lim_{n \to \infty} b_n \text{ exists}   \\
-\Rightarrow 
+\implies A=\lim_{n \to \infty} a_n,B=\lim_{n \to \infty} b_n \text{ exists}   \\
+\implies 
 \begin{cases}
 \lim_{n \to \infty} b_{n+1} = \lim_{n \to \infty} \frac{a_n + b_n}{2} \\
 \lim_{n \to \infty} a_{n+1} = \sqrt{a_n b_n}
 \end{cases} \\
 
-\Rightarrow 
+\implies 
 \begin{cases}
 B=\dfrac{A+B}{2}  \\
 A=\sqrt{ A B } \\ 
 \end{cases}
-\Rightarrow A=B
+\implies A=B
 
 \end{gathered}
 $$
@@ -100,19 +100,19 @@ $$
 $$
 \begin{gathered}
 \dfrac{1}{4(1-x_n)}<x_{n+1}<1  \\
-\Rightarrow x_n<\dfrac{3}{4}  \\
+\implies x_n<\dfrac{3}{4}  \\
 \dfrac{1}{4(1-x_{n-1})}<x_n<\dfrac{3}{4}  \\
-\Rightarrow x_{n-1}<\dfrac{2}{3} \\
+\implies x_{n-1}<\dfrac{2}{3} \\
 \text{同理} 
-\Rightarrow x_{n-2}<\dfrac{1}{2}  \\
+\implies x_{n-2}<\dfrac{1}{2}  \\
 \therefore \forall n,x_n<\dfrac{1}{2} \\
 \text{又} x_{n+1}=\dfrac{1}{4(1-x_n)} > x_n \\
-\Leftrightarrow (2x_n-1)^2>0
-\Rightarrow \text{True}  \\
+\iff (2x_n-1)^2>0
+\implies \text{True}  \\
 X=\lim_{n \to \infty} x_n \text{ exists}  \\
 x_{n+1}>\dfrac{1}{4(1-x_n)}  \\
-\Rightarrow X\ge \dfrac{1}{4(1-X)}  \\
-\Rightarrow X=\dfrac{1}{2} 
+\implies X\ge \dfrac{1}{4(1-X)}  \\
+\implies X=\dfrac{1}{2} 
 \end{gathered}
 $$
 
@@ -148,16 +148,16 @@ $$
 \begin{cases}
 x_1\le \dfrac{1}{1},x_2<\min(x_1,1-x_1)\le \dfrac{1}{2}   \\
 x_n\le \dfrac{1}{n},n\ge 2 
-\Rightarrow 
+\implies 
 x_{n+1}<\dfrac{1}{n}(1-\dfrac{1}{n} )=\dfrac{n-1}{n^2} <\dfrac{1}{n+1}
 \end{cases} \\
-\Rightarrow x_n\le \dfrac{1}{n} \\
+\implies x_n\le \dfrac{1}{n} \\
 0<x_n\le  \dfrac{1}{n} \\
 \stackrel{\text{Squeeze Theorem}}{\Longrightarrow}  \\
 \lim_{n \to \infty} x_n=0 \\
-\Rightarrow 
+\implies 
 \lim_{n \to \infty} \dfrac{\dfrac{1}{x_n} }{n} =\dfrac{1}{1-\lim_{n \to \infty} x_{n}}=1 \\
-\Rightarrow \lim_{n \to \infty} nx_n=1
+\implies \lim_{n \to \infty} nx_n=1
 \end{gathered}
 $$
 
@@ -205,8 +205,8 @@ $$
 $$
 \begin{gathered}
 x>\ln(x)+1 \\
-\Rightarrow \dfrac{1}{x}\in(\ln(\dfrac{x}{x-1}),\ln(\dfrac{x+1}{x} ) )  \\
-\Rightarrow a_n\in (\sum _{i = n+1} ^{2n} \ln(\dfrac{i}{i-1}),\sum _{i = n+1} ^{2n} \ln(\dfrac{i+1}{i} ) ) \\
+\implies \dfrac{1}{x}\in(\ln(\dfrac{x}{x-1}),\ln(\dfrac{x+1}{x} ) )  \\
+\implies a_n\in (\sum _{i = n+1} ^{2n} \ln(\dfrac{i}{i-1}),\sum _{i = n+1} ^{2n} \ln(\dfrac{i+1}{i} ) ) \\
 =(\ln(\dfrac{2n}{n}),\ln(\dfrac{2n+1}{n+1} ) ) \\
 \stackrel{\text{Squeeze Theorem}}{\Longrightarrow}
 \lim_{n \to \infty} a_n=\ln(2)
@@ -233,8 +233,8 @@ x_n \text{ is obviously incresing}  \\
 \ln(x_n)=\sum_{i=1}^n \ln(1+\dfrac{1}{2^i} ) \\
 <\sum _{i = 1} ^{n} \dfrac{1}{2^i}  \\
 <1 \\
-\Rightarrow x_n<e
-\Rightarrow \lim_{n \to \infty} x_n \text{exists}
+\implies x_n<e
+\implies \lim_{n \to \infty} x_n \text{exists}
 
 \end{gathered}
 $$
@@ -271,8 +271,8 @@ $$
 =\dfrac{1}{n} -\dfrac{1}{n+m}  \\
 <\dfrac{1}{n} \\
 
-\Rightarrow \forall \epsilon,N:=\dfrac{1}{\epsilon} +100 \\
-\Rightarrow \forall i,j>N,\vert a_i-a_j \vert < \epsilon
+\implies \forall \epsilon,N:=\dfrac{1}{\epsilon} +100 \\
+\implies \forall i,j>N,\vert a_i-a_j \vert < \epsilon
 \\
 \stackrel{\text{Cauchy Convergence Theorem}}{\Longrightarrow} \\
 \\
@@ -292,7 +292,7 @@ $$
 $$
 \begin{gathered}
 b_n=\sum _{i = 1} ^{n-1}  \vert a_{i+1}-a_i \vert \text{ is bounded} 
-\Rightarrow a_n \text{ is convergent} 
+\implies a_n \text{ is convergent} 
 \end{gathered}
 $$
 
@@ -305,16 +305,16 @@ $$
 \begin{cases}
 b_n \text{ is increasing}  \\
 b_n \text{ is bounded} 
-\end{cases}\Rightarrow \lim_{n \to \infty} b_n =B \\
+\end{cases}\implies \lim_{n \to \infty} b_n =B \\
 a_{n+m}-a_n=\sum _{i = n+1} ^{n+m}  a_{i}-a_{i-1} \\
 \le \sum _{i = n+1} ^{n+m}  \vert a_i-a_{i-1} \vert  \\
 =b_{n+m} - b_n
 \\
-\Rightarrow 
+\implies 
 \forall \epsilon_1, \exists N \\ s.t.\\ 
-n>N \Rightarrow \vert b_n-B \vert < \epsilon_1 \\
-\Rightarrow b_{n+m}-b_n< \vert b_n-B \vert + \vert B-b_{n+m} \vert =2\epsilon_1 \\
-\epsilon_1:=\dfrac{\epsilon}{2} \Rightarrow \forall x,y>N,\vert a_x-a_y \vert < \epsilon \\
+n>N \implies \vert b_n-B \vert < \epsilon_1 \\
+\implies b_{n+m}-b_n< \vert b_n-B \vert + \vert B-b_{n+m} \vert =2\epsilon_1 \\
+\epsilon_1:=\dfrac{\epsilon}{2} \implies \forall x,y>N,\vert a_x-a_y \vert < \epsilon \\
 \stackrel{\text{Cauchy Convergence Theorem}}{\Longrightarrow} \\
 \\
 \text{Q.E.D}
@@ -332,8 +332,8 @@ $$
 $$
 \begin{gathered}
 \forall \epsilon , \exists N_1=N(\epsilon) \\ s.t.\\ 
-i,j>N_1 \Rightarrow \vert x_i-x_j \vert < \epsilon \\
-\Leftrightarrow  \\
+i,j>N_1 \implies \vert x_i-x_j \vert < \epsilon \\
+\iff  \\
 x_n \text{ is convergent} 
 \end{gathered}
 $$
@@ -346,7 +346,7 @@ $$
 
 $$
 \begin{gathered}
-\epsilon_1:=1 \therefore i>N \Rightarrow x_i \in [x_N-\epsilon_1,x_N+\epsilon_1] \\
+\epsilon_1:=1 \therefore i>N \implies x_i \in [x_N-\epsilon_1,x_N+\epsilon_1] \\
 a_1:=x_N-\epsilon_1,b_1:=x_N+\epsilon_1 \\
 \end{gathered}
 $$
@@ -367,10 +367,10 @@ b_i\ge b_{i+1} \\
 \lim_{n \to \infty} b_n-a_n = 0
 \end{cases}
 \\
-\Rightarrow \exists!  \xi \in [a_n,b_n] \\ s.t.\\ 
+\implies \exists!  \xi \in [a_n,b_n] \\ s.t.\\ 
 \forall \epsilon,N=\min \{ i \vert b_i-a_i<\epsilon \} 
-\Rightarrow 
-n>N \Rightarrow \vert \xi-x_n\vert<\epsilon
+\implies 
+n>N \implies \vert \xi-x_n\vert<\epsilon
 \\
 \text{Q.E.D}
 \end{gathered}
@@ -388,9 +388,9 @@ $$
 $$
 \begin{gathered}
 a_0=3,a_n=a_{n-1}^2-2 \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \lim_{n \to \infty} a_n=+\infty \\
-A_n:=\dfrac{a_n}{\prod_{i=0}^{n-1}a_i} \Rightarrow \lim_{n \to \infty} A_n = \sqrt{5}
+A_n:=\dfrac{a_n}{\prod_{i=0}^{n-1}a_i} \implies \lim_{n \to \infty} A_n = \sqrt{5}
 \end{cases}
 \end{gathered}
 $$
@@ -405,7 +405,7 @@ $$
 \begin{gathered}
 \begin{cases}
 a_0=3,a_1=7,a_2=47 \\
-n>2,a_{n-1}>2^{n} \Rightarrow a_n = a_{n-1}^2-2>2^{2n}-2>2^{n+1}
+n>2,a_{n-1}>2^{n} \implies a_n = a_{n-1}^2-2>2^{2n}-2>2^{n+1}
 \end{cases} \\
 \stackrel{\text{induction}}{\Longrightarrow} a_n>2^{n+1} \\
 \therefore
@@ -418,9 +418,9 @@ $$
 $$
 \begin{gathered}
 a_n=a_{n-1}^2-2 \\
-\Rightarrow (a_n-2)=(a_{n-1}-2)(a_{n-1}+2) \\
-\Rightarrow \prod _{i = 1} ^{n}  (a_i+2 ) = \dfrac{a_{n+1}-2}{a_1-2} =\dfrac{a_{n+1}-2}{5}  \\
-\Rightarrow  \\
+\implies (a_n-2)=(a_{n-1}-2)(a_{n-1}+2) \\
+\implies \prod _{i = 1} ^{n}  (a_i+2 ) = \dfrac{a_{n+1}-2}{a_1-2} =\dfrac{a_{n+1}-2}{5}  \\
+\implies  \\
 
 A_n^2=\dfrac{a_{n}^2}{\prod _{i = 0} ^{n-1}  a_i^2}  \\
 =\dfrac{a_{n+1}+2}{\prod _{i = 1} ^{n}  (a_i+2)}  \\
@@ -441,7 +441,7 @@ $$
 $$
 \begin{gathered}
 A,B \text{is upper bounder},S\subset\{ x+y\vert x\in A,y\in B \}   \\
-\Rightarrow \sup S\le \sup A+\sup B
+\implies \sup S\le \sup A+\sup B
 \end{gathered}
 $$
 
@@ -453,7 +453,7 @@ $$
 
 若$\sup S>\sup A+\sup B$,取$M=\sup A+\sup B$,
 
-则$\forall x\in A,y\in B,x\le \sup A,y\le \sup B \Rightarrow x+y \le M$
+则$\forall x\in A,y\in B,x\le \sup A,y\le \sup B \implies x+y \le M$
 
 于是$M$是比$\sup S$小的上界,矛盾.
 
@@ -473,7 +473,7 @@ $$
 A,B \text{ aren't empty},\alpha\ge 0, \\
 C=A+\alpha B =\{ x\vert x=a+\alpha b,a\in A,b\in B \}  
 \end{cases} \\
-\Rightarrow \sup(A+\alpha B)=M=\sup A+\alpha \sup B
+\implies \sup(A+\alpha B)=M=\sup A+\alpha \sup B
 
 \end{gathered}
 $$
@@ -485,12 +485,12 @@ $$
 $$
 \begin{gathered}
 \forall c\in C=a+\alpha b, \\
-a\le \sup A,b\le \sup B \Rightarrow a+\alpha b\le \sup A+\alpha \sup B=M \\
+a\le \sup A,b\le \sup B \implies a+\alpha b\le \sup A+\alpha \sup B=M \\
 \forall M'<M,\epsilon=M-M' \\
 \text{let }X=\sup A-\dfrac{\epsilon}{3} ,Y=\sup B+\dfrac{\epsilon}{3\alpha} \\
 \text{According to the definition of supremum, } \exists a>X\in A,y>Y\in B \\
-\Rightarrow  \exists c=a+b\in C,c>X+Y>M'
-\Rightarrow \sup C=\sup A+\alpha \sup B
+\implies  \exists c=a+b\in C,c>X+Y>M'
+\implies \sup C=\sup A+\alpha \sup B
 \end{gathered}
 $$
 
@@ -505,7 +505,7 @@ $$
 $$
 \begin{gathered}
 A\subset B \\
-\Rightarrow \sup A\le \sup B,\inf A \ge \inf B
+\implies \sup A\le \sup B,\inf A \ge \inf B
 \end{gathered}
 $$
 
@@ -522,12 +522,12 @@ $$
 a\in A \stackrel{A\subset B}{\Longrightarrow} a\in B \\
 a>\sup B
 \end{cases}
-\Rightarrow \text{False}  \\
+\implies \text{False}  \\
 \therefore \sup A\le \sup B
 \end{gathered}
 $$
 
-取 $C=-A,D=-B,C\subset D,\sup C\le \sup D \Rightarrow \inf A\ge \inf B$,
+取 $C=-A,D=-B,C\subset D,\sup C\le \sup D \implies \inf A\ge \inf B$,
 
 </div>
 
@@ -538,7 +538,7 @@ $$
 $$
 \begin{gathered}
 \forall x\in A,y\in B,x\le y \\
-\Rightarrow \sup A\le \inf B
+\implies \sup A\le \inf B
 \end{gathered}
 $$
 
@@ -574,7 +574,7 @@ $$
 \vert \sqrt x-\sqrt {x_0} \vert  \\
 ={\left \vert \dfrac{x-x_0}{\sqrt x+\sqrt {x_0}} \right \vert}   \\
 \le \dfrac{\delta}{\sqrt{x_0} }  \\
-\therefore \delta:=\dfrac{\sqrt{x_0}\epsilon}{2} \Rightarrow  \\
+\therefore \delta:=\dfrac{\sqrt{x_0}\epsilon}{2} \implies  \\
 \forall \epsilon,x\in N(x_0,\delta),\vert \sqrt x-\sqrt {x_0} \vert <\epsilon
 \end{gathered}
 $$
@@ -583,7 +583,7 @@ if $x_0=0,\sqrt x_0=0$
 
 $$
 \begin{gathered}
-\delta:=\dfrac{\epsilon^2}{4} \Rightarrow \forall \epsilon,x\in N(x_0,\delta), \\
+\delta:=\dfrac{\epsilon^2}{4} \implies \forall \epsilon,x\in N(x_0,\delta), \\
 \vert \sqrt x-\sqrt {x_0} \vert =\dfrac{\epsilon}{4} <\epsilon
 \end{gathered}
 $$
@@ -623,7 +623,7 @@ $$
 
 \therefore \forall \epsilon \in (0,1),
 \delta:=\dfrac{4}{\epsilon^2}, \\
-x>\delta \Rightarrow \sqrt{x+1}-\sqrt{ x-1 } <\dfrac{1}{\sqrt{ x } } =\dfrac{\epsilon}{2} < \epsilon
+x>\delta \implies \sqrt{x+1}-\sqrt{ x-1 } <\dfrac{1}{\sqrt{ x } } =\dfrac{\epsilon}{2} < \epsilon
 \\
 \text{Q.E.D}
 \end{gathered}

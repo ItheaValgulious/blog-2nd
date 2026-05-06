@@ -164,7 +164,7 @@ $$
 $$
 \begin{gathered}
 x_1=\sin x_0>0,x_{n+1}=\sin x_n \\
- \Rightarrow \lim_{n \to \infty} \sqrt{ \dfrac{n}{3}  } x_n=1
+ \implies \lim_{n \to \infty} \sqrt{ \dfrac{n}{3}  } x_n=1
 \end{gathered}
 $$
 
@@ -180,7 +180,7 @@ $$
 =\lim_{n \to \infty} \dfrac{x_n^2-\sin^2(x_n)}{x_n^2\sin^2x_n} \\
 =\lim_{n \to \infty} \dfrac{x_n^2-(x_n-\dfrac{x_n^3}{6} +O(x^5))^2}{x_n^2(x_n-\dfrac{x_n^3}{6} +O(x^5))^2}    \\
 =\lim_{n \to \infty} \dfrac{\dfrac{x_n^4}{3} +o(x_n^4)}{x_n^4+o(x_n^4)} =\dfrac{1}{3}  \\
-\Rightarrow \lim_{n \to \infty} \sqrt{ \dfrac{n}{3}  } x_n=1
+\implies \lim_{n \to \infty} \sqrt{ \dfrac{n}{3}  } x_n=1
 \end{gathered}
 $$
 
@@ -195,7 +195,7 @@ $$
 $$
 \begin{gathered}
 f\in D^2[a,b],f'_+(a)=f'_-(b)=0 \\
-\Rightarrow \exists \xi \in (a,b) \ s.t.\ 
+\implies \exists \xi \in (a,b) \ s.t.\ 
 \vert f''(\xi) \vert \ge \dfrac{4}{(b-a)^2} \vert f(b)-f(a) \vert 
 \end{gathered}
 $$
@@ -212,13 +212,13 @@ f(a)+\dfrac{f''_+(a)}{2}(x-a)^2,x\in (-\infty,a) \\
 f(b)+\dfrac{f''_-(b)}{2}(x-b)^2,\in (b,+\infty)
 \end{cases} \\
 g(x)=g(x_0)+(x-x_0)g'(x_0)+\dfrac{(x-x_0)^2g''(\xi)}{2}  \\
-x=\dfrac{a+b}{2},x_0=a,b \Rightarrow  \\
+x=\dfrac{a+b}{2},x_0=a,b \implies  \\
 g(\dfrac{a+b}{2})=g(a)+\dfrac{(a-b)^2g''(\xi_1)}{8} \\
 g(\dfrac{a+b}{2})=g(b)+\dfrac{(a-b)^2g''(\xi_2)}{8}  \\
-\Rightarrow \vert \dfrac{g''(\xi_1)-g''(\xi_2)}{2} \vert =\dfrac{4}{(b-a)^2} \vert g(b)-g(a) \vert  \\
+\implies \vert \dfrac{g''(\xi_1)-g''(\xi_2)}{2} \vert =\dfrac{4}{(b-a)^2} \vert g(b)-g(a) \vert  \\
 \max \vert g''(\xi_1) \vert ,\vert g''(\xi_2) \vert \ge \vert \dfrac{g''(\xi_1)-g''(\xi_2)}{2}  \vert  \\
-\Rightarrow \max \vert g''(\xi_1) \vert ,\vert g''(\xi_2) \vert\ge \dfrac{4}{(b-a)^2} \vert g(b)-g(a) \vert \\
-\Rightarrow \max \vert f''(\xi_1) \vert ,\vert f''(\xi_2) \vert\ge \dfrac{4}{(b-a)^2} \vert f(b)-f(a) \vert
+\implies \max \vert g''(\xi_1) \vert ,\vert g''(\xi_2) \vert\ge \dfrac{4}{(b-a)^2} \vert g(b)-g(a) \vert \\
+\implies \max \vert f''(\xi_1) \vert ,\vert f''(\xi_2) \vert\ge \dfrac{4}{(b-a)^2} \vert f(b)-f(a) \vert
 \end{gathered}
 $$
 
@@ -233,7 +233,7 @@ $$
 $$
 \begin{gathered}
 f\in C^2[a,b],f(a)=f(b)=0 \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \max_{x\in [a,b]}\vert f(x) \vert \le \dfrac{1}{8} (b-a)^2\max_{x\in [a,b]}\vert f''(x) \vert  \\
 \max_{x\in [a,b]} \vert f'(x) \vert \le \dfrac{1}{2} (b-a)\max_{x\in [a,b]}\vert f''(x) \vert 
 \end{cases}
@@ -253,13 +253,13 @@ $$
 \text{if } x_0\in \{ a,b \}: \text{Obviously}  \\
 f(x_0)\in (a,b),f'(x_0)=0 \\
 f(x)=f(x_0)+\dfrac{f''(\xi)}{2} (x-x_0)^2 \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 0=f(a)=f(x_0)+\dfrac{f''(\xi_1)}{2} (a-x_0)^2 \\
 0=f(b)=f(x_0)+\dfrac{f''(\xi_2)}{2} (b-x_0)^2
 \end{cases} \\
 (b-x_0)+(x_0-a)=b-a \\
-\Rightarrow \min (a-x_0)^2,(b-x_0)^2 \le (\dfrac{a-b}{2} )^2 \\
-\Rightarrow \vert f(x)\vert \le \dfrac{1}{8} (b-a)^2(\max \vert f''(\xi_1)\vert ,\vert f''(\xi_2)\vert) \\
+\implies \min (a-x_0)^2,(b-x_0)^2 \le (\dfrac{a-b}{2} )^2 \\
+\implies \vert f(x)\vert \le \dfrac{1}{8} (b-a)^2(\max \vert f''(\xi_1)\vert ,\vert f''(\xi_2)\vert) \\
 \le \dfrac{1}{8} (b-a)^2\max_{x\in [a,b]}\vert f''(x) \vert
 \end{gathered}
 $$
@@ -274,7 +274,7 @@ $$
 0=f(b)=f(x)+f'(x)(b-x)+\dfrac{f''(\xi_2)}{2} (b-x)^2 \\
 
 \end{cases} \\
-\Rightarrow
+\implies
 f'(x)(b-a)=\dfrac{f''(\xi_1)}{2} (a-x)^2-\dfrac{f''(\xi_2)}{2} (b-x)^2 \\
 \vert f'(x) \vert \le \dfrac{1}{2(b-a)} \vert f''(\xi_1)(a-x)^2-f''(\xi_2)(b-x)^2 \vert  \\
 \le \dfrac{1}{2(b-a)}M\vert (a-x)^2+(b-x)^2 \vert  \\
@@ -297,7 +297,7 @@ $$
 f(x),g(x)\in C^{+\infty}(-1,1) \\
 \forall n\in{\mathbb N},\vert f^{(n)}(x)-g^{(n)}(x) \vert \le n! \vert x \vert 
 \end{cases} \\
-\Rightarrow f(x)=g(x),x\in (-1,1)
+\implies f(x)=g(x),x\in (-1,1)
 \end{gathered}
 $$
 
@@ -309,7 +309,7 @@ $$
 \begin{gathered}
 F(x)=f(x)-g(x) \\
 \vert F^{(n)}(x) \vert \le n!\vert x \vert  \\ \\
-n=0 \Rightarrow \vert F(x) \vert \le \vert x \vert,F(0)=0 \\
+n=0 \implies \vert F(x) \vert \le \vert x \vert,F(0)=0 \\
 \vert F(x) \vert={\left \vert \sum _{i = 0} ^{n}  \dfrac{F^{(i)}(0)}{i!} x^i+\dfrac{F^{(n+1)}(\xi)}{(n+1)!} x^{n+1} \right \vert} \\
 \le \vert \dfrac{F^{n+1}(\xi)}{(n+1)!}x^{n+1} \vert  \\
 \le \vert x^{n+2} \vert \\
@@ -334,7 +334,7 @@ f(x)\in D^2[0,1] \\
 f(0)=f(1)=0 \\
 \min_{x\in [0,1]}f(x)=-1
 \end{cases} \\
-\Rightarrow \exists \xi,f''(\xi)\ge 8
+\implies \exists \xi,f''(\xi)\ge 8
 \end{gathered}
 $$
 
@@ -350,14 +350,14 @@ $$
 \text{if } x_0\in \{ 0,1 \}: \text{Obviously}  \\
 f(x_0)\in (0,1),f'(x_0)=0 \\
 f(x)=f(x_0)+\dfrac{f''(\xi)}{2} (x-x_0)^2 \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 0=f(0)=f(x_0)+\dfrac{f''(\xi_1)}{2} x_0^2 \\
 0=f(1)=f(x_0)+\dfrac{f''(\xi_2)}{2} (1-x_0)^2
 \end{cases} \\
 (-x_0)+(x_0-1)=0+1 \\
-\Rightarrow \min x_0^2,(1-x_0)^2 \le (\dfrac{0+1}{2} )^2 \\
-\Rightarrow \vert f(x)\vert \le \dfrac{1}{8} (\max \vert f''(\xi_1)\vert ,\vert f''(\xi_2)\vert) \\
-\Rightarrow \text{let } f(x)=-1,\exists \xi,f''(\xi)\ge 8
+\implies \min x_0^2,(1-x_0)^2 \le (\dfrac{0+1}{2} )^2 \\
+\implies \vert f(x)\vert \le \dfrac{1}{8} (\max \vert f''(\xi_1)\vert ,\vert f''(\xi_2)\vert) \\
+\implies \text{let } f(x)=-1,\exists \xi,f''(\xi)\ge 8
 \end{gathered}
 $$
 
@@ -376,10 +376,10 @@ $$
 f(x)\in D^n(x_0-\delta,x_0+\delta) \\
 \forall i \in [2,n-1],f^{(i)}(x_0)=0 \\
 f^{(n)}(x_0)\ne 0,f^{(n)}(x) \text{ is continuous at } x_0 \\
-0<\vert h \vert <\delta \Rightarrow f(x_0+h)-f(x_0)=hf'(x_0+\theta h),\theta\in (0,1) \\
+0<\vert h \vert <\delta \implies f(x_0+h)-f(x_0)=hf'(x_0+\theta h),\theta\in (0,1) \\
 
 \end{cases} \\
-\Rightarrow \lim_{h \to 0} \theta = (\dfrac{1}{n})^{\frac{1}{n-1} }
+\implies \lim_{h \to 0} \theta = (\dfrac{1}{n})^{\frac{1}{n-1} }
 \end{gathered}
 $$
 
@@ -392,8 +392,8 @@ $$
 f(x_0+h)-f(x_0)=\dfrac{f^{(n)}(\xi_1)h^n}{n!}  \\
 f'(x_0+\theta h)=f^{(n)}(\xi_2)\dfrac{(\theta h)^{n-1}}{(n-1)!}  \\
 f(x_0+h)-f(x_0)=hf'(x_0+\theta h) \\
-\Rightarrow f^{(n)}(\xi_2)\dfrac{\theta^{n-1}}{(n-1)!}=\dfrac{f^{(n)}(\xi_1)}{n!} \\
-\Rightarrow \theta = (\dfrac{f^{(n)}(\xi_1)}{f^{(n)}(\xi_2)})^{\frac1{n-1}}(\dfrac{1}{n} )^{\frac1{n-1}} \\
+\implies f^{(n)}(\xi_2)\dfrac{\theta^{n-1}}{(n-1)!}=\dfrac{f^{(n)}(\xi_1)}{n!} \\
+\implies \theta = (\dfrac{f^{(n)}(\xi_1)}{f^{(n)}(\xi_2)})^{\frac1{n-1}}(\dfrac{1}{n} )^{\frac1{n-1}} \\
 \lim_{h \to 0} \theta = (\dfrac{1}{n}) ^{\frac1{n-1}}
 
 \end{gathered}
@@ -566,7 +566,7 @@ $$
 =\int e^xd\sin x \\
 =e^x\sin x-\int e^x\sin x \\
 =e^x\sin x+e^x\cos x-\int e^x\cos x \\
-\Rightarrow \int e^x\cos xdx=\dfrac{e^x(\sin x+\cos x)}{2} +C
+\implies \int e^x\cos xdx=\dfrac{e^x(\sin x+\cos x)}{2} +C
 \end{gathered}
 $$
 
@@ -922,7 +922,7 @@ I_n=\int \sin^n tdt \\
 I_n=-\sin^{n-1}t\cos t+\int (n-1)\sin^{n-2}t\cos^2 t \\
 =-\sin^{n-1}t\cos t+\int(n-1)\sin^{n-2}t(1-\sin^2 t)dt \\
 =-\sin^{n-1}t\cos t+(n-1)I_{n-2}-(n-1)I_n \\
-\Rightarrow I_n=-\dfrac{1}{n} \sin^{n-1}t\cos t+\dfrac{n-1}{n} I_{n-2}
+\implies I_n=-\dfrac{1}{n} \sin^{n-1}t\cos t+\dfrac{n-1}{n} I_{n-2}
 \end{gathered}
 $$
 

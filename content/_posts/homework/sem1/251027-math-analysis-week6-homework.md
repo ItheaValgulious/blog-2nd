@@ -33,7 +33,7 @@ $$
 \begin{gathered}
 f(x)=1-x (x\ne -1) \\
 f''(x)=0 \\
-\Rightarrow \text{convex  in } (-\infty,-1),(-1,+\infty) \\
+\implies \text{convex  in } (-\infty,-1),(-1,+\infty) \\
 \forall x \ne -1,x \text{ is a inflection point} 
 \end{gathered}
 $$
@@ -48,7 +48,7 @@ $$
 
 $$
 \begin{gathered}
-a,b>0 \Rightarrow  \\
+a,b>0 \implies  \\
 (a+b)\ln \dfrac{a+b}{2} \le a\ln a+b\ln b
 \end{gathered}
 $$
@@ -60,9 +60,9 @@ $$
 $$
 \begin{gathered}
 f(x)=x\ln x \\
-f''(x)=\dfrac{1}{x} \ge 0 \Rightarrow f \text{ is convex in } (0,+\infty) \\
-\Rightarrow f(a)+f(b)\ge 2f(\dfrac{a+b}{2} )  \\
-\Rightarrow (a+b)\ln \dfrac{a+b}{2} \le a\ln a+b\ln b
+f''(x)=\dfrac{1}{x} \ge 0 \implies f \text{ is convex in } (0,+\infty) \\
+\implies f(a)+f(b)\ge 2f(\dfrac{a+b}{2} )  \\
+\implies (a+b)\ln \dfrac{a+b}{2} \le a\ln a+b\ln b
 \end{gathered}
 $$
 
@@ -76,7 +76,7 @@ $$
 
 $$
 \begin{gathered}
-p,q>0;a,b\ge 0 \Rightarrow  \\
+p,q>0;a,b\ge 0 \implies  \\
 (\dfrac{a}{p} )^p(\dfrac{b}{q} )^q\le (\dfrac{a+b}{p+q} )^{p+q}
 \end{gathered}
 $$
@@ -90,17 +90,17 @@ $ab=0$显然成立,考虑$a,b\ne 0$.
 $$
 \begin{gathered}
 (\dfrac{a}{p} )^p(\dfrac{b}{q} )^q\le (\dfrac{a+b}{p+q} )^{p+q} \\
-\Leftrightarrow 
+\iff 
 p\ln a-p\ln p +q\ln b-q\ln q\le (p+q)(\ln (a+b)-\ln (p+q)) \\
-\Leftrightarrow 
+\iff 
 p(\ln a-\ln (a+b)+\ln(p+q)-\ln p)+q(\ln b-\ln (a+b)+\ln (p+q)-\ln q)\le 0 \\ \\
 \xLeftrightarrow{\text{let } x=\dfrac{p}{p+q} ,y=\dfrac{a}{a+b} }
 \\
  x(\ln y-\ln x)+(1-x)(\ln (1-y)-\ln (1-x))\le 0 \\
 f(y)=x\ln y+(1-x)\ln (1-y) \\
 f'(y)=\dfrac{x}{y}-\dfrac{1-x}{1-y}=\dfrac{x-y}{y(1-y)}  \\
-\Rightarrow \operatorname{sign} f'(y)=-\operatorname{sign} (y-x),f(x) \text{ is a maximum } \\
-\Rightarrow f(y)\le f(y)=0 \\
+\implies \operatorname{sign} f'(y)=-\operatorname{sign} (y-x),f(x) \text{ is a maximum } \\
+\implies f(y)\le f(y)=0 \\
 \\
 \text{Q.E.D}
 \end{gathered}
@@ -115,7 +115,7 @@ $$
 $$
 \begin{gathered}
 \lambda_i>0,x_i>0,\sum _{i = 1} ^{n}  \lambda_i=1 \\
-\Rightarrow \prod _{i = 1} ^{n}  x_i^{\lambda_i}\le \sum _{i = 1} ^{n}  \lambda_i x_i
+\implies \prod _{i = 1} ^{n}  x_i^{\lambda_i}\le \sum _{i = 1} ^{n}  \lambda_i x_i
 \end{gathered}
 $$
 
@@ -141,7 +141,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is convex in } [a,b],\exists c\in (a,b):f(a)=f(c)=f(b) \\
-\Rightarrow \forall x\in [a,b],f(x)=f(a)
+\implies \forall x\in [a,b],f(x)=f(a)
 \end{gathered}
 $$
 
@@ -156,9 +156,9 @@ $$
 \dfrac{f(x)-f(c)}{x-c} \le \dfrac{f(c)-f(b)}{c-b} =0 \\
 \dfrac{f(x)-f(c)}{x-c} \ge \dfrac{f(c)-f(a)}{c-a} =0
 \end{cases} \\
-\Rightarrow f(x)=f(c) \\
+\implies f(x)=f(c) \\
 \text{same for } \forall x>c,f(x)=c \\
-\Rightarrow \forall x\in [a,b],f(x)=f(a)
+\implies \forall x\in [a,b],f(x)=f(a)
 \end{gathered}
 $$
 
@@ -176,7 +176,7 @@ $$
 a<b<c<d \\
 f(x) \text{ is convex in } [a,c] \text{ and }  [b,d] \\
 \end{cases} \\
-\Rightarrow f(x) \text{ is convex in [a,d]} 
+\implies f(x) \text{ is convex in [a,d]} 
 \end{gathered}
 $$
 
@@ -194,7 +194,7 @@ f(\lambda x_1+(1-\lambda)x_2)\le \lambda  f(x_1)+(1-\lambda)f(x_2) \\
 \text{let } m=\lambda x_1+(1-\lambda)x_2 \\
 \text{if } m \in [a,c] \\
 \dfrac{f(x_1)-f(c)}{x_1-c} \le \dfrac{f(x_1)-f(x_2)}{x_1-x_2}  \\
-\Rightarrow 
+\implies 
 f(m)\le \mu f(x_1)+(1-\mu)f(c) \\
 =f(x_1)+\dfrac{f(x_1)-f(c)}{x_1-c} (m-x_1) \\
 \le f(x_1)+\dfrac{f(x_1)-f(x_2)}{x_1-x_2} (m-x_1) \\
@@ -215,7 +215,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is convex in } I \\
-\Leftrightarrow \forall c\in I,\exists a,f(x)\ge a(x-c)+f(c)
+\iff \forall c\in I,\exists a,f(x)\ge a(x-c)+f(c)
 \end{gathered}
 $$
 
@@ -233,13 +233,13 @@ $$
 f(x_1)\ge a(x_1-x_3)+f(x_3) \\
 f(x_2)\ge a(x_2-x_3)+f(x_3) \\
 \end{cases} \\
-\Rightarrow 
+\implies 
 \begin{cases}
 a\le \dfrac{f(x_1)-f(x_3)}{x_1-x_3}  \\
 a\ge \dfrac{f(x_2)-f(x_3)}{x_2-x_3} 
 \end{cases} \\
-\Rightarrow \dfrac{f(x_1)-f(x_3)}{x_1-x_3} \ge \dfrac{f(x_2)-f(x_3)}{x_2-x_3}  \\
-\Leftrightarrow f(x_3)\le \lambda f(x_1)+(1-\lambda)f(x_2)
+\implies \dfrac{f(x_1)-f(x_3)}{x_1-x_3} \ge \dfrac{f(x_2)-f(x_3)}{x_2-x_3}  \\
+\iff f(x_3)\le \lambda f(x_1)+(1-\lambda)f(x_2)
 
 
 
@@ -253,13 +253,13 @@ $$
 \text{let } S=\{ \dfrac{f(x)-f(c)}{x-c} \vert x<c  \}  \\
 T=\{ \dfrac{f(x)-f(c)}{x-c} \vert x>c  \}  \\
 \forall s\in S,t\in T:s<t \\
-\Rightarrow \sup S\le \inf T \\
+\implies \sup S\le \inf T \\
 \text{let } a\in [\sup S,\inf T] \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \forall x<c,\dfrac{f(x)-f(c)}{x-c} <a \\
 \forall x>c,\dfrac{f(x)-f(c)}{x-c} >a
 \end{cases} \\
-\Rightarrow \forall x,f(x)>a(x-c)
+\implies \forall x,f(x)>a(x-c)
 \end{gathered}
 $$
 
@@ -274,7 +274,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is convex in } [a,b] \\
-\Rightarrow \forall x\in[a,b],f(x)\le \max(f(a),f(b))
+\implies \forall x\in[a,b],f(x)\le \max(f(a),f(b))
 \end{gathered}
 $$
 
@@ -286,7 +286,7 @@ $$
 \begin{gathered}
 \text{let } m=\max(f(a),f(b)) \\
 \lambda=\dfrac{x-a}{b-a} \\
-\Rightarrow 
+\implies 
 f(x)\le \lambda f(a)+(1-\lambda)f(b) \\
 \le \lambda m + (1-\lambda) m \\
 =m \\
@@ -304,7 +304,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is convex in } [a,b] \\
-\Rightarrow f(x) \text{ is bounded in } [a,b]
+\implies f(x) \text{ is bounded in } [a,b]
 \end{gathered}
 $$
 
@@ -316,10 +316,10 @@ $$
 \begin{gathered}
 \text{According to T8,} f(x)\le M_1=\max (f(a),f(b)) \\ \text{let } c\in (a,b) \\
 \forall x<c,\dfrac{f(c)-f(x)}{c-x} \le \dfrac{f(b)-f(c)}{b-c}  \\
-\Rightarrow f(x)\ge f(c)-\dfrac{f(b)-f(c)}{b-c} (c-x) \\
+\implies f(x)\ge f(c)-\dfrac{f(b)-f(c)}{b-c} (c-x) \\
 \ge f(c)-\dfrac{f(b)-f(c)}{b-c} (c-a)=M_2 \\
 \text{same for } x>c,f(x)\ge f(c)-\dfrac{f(c)-f(a)}{c-a} (b-c)=M_3 \\
-\Rightarrow \vert f(x) \vert \le \max (\vert M_1 \vert ,\vert M_2 \vert ,\vert M_3 \vert) =M
+\implies \vert f(x) \vert \le \max (\vert M_1 \vert ,\vert M_2 \vert ,\vert M_3 \vert) =M
 \end{gathered}
 $$
 
@@ -451,7 +451,7 @@ $$
 f(x)\in C^2(a,+\infty) \\
 \lim_{x \to +\infty} (f(x)+2f'(x)+f''(x))=l
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \lim_{x \to +\infty} f(x)=l \\
 \lim_{x \to +\infty} f'(x)=\lim_{x \to +\infty} f''(x)=0
 \end{cases}
@@ -465,16 +465,16 @@ $$
 $$
 \begin{gathered}
 \text{let } F(x)=e^xf(x) \\
-\Rightarrow 
+\implies 
 \begin{cases}
 F'(x)=e^x(f(x)+f'(x)) \\
 F''(x)=e^x (f(x)+2f'(x)+f''(x))
 \end{cases} \\
-\Rightarrow \lim_{x \to +\infty} \dfrac{F''(x)}{e^x}=l \\
+\implies \lim_{x \to +\infty} \dfrac{F''(x)}{e^x}=l \\
 \lim_{x \to +\infty} \dfrac{F(x)}{e^x}  \\
 =\lim_{x \to +\infty} \dfrac{F'(x)}{e^x} \\
 =\lim_{x \to +\infty} \dfrac{F''(x)}{e^x} =l \\
-\Rightarrow 
+\implies 
 \begin{cases}
 \lim_{x \to +\infty} f(x)=l \\
 \lim_{x \to +\infty} f'(x)=\lim_{x \to +\infty} \dfrac{F'(x)}{e^x} -f(x)=0 \\
@@ -539,7 +539,7 @@ $$
 \theta^2=\dfrac{1}{x^2} -\dfrac{1}{\arcsin^2(x)}  \\
 =\dfrac{\arcsin^2(x)-x^2}{x^2\arcsin^2(x)}  \\
 \text{let } t=\arcsin(x),x=\sin t \\
-\Rightarrow \theta^2=\dfrac{t^2-\sin^2 t}{t^2\sin^2 t}  \\
+\implies \theta^2=\dfrac{t^2-\sin^2 t}{t^2\sin^2 t}  \\
 \lim_{x \to 0} \theta^2 \\
 =\lim_{t \to 0} \dfrac{t^2-\sin^2t}{t^2\sin^2t}  \\
 =\lim_{t \to 0} \dfrac{t^2-\sin^2 t}{t^4}   \\
@@ -547,7 +547,7 @@ $$
 =\lim_{t \to 0} \dfrac{1-\cos2t}{6t^2}  \\
 =\lim_{t \to 0} \dfrac{t^2}{3t^2} \\
 =\dfrac{1}{3} \\
-\Rightarrow \lim_{x \to 0} \theta = \dfrac{\sqrt 3}{3} 
+\implies \lim_{x \to 0} \theta = \dfrac{\sqrt 3}{3} 
 \end{gathered}
 $$
 
@@ -578,16 +578,16 @@ $$
 \begin{gathered}
 \text{let } f(x)=\ln x-\dfrac{x}{e}  \\
 f'(x)=\dfrac{1}{x} -\dfrac{1}{e}  \\
-\Rightarrow \begin{cases}
-x<e \Rightarrow f'(x)>0,f(x) \text{ is increasing}  \\
-x>e \Rightarrow f'(x)<0,f(x) \text{ is decreasing}  \\
+\implies \begin{cases}
+x<e \implies f'(x)>0,f(x) \text{ is increasing}  \\
+x>e \implies f'(x)<0,f(x) \text{ is decreasing}  \\
 f(e)=0 \text{ is maximum of } f \\
 \end{cases} \\
 \begin{cases}
 \lim_{x \to +\infty} f(x)=-\infty \\
 \lim_{x \to 0^+} f(x)=-\infty    \\
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \vert S \vert =0,k>0 \\
 \vert S \vert =1,k=0 \\
 \vert S \vert =2,k<0
@@ -606,7 +606,7 @@ $$
 
 $$
 \begin{gathered}
-x>0 \Rightarrow \exists !x_0,kx+\dfrac{1}{x_0^2} =1 \\
+x>0 \implies \exists !x_0,kx+\dfrac{1}{x_0^2} =1 \\
 \text{solve } k
 \end{gathered}
 $$
@@ -619,16 +619,16 @@ $$
 \begin{gathered}
 \text{let } f(x)=\dfrac{x^2-1}{x^3} \\
 f'(x)=\dfrac{3-x^2}{x^4} \\
-\Rightarrow \begin{cases}
-x<\sqrt 3 \Rightarrow f'(x)>0,f(x) \text{ is increasing}  \\
-x>\sqrt 3 \Rightarrow f'(x)<0,f(x) \text{ is decreasing}  \\
+\implies \begin{cases}
+x<\sqrt 3 \implies f'(x)>0,f(x) \text{ is increasing}  \\
+x>\sqrt 3 \implies f'(x)<0,f(x) \text{ is decreasing}  \\
 f(\sqrt 3)=\dfrac{2\sqrt 3}{9} \text{ is maximum} 
 \end{cases} \\
 \begin{cases}
 \lim_{x \to 0^+} f(x)=-\infty \\
 \lim_{x \to +\infty} f(x)=0
 \end{cases} \\
-\Rightarrow k \in \{ \dfrac{2\sqrt 3}{9}  \} \cup (-\infty,0]
+\implies k \in \{ \dfrac{2\sqrt 3}{9}  \} \cup (-\infty,0]
 
 
 \end{gathered}

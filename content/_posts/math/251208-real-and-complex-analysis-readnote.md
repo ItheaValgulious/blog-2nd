@@ -42,7 +42,7 @@ $f:X\to Y$是连续函数当且仅当任意开集的原像是开集.
 度量是一个二元函数$d(x,y)$满足
 - $d(x,y)=d(y,x)$
 - $d(x,y)+d(y,z)\ge d(x,z)$
-- $d(x,y)=0 \Leftrightarrow x=y$
+- $d(x,y)=0 \iff x=y$
 - $d(x,y)\in [0,+\infty)$
 
 $B(x,r)=\{ y \vert d(x,y)<r\}$定义为开球.由开球做拓扑基生成的拓扑是度量空间.
@@ -71,7 +71,7 @@ $\sigma \text{-algebra}$
 $X$的子集族$m$满足
 
 - $X\in m$
-- $S\in m \Rightarrow S^C \in m$
+- $S\in m \implies S^C \in m$
 - $m$中元素任意可数交(并)在$m$中
 
 定义了$\sigma$-algebra的集合$X$为测度空间,$m$中的元素为可测集.
@@ -201,7 +201,7 @@ $\beta$ 称为 $\{a_n\}$ 的上极限 (upper limit)，记为 $\limsup_{n \to \in
 
 由上一条,只要证明对所有的$(a,+\infty]$满足原像可测.
 
-对$g$,$g(x)>a \Leftrightarrow \exists k,f_k(x)>a$,于是$g^{-1}((a,+\infty])=\cup_i f_k^{-1}((a,+\infty])$可测.
+对$g$,$g(x)>a \iff \exists k,f_k(x)>a$,于是$g^{-1}((a,+\infty])=\cup_i f_k^{-1}((a,+\infty])$可测.
 
 而$h(x)=\inf_i \sup_{j>i} f_j(x)$,于是你用两次$g$的结论即可.
 
@@ -315,13 +315,13 @@ $s$ 可测当且仅当每个 $A_i$ 可测。
 
 <div class='pbox'>
 
-对(a),$s\le f \Rightarrow s\le g$,显然.
+对(a),$s\le f \implies s\le g$,显然.
 
 对(b),对每个$s\le f$,都有$\int_A sd\mu\le \int_b sd\mu$,显然.
 
 对(c),同样是对每个简单函数成立,然后再分析上确界性质成立.(e),(f)是一样
 
-(d)是因为$0\le s\le f \Rightarrow s=0$.
+(d)是因为$0\le s\le f \implies s=0$.
 
 </div>
 
@@ -457,8 +457,8 @@ $$
 \begin{gathered}
 \forall n\ge k \\
 g_k\le f_n \\
-\Rightarrow \int_X g_k(x)d\mu\le \int_X f_n(x)d\mu \\
-\Rightarrow \int_X g_k(x)d\mu\le \inf_{n\ge k} f_n(x)d\mu
+\implies \int_X g_k(x)d\mu\le \int_X f_n(x)d\mu \\
+\implies \int_X g_k(x)d\mu\le \inf_{n\ge k} f_n(x)d\mu
 \end{gathered}
 $$
 
@@ -604,7 +604,7 @@ $$
 \begin{gathered}
 \int_X 2gd\mu \stackrel{\text{Fatou's lemma}}{\le} \liminf_n \int_X (2g-\vert f_n-f \vert )d\mu\\
 =\int_X 2gd\mu+\liminf -\int_X \vert f_n-f \vert d\mu \\
-\Rightarrow \limsup \int_X \vert f_n-f \vert d\mu \le 0
+\implies \limsup \int_X \vert f_n-f \vert d\mu \le 0
 \end{gathered}
 $$
 
@@ -703,7 +703,7 @@ $$
 
 取$s\ge cf,c\in (0,1)$,$c\int_E fd\mu\le \int_E sd\mu=\sum_i \alpha_i \mu(A_i)$.
 
-则$\alpha_i\ne 0 \Rightarrow \mu(A_i)=0$,于是$s$几乎处处为$0$.然后$s$为$0$的地方$f$一定为$0$.
+则$\alpha_i\ne 0 \implies \mu(A_i)=0$,于是$s$几乎处处为$0$.然后$s$为$0$的地方$f$一定为$0$.
 
 (b)
 
@@ -714,8 +714,8 @@ $$
 $$
 \begin{gathered}
 \alpha \int_X fd\mu=\vert \int_X fd\mu \vert \\
-\Rightarrow \int_X \alpha fd\mu=\int_X \Re(\alpha f)d\mu=\int_X \vert f \vert d\mu \\
-\Rightarrow \int_X (\vert f \vert -\Re(\alpha f))d\mu=0
+\implies \int_X \alpha fd\mu=\int_X \Re(\alpha f)d\mu=\int_X \vert f \vert d\mu \\
+\implies \int_X (\vert f \vert -\Re(\alpha f))d\mu=0
 \end{gathered}
 $$
 
@@ -888,7 +888,7 @@ $$ K \subset V \subset \bar{V} \subset U. $$
 
 如果$U$是全集问题就解决了,但问题是$\overline G\subset U$不满足.
 
-此时考虑$U^C$,对$U^C$中的任何一个点$u_i$可以找一个邻域$U_i$和包含$K$的开集$W_i$不交,$U_i\cap W_i=\varnothing \Rightarrow u_i\notin \overline {W_i}$(这是因为$u_i$如果在边界上那么它的邻域$U_i$需要与$W_i$相交).
+此时考虑$U^C$,对$U^C$中的任何一个点$u_i$可以找一个邻域$U_i$和包含$K$的开集$W_i$不交,$U_i\cap W_i=\varnothing \implies u_i\notin \overline {W_i}$(这是因为$u_i$如果在边界上那么它的邻域$U_i$需要与$W_i$相交).
 
 **此时考虑 $\{ \overline{G}\cap \overline{W_i}\cap U^C \}$ 这组集合**,紧集交闭集是紧的于是它们是紧的,且它们交集为空,于是其中有限个交集为空,也就意味着$\overline{G}\cap \bigcap \overline{W_i}$与$U^C$交为空,于是取$V=G\cap \bigcap W_i$即可.
 
@@ -1057,8 +1057,8 @@ $\mu(E)\le \sum_i \mu(E_i),\bigcup E_i=E,E_i\cap E_j=\emptyset$
 $$
 \begin{gathered}
 \Lambda f\le \mu(\bigcup_{i\in C} V_i)\le \sum_{i\in C}\mu(V_i)\le \sum_{i=1}^\infty\mu(E_i)+\epsilon \\
-\Rightarrow \mu(E)\le \sum_{i=1}^\infty \mu(E_i)+\epsilon \\
-\Rightarrow \mu(E)\le \sum_{i=1}^\infty \mu(E_i)
+\implies \mu(E)\le \sum_{i=1}^\infty \mu(E_i)+\epsilon \\
+\implies \mu(E)\le \sum_{i=1}^\infty \mu(E_i)
 \end{gathered}
 $$
 
@@ -1077,9 +1077,9 @@ $$
 $$
 \begin{gathered}
 f\le g \\
-\Rightarrow \Lambda f\le \Lambda g \\
-\Rightarrow \sup \Lambda f\le \inf \Lambda g \\
-\Rightarrow \mu(K)\le \mu(V)\le \inf\Lambda g<\infty
+\implies \Lambda f\le \Lambda g \\
+\implies \sup \Lambda f\le \inf \Lambda g \\
+\implies \mu(K)\le \mu(V)\le \inf\Lambda g<\infty
 \end{gathered}
 $$
 
@@ -1108,7 +1108,7 @@ $M_f$中的元素满足测度的可数可加性:
 $$
 \begin{gathered}
 E=\bigcup E_i,E_i\cap E_j=\emptyset \\
-\Rightarrow 
+\implies 
 \mu(E)=\sum _{i = 1} ^{\infty}  \mu(E_i)
 \end{gathered}
 $$
@@ -1411,7 +1411,7 @@ $R^k$ 中的开集是可数个不相交盒子的并。
 
 <div class='pbox'>
 
-考虑一个等价关系 $x\sim y \Leftrightarrow x-y\in Q$,则令$E=R/\sim$,你发现$E$有$E+p\cap E+q=\emptyset,p,q\in Q$,且任意$r\in R,\exists p,r\in (E+p)$
+考虑一个等价关系 $x\sim y \iff x-y\in Q$,则令$E=R/\sim$,你发现$E$有$E+p\cap E+q=\emptyset,p,q\in Q$,且任意$r\in R,\exists p,r\in (E+p)$
 
 然后令$A_p=A\cap (E+p)$,显然$A_p$不交且$\bigcup_{p\in Q} A_p=A$.
 
@@ -1548,7 +1548,7 @@ $$ \varphi\left( \int_{\Omega} f \, d\mu \right) \le \int_{\Omega} (\varphi \cir
 $$
 \begin{gathered}
 \varphi(x)\ge \varphi(t)+k(x-t) \\
-\Rightarrow \varphi(f(x))\ge \varphi(t)+k(f(x)-t)
+\implies \varphi(f(x))\ge \varphi(t)+k(f(x)-t)
 \end{gathered}
 $$
 
@@ -1590,7 +1590,7 @@ $$
 =(\int f^p)^\frac1p (\int (f+g)^p )^\frac1q \\
 \int (f+g)^p =\int f(f+g)^{p-1}+\int g(f+g)^{p-1} \\
 \le ((\int f^p)^\frac1p+(\int g^p)^\frac1p) (\int (f+g)^p )^\frac1q \\
-\Rightarrow (\int (f+g)^p )^{\frac1p}=(\int (f+g)^p )^{1-\frac1q}\le (\int f^p)^\frac1p+(\int g^p)^\frac1p
+\implies (\int (f+g)^p )^{\frac1p}=(\int (f+g)^p )^{1-\frac1q}\le (\int f^p)^\frac1p+(\int g^p)^\frac1p
 \end{gathered}
 $$
 
@@ -1789,7 +1789,7 @@ $$ \|f\| = \sup_{x \in X} |f(x)| $$
 
 你发现这个范数下的柯西列$f_n$一定一致收敛到某个函数$f$.那么从一致收敛可以推连续性.
 
-显然如果你取一个$\epsilon$,柯西列条件存在一个$N$,于是能得到$n>N \Rightarrow |f_n-f|<\epsilon$,于是,$\forall 2\epsilon$,因为$f_n$在一个紧集外小于$\epsilon$,于是这外面$|f|<2\epsilon$.
+显然如果你取一个$\epsilon$,柯西列条件存在一个$N$,于是能得到$n>N \implies |f_n-f|<\epsilon$,于是,$\forall 2\epsilon$,因为$f_n$在一个紧集外小于$\epsilon$,于是这外面$|f|<2\epsilon$.
 
 于是$f\in C_0$,且从一致收敛容易知道$\|f-f_n\| \to 0$
 
@@ -1826,12 +1826,12 @@ $$|(x, y)| \le \|x\| \|y\|$$
 
 $$
 \begin{gathered}
-\Leftrightarrow (x,y)(y,x)\le (x,x)(y,y) \\
+\iff (x,y)(y,x)\le (x,x)(y,y) \\
 \text{let } z=(x-ray),a\in R,|a|=1,r\in R,r>0 \\
 \forall a,r,(z,z)>0 \\
-\Rightarrow  (x,x)+ra(y,x)+\overline{r}a(x,y)+r^2(y,y)\ge 0\\
-\Rightarrow  (y,y)r^2+2r(x,y)+(x,x)\ge r^2(y,y)+ra(y,x)+\overline ra(x,y)+(x,x)\ge 0 \\
-\Rightarrow 4(x,y)^2<4(x,x)(y,y) \\
+\implies  (x,x)+ra(y,x)+\overline{r}a(x,y)+r^2(y,y)\ge 0\\
+\implies  (y,y)r^2+2r(x,y)+(x,x)\ge r^2(y,y)+ra(y,x)+\overline ra(x,y)+(x,x)\ge 0 \\
+\implies 4(x,y)^2<4(x,x)(y,y) \\
 \end{gathered}
 $$
 
@@ -1924,10 +1924,10 @@ $H$ 的**闭子空间**是指相对于 $H$ 的度量诱导的拓扑而言是闭�
 $$
 \begin{gathered}
 \text{let } m=\dfrac{x+y}{2}  \\
-\|x\|=\|y\| \Rightarrow 
+\|x\|=\|y\| \implies 
 (m,m)=\dfrac{1}{4} ((x,x)+(y,y)+(x,y)+(y,x)) \\
 \le \dfrac{1}{4} ((x,x)+(y,y)+2(x,x)) \\
-\Rightarrow \|m\|<\|x\|
+\implies \|m\|<\|x\|
 \end{gathered}
 $$
 
@@ -1958,7 +1958,7 @@ $$
 (Px+rm-x,Px+rm-x) \\
 =(Px-x,Px-x)+r(m,Px-x)+\overline{r(m,Px-x)}+r^2 \\
 \ge (Px-x,Px-x) \\
-\Rightarrow r(r+(m,Px-x)+\overline{(m,Px-x)})>0
+\implies r(r+(m,Px-x)+\overline{(m,Px-x)})>0
 \end{gathered}
 $$
 

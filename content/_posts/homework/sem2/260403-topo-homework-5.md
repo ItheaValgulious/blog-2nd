@@ -21,9 +21,9 @@ top: 0
 
 <div class='pbox'>
 
-$\Rightarrow$:因为$T_2$,故假设序列 $\{ x_n \}\to a,\{ x_n \} \to b,a\ne b$,则$\exists a\in U\subset X,\exists b\in V\subset X,U\cap V=\varnothing$,$U,V$是开集.但$\exists N,\forall n>N,x_i\in U\cap V=\varnothing$,$x_i\in \varnothing$,矛盾.故任意$x$至多有一个极限点.
+$\implies$:因为$T_2$,故假设序列 $\{ x_n \}\to a,\{ x_n \} \to b,a\ne b$,则$\exists a\in U\subset X,\exists b\in V\subset X,U\cap V=\varnothing$,$U,V$是开集.但$\exists N,\forall n>N,x_i\in U\cap V=\varnothing$,$x_i\in \varnothing$,矛盾.故任意$x$至多有一个极限点.
 
-$\Leftarrow$:由于$C_1$,故$\forall a\ne b,a,b\in X$,$\exists \{ U_n \}$是$a$的一组嵌套的($U_i\subset U_{i-1}$)邻域基,$\{ V_n \}$是$b$的嵌套的邻域基.现在证明$\exists a\in U,b\in V,U,V \text{ is open},U\cap V=\varnothing$,反证,假设任意两个分别包含$a,b$的开集都有交.
+$\impliedby$:由于$C_1$,故$\forall a\ne b,a,b\in X$,$\exists \{ U_n \}$是$a$的一组嵌套的($U_i\subset U_{i-1}$)邻域基,$\{ V_n \}$是$b$的嵌套的邻域基.现在证明$\exists a\in U,b\in V,U,V \text{ is open},U\cap V=\varnothing$,反证,假设任意两个分别包含$a,b$的开集都有交.
 
 那么令$W_i=U_i\cap V_i\ne \varnothing$,构造点列 $\{ x_i \}$使得$x_i\in W_i$,由于$U_i\subset U_{i-1},V_i\subset V_{i-1}$,所以$W_i\subset W_{i-1}$,于是对$a$的任意开邻域$U$,存在$W_i$被其包含,从而能对任意$n>i,x_i\in U$;对$b$同理.故$x_n$有至少两个极限点,矛盾.
 
@@ -109,7 +109,7 @@ $\forall x\in B,g^{-1}(x)=\bigcap_{i=1}^n (g^{(i)})^{-1}([a_i,b_i])$,是有限�
 
 <div class='pbox'>
 
-(1):假设其可度量化,因为 $d(a,b)=0 \Leftrightarrow a=b$,则$\forall b\ne a,d(a,b)>0$,设$d_a=\dfrac12 \min_{b\ne a} \{d(a,b)\}$,则取开球$B(a,d_a)=a$,故单点集是开集,是离散拓扑.而离散拓扑都可以用离散度量$d(x,y)=1-[x=y]$度量化.
+(1):假设其可度量化,因为 $d(a,b)=0 \iff a=b$,则$\forall b\ne a,d(a,b)>0$,设$d_a=\dfrac12 \min_{b\ne a} \{d(a,b)\}$,则取开球$B(a,d_a)=a$,故单点集是开集,是离散拓扑.而离散拓扑都可以用离散度量$d(x,y)=1-[x=y]$度量化.
 
 (2):$Z$上赋予所有等差数列为开集的拓扑.
 
@@ -200,7 +200,7 @@ $\forall x\in B,g^{-1}(x)=\bigcap_{i=1}^n (g^{(i)})^{-1}([a_i,b_i])$,是有限�
 
 考虑单位映射$i:A=(X,\mathcal{T}_1)\to (X,\mathcal{T}_2)=B,j=i^{-1}$.
 
-$\mathcal{T}_2\subset \mathcal{T}_2 \Rightarrow i \text{ is continuous}$.
+$\mathcal{T}_2\subset \mathcal{T}_2 \implies i \text{ is continuous}$.
 
 (1):因为$A$紧致$B$是Hausdorff,故$i$把闭集(紧集)映到紧集(闭集),于是$j$连续,$i,j$是同胚,$A=B$.
 

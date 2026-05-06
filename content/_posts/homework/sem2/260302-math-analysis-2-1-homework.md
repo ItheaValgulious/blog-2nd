@@ -70,7 +70,7 @@ $$
 
 $$
 \begin{gathered}
-x\in (0,1) \Rightarrow 
+x\in (0,1) \implies 
 \lim_{n \to \infty} f_n(x)=f(x)=0 \\
 \text{let } x_n=1-\dfrac 1n \\
 \lim_{n \to \infty} |f_n(x_n)-f(x_n)|= \lim_{n \to \infty} \dfrac{(1-\dfrac 1n)^n}{1+(1-\dfrac 1n)^n}= \dfrac{1}{e+1}\ne 0 
@@ -83,7 +83,7 @@ $$
 
 $$
 \begin{gathered}
-x\in (1,+\infty) \Rightarrow \lim_{n \to \infty} f_n(x)=f(x)=1 \\
+x\in (1,+\infty) \implies \lim_{n \to \infty} f_n(x)=f(x)=1 \\
 \text{let } x_n=1+\dfrac 1n \\
 \lim_{n \to \infty} |f_n(x_n)-f(x_n)|= \lim_{n \to \infty} 1-\dfrac{(1+\dfrac 1n)^n}{1+(1+\dfrac 1n)^n}= \dfrac{1}{e+1}\ne 0 
 \end{gathered}
@@ -112,7 +112,7 @@ $$
 =\dfrac{1}{2n\sqrt x(\sqrt x+\sqrt{x+\frac1n})^2} \\
 >\dfrac{1}{2n\sqrt x(x+1)} \\
 \text{let } x_n=\dfrac1{n^2} \\
-\Rightarrow |f_n-f|>\dfrac{1}{2(1+\dfrac1{n^2})}>\dfrac14
+\implies |f_n-f|>\dfrac{1}{2(1+\dfrac1{n^2})}>\dfrac14
 \end{gathered}
 $$
 
@@ -168,7 +168,7 @@ f' \text{ is uniformly continuous on } [a,b] \\
 \forall \epsilon>0,\exists \delta, \\ s.t.\\ 
 \forall |x_1-x_2|<\delta,|f'(x_1)-f'(x_2)|<\epsilon \\
 \text{let } n>\dfrac1\epsilon \\
-\Rightarrow \forall x,|f_n(x)-f(x)|=|f'(\xi_x)-f'(x)|<\epsilon \\
+\implies \forall x,|f_n(x)-f(x)|=|f'(\xi_x)-f'(x)|<\epsilon \\
 \text{Q.E.D}
 \end{gathered}
 $$
@@ -206,7 +206,7 @@ $$
 =A+B \\
 \because \varphi\in C[0,1] \\
 \therefore \exists M,|\varphi|<M \\
-\therefore B\le \lim_{n \to \infty} \dfrac{1}{\ln n}M=0 \Rightarrow B=0 \\
+\therefore B\le \lim_{n \to \infty} \dfrac{1}{\ln n}M=0 \implies B=0 \\
 \lim_{n \to \infty} (1-\dfrac1{\ln n})\varphi(\xi^n(n)) \\
 =\lim_{n \to \infty} (1-\dfrac1{\ln n}) \cdot \lim_{n \to \infty}  \varphi(\xi^n(n)) \\
 =\varphi(0) \\
@@ -243,7 +243,7 @@ $$
 $$
 \begin{gathered}
 \prod_{i=1}^{n} (1+ix_n)\le (1+\dfrac4{n})^n\le e^4 \\
-\Rightarrow u_{n}(x_n)\ge \dfrac4{e^4n}
+\implies u_{n}(x_n)\ge \dfrac4{e^4n}
 \end{gathered}
 $$
 
@@ -285,7 +285,7 @@ $$
 \begin{gathered}
 \forall n,\{x_n\},|\sum_{i=n}^{2n} a_i\sin(ix_i)|\to 0 \\
 \text{let } x_n=\dfrac1{2n},n>1000 \\
-\Rightarrow \sin(nx_n) \text{ is increasing with } n,\sin(nx_n)>0 \\
+\implies \sin(nx_n) \text{ is increasing with } n,\sin(nx_n)>0 \\
 |\sum_{i=n}^{2n} a_i\sin(ix_i)| \\
 =\sum_{i=n}^{2n} a_i\sin(ix_i) \\
 \ge \sum_{i=n}^{2n} a_{2n}\sin(\dfrac12) \\
@@ -356,7 +356,7 @@ $$
 $$
 \begin{gathered}
 \ln(k^2+2k)-\ln(k^2-1)\le \ln(k^2)-\ln((k-1)^2) \\
-\Leftrightarrow (k^2+2k)(k-1)^2\le k^2(k^2-1)
+\iff (k^2+2k)(k-1)^2\le k^2(k^2-1)
 \end{gathered}
 $$
 
@@ -423,7 +423,7 @@ $\sum_{n=1}^\infty a_n$(常函数)一致收敛,$e^{-nx}$单调下降且一致有
 
 <div class='pbox'>
 
-显然$a_n\to \infty$.因为有界,设有界闭集$D$满足$M=\sup D$,则$\exists N,n>N\Rightarrow |a_n|>2M$.
+显然$a_n\to \infty$.因为有界,设有界闭集$D$满足$M=\sup D$,则$\exists N,n>N\implies |a_n|>2M$.
 
 于是
 

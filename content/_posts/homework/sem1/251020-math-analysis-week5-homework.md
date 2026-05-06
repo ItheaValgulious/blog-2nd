@@ -20,7 +20,7 @@ top: 0
 $$
 \begin{gathered}
 \sum _{i = 0} ^{n}  \dfrac{a_i}{n+1-i}=0 \\
-\Rightarrow \exists x_0\in(0,1),\sum _{i = 0} ^{n}  a_ix_0^{n-i}=0 
+\implies \exists x_0\in(0,1),\sum _{i = 0} ^{n}  a_ix_0^{n-i}=0 
 \end{gathered}
 $$
 
@@ -34,7 +34,7 @@ $$
 \text{let } F(x)=\sum _{i = 0} ^{n}  \dfrac{a_ix^{n-i+1}}{n-i+1}  \\
 F(0)=0,F(1)=\sum _{i = 0} ^{n}  \dfrac{a_i}{n+1-i} =0 \\
 \stackrel{\text{ Rolle's Theorem }}{\Longrightarrow} \exists \xi \in (0,1),f(\xi)=F'(\xi)=0 \\
-\Rightarrow x_0=\xi
+\implies x_0=\xi
 \end{gathered}
 $$
 
@@ -53,8 +53,8 @@ f(x)\in C[a,b] \\
 \forall x\in (a,b),\exists f'(x) \\
 f(a)=f(b)=0
 \end{cases} \\
-\Rightarrow \begin{cases}
-a>0 \Rightarrow \exists \xi\in(a,b),f'(\xi)=\dfrac{f(\xi)}{\xi}  \\
+\implies \begin{cases}
+a>0 \implies \exists \xi\in(a,b),f'(\xi)=\dfrac{f(\xi)}{\xi}  \\
 \forall \lambda,\exists \xi,f'(\xi)=\lambda f(\xi)
 \end{cases}
 \end{gathered}
@@ -71,8 +71,8 @@ $$
 \text{let } F(x)=\dfrac{f(x)}{x}  \\
 F(a)=F(b)=0 \\
 \stackrel{\text{ Rolle's Theorem }}{\Longrightarrow}\exists \xi\in (a,b),F'(\xi)=0 \\
-\Rightarrow F'(\xi)=\dfrac{f'(\xi)\xi-f(\xi)}{\xi^2} =0 \\
-\Rightarrow f'(\xi)=\dfrac{f(\xi)}{\xi} 
+\implies F'(\xi)=\dfrac{f'(\xi)\xi-f(\xi)}{\xi^2} =0 \\
+\implies f'(\xi)=\dfrac{f(\xi)}{\xi} 
 \end{gathered}
 $$
 
@@ -82,11 +82,11 @@ $$
 \begin{gathered}
 \text{let } F(x)=e^{-\lambda x}f(x) \\
 F(a)=F(b)=0
-\Rightarrow
+\implies
 \exists \xi \in (a,b),F'(\xi)=0 \\
-\Rightarrow x=\xi,
+\implies x=\xi,
 F'(x)=e^{-\lambda x}(f'(x)-\lambda f(x))=0 \\
-\Rightarrow f'(x)=\lambda f(x)
+\implies f'(x)=\lambda f(x)
 \end{gathered}
 $$
 
@@ -104,7 +104,7 @@ $$
 \forall x\in [0,1],\exists f'''(x) \\
 f(0)=f(1)=0 \\
 F(x)=x^2f(x)
-\end{cases}\Rightarrow \exists \xi\in (0,1),F'''(\xi)=0
+\end{cases}\implies \exists \xi\in (0,1),F'''(\xi)=0
 \end{gathered}
 $$
 
@@ -139,7 +139,7 @@ $$
 \forall x\in (0,a),\exists f'(x) \\
 f(0^+)=+\infty
 \end{cases} \\
-\Rightarrow f'(x) \text{ has no lower bound on the right-hand neibourhood of } 0 
+\implies f'(x) \text{ has no lower bound on the right-hand neibourhood of } 0 
 \end{gathered}
 $$
 
@@ -153,7 +153,7 @@ $$
 \exists \{ a_n \},a_n\in (0,1),a_n<a_{n-1},\lim_{n \to \infty} a_n=0,\lim_{n \to \infty} f(a_n)=+\infty \\
 \forall M>0,i,\exists k>i \ s.t.\ 
 f(a_k)>f(a_i)+M \\
-\Rightarrow \exists \xi \in (a_k,a_i),f'(\xi)=\dfrac{f(a_k)-f(a_i)}{a_k-a_i} <-M \\
+\implies \exists \xi \in (a_k,a_i),f'(\xi)=\dfrac{f(a_k)-f(a_i)}{a_k-a_i} <-M \\
 \\
 \text{Q.E.D} 
 \end{gathered}
@@ -174,7 +174,7 @@ f \in C[a,b] \\
 \forall x\in(a,b),\exists f'(x) \\
 f \text{ is not constant or linear function}  \\
 \end{cases}  \\
-\Rightarrow \exists \xi \in (a,b),\vert f'(\xi) \vert >{\left \vert \dfrac{f(b)-f(a)}{b-a}  \right \vert} 
+\implies \exists \xi \in (a,b),\vert f'(\xi) \vert >{\left \vert \dfrac{f(b)-f(a)}{b-a}  \right \vert} 
 \end{gathered}
 $$
 
@@ -212,9 +212,9 @@ $$
 \begin{cases}
 \forall x\in [a,+\infty),\exists f'(x) \\
 f(a)=0 \\
-x \ge a \Rightarrow  \vert f'(x) \vert \le \vert f(x) \vert 
+x \ge a \implies  \vert f'(x) \vert \le \vert f(x) \vert 
 \end{cases} \\
-\Rightarrow \forall x\in [a,+\infty),f(x)=0
+\implies \forall x\in [a,+\infty),f(x)=0
 \end{gathered}
 $$
 
@@ -230,7 +230,7 @@ $$
 F'(x)=2e^{-2x}f(x)(f'(x)-f(x))\le 0 \\
 \forall x>a=0,F(x)\le F(a) \\
 \because F(x)\ge 0 \\
-\Rightarrow F(x)=0,f(x)=0
+\implies F(x)=0,f(x)=0
 \end{gathered}
 $$
 
@@ -254,7 +254,7 @@ f\in C[a,b] \\
 f(a)=f(b)=0 \\
 f'_+(a)>0
 \end{cases} \\
-\Rightarrow \exists \xi \in (a,b),f''(\xi)<0
+\implies \exists \xi \in (a,b),f''(\xi)<0
 \end{gathered}
 $$
 
@@ -266,8 +266,8 @@ $$
 \begin{gathered}
 f(a)=f(b)=0 \\
 \stackrel{\text{ Rolle's Theorem }}{\Longrightarrow}\exists x_1\in(a,b),f'(x_1)=0 \\
-\exists f''(x) \Rightarrow f'(x) \in C(a,b) \\
-f'_+(a)>0 \Rightarrow \exists x_2 \in (a,a+\delta),f'(x_2)>0 \\
+\exists f''(x) \implies f'(x) \in C(a,b) \\
+f'_+(a)>0 \implies \exists x_2 \in (a,a+\delta),f'(x_2)>0 \\
 \exists \xi \in (x_2,x_1) \subset (a,b),f''(\xi)=\dfrac{f'(x_1)-f'(x_2)}{x_1-x_2} <0
 \end{gathered}
 $$
@@ -285,7 +285,7 @@ $$
 \forall x \in (0,+\infty),\exists f'(x) \\
 \lim_{x \to +\infty} f'(x)=+\infty
 \end{gathered} \\
-\Rightarrow f(x) \text{ is not uniformly continuous in } (0,+\infty)
+\implies f(x) \text{ is not uniformly continuous in } (0,+\infty)
 $$
 
 </div>
@@ -297,7 +297,7 @@ $$
 \lim_{x \to +\infty} f'(x)=+\infty \\
 \epsilon=1 \\
 \forall \delta \\
-\text{let } M=\dfrac{2}{\delta}  \Rightarrow \exists X,x>X \Rightarrow f'(x)>M \\
+\text{let } M=\dfrac{2}{\delta}  \implies \exists X,x>X \implies f'(x)>M \\
 \forall x>M,\vert f(x+\delta)-f(x) \vert = \vert \delta f'(\xi) \vert >2>\epsilon \\
 \\
 \text{Q.E.D}
@@ -319,7 +319,7 @@ $$
 \forall x \in (x_0,x_0+\delta_0),\exists f'(x) \\
 \exists f'(x_0^+)
 \end{cases} \\
-\Rightarrow f'_+(x_0)=f'(x_0^+)
+\implies f'_+(x_0)=f'(x_0^+)
 \end{gathered}
 $$
 
@@ -347,7 +347,7 @@ $$
 $$
 \begin{gathered}
 x\in [0,1],p\ge 2 \\
-\Rightarrow 
+\implies 
 (\dfrac{1+x}{2} )^p+(\dfrac{1-x}{2} )^p\le \dfrac{1}{2} (1+x^p)
 \end{gathered}
 $$
@@ -360,10 +360,10 @@ $$
 \begin{gathered}
 f(x)=\dfrac{1}{2} (1+x^p)-(\dfrac{1+x}{2} )^p-(\dfrac{1-x}{2} )^p \\
 f'(x)=\dfrac{p}{2}(x^{p-1} -(\dfrac{1+x}{2} )^{p-1}+ (\dfrac{1-x}{2} )^{p-1}) \\
-p-1>1 \Rightarrow a^{p-1}+b^{p-1}<(a+b)^{p-1} \\
+p-1>1 \implies a^{p-1}+b^{p-1}<(a+b)^{p-1} \\
 \therefore (\dfrac{1-x}{2})^{p-1}+x^{p-1}<(\dfrac{1+x}{2})^{p-1} \\
-\Rightarrow f'(x)<0 \\
-\Rightarrow f(x) \text{ is decreasing}  \\
+\implies f'(x)<0 \\
+\implies f(x) \text{ is decreasing}  \\
 f(x)>f(1)=0 \\
 \\
 \text{Q.E.D} 
@@ -380,7 +380,7 @@ $$
 
 $$
 \begin{gathered}
-x\in (0,\dfrac{\pi}{2} )\Rightarrow 2x<\sin x+\tan x
+x\in (0,\dfrac{\pi}{2} )\implies 2x<\sin x+\tan x
 \end{gathered}
 $$
 
@@ -393,9 +393,9 @@ $$
 f(x)=\sin x+\tan x-2x \\
 f'(x)=\cos x+\dfrac{1}{\cos^2 x}-2 \\
 f''(x)=\sin x(\dfrac{2}{\cos^3 x} -1)>0 \\
-\Rightarrow f'(x) \text{ is increasing}  \\
-\Rightarrow f'(x)>f'(0)=0 \\
-\Rightarrow f(x) \text{ is increasing}  \\
+\implies f'(x) \text{ is increasing}  \\
+\implies f'(x)>f'(0)=0 \\
+\implies f(x) \text{ is increasing}  \\
 f(x)>f(0)=0 \\
 \\
 \text{Q.E.D}
@@ -417,7 +417,7 @@ $$
 f(0)=0 \\
 f'(x) \text{ is strictly increasing}
 \end{cases} \\
-\Rightarrow \dfrac{f(x)}{x} \text{ is strictly increasing} 
+\implies \dfrac{f(x)}{x} \text{ is strictly increasing} 
 \end{gathered}
 $$
 
@@ -428,9 +428,9 @@ $$
 $$
 \begin{gathered}
 f(x)=f(x)-f(0)=(x-0)f'(\xi) \\
-\xi\in(0,x) \Rightarrow f'(\xi)<f'(x) \\
-\Rightarrow f(x)<xf'(x) \\
-\Rightarrow (\dfrac{f(x)}{x} )'=\dfrac{xf'(x)-f(x)}{x^2} >0 \\
+\xi\in(0,x) \implies f'(\xi)<f'(x) \\
+\implies f(x)<xf'(x) \\
+\implies (\dfrac{f(x)}{x} )'=\dfrac{xf'(x)-f(x)}{x^2} >0 \\
 \\
 \text{Q.E.D}
 \end{gathered}
@@ -461,10 +461,10 @@ $$
 f'(x)=\dfrac{1}{\sqrt{1-(\dfrac{2x}{1+x^2} )^2}}\dfrac{2(1+x^2)-4x^2}{(1+x^2)^2}  \\
 =\dfrac{2-2x^2}{\sqrt{x^4+2x^2+1-4x^2}(1+x^2)}  \\
 =\dfrac{2(1-x^2)}{\vert 1-x^2 \vert (1+x^2)}   \\
-x<-1 \Rightarrow f'(x)<0,f(x) \text{ is decreasing}  \\
-x\in (-1,1) \Rightarrow f'(x)>0,f(x) \text{ is increasing}  \\
-x>1 \Rightarrow f'(x)<0,f(x) \text{ is decreasing}  \\
-\Rightarrow \text{minimum:} (-1,-\dfrac{\pi}{2} ),\text{maximum:} (1,\dfrac{\pi}{2} )
+x<-1 \implies f'(x)<0,f(x) \text{ is decreasing}  \\
+x\in (-1,1) \implies f'(x)>0,f(x) \text{ is increasing}  \\
+x>1 \implies f'(x)<0,f(x) \text{ is decreasing}  \\
+\implies \text{minimum:} (-1,-\dfrac{\pi}{2} ),\text{maximum:} (1,\dfrac{\pi}{2} )
 \end{gathered}
 $$
 
@@ -492,10 +492,10 @@ $$
 \begin{gathered}
 f'(x)=e^{-x}(\sum _{i = 0} ^{n-1}  \dfrac{x^i}{i!} -\sum _{i = 1} ^{n}  \dfrac{x^i}{i!} ) \\
 =-\dfrac{x^ne^{-x}}{n!}  \\
-n \bmod 2=0:f'(x)\le 0(f'(x)=0 \Leftrightarrow x=0) \\
-\Rightarrow f(x) \text{ has no extremum} \\
+n \bmod 2=0:f'(x)\le 0(f'(x)=0 \iff x=0) \\
+\implies f(x) \text{ has no extremum} \\
 n \bmod 2=1:\operatorname{sign}f'(x)=-\operatorname{sign}x \\
-\Rightarrow f(x) \text{ has maximum } (0,1)
+\implies f(x) \text{ has maximum } (0,1)
 \end{gathered}
 $$
 
@@ -510,9 +510,9 @@ $$
 $$
 \begin{gathered}
 xf''(x)+3x(f'(x))^2=1-e^{-x} \\
-\Rightarrow \begin{cases}
-x=c(c\ne 0) \text{ is an extremum } \Rightarrow f(c)\text{ is a minimum}  \\
-x=c(c=0) \text{ is an extremum } \Rightarrow f(c) \text{ is a minimum} 
+\implies \begin{cases}
+x=c(c\ne 0) \text{ is an extremum } \implies f(c)\text{ is a minimum}  \\
+x=c(c=0) \text{ is an extremum } \implies f(c) \text{ is a minimum} 
 \end{cases}
 
 \end{gathered}
@@ -527,12 +527,12 @@ $$
 $$
 \begin{gathered}
 x=c \text{ is an extremum}  \\
-\Rightarrow f'(c)=0 \\
+\implies f'(c)=0 \\
 cf''(c)+3c(f'(c))^2=1-e^{-c} \\
-\Rightarrow \operatorname{sign} f''(c)=\operatorname{sign} \dfrac{1-e^{-c}}{c} =1 \\
-\Rightarrow \lim_{x \to c} \dfrac{f'(x)-f'(c)}{x-c}=\dfrac{f'(x)}{x-c} >0 \\
-\Rightarrow \operatorname{sign}  f'(x)=\operatorname{sign} (x-c) \\
-\Rightarrow f(x) \text{ is a minimum} 
+\implies \operatorname{sign} f''(c)=\operatorname{sign} \dfrac{1-e^{-c}}{c} =1 \\
+\implies \lim_{x \to c} \dfrac{f'(x)-f'(c)}{x-c}=\dfrac{f'(x)}{x-c} >0 \\
+\implies \operatorname{sign}  f'(x)=\operatorname{sign} (x-c) \\
+\implies f(x) \text{ is a minimum} 
 \end{gathered}
 $$
 
@@ -542,7 +542,7 @@ $$
 \begin{gathered}
 f'(0)=0 \\
 \lim_{x \to 0} (f''(x)+3f'^2(x))=\lim_{x \to 0} \dfrac{1-e^{-x}}{x} =1 \\
-\Rightarrow f''(0)=1 \\
+\implies f''(0)=1 \\
 \stackrel{\text{ same as (1)'s proof }}{\Longrightarrow} f(x) \text{ is a minimum} 
 \end{gathered}
 $$
@@ -557,7 +557,7 @@ $$
 
 $$
 \begin{gathered}
-p>1,x\in [0,1] \Rightarrow  \\
+p>1,x\in [0,1] \implies  \\
 \dfrac{1}{2^{p-1}} \le x^p+(1-x)^p\le 1
 \end{gathered}
 $$
@@ -568,12 +568,12 @@ $$
 
 $$
 \begin{gathered}
-x\le 1 \Rightarrow x^p\le x \Rightarrow x^p+(1-x)^p\le x+1-x=1 \\
+x\le 1 \implies x^p\le x \implies x^p+(1-x)^p\le x+1-x=1 \\
 f(x)=x^p+(1-x)^p \\
 f'(x)=px^{p-1}-p(1-x)^{p-1}=p(x^{p-1}-(1-x)^{p-1}) \\
-x>\dfrac{1}{2} \Rightarrow x>1-x \Rightarrow f'(x)>0 \\
-x<\dfrac{1}{2} \Rightarrow f'(x)<0 \\
-\Rightarrow (\dfrac{1}{2},f(\dfrac{1}{2})) \text{ is a minimum} ,f(x)\ge f(\dfrac{1}{2})=2^{-(p-1)}
+x>\dfrac{1}{2} \implies x>1-x \implies f'(x)>0 \\
+x<\dfrac{1}{2} \implies f'(x)<0 \\
+\implies (\dfrac{1}{2},f(\dfrac{1}{2})) \text{ is a minimum} ,f(x)\ge f(\dfrac{1}{2})=2^{-(p-1)}
 \end{gathered}
 $$
 
@@ -592,7 +592,7 @@ f,g:R\to R \\
 f''(x)+f'(x)g(x)-f(x)=0 \\
 f(a)=f(b)=0(a<b)
 \end{cases} \\
-\Rightarrow \forall x\in [a,b],f(x)=0
+\implies \forall x\in [a,b],f(x)=0
 \end{gathered}
 $$
 
@@ -605,30 +605,30 @@ $$
 $$
 \begin{gathered}
 f''(x)+f'(x)g(x)-f(x)=0 \\
-\Leftrightarrow \forall x,f'(x)\ne 0 \lor f''(x)=f(x) \\
+\iff \forall x,f'(x)\ne 0 \lor f''(x)=f(x) \\
 \forall x_0\in (a,b),f'(x_0)=0 \\
 \text{Assume } f(x_0)\ne 0 \\
 \text{Without loss of generality,assume } f(x_0)>0 \\
-\Rightarrow f''(x_0)=f(x_0)>0 \\
-\Rightarrow \exists \delta,\exists x_0'\in (x_0,\delta),f'(x_0')>0 \\
+\implies f''(x_0)=f(x_0)>0 \\
+\implies \exists \delta,\exists x_0'\in (x_0,\delta),f'(x_0')>0 \\
 \exists \xi,f'(\xi)=\dfrac{f(x_0)-f(b)}{x_0-b} <0 \\
 \stackrel{\text{ Darbox Theorem }}{\Longrightarrow}\exists x_1\in (x_0,\xi),f'(x_1)=0 \\
 \text{Repeat this you get } \{ x_n \} ,x_i\in (x_{i-1},\xi),f'(x_i)=0 \\
 \lim_{n \to \infty} x_n=\xi,\lim_{n \to \infty} f'(x_n)=0\ne f'(\xi) \\
 \text{Ridiculous!} \\
-\Rightarrow f'(x)=0 \Rightarrow f(x)=f''(x)=0 \\
+\implies f'(x)=0 \implies f(x)=f''(x)=0 \\
 \text{Assume } f(x_0)\ne 0,a_0=a,b_0=b \\
 \exists x_1\in (a_i,x_0),x_2\in (x_0,b_i), \\
 f'(x_1)=\dfrac{f(x_0)}{x_0-a_i} \ne 0 \\
 f'(x_2)=\dfrac{f(x_0)}{x_0-b_i} \ne 0 \\
-f'(x_1)f'(x_2)<0 \Rightarrow \exists x_3,f'(x_3)=0 \\
-\Rightarrow f'(x_3)=f(x_3)=0 \\
-f'(x_1)\ne 0 \Rightarrow \exists x_1'\in N(x_1),f(x_1')\ne 0 \\
+f'(x_1)f'(x_2)<0 \implies \exists x_3,f'(x_3)=0 \\
+\implies f'(x_3)=f(x_3)=0 \\
+f'(x_1)\ne 0 \implies \exists x_1'\in N(x_1),f(x_1')\ne 0 \\
 \text{same for } \exists x_2'\in N(x_2),f(x_2')\ne 0 \\
-\Rightarrow \exists f(a_i)=f(x_3)=0,x_1'\in(a_i,x_3),f(x_1')\ne 0 \\
+\implies \exists f(a_i)=f(x_3)=0,x_1'\in(a_i,x_3),f(x_1')\ne 0 \\
 \exists f(x_3)=f(b_i)=0,x_2'\in (x_3,b_i),f(x_2')\ne 0 \\
 \text{let } [a_{i+1},b_{i+1}]=\text{the shorter one in } [a_i,x_3],[x_3,b_i] \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 b_{i+1}-a_{i+1}\le \dfrac{1}{2} (b_i-a_i) \\
 [a_i,b_i]\supset [a_{i+1},b_{i+1}] \\
 \exists c_i\in [a_i,b_i],f(c_i)\ne 0
@@ -640,7 +640,7 @@ b_{i+1}-a_{i+1}\le \dfrac{1}{2} (b_i-a_i) \\
 \lim_{n \to \infty} c_n=\xi \\
 \lim_{n \to \infty} f(a_n)=\lim_{n \to \infty} f(c_n) \\
 \text{Ridiculous!} \\
-\Rightarrow \forall x\in (a,b),f(x)=0 
+\implies \forall x\in (a,b),f(x)=0 
 \\
 \text{Q.E.D}
 \end{gathered}

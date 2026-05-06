@@ -19,7 +19,7 @@ $$
 r_n=\sum _{i = n} ^{\infty} a_n \\
 a_n>0
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \sum _{n = 1} ^{\infty}  \dfrac{a_n}{r_n}=\infty \\
 \sum _{n = 1} ^{\infty}  \dfrac{a_n}{\sqrt{r_n}}<\infty  
 \end{cases}

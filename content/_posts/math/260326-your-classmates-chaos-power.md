@@ -31,7 +31,7 @@ $$
 $$
 \begin{gathered}
 p \text{ is a k-period point}\\
-\Leftrightarrow f^{(k)}(p)=p \text{ and } \forall k'\in (0,k),f^{(k')}\ne p
+\iff f^{(k)}(p)=p \text{ and } \forall k'\in (0,k),f^{(k')}\ne p
 \end{gathered}
 $$
 
@@ -44,7 +44,7 @@ $$
 $$
 \begin{gathered}
 f\in C(I),I \text{ is closed range} , f(I)\supset I \\
-\Rightarrow \exists p\in I,f(p)=p
+\implies \exists p\in I,f(p)=p
 \end{gathered}
 $$
 
@@ -63,7 +63,7 @@ $$
 $$
 \begin{gathered}
 f\in C(I) \\
-\Rightarrow \forall I_1\subset f(I), \exists I_0\subset I \ s.t.\ 
+\implies \forall I_1\subset f(I), \exists I_0\subset I \ s.t.\ 
 f(I_0)=I_1,\text{ where } I_0,I_1 \text{ are both closed ranges}  
 \end{gathered}
 $$
@@ -89,7 +89,7 @@ $$
 f\in C(I) \\
 \forall \{ M_i \}_{i=1}^n,(n\le \infty),\forall i,I\supset M_i,f(M_i)\supset M_{i+1}
 \end{cases} \\
-\Rightarrow \exists \{ J_i \} _{i=1}^n ,f^{(i)}(J_i)= M_i,I\supset J_i\supset J_{i+1}
+\implies \exists \{ J_i \} _{i=1}^n ,f^{(i)}(J_i)= M_i,I\supset J_i\supset J_{i+1}
 \end{gathered}
 $$
 
@@ -128,7 +128,7 @@ $$
 $$
 \begin{gathered}
 f \text{ has a 3-period point}  \\
-\Rightarrow \exists a,f^{(3)}(a)\le a<f(a)<f^2(a)
+\implies \exists a,f^{(3)}(a)\le a<f(a)<f^2(a)
 \end{gathered}
 $$
 
@@ -151,7 +151,7 @@ f\in C(I) \\
 \exists a \ s.t.\ 
 f^{(3)}(a)\le a<f(a)<f^2(a)
 \end{cases} \\
-\Rightarrow \forall k,\exists b \ s.t.\ 
+\implies \forall k,\exists b \ s.t.\ 
 b \text{ is a k-period point} 
 \end{gathered}
 $$
@@ -195,7 +195,7 @@ $S$中的任意两点无限次接近,无限次分离,且始终不趋近于一个
 
 可以构造区间列 $\{ M_i \}_{i=1}^\infty$,满足:
 - $M_i=K$ 或 $M_i\subset L,f(M_i)\supset M_{i+1}$.
-- $M_i=K \Rightarrow i \text{ is a square number}$.
+- $M_i=K \implies i \text{ is a square number}$.
 
 (显然$f(M_i)\supset M_{i+1}$对$M_i=K$也是成立的.)
 

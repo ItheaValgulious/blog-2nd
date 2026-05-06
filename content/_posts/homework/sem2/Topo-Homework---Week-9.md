@@ -89,7 +89,7 @@ $$
 
 <div class="pbox">
 
-考虑莫比乌斯带同胚于$I\times I/\sim$,其中$x \sim y \Leftrightarrow x=y\lor (\exists t \ s.t.\ \{ x,y \} =\{ (0,t),(1,1-t) \} )$.
+考虑莫比乌斯带同胚于$I\times I/\sim$,其中$x \sim y \iff x=y\lor (\exists t \ s.t.\ \{ x,y \} =\{ (0,t),(1,1-t) \} )$.
 
 那么莫比乌斯带的二等分腰线是一条$(0,\dfrac12)\rightsquigarrow (1,\dfrac12)$的路径.不妨设为$\alpha(t)=(t,\dfrac12)$.
 
@@ -169,15 +169,15 @@ $$f(x, y) = (\cos(2\pi x), \cos(2\pi y), \sin(2\pi y), \sin(2\pi x) \cos(\pi y),
 
 <div class="pbox">
 
-克莱因瓶即$I\times I/\sim,x\sim y \Leftrightarrow \exists t,\{ x,y \} =\{ (0,t),(1,t) \} \lor \{ x,y \} =\{ (t,0),(1-t,1) \}$.
+克莱因瓶即$I\times I/\sim,x\sim y \iff \exists t,\{ x,y \} =\{ (0,t),(1,t) \} \lor \{ x,y \} =\{ (t,0),(1-t,1) \}$.
 
-那么直接定义映射$T:I\times I/\sim \Rightarrow \operatorname{Im} f,T(S)=f(s),s\in S$.
+那么直接定义映射$T:I\times I/\sim \implies \operatorname{im} f,T(S)=f(s),s\in S$.
 
 证明$T$良定义:因为$f(0,t)=(1,\cos(2\pi t),\sin(2\pi t),0,0)=f(1,t)$,$f(t,0)=(\cos(2\pi t),1,0,\sin(2\pi t),0)=f(1-t,1)$.
 
 仍然观察到$T$对每一维分量连续,$T$连续.
 
-$T$是满射:$\forall f(x,y)\in \operatorname{Im} f,T\pi(x,y)=f(x,y)$.
+$T$是满射:$\forall f(x,y)\in \operatorname{im} f,T\pi(x,y)=f(x,y)$.
 
 $T$是单射:$T(a,b)=T(x,y)$解第二,三维可知$b=y$,解第一,四维可知$x=a$.故事单射.
 

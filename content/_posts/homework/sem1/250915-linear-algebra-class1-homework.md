@@ -186,7 +186,7 @@ $$
     14=1c+3d\\
     8=2c+1d
 \end{cases}
- \Rightarrow 
+ \implies 
 \begin{cases}
     c=2\\
     d=4

@@ -85,11 +85,11 @@ T12. (MR) 设 $A$ 和 $B$ 都是拓扑空间 $X$ 上的稠密子集, 且 $A$ 是
 $$
 \begin{gathered}
 A,B \text{ is dense}  \\
-\Rightarrow \forall x\in U_x\subset X, \\
+\implies \forall x\in U_x\subset X, \\
 \exists a\in U_a\subset A\cap U_x, \\
 \exists b\in U_a\cap B \\
-b\in U_a\subset A \Rightarrow b\in A\cap B \\
-b\in U_x \Rightarrow A\cap B \text{ is dense}
+b\in U_a\subset A \implies b\in A\cap B \\
+b\in U_x \implies A\cap B \text{ is dense}
 \end{gathered}
 $$
 
@@ -118,7 +118,7 @@ $$
 \partial A=\operatorname{Cl}A\cap (X-\operatorname{Int}A) \\
 \operatorname{Cl}A \text{ is close} \\
 X-\operatorname{Int}A \text{ is close}  \\
-\Rightarrow \partial A \text{ is close}
+\implies \partial A \text{ is close}
 \end{gathered}
 $$
 
@@ -143,8 +143,8 @@ $$
 $$
 \begin{gathered}
 \operatorname{Int}A\subset A \\
-\Rightarrow 
-\operatorname{Cl}A-\operatorname{Int}A\subset A \Leftrightarrow \operatorname{Cl}A\subset A \Leftrightarrow A \text{ is close} 
+\implies 
+\operatorname{Cl}A-\operatorname{Int}A\subset A \iff \operatorname{Cl}A\subset A \iff A \text{ is close} 
 \end{gathered}
 $$
 
@@ -154,7 +154,7 @@ $$
 \begin{gathered}
 \partial A\cap A=\operatorname{Cl}A\cap (X-\operatorname{Int}A)\cap A \\
 =A-A\cap \operatorname{Int}A \\
-\Rightarrow \partial A\cap A=\varnothing \Leftrightarrow A\cap \operatorname{Int}A=A \Leftrightarrow A \text{ is open} 
+\implies \partial A\cap A=\varnothing \iff A\cap \operatorname{Int}A=A \iff A \text{ is open} 
 \end{gathered}
 $$
 
@@ -165,8 +165,8 @@ By (4),(5):
 $$
 \begin{gathered}
 A \text{ is open and close}  \\
-\Leftrightarrow \partial A\subset A \land \partial A\cap A=\varnothing \\
-\Leftrightarrow \partial A = \varnothing
+\iff \partial A\subset A \land \partial A\cap A=\varnothing \\
+\iff \partial A = \varnothing
 \end{gathered}
 $$
 
@@ -186,14 +186,14 @@ T2. (ER) 设 $f: X \to Y$. 证明下列陈述等价:
 
 $$
 \begin{gathered}
-(4) \Rightarrow (5): \\
+(4) \implies (5): \\
 \text{let } A=f^{-1}(B) \\
-\Rightarrow f(\operatorname{Cl} f^{-1} (B))\subset \operatorname{Cl}f(f^{-1}(B))\subset \operatorname{Cl}B \\
-\Rightarrow \operatorname{Cl}f^{-1}(B) \subset f^{-1}(f(\operatorname{Cl}f^{-1} (B)))\subset f^{-1}(\operatorname{Cl}B) \\
-(5) \Rightarrow (4): \\
+\implies f(\operatorname{Cl} f^{-1} (B))\subset \operatorname{Cl}f(f^{-1}(B))\subset \operatorname{Cl}B \\
+\implies \operatorname{Cl}f^{-1}(B) \subset f^{-1}(f(\operatorname{Cl}f^{-1} (B)))\subset f^{-1}(\operatorname{Cl}B) \\
+(5) \implies (4): \\
 \text{let } B=f(A) \\
-\Rightarrow \operatorname{Cl}A\subset \operatorname{Cl}f^{-1}(f(A))\subset f^{-1}(\operatorname{Cl}f(A)) \\
-\Rightarrow f(\operatorname{Cl}A)\subset f(f^{-1}(\operatorname{Cl}f(A)))\subset \operatorname{Cl}f(A)
+\implies \operatorname{Cl}A\subset \operatorname{Cl}f^{-1}(f(A))\subset f^{-1}(\operatorname{Cl}f(A)) \\
+\implies f(\operatorname{Cl}A)\subset f(f^{-1}(\operatorname{Cl}f(A)))\subset \operatorname{Cl}f(A)
 \end{gathered}
 $$
 
@@ -206,7 +206,7 @@ $$
 $$
 \begin{gathered}
 X,Y \text{are topo spaces} ,A\subset X,B\subset Y \\
-\Rightarrow \operatorname{Int}(A\times B)=\operatorname{Int}A\times \operatorname{Int}B
+\implies \operatorname{Int}(A\times B)=\operatorname{Int}A\times \operatorname{Int}B
 \end{gathered}
 $$
 
@@ -227,8 +227,8 @@ $$
 $$
 \begin{gathered}
 C_i\times D_j\subset A\times B  \\
-\Leftrightarrow C_i\subset A\land D_j\subset D  \\
-\Leftrightarrow C_i\subset \operatorname{Int}A\land D_j\subset \operatorname{Int}B
+\iff C_i\subset A\land D_j\subset D  \\
+\iff C_i\subset \operatorname{Int}A\land D_j\subset \operatorname{Int}B
 \end{gathered}
 $$
 
@@ -267,7 +267,7 @@ $$
 
 $$
 \begin{gathered}
-\overline{ A\cap B } \subset \overline{ A } ,\overline{ A\cap B } \subset \overline{ B } \Rightarrow \overline{ A\cap B } \subset \overline{ A } \cap \overline{ B } 
+\overline{ A\cap B } \subset \overline{ A } ,\overline{ A\cap B } \subset \overline{ B } \implies \overline{ A\cap B } \subset \overline{ A } \cap \overline{ B } 
 \end{gathered}
 $$
 
@@ -276,7 +276,7 @@ $$
 $$
 \begin{gathered}
 \overline{ A } \subset \overline{ A\cap B } ,\overline{ B } \subset \overline{ A\cap B }  \\
-\Rightarrow \overline{ A } \cup \overline{ B } \subset \overline{ A\cup B } 
+\implies \overline{ A } \cup \overline{ B } \subset \overline{ A\cup B } 
 \end{gathered}
 $$
 

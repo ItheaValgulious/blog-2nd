@@ -43,7 +43,7 @@ $$
 $$
 \begin{gathered}
 x(t),y(t)\in C^1 \\
-\Rightarrow 
+\implies 
 \text{length}= \int \sqrt{x'^2(t)+y'^2(t)}dt
 \end{gathered}
 $$
@@ -116,8 +116,8 @@ $$
 
 $$
 \begin{gathered}
-f\in D(-\infty,+\infty) \Rightarrow \int_a^{\infty}f(x)dx=\lim_{X \to \infty} \int_a^X f(x)dx \\
-f\in D[a,b) \Rightarrow \int_a^b f(x)dx=\lim_{X \to b} \int_a^X f(x)dx
+f\in D(-\infty,+\infty) \implies \int_a^{\infty}f(x)dx=\lim_{X \to \infty} \int_a^X f(x)dx \\
+f\in D[a,b) \implies \int_a^b f(x)dx=\lim_{X \to b} \int_a^X f(x)dx
 \end{gathered}
 $$
 
@@ -191,7 +191,7 @@ I=\int_0^{\frac\pi2}\ln \sin xdx=I=\int_0^{\frac\pi2}\ln \cos xdx \\
 =\dfrac{1}{2} \int_0^{\frac\pi2} \ln (\dfrac{\sin 2x}{2} )dx \\
 =\dfrac{1}{4} \int_0^\pi \ln \sin x dx-\dfrac{\pi}{4}\ln 2 \\
 =\dfrac{1}{2} I-\dfrac{\pi}{4} \ln 2 \\
-\Rightarrow I=-\dfrac{\pi}{2}\ln 2  
+\implies I=-\dfrac{\pi}{2}\ln 2  
 \end{gathered}
 $$
 
@@ -267,9 +267,9 @@ $$
 \lim \dfrac{f(x)}{g(x)} =A \\
 f(x),g(x)>0 \\
 \end{cases} \\
-\Rightarrow \begin{cases}
-A<\infty,\int_a^\infty g<\infty \Rightarrow \int_a^\infty f<\infty \\
-A>0,\int_a^\infty g=\infty \Rightarrow \int_a^\infty f=\infty
+\implies \begin{cases}
+A<\infty,\int_a^\infty g<\infty \implies \int_a^\infty f<\infty \\
+A>0,\int_a^\infty g=\infty \implies \int_a^\infty f=\infty
 \end{cases}
  
 \end{gathered}
@@ -281,7 +281,7 @@ $$
 
 <div class='pbox'>
 
-以第一个为例,则存在$X$使得 $x>X \Rightarrow \dfrac{f(x)}{g(x)} <A+1$,然后$\int f\le (A+1)\int g<\infty$
+以第一个为例,则存在$X$使得 $x>X \implies \dfrac{f(x)}{g(x)} <A+1$,然后$\int f\le (A+1)\int g<\infty$
 
 </div>
 
@@ -297,7 +297,7 @@ $$
 g(x) \text{ is decreasing} ,\lim_{x \to \infty} g(x)=0 \\,
 \int_a^x f(t)dt \text{ is bounded} 
 \end{cases} \\
-\Rightarrow \int_a^\infty f(x)g(x)dx \text{ is convergent} 
+\implies \int_a^\infty f(x)g(x)dx \text{ is convergent} 
 \end{gathered}
 $$
 
@@ -309,7 +309,7 @@ $$
 g(x) \text{ is monotonic and bounded}  \\
 \int_a^x f(t)dt \text{ is convergent} 
 \end{cases} \\
-\Rightarrow \int_a^\infty f(x)g(x)dx \text{ is convergent} 
+\implies \int_a^\infty f(x)g(x)dx \text{ is convergent} 
 \end{gathered}
 $$
 
@@ -402,7 +402,7 @@ $$
 f \text{ is monotonic}  \\
 \int_1^\infty f(x)dx<\infty
 \end{cases} \\
-\Rightarrow f(x)=o(\dfrac{1}{x} ) 
+\implies f(x)=o(\dfrac{1}{x} ) 
 \end{gathered}
 $$
 
@@ -433,7 +433,7 @@ $$
 f(x)\in UC[1,\infty) \\ 
 \end{cases}
 \\
-\Rightarrow \lim_{x \to +\infty} f(x)=0
+\implies \lim_{x \to +\infty} f(x)=0
 \end{gathered}
 $$
 
@@ -457,7 +457,7 @@ $$
 $$
 \begin{gathered}
 \lim_{x \to +\infty} f(x)=k \\
-\Rightarrow \int_0^\infty \dfrac{f(ax)-f(bx)}{x} dx=(f(0)-k)\ln(\dfrac{b}{a} )
+\implies \int_0^\infty \dfrac{f(ax)-f(bx)}{x} dx=(f(0)-k)\ln(\dfrac{b}{a} )
 \end{gathered}
 $$
 
@@ -465,7 +465,7 @@ $$
 $$
 \begin{gathered}
 \int_0^\infty \dfrac{f(x)}{x} <\infty \\
-\Rightarrow \int_0^\infty \dfrac{f(ax)-f(bx)}{x}dx=f(0)\ln \dfrac{b}{a} 
+\implies \int_0^\infty \dfrac{f(ax)-f(bx)}{x}dx=f(0)\ln \dfrac{b}{a} 
 \end{gathered}
 $$
 
@@ -479,7 +479,7 @@ $$
 \begin{gathered}
 \int_L^R \dfrac{f(ax)}{x} dx \\
 = \int_{La}^{Ra}\dfrac{f(x)}{x} dx \\
-\Rightarrow \int_L^R \dfrac{f(ax)-f(bx)}{x} dx \\
+\implies \int_L^R \dfrac{f(ax)-f(bx)}{x} dx \\
 =\int_{aL}^{bL}\dfrac{f(x)}{x} dx-\int_{aR}^{bR}\dfrac{f(x)}{x} dx \\
 \end{gathered}
 $$
@@ -569,8 +569,8 @@ $$
 \begin{gathered}
 
 \lim_{n \to \infty}  n(\dfrac{a_n}{a_{n+1}} -1)=r \\
-r>1 \Rightarrow  \text{convergent}  \\
-r<1 \Rightarrow  \text{divergent} 
+r>1 \implies  \text{convergent}  \\
+r<1 \implies  \text{divergent} 
 \end{gathered}
 $$
 
@@ -591,7 +591,7 @@ $$
 \stackrel{ \ln (1-x)>-\frac x{1-x} } \ge\sum _{i = 1} ^{n}  - \dfrac{r}{i+r} \dfrac{i+r}{i}    \\
 =\sum _{i = 1} ^{n}  -\dfrac{r}{i}  \\
 \sim -r\ln n \\
-\Rightarrow b_n\sim \dfrac{1}{n^r} 
+\implies b_n\sim \dfrac{1}{n^r} 
 \end{gathered}
 $$
 
@@ -656,7 +656,7 @@ $$
 $$
 \begin{gathered}
 a_n>0,S_n=\sum _{i = 1} ^{n}  a_i \\
-\Rightarrow \sum _{n = 1} ^{\infty}  \dfrac{a_n}{S_n^2} <\infty
+\implies \sum _{n = 1} ^{\infty}  \dfrac{a_n}{S_n^2} <\infty
 \end{gathered}
 $$
 
@@ -685,7 +685,7 @@ $$
 $$
 \begin{gathered}
 S_n=\sum _{i = 1} ^{n}  a_i,\sum a_i \text{ is divergent},a_n>0  \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \sum \dfrac{a_n}{1+a_n} \text{ is divergent}  \\
 \sum \dfrac{a_n}{S_n} \text{ is divergent} 
 \end{cases}
@@ -729,7 +729,7 @@ $$
 a_n \text{ is decreasing}  \\
 a_n (-1)^n >0
 \end{cases} \\
-\Rightarrow \sum a_i \text{ is convergent} 
+\implies \sum a_i \text{ is convergent} 
 \end{gathered}
 $$
 
@@ -754,7 +754,7 @@ $$
 b_n \text{ is monotonic} 
 \end{cases}
 \\
-\Rightarrow \vert \sum _{i = 1} ^{n}  a_ib_i \vert \le M(\vert b_1 \vert +2 \vert b_n \vert )
+\implies \vert \sum _{i = 1} ^{n}  a_ib_i \vert \le M(\vert b_1 \vert +2 \vert b_n \vert )
 \end{gathered}
 $$
 
@@ -824,7 +824,7 @@ $$
 $$
 \begin{gathered}
 \lim_{n \to \infty} n(\dfrac{a_n}{a_{n+1}} -1)=\lambda>0 \\
-\Rightarrow \sum _n  (-1)^n a_n < \infty
+\implies \sum _n  (-1)^n a_n < \infty
 \end{gathered}
 $$
 
@@ -936,7 +936,7 @@ $$
 $$
 \begin{gathered}
 \sum a<\infty,\sum b<\infty,\sum c<\infty \\
-\Rightarrow (\sum a)(\sum b)=(\sum c)
+\implies (\sum a)(\sum b)=(\sum c)
 \end{gathered}
 $$
 
@@ -966,7 +966,7 @@ $$
 
 </div>
 
-[think] 我们发现从$a*b=c\Rightarrow A*B=C$其实是自然的(求和是卷$1$)是容易的.另外取平均值是提取频率为$0$的分量.
+[think] 我们发现从$a*b=c\implies A*B=C$其实是自然的(求和是卷$1$)是容易的.另外取平均值是提取频率为$0$的分量.
 
 ## Class 31
 
@@ -982,7 +982,7 @@ $$
 
 $$
 \begin{gathered}
-\prod(1+a_i)<\infty \Leftrightarrow \sum \ln(1+a_i)<\infty
+\prod(1+a_i)<\infty \iff \sum \ln(1+a_i)<\infty
 \end{gathered}
 $$
 
@@ -998,8 +998,8 @@ $$
 
 $$
 \begin{gathered}
-a_n>0 \Rightarrow  \\
-\sum \ln(1+a_n) <\infty \Leftrightarrow \sum a_n<\infty
+a_n>0 \implies  \\
+\sum \ln(1+a_n) <\infty \iff \sum a_n<\infty
 \end{gathered}
 $$
 
@@ -1023,8 +1023,8 @@ $$
 
 $$
 \begin{gathered}
--1<a_n<0,a_n\to 0 \Rightarrow  \\
-\sum \ln(1+a_n)>-\infty \Leftrightarrow \sum a_n>-\infty
+-1<a_n<0,a_n\to 0 \implies  \\
+\sum \ln(1+a_n)>-\infty \iff \sum a_n>-\infty
 \end{gathered}
 $$
 
@@ -1042,7 +1042,7 @@ $$
 $$
 \begin{gathered}
 \sum \ln(1+a_n) \text{ is convergent}  \\
-\Leftrightarrow \sum a_n^2 \text{ is convergent} 
+\iff \sum a_n^2 \text{ is convergent} 
 \end{gathered}
 $$
 
@@ -1083,7 +1083,7 @@ $$
 
 $$
 \begin{gathered}
-E=\{ a \} \Leftrightarrow \lim_{n \to \infty} a_n=a
+E=\{ a \} \iff \lim_{n \to \infty} a_n=a
 \end{gathered}
 $$
 
@@ -1160,7 +1160,7 @@ $$
 $$
 \begin{gathered}
 \forall m,n\in N^+,0\le a_{m+n}\le a_m+a_n \\
-\Rightarrow \lim_{n \to \infty} \dfrac{a_n}{n} <\infty
+\implies \lim_{n \to \infty} \dfrac{a_n}{n} <\infty
 \end{gathered}
 $$
 
@@ -1194,7 +1194,7 @@ $$
 
 $$
 \begin{gathered}
-A=\limsup x_n \Leftrightarrow \begin{cases}
+A=\limsup x_n \iff \begin{cases}
 \forall \epsilon>0,\exists N,\forall n>N,x_n<A+\epsilon \\
 \exists \text{ infinite }x_n \ s.t.\ x_n>x-\epsilon 
 \end{cases}
@@ -1218,7 +1218,7 @@ $$
 x_n \text{ is bounded} \\
 \lim_{n \to \infty} 2x_n+x_{2n}<\infty
 \end{cases}
-\Rightarrow \lim_{n \to \infty} x_n<\infty 
+\implies \lim_{n \to \infty} x_n<\infty 
 \end{gathered}
 $$
 
@@ -1265,7 +1265,7 @@ $$
 
 $$
 \begin{gathered}
-x_n>0 \Rightarrow \limsup_{n \to \infty} \sqrt[ n ]{ x_n } \le \limsup_{n \to \infty} \dfrac{x_n}{x_{n-1}} 
+x_n>0 \implies \limsup_{n \to \infty} \sqrt[ n ]{ x_n } \le \limsup_{n \to \infty} \dfrac{x_n}{x_{n-1}} 
 \end{gathered}
 $$
 
@@ -1286,7 +1286,7 @@ $$
 
 <div class='cbox'>
 
-有限覆盖推$f\in C[a,b] \Rightarrow f\in UC[a,b]$
+有限覆盖推$f\in C[a,b] \implies f\in UC[a,b]$
 
 </div>
 
@@ -1315,7 +1315,7 @@ $$
 $$
 \begin{gathered}
 x^{\frac13}+y^{\frac13}\ge (x+y)^{\frac13} \\
-\Rightarrow (x-y)^{\frac13}\ge x^{\frac13}-y^{\frac13} \\
+\implies (x-y)^{\frac13}\ge x^{\frac13}-y^{\frac13} \\
 \end{gathered}
 $$
 
@@ -1379,7 +1379,7 @@ $$
 T\in (0,\infty),g\ge 0,g\in C(-\infty,+\infty) \\
 \exists \tau>0,b>0 \ s.t.\ 
 \forall t\in (0,T),\dfrac{1}{\tau} \int_t^{t+\tau}g(s)ds\le b \\
-\Rightarrow \forall a>0,t\in (0,T) \\
+\implies \forall a>0,t\in (0,T) \\
 \int_0^t e^{-a(t-s)}g(s)ds\le \dfrac{b\tau}{1-e^{-a\tau}} 
 \end{gathered}
 $$

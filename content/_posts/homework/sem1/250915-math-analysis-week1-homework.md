@@ -17,7 +17,7 @@ top: 0
 
 <div class='cbox'>
 
-$a_n\le b_n\le c_n, \lim_{n \to \infty} (c_n-a_n)=0  \Rightarrow a_n \text{收敛}$ 
+$a_n\le b_n\le c_n, \lim_{n \to \infty} (c_n-a_n)=0  \implies a_n \text{收敛}$ 
 
 </div>
 
@@ -40,7 +40,7 @@ $$
 
 $$
 \begin{gathered}
-a_n\le b_n\le c_n,b_n \text{收敛}  , \lim_{n \to \infty} (c_n-a_n)=0  \Rightarrow a_n \text{收敛} 
+a_n\le b_n\le c_n,b_n \text{收敛}  , \lim_{n \to \infty} (c_n-a_n)=0  \implies a_n \text{收敛} 
 \end{gathered}
 $$
 
@@ -51,14 +51,14 @@ $$
 $$
 \begin{gathered}
 \forall \epsilon_1 > 0, \exists N_1 \ s.t.\ 
-n>N_1  \Rightarrow c_n-a_n< \epsilon_1 \\
+n>N_1  \implies c_n-a_n< \epsilon_1 \\
 \therefore b_n-a_n\le c_n-a_n<\epsilon_1 \\
 \text{又}\because \forall \epsilon_2 > 0\exists N_2 \ s.t.\ 
-n>N_2  \Rightarrow b_n-B<\epsilon_2 \\
+n>N_2  \implies b_n-B<\epsilon_2 \\
 \therefore \vert a_n-B \vert \le \vert b_n-a_n \vert+\vert b_n-B \vert \le \epsilon+\epsilon_2 \\
 \therefore \epsilon_1,\epsilon_2:=\frac{\epsilon}{2} 
 \text{有} \\
-\forall \epsilon,N:=\max(N_1,N_2), n>N  \Rightarrow  \vert a_n-B\vert < \epsilon \\
+\forall \epsilon,N:=\max(N_1,N_2), n>N  \implies  \vert a_n-B\vert < \epsilon \\
 \text{Q.E.D}
 \end{gathered}
 $$
@@ -71,7 +71,7 @@ $$
 
 $$
 \begin{gathered}
-\lim a_n = A, a_n\ne 0 \Rightarrow \lim \frac{a_{n+1}}{a_n} = 1 
+\lim a_n = A, a_n\ne 0 \implies \lim \frac{a_{n+1}}{a_n} = 1 
 \end{gathered}
 $$
 
@@ -91,7 +91,7 @@ $a_n=2^{-n}$
 
 $$
 \begin{gathered}
-\lim_{n \to \infty} a_nb_n = 0 \Rightarrow (\lim_{n \to \infty} a_n)(\lim_{n \to \infty} b_n) =0
+\lim_{n \to \infty} a_nb_n = 0 \implies (\lim_{n \to \infty} a_n)(\lim_{n \to \infty} b_n) =0
 \end{gathered}
 $$
 
@@ -116,7 +116,7 @@ $$
 
 $$
 \begin{gathered}
-\lim_{n \to \infty} \dfrac{b_n}{a_n} =1, \lim_{n \to \infty} a_n=A  \Rightarrow \lim_{n \to \infty} b_n = A
+\lim_{n \to \infty} \dfrac{b_n}{a_n} =1, \lim_{n \to \infty} a_n=A  \implies \lim_{n \to \infty} b_n = A
 \end{gathered}
 $$
 
@@ -145,11 +145,11 @@ b_n= \frac{a_n}{\frac{a_n}{b_n}} \in (\dfrac{A-\epsilon_2}{1+\epsilon_1},\dfrac{
 \therefore  b_n-A \in (\dfrac{-A\epsilon_1-\epsilon_2}{1+\epsilon_1},\dfrac{A\epsilon_1+\epsilon_2}{1-\epsilon_1} ), \\
 \vert b_n-A \vert \le \dfrac{A\epsilon_1+\epsilon_2}{1-\epsilon_1}<\epsilon \\
 \epsilon_1:= \dfrac{\epsilon}{100A} ,\epsilon_2:=\dfrac{\epsilon}{100} \\
-\Rightarrow \vert b_n-A \vert \le \dfrac{A\epsilon_1+\epsilon_2}{1-\epsilon_1}=\dfrac{\dfrac{\epsilon}{50} }{1-\dfrac{\epsilon}{100A} }  \\
+\implies \vert b_n-A \vert \le \dfrac{A\epsilon_1+\epsilon_2}{1-\epsilon_1}=\dfrac{\dfrac{\epsilon}{50} }{1-\dfrac{\epsilon}{100A} }  \\
 
-\text{let } \epsilon<A  \Rightarrow 1-\dfrac{\epsilon}{100A} >\dfrac{1}{50}  \\
+\text{let } \epsilon<A  \implies 1-\dfrac{\epsilon}{100A} >\dfrac{1}{50}  \\
 
-\therefore N=\max(N_1,N_2) \Rightarrow n>A \Rightarrow \vert b_n-A \vert < \epsilon \\
+\therefore N=\max(N_1,N_2) \implies n>A \implies \vert b_n-A \vert < \epsilon \\
 
 \text{Q.E.D}
 
@@ -280,7 +280,7 @@ $$
 $$
 \begin{gathered}
 N:=\tan(\dfrac{\pi}{2}-\dfrac{\epsilon}{2})
- \Rightarrow  \\
+ \implies  \\
 \forall \epsilon, \vert \arctan(n)-\dfrac{\pi}{2}\vert =\dfrac{\pi}{2}-\arctan(n)=\dfrac{\epsilon}{2}<\epsilon \\
 
 \text{Q.E.D}
@@ -293,7 +293,7 @@ $$
 
 $$
 \begin{gathered}
-(\lim a_n)(\lim_{n \to \infty} b_n) = X,a_n>0,b_n>0  \Rightarrow  \lim_{n \to \infty} a_nb_n=X
+(\lim a_n)(\lim_{n \to \infty} b_n) = X,a_n>0,b_n>0  \implies  \lim_{n \to \infty} a_nb_n=X
 \end{gathered}
 $$
 
@@ -305,14 +305,14 @@ $$
 \begin{gathered}
 A:=\lim a_n,B:=\lim b_n \\
 \forall \epsilon_1, \exists N_1 \ s.t.\ 
-n>N_1  \Rightarrow  {\left \vert a_n-A \right \vert} < \epsilon \\
+n>N_1  \implies  {\left \vert a_n-A \right \vert} < \epsilon \\
 
 \forall \epsilon_2, \exists N_2 \ s.t.\ 
-n>N_2  \Rightarrow  {\left \vert b_n-B \right \vert} < \epsilon \\
+n>N_2  \implies  {\left \vert b_n-B \right \vert} < \epsilon \\
 
-\therefore n>\max(N_1,N_2)  \Rightarrow \\
+\therefore n>\max(N_1,N_2)  \implies \\
   a_n \in (A-\epsilon_1,A+\epsilon_1),b_n\in (B-\epsilon_2,B+\epsilon_2) \\
-\Rightarrow  \\
+\implies  \\
 a_nb_n \in ((A-\epsilon_1)(B-\epsilon_2),(A+\epsilon_1)(B+\epsilon_2)) \\
 \vert a_nb_n-AB\vert < A\epsilon_2+B\epsilon_1+\epsilon_1\epsilon_2\\
 \forall \epsilon, \epsilon_2:=\dfrac{\epsilon}{4A},\epsilon_1:=\dfrac{\epsilon}{4B} \\
@@ -395,11 +395,11 @@ $$
 \stackrel{\text{Squeeze Theorem}}{\Longrightarrow } \\
 
 \lim_{n \to \infty} \sum _{i = 1} ^{n}  \frac{1}{\sqrt{n^2+1}} \le L=\lim_{n \to \infty} \sum _{i = 1} ^{n}  \frac{1}{\sqrt{n^2+i}} \le \lim_{n \to \infty} \sum _{i = 1} ^{n}  \frac{1}{\sqrt{n^2+n}}  \\
-\Rightarrow 
+\implies 
 \lim_{n \to \infty} \frac{n}{\sqrt{n^2+1}} \le L \le \lim_{n \to \infty} \frac{n}{\sqrt{n^2+n}}  \\
-\Rightarrow 
+\implies 
 \lim_{n \to \infty} \frac{1}{\sqrt{1+\frac{1}{n^2} }} \le L \le \lim_{n \to \infty} \frac{1}{\sqrt{1+\frac{1}{n} }}  \\
-\Rightarrow L=1
+\implies L=1
 \end{gathered}
 $$
 
@@ -417,16 +417,16 @@ $\lim_{n\to\infty} \sqrt[n]{n^2-n+2}$
 
 <div class='pbox'>
 
-Obviously: $n>2 \Rightarrow n^2-n+2>8>1$
+Obviously: $n>2 \implies n^2-n+2>8>1$
 
 $$
 \begin{gathered}
 \vert (n^2-n+2)^{\frac{1}{n} }-1 \vert =(n^2-n+2)^{\frac{1}{n} }-1<\epsilon \\
-\Leftarrow n^2-n+2<(1+\epsilon)^n \\
-\Leftarrow F(x)=n^2-n+2<1+n\epsilon+\frac{(n^2-n)\epsilon^2}{2}+\frac{n(n-1)(n-2)}{6}\epsilon^3=G(x)   \\
+\impliedby n^2-n+2<(1+\epsilon)^n \\
+\impliedby F(x)=n^2-n+2<1+n\epsilon+\frac{(n^2-n)\epsilon^2}{2}+\frac{n(n-1)(n-2)}{6}\epsilon^3=G(x)   \\
 \exists C_1(\epsilon),C_2(\epsilon) \\ s.t.\\ 
 F(x)<C_1(\epsilon)n^2,G(x)>C_2(\epsilon)n^3 \\
-\therefore N:=\frac{C_1(\epsilon)}{C_2(\epsilon)} +1 \Rightarrow (n>N \Rightarrow (n^2-n+2)^{\frac{1}{n} }-1<\epsilon) \\
+\therefore N:=\frac{C_1(\epsilon)}{C_2(\epsilon)} +1 \implies (n>N \implies (n^2-n+2)^{\frac{1}{n} }-1<\epsilon) \\
 \therefore \lim_{n\to\infty} \sqrt[n]{n^2-n+2}=1
 \end{gathered}
 $$
@@ -450,7 +450,7 @@ $$
 $$
 \begin{gathered}
 1<\arctan(n)<\frac{\pi}{2} \\
-\Rightarrow 1<\sqrt[n]{\arctan(n)}<\sqrt[n]{\frac{\pi}{2} } \\
+\implies 1<\sqrt[n]{\arctan(n)}<\sqrt[n]{\frac{\pi}{2} } \\
 
 \begin{cases}
 1<\sqrt[n]{\arctan(n)}<\sqrt[n]{\frac{\pi}{2} }  \\
@@ -523,7 +523,7 @@ $$
 \lim_{n \to \infty} a_{2n} = \lim_{n \to \infty} \frac{6n}{6n+1} =1 \\
 \lim_{n \to \infty} a_{2n+1} = \lim_{n \to \infty} \frac{2n+1}{6n+4} =\frac{1}{3} \ne 1 
 \end{cases} \\
-\Rightarrow \{ a_n \} \text{发散} 
+\implies \{ a_n \} \text{发散} 
 \end{gathered}
 $$
 
@@ -536,8 +536,8 @@ $$
 <div class="cbox">
 
 $$
-a_n\ne 0,\frac{a_{n+1}}{a_n} >0,\lim_{n \to \infty} \frac{a_{n+1}}{a_n} =0 \Rightarrow \exists N \ s.t.\ 
-n>N \Rightarrow \{a_n\} \text{单调} 
+a_n\ne 0,\frac{a_{n+1}}{a_n} >0,\lim_{n \to \infty} \frac{a_{n+1}}{a_n} =0 \implies \exists N \ s.t.\ 
+n>N \implies \{a_n\} \text{单调} 
 $$
 
 </div>
@@ -569,8 +569,8 @@ $$
 $$
 \begin{gathered}
 \forall \epsilon_1, \exists N_1 \ s.t.\ 
-n>N_1 \Rightarrow \vert x_n-x_{n-1}-d \vert <\epsilon_1 \\
-\Leftrightarrow x_n-x_{n-1} \in [d-\epsilon_1,d+\epsilon_1] \\
+n>N_1 \implies \vert x_n-x_{n-1}-d \vert <\epsilon_1 \\
+\iff x_n-x_{n-1} \in [d-\epsilon_1,d+\epsilon_1] \\
 
 \therefore x_n=x_{N_1}+\sum _{i = N_1+1} ^{n}  (x_i-x_{i-1}) \\
 \in [x_{N_1}+(n-N_1)(d-\epsilon_1),x_{N_1}+(n-N_1)(d+\epsilon_1)] \\
@@ -579,7 +579,7 @@ n>N_1 \Rightarrow \vert x_n-x_{n-1}-d \vert <\epsilon_1 \\
 
 
 \epsilon_1:=\frac{\epsilon}{2} ,n:=\frac{2x_{N_1}-N_1(d-\epsilon_1)}{\epsilon}  \\
-\Rightarrow \vert \frac{x_n}{n} -d \vert < \epsilon
+\implies \vert \frac{x_n}{n} -d \vert < \epsilon
 \end{gathered}
 $$
 
@@ -606,20 +606,20 @@ $$
 $$
 \begin{gathered}
 {\left \vert \sqrt[n]{ \prod_i a_i } -a \right \vert} <\epsilon \\
-\Leftrightarrow a-\epsilon<\sqrt[n]{ \prod_i a_i }<a+\epsilon \\
-\Leftrightarrow (a-\epsilon)^n<\prod_i a_i<(a+\epsilon)^n \\
+\iff a-\epsilon<\sqrt[n]{ \prod_i a_i }<a+\epsilon \\
+\iff (a-\epsilon)^n<\prod_i a_i<(a+\epsilon)^n \\
 \forall \epsilon_1,\exists N_1 \ s.t.\ 
-n>N_1 \Rightarrow a_n\in [a-\epsilon_1,a+\epsilon_1] \\
+n>N_1 \implies a_n\in [a-\epsilon_1,a+\epsilon_1] \\
 \prod_i a_i=(\prod_{i=1}^{N_1} a_i) (\prod_{i=N_1+1}^{n}a_i)\in [A(a-\epsilon_1)^{n-N_1},A(a+\epsilon_1)^{n-N_1}] \\
 \text{let} \epsilon_1:=\frac{\epsilon}{2} ,\text{Consider } A(a-\epsilon_1)^{n-N_1}>(a-\epsilon)^n: \\
-\Leftrightarrow \frac{A}{(a-\epsilon_1)^{N_1}} >(\frac{a-\epsilon}{a-\epsilon_1} )^n \\
+\iff \frac{A}{(a-\epsilon_1)^{N_1}} >(\frac{a-\epsilon}{a-\epsilon_1} )^n \\
 \text{Since }\frac{a-\epsilon}{a-\epsilon_1}<1,\exists N_2 \ s.t.\ 
-n>N_2 \Rightarrow \text{不等式成立} \\
+n>N_2 \implies \text{不等式成立} \\
 \text{右侧同理有} N_3 \\
 \therefore N:=N_1+N_2+N_3 \\ s.t.\\ 
 n>N  \\ 
-\Rightarrow  (a-\epsilon)^n<A(a-\epsilon_1)^{n-N_1}<\prod_i a_i<A(a+\epsilon_1)^{n-N_1}<(a+\epsilon)^n\\
-\Rightarrow {\left \vert \sqrt[n]{ \prod_i a_i } -a \right \vert} <\epsilon 
+\implies  (a-\epsilon)^n<A(a-\epsilon_1)^{n-N_1}<\prod_i a_i<A(a+\epsilon_1)^{n-N_1}<(a+\epsilon)^n\\
+\implies {\left \vert \sqrt[n]{ \prod_i a_i } -a \right \vert} <\epsilon 
 \\
 \text{Q.E.D}
 \end{gathered}
@@ -639,7 +639,7 @@ $$
 
 \begin{gathered}
 e=\lim_{n \to \infty} (1+\frac{1}{n})^n  \\
-\Rightarrow \frac{1}{e} =\lim_{n \to \infty} (\frac{n}{n+1} )^n \\
+\implies \frac{1}{e} =\lim_{n \to \infty} (\frac{n}{n+1} )^n \\
 a_n:=(\frac{n}{n+1})^n 
 \text{检验符合引理}
 \\
@@ -664,12 +664,12 @@ $$
 $$
 \begin{gathered}
 \forall X,X_1:=X+1  \\
-\lim_{n \to \infty} x_n=\infty \Rightarrow \exists N_1 \ s.t.\ 
-n>N_1 \Rightarrow x_n>X_1=X+1 \\
+\lim_{n \to \infty} x_n=\infty \implies \exists N_1 \ s.t.\ 
+n>N_1 \implies x_n>X_1=X+1 \\
 \text{for }n>N_1,\frac{\sum _{i = 1} ^{n}  x_i}{n} =\frac{\sum _{i = 1} ^{N_1}  x_i+\sum _{i = N_1+1} ^{n}  X+1}{n} \\
 >(1-\frac{N_1}{n})(X+1)  \\
 n:=N_1(X+1)+100 \\
-\Rightarrow \frac{\sum _{i = 1} ^{n}  x_i}{n} >X
+\implies \frac{\sum _{i = 1} ^{n}  x_i}{n} >X
 \end{gathered}
 $$
 
@@ -682,7 +682,7 @@ $$
 <div class="cbox">
 
 $$
-a_n>0,\lim_{n \to \infty} \frac{a_n}{a_{n+1}+a_{n+2}}=0 \Rightarrow a_n \text{is unbounded}  
+a_n>0,\lim_{n \to \infty} \frac{a_n}{a_{n+1}+a_{n+2}}=0 \implies a_n \text{is unbounded}  
 $$
 
 </div>
@@ -694,10 +694,10 @@ $$
 $$
 
 \begin{gathered}
-\epsilon=\frac{1}{5} ,\frac{a_n}{a_{n+1}+a_{n+2}} <\frac{1}{5} \Rightarrow a_{n+1}+a_{n+2}>5a_n \\
+\epsilon=\frac{1}{5} ,\frac{a_n}{a_{n+1}+a_{n+2}} <\frac{1}{5} \implies a_{n+1}+a_{n+2}>5a_n \\
 \therefore \max(\{ a_{n+1},a_{n+2} \} )>2a_n \\
 \therefore b_1=N+1,b_i=a_{b_{i-1}+1},a_{b_{i-1}+2} \text{中较大的一个的下标} 
-\Rightarrow a_{b_i}>2^ia_{b_1}
+\implies a_{b_i}>2^ia_{b_1}
 \end{gathered}
 $$
 
@@ -736,7 +736,7 @@ $$
 \lim_{n \to \infty} a =a \\
 \lim_{n \to \infty} \frac{\sum _{i = 1} ^{n}  x_i}{n}=a
 \end{cases}
-\Rightarrow 
+\implies 
 \lim_{n \to \infty} x_n=a
 $$
 
@@ -760,8 +760,8 @@ $\lim_{n \to \infty} \frac{1 + \frac{1}{\sqrt{2}} + \cdots + \frac{1}{\sqrt{n}}}
 $$
 \begin{gathered}
 \lim_{n \to \infty} \frac{1 + \frac{1}{\sqrt{2}} + \cdots + \frac{1}{\sqrt{n}}}{\ln \sqrt{n}} \\
-\stackrel{\text{Stolz Theorem}}{\Leftarrow  }\lim_{n \to \infty} \dfrac{\dfrac{2}{\sqrt n} }{\ln\dfrac{n}{n-1} }  \\
-\stackrel{x>1 \Rightarrow \ln(x)>2\frac{x-1}{x+1} }{>}\lim_{n \to \infty} \dfrac{\dfrac{2}{\sqrt{ n } } }{\dfrac{2}{2n-1}  }\\
+\stackrel{\text{Stolz Theorem}}{\impliedby  }\lim_{n \to \infty} \dfrac{\dfrac{2}{\sqrt n} }{\ln\dfrac{n}{n-1} }  \\
+\stackrel{x>1 \implies \ln(x)>2\frac{x-1}{x+1} }{>}\lim_{n \to \infty} \dfrac{\dfrac{2}{\sqrt{ n } } }{\dfrac{2}{2n-1}  }\\
 =+\infty
 
 \end{gathered}
@@ -784,7 +784,7 @@ $\lim_{n \to \infty} \frac{1 + \sqrt{2} + \sqrt[3]{3} + \cdots + \sqrt[n]{n}}{n}
 $$
 \begin{gathered}
 \lim_{n \to \infty} \frac{1 + \sqrt{2} + \sqrt[3]{3} + \cdots + \sqrt[n]{n}}{n} \\
-\stackrel{\text{Stolz Theorem}}{\Leftarrow }\lim_{n \to \infty} \dfrac{\sqrt[n]{n}}{1}  \\
+\stackrel{\text{Stolz Theorem}}{\impliedby }\lim_{n \to \infty} \dfrac{\sqrt[n]{n}}{1}  \\
 =1
 \end{gathered}
 $$
@@ -804,7 +804,7 @@ $\lim_{n \to \infty} \frac{a_1 + 2a_2 + \cdots + na_n}{\sum_{i=1}^n i}$ (已知 
 $$
 \begin{gathered}
 \lim_{n \to \infty} \frac{a_1 + 2a_2 + \cdots + na_n}{\sum_{i=1}^n i} \\
-\stackrel{\text{Stolz Theorem}}{\Leftarrow }
+\stackrel{\text{Stolz Theorem}}{\impliedby }
 \lim_{n \to \infty} \dfrac{na_n}{n} \\
 =a
 \end{gathered}
@@ -848,14 +848,14 @@ $$
 $$
 \begin{gathered}
 \frac{1}{n^2} \sum_{k=0}^n \ln \binom{n}{k} \\
-\stackrel{\text{Stolz Theorem}}{\Leftarrow }
+\stackrel{\text{Stolz Theorem}}{\impliedby }
 \dfrac{\sum _{i = 0} ^{n} \ln\binom{n}{i}-\sum _{i = 0} ^{n-1}  \ln \binom{n-1}{i}}{2n-1}  \\
 =\dfrac{\sum _{i = 0} ^{n-1} \ln(\dfrac{n}{n-i} )}{2n-1}  \\
 =\dfrac{\ln(\dfrac{n^n}{n!} )}{2n-1}  \\
 = \dfrac{n\ln(\dfrac{n}{\sqrt[n]{ n! } } )}{2n-1} \\
 \text{According to homework class-2:} \\
 \lim_{n \to \infty} \dfrac{\sqrt[n]{ n! } }{n} =\dfrac{1}{e} \\
-\Rightarrow \lim_{n \to \infty}  \dfrac{n\ln(\dfrac{n}{\sqrt[n]{ n! } } )}{2n-1}  \\
+\implies \lim_{n \to \infty}  \dfrac{n\ln(\dfrac{n}{\sqrt[n]{ n! } } )}{2n-1}  \\
 =\lim_{n \to \infty} \dfrac{n}{2n-1} \lim_{n \to \infty} \ln(\dfrac{n}{\sqrt[n]{ n! } } ) \\
 =\dfrac{1}{2} 
 
@@ -882,7 +882,7 @@ x_n:=\sum _{i = n} ^{n} \Delta A_i i \\
 =\sum _{i = 1} ^{n}  i(A_i-A_{i-1}) \\
 =nA_n-\sum_{i=1}^{n-1} A_i \\
 \lim_{n \to \infty} \dfrac{x_n}{n} \\
-\stackrel{\text{Stolz Theorem}}{\Leftarrow  } \dfrac{x_n-x_{n-1}}{n-(n-1)} =n\Delta A_n
+\stackrel{\text{Stolz Theorem}}{\impliedby  } \dfrac{x_n-x_{n-1}}{n-(n-1)} =n\Delta A_n
 =0 \\
 \therefore \lim_{n \to \infty} A_n- \lim_{n \to \infty}  \dfrac{\sum _{i = 1} ^{n-1}  A_i}{n-1} = \lim_{n \to \infty} \dfrac{x_n}{n} =0 \\
 \lim_{n \to \infty} A_n=a

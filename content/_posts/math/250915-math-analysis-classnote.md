@@ -18,7 +18,7 @@ top: 0
 <div class='cbox'>
 
 $$
-a,b\in R  \Rightarrow {\left \vert {\left \vert a \right \vert} -{\left \vert b \right \vert}   \right \vert}  \le  {\left \vert a+b \right \vert} \leq {\left \vert a \right \vert} + {\left \vert b \right \vert}
+a,b\in R  \implies {\left \vert {\left \vert a \right \vert} -{\left \vert b \right \vert}   \right \vert}  \le  {\left \vert a+b \right \vert} \leq {\left \vert a \right \vert} + {\left \vert b \right \vert}
 $$
 
 </div>
@@ -28,10 +28,10 @@ $$
 $$
 \begin{gathered}
     -{\left \vert a \right \vert} {\left \vert b \right \vert} \le ab\le {\left \vert a \right \vert} {\left \vert b \right \vert}
- \Rightarrow  \\
+ \implies  \\
 {\left \vert a \right \vert} ^2-2 {\left \vert a \right \vert} {\left \vert b \right \vert}  + {\left \vert a+b \right \vert} ^2
 \le a^2+2ab+b^2 
-\le {\left \vert a \right \vert} ^2+2 {\left \vert a \right \vert} {\left \vert b \right \vert}  + {\left \vert a+b \right \vert} ^2 \Rightarrow  \\
+\le {\left \vert a \right \vert} ^2+2 {\left \vert a \right \vert} {\left \vert b \right \vert}  + {\left \vert a+b \right \vert} ^2 \implies  \\
 ({\left \vert a \right \vert} -{\left \vert b \right \vert} )^2\le (a+b)^2\le ({\left \vert a \right \vert} +{\left \vert b \right \vert} )^2
 \end{gathered}
 $$
@@ -47,7 +47,7 @@ $$
 
 $$
 \begin{gathered}
-0<x_i \in R  \Rightarrow 
+0<x_i \in R  \implies 
 \dfrac{\sum_i x_i}{n} \ge \sqrt[n]{\prod_i x_i} \ge \dfrac{n}{\sum_i \dfrac{1}{x_i} }  
 \end{gathered}
 $$
@@ -71,9 +71,9 @@ $$
 
 $$
 \begin{gathered}
-lim_{n\to \infty} a_n = A  \Leftrightarrow  \\
+lim_{n\to \infty} a_n = A  \iff  \\
 \forall \epsilon >0 \exists N \ s.t.\ 
-n\ge N  \Rightarrow \left \vert a_n-A \right \vert < \epsilon
+n\ge N  \implies \left \vert a_n-A \right \vert < \epsilon
 \end{gathered}
 $$
 
@@ -110,9 +110,9 @@ Or try this:
 $$
 \begin{gathered}
 {\left \vert n^{\frac{1}{n} }-1 \right \vert} =n^{\frac{1}{n} }-1<\epsilon \\
-\Leftarrow  n^{\frac{1}{n}}<(\epsilon+1) \\
-\Leftarrow  n<(1+\epsilon)^n \\
-\Leftarrow n<1+\epsilon n+\frac{\epsilon^2n(n-1)}{2} 
+\impliedby  n^{\frac{1}{n}}<(\epsilon+1) \\
+\impliedby  n<(1+\epsilon)^n \\
+\impliedby n<1+\epsilon n+\frac{\epsilon^2n(n-1)}{2} 
 \end{gathered}
 $$
 
@@ -228,7 +228,7 @@ $$
 
 <div class='cbox'>
 
-$\operatorname{Card}(A)\le \operatorname{Card}(B),\operatorname{Card}(B)\le \operatorname{Card}(A) \Rightarrow \operatorname{Card}(A)=\operatorname{Card}(B)$
+$\operatorname{Card}(A)\le \operatorname{Card}(B),\operatorname{Card}(B)\le \operatorname{Card}(A) \implies \operatorname{Card}(A)=\operatorname{Card}(B)$
 
 或者表达为
 
@@ -238,7 +238,7 @@ $$
 \forall A,B,g:A\to B,f:B\to A\\
 f,g \text{ is injective} 
 \end{cases}
- \Rightarrow \exists h:A \leftrightarrow B \text{ is bijective} 
+ \implies \exists h:A \leftrightarrow B \text{ is bijective} 
 \end{gathered}
 $$
 
@@ -311,8 +311,8 @@ $$
 $$
 \begin{gathered}
 {\left \vert \frac{1}{b_n}-\frac{1}{B}  \right \vert}<\epsilon \\
-\Leftarrow {\left \vert B-b_n \right \vert} <\epsilon b_nB \\
-\Leftarrow \epsilon'=\frac{\epsilon}{BM+114514} (\vert M\vert>b_n)
+\impliedby {\left \vert B-b_n \right \vert} <\epsilon b_nB \\
+\impliedby \epsilon'=\frac{\epsilon}{BM+114514} (\vert M\vert>b_n)
 \end{gathered}
 \\
 \text{Q.E.D}
@@ -335,7 +335,7 @@ $$
 \lim_{n \to \infty} a_n=a \\
 \lim_{n \to \infty} b_n=b
 \end{cases} \\
-\Rightarrow \lim_{n \to \infty} \frac{\sum_i a_ib_{n-i}}{n}=ab
+\implies \lim_{n \to \infty} \frac{\sum_i a_ib_{n-i}}{n}=ab
  
 $$
 
@@ -422,7 +422,7 @@ y_n \uparrow,\lim_{n \to \infty} y_n=\infty \\
 \lim_{n \to \infty} \dfrac{x_n-x_{n-1}}{y_n-y_{n-1}} =a\in[-\infty,+\infty]
 \end{cases}
  \\
-\Rightarrow \lim_{n \to \infty} \dfrac{x_n}{y_n} =a
+\implies \lim_{n \to \infty} \dfrac{x_n}{y_n} =a
 \end{gathered}
 $$
 
@@ -463,7 +463,7 @@ $$
 a_i>a_{i-1} \\
 a_i<M
 \end{cases}
-\Rightarrow 
+\implies 
 \lim_{n \to \infty} a_i \text{ exists} 
 \end{gathered}
 $$
@@ -520,7 +520,7 @@ $$
 $$
 \begin{gathered}
 \lim_{a \to \infty} \lim_{b \to \infty} f(a,b) = X
-\Rightarrow \lim_{n \to \infty} f(n,n) = X
+\implies \lim_{n \to \infty} f(n,n) = X
 \end{gathered}
 $$
 
@@ -545,7 +545,7 @@ $$
 \begin{gathered}
 b_n:=\sum _{i = 0} ^{n}  \dfrac{1}{i!} \\
 X=b_{n+m}-b_n=\sum _{i = n+1} ^{n+m}  \dfrac{1}{i!}  \\
-<\dfrac{1}{(n+1)!} \sum _{i = 0} ^{m-1}  \dfrac{1}{(n+1)^i}<\dfrac{1}{n!\cdot n}   \\ \Rightarrow e-b_n= \lim_{m \to \infty} X<\dfrac{1}{n!\cdot n} 
+<\dfrac{1}{(n+1)!} \sum _{i = 0} ^{m-1}  \dfrac{1}{(n+1)^i}<\dfrac{1}{n!\cdot n}   \\ \implies e-b_n= \lim_{m \to \infty} X<\dfrac{1}{n!\cdot n} 
 \end{gathered}
 $$
 
@@ -645,7 +645,7 @@ $$
 \begin{gathered}
 \forall \epsilon, \exists N \\ s.t.\\ 
 \forall n,m>N, \vert a_n-a_m\vert<\epsilon
-\Leftrightarrow \lim_{n \to \infty} a_n \text{ exists} 
+\iff \lim_{n \to \infty} a_n \text{ exists} 
 \end{gathered}
 $$
 
@@ -690,7 +690,7 @@ $$
 $$
 \begin{gathered}
 S=\{ (x,y) \vert x<y \},T\subset S , \cup_{I\in T} I \supset [a,b] \\
-\Rightarrow \exists A \in T,\cup_{I\in A} I \supset [a,b],\vert A\vert\in N(\text{not infinity} ) 
+\implies \exists A \in T,\cup_{I\in A} I \supset [a,b],\vert A\vert\in N(\text{not infinity} ) 
 \end{gathered}
 $$
 
@@ -717,7 +717,7 @@ $$
 $$
 \begin{gathered}
 \lim_{x \to x_0} f(x) = A  \\
-\Leftrightarrow \forall \epsilon, \exists \delta,\\ s.t.\\ 
+\iff \forall \epsilon, \exists \delta,\\ s.t.\\ 
 \forall x, \vert x-x_0 \vert \in (0,\delta), \vert f(x)-A \vert <\epsilon
 \end{gathered}
 $$
@@ -731,7 +731,7 @@ Heine Theorem
 $$
 \begin{gathered}
 \lim_{x \to x_0} f(x)=A \\
-\Leftrightarrow \forall \{ x_n \} ,\lim_{n \to \infty} x_n  = x_0 \\
+\iff \forall \{ x_n \} ,\lim_{n \to \infty} x_n  = x_0 \\
 \lim_{n \to \infty} f(x_n) = A
 \end{gathered}
 $$
@@ -761,7 +761,7 @@ $$
 
 $$
 \begin{gathered}
-\lim_{x \to x_0} \text{ exists} \Leftrightarrow \forall \epsilon, \exists \delta,\forall x_1,x_2 \in N^*(x_0,\delta),\vert f(x_1)-f(x_2) \vert < \epsilon
+\lim_{x \to x_0} \text{ exists} \iff \forall \epsilon, \exists \delta,\forall x_1,x_2 \in N^*(x_0,\delta),\vert f(x_1)-f(x_2) \vert < \epsilon
 \end{gathered}
 $$
 
@@ -784,9 +784,9 @@ $$
 \begin{cases}
 \lim_{x \to x_0} f(x) = A \\
 \lim_{t \to t_0} g(t) = x_0 \\
-\exists \eta>0, t\in N(t_0,\eta) \Rightarrow g(t)\ne 0
+\exists \eta>0, t\in N(t_0,\eta) \implies g(t)\ne 0
 \end{cases} \\
-\Rightarrow \lim_{t \to t_0} f(g(t)) = A
+\implies \lim_{t \to t_0} f(g(t)) = A
 \end{gathered}
 $$
 
@@ -834,7 +834,7 @@ R(x)=\begin{cases}
 \dfrac{1}{q}, x=\dfrac{p}{q}  \\
 0,x\notin Q
 \end{cases}
-\Rightarrow \lim_{x \to x_0} R(x)=0
+\implies \lim_{x \to x_0} R(x)=0
 \end{gathered}
 $$
 
@@ -911,7 +911,7 @@ $$
 
 $$
 \begin{gathered}
-r=\dfrac{m}{n} =\dfrac{p}{q} \Rightarrow a=(x^m)^{\frac1n}=(x^p)^{\frac1q}=b
+r=\dfrac{m}{n} =\dfrac{p}{q} \implies a=(x^m)^{\frac1n}=(x^p)^{\frac1q}=b
 \end{gathered}
 $$
 
@@ -922,8 +922,8 @@ $$
 $$
 \begin{gathered}
 a^{nq}=x^{nrq},b^{nq}=x^{nrq} \\
-\Rightarrow  a^{nq}=b^{nq} \\
-\Rightarrow a=b
+\implies  a^{nq}=b^{nq} \\
+\implies a=b
 \end{gathered}
 $$
 
@@ -982,7 +982,7 @@ todo
 $$
 \begin{gathered}
 f(x) \text{ is continuous} ,f\circ f^{-1}=x \\
-\Rightarrow f^{-1} \text{is continuous} 
+\implies f^{-1} \text{is continuous} 
 \end{gathered}
 $$
 
@@ -995,11 +995,11 @@ $$
 $$
 \begin{gathered}
 \lim_{y \to y_0} f^{-1}(y)=f^{-1}(y_0)=x_0 \\
-\Leftrightarrow \forall \{ y_n \} ,\lim_{n \to \infty} y_n=y_0 \ s.t.\ 
+\iff \forall \{ y_n \} ,\lim_{n \to \infty} y_n=y_0 \ s.t.\ 
 \lim_{n \to \infty} f^{-1}(y)=x_0 \\
 \text{Contrapose! Assume} \exists \epsilon,\forall \delta,\exists y_1\in N^*(y_0,\delta),\vert f^{-1}(y_1)-x_0 \vert > \epsilon. \\
 \exists \{ x_n \} ,x_n=y_1(\delta). \\
-x_n \text{is bounded} \Rightarrow \exists \{ i_n \} , \\
+x_n \text{is bounded} \implies \exists \{ i_n \} , \\
 x_{i_n} \text{is convergent} ,\lim_{n \to \infty} x_{i_n}=X\ne x_0 \\
 \lim_{n \to \infty} f(x_{i_n})=f(X) \\
 \because \lim_{n \to \infty} f(x_n) =\lim_{n \to \infty} y_n=y_0 \\
@@ -1014,7 +1014,7 @@ $$
 
 容易证明连续函数是单射必须严格单调.
 
-对$x_0$的任意邻域$N$,$f(N)$也是$y_0$的邻域,于是 $\forall \epsilon,x\in N(x_0,\epsilon) \Rightarrow y\in f(N(x_0,\epsilon))$,把这个翻译成$\epsilon-\delta$.
+对$x_0$的任意邻域$N$,$f(N)$也是$y_0$的邻域,于是 $\forall \epsilon,x\in N(x_0,\epsilon) \implies y\in f(N(x_0,\epsilon))$,把这个翻译成$\epsilon-\delta$.
 
 [think] 考虑的是连续函数把邻域变成邻域(或者说连续函数把闭集映到闭集,于是在一边有极限在另一边也有)吧.
 
@@ -1042,10 +1042,10 @@ $x^a=e^{a\ln x}$,于是只要证:
 $$
 \begin{gathered}
 \lim_{x \to x_0} e^x = e^{x_0} \lim_{x \to x_0}  e^{x-x_0} = e^{x_0} \lim{x\to 0} e^x \\
-\Rightarrow e^x \text{ is continuous} \Leftrightarrow e^x \text{ is continuous at } 0 \\
+\implies e^x \text{ is continuous} \iff e^x \text{ is continuous at } 0 \\
 \lim_{x \to 0} e^x=0  \\
-\Leftrightarrow \forall x_n,\lim_{n \to \infty} e^{x_n} = 0,\lim_{n \to \infty} x_n=0 \\
-\lim_{n \to \infty} n^{\frac{1}{n}}=1 \Rightarrow  \lim_{n \to \infty} e^{x_n}=0
+\iff \forall x_n,\lim_{n \to \infty} e^{x_n} = 0,\lim_{n \to \infty} x_n=0 \\
+\lim_{n \to \infty} n^{\frac{1}{n}}=1 \implies  \lim_{n \to \infty} e^{x_n}=0
 \end{gathered}
 $$
 
@@ -1073,7 +1073,7 @@ $$
 \begin{cases}
 x\in [a,b], f\text{ is continuous} \\
 y\in [f(a),f(b)]
-\end{cases} \Rightarrow \exists x_0, f(x_0)=y
+\end{cases} \implies \exists x_0, f(x_0)=y
 $$
 
 </div>
@@ -1088,7 +1088,7 @@ $$
 
 那么要证明$f(x_1)=y$,考虑:
 
-若$f(x_1)<y$,则 $\lim_{x \to x_1} f(x)=y \Rightarrow \epsilon=y-f(x_1),\forall x\in (x_1-\delta,x_1+\delta)\Rightarrow f(x)\in (f(x_1)-\epsilon,f(x_1)+\epsilon)<y$,于是$\exists x_2>x_1,f(x_2)<y$,与$x_1$上确界矛盾.故$f(x_1)\le y$.
+若$f(x_1)<y$,则 $\lim_{x \to x_1} f(x)=y \implies \epsilon=y-f(x_1),\forall x\in (x_1-\delta,x_1+\delta)\implies f(x)\in (f(x_1)-\epsilon,f(x_1)+\epsilon)<y$,于是$\exists x_2>x_1,f(x_2)<y$,与$x_1$上确界矛盾.故$f(x_1)\le y$.
 
 同理$f(x_1)\ge y$,于是$f(x_1)=y$.
 
@@ -1151,7 +1151,7 @@ A=\sup S \\
 \forall x_1<x_0,x_2>x_0,f(x_1)<f(x_2) \\
 f(x_1)<f(x_0) \stackrel{\lim_{x_1 \to x_0} }{\Longrightarrow}A\le f(x_0) \\
 f(x_2)>f(x_0)\stackrel{\lim_{x_2\to x_0}}{\Longrightarrow}B\ge f(x_0) \\
-\therefore A=B \Rightarrow A=f(x_0)=B \\
+\therefore A=B \implies A=f(x_0)=B \\
 \therefore A\ne B
 \end{gathered}
 $$
@@ -1305,9 +1305,9 @@ Uniform Continuity
 $$
 \begin{gathered}
 f(x) \text{ is uniformly continuous in } [a,b]  \\
-\Leftrightarrow 
+\iff 
 \forall \epsilon>0,\exists \delta,\forall x_1,x_2\in [a,b], \\
-\vert x_1-x_2 \vert <\delta \Rightarrow \vert f(x_1)-f(x_2) \vert <\epsilon
+\vert x_1-x_2 \vert <\delta \implies \vert f(x_1)-f(x_2) \vert <\epsilon
 \end{gathered}
 $$
 
@@ -1342,7 +1342,7 @@ $$
 
 $$
 \begin{gathered}
-x_1>x_2 \Rightarrow  \\
+x_1>x_2 \implies  \\
 \vert \sqrt{x_1}-\sqrt{ x_2 } \vert  ={\left \vert \dfrac{x_1-x_2}{\sqrt{ x_1 } +\sqrt{ x_2 } }  \right \vert} < {\left \vert \dfrac{x_1-x_2}{\sqrt{x_1-x_2}}  \right \vert} =\sqrt{ x_1-x_2 }<\sqrt \delta 
 \end{gathered}
 $$
@@ -1394,7 +1394,7 @@ $$
 \begin{gathered}
 \text{let} x_0=\lim_{n \to \infty} s'_n=\lim_{n \to \infty} s_n=\lim_{n \to \infty} t'_n=\lim_{n \to \infty} t_n \in [a,b] \\
 \lim_{n \to \infty} f(s'_n)=\lim_{n \to \infty} f(t_n')=f(x_0) \\
-\Rightarrow \lim_{n \to \infty} \vert f(s'_n)-f(t'_n) \vert =0
+\implies \lim_{n \to \infty} \vert f(s'_n)-f(t'_n) \vert =0
 \end{gathered}
 $$
 
@@ -1427,7 +1427,7 @@ $$
 M=\sup \{ f(x) \vert x\in [a,b] \} \\ 
 \text{f is continuous}
 \end{cases}
-\Rightarrow \exists x\in [a,b], f(x)=M
+\implies \exists x\in [a,b], f(x)=M
 $$
 
 </div>
@@ -1451,7 +1451,7 @@ $$
 f(x)\text{ is a periodic function that isn't constant} \\
 f(x)\text{ is continuous} 
 \end{cases} \\
-\Rightarrow f(x)\text{ has min positive period} 
+\implies f(x)\text{ has min positive period} 
 $$
 
 </div>
@@ -1486,7 +1486,7 @@ $$
 $$
 \begin{gathered}
 u(x) \text{ is continuous},\lim_{u \to u_0} G(u)=A  \\
-\Rightarrow \lim_{x \to x_0} G(u(x)) = A
+\implies \lim_{x \to x_0} G(u(x)) = A
 \end{gathered}
 $$
 
@@ -1496,8 +1496,8 @@ $$
 
 $$
 \begin{gathered}
-\forall \epsilon,\exists \delta, u(x)\in N^*(u(x),\delta_1) \Rightarrow G(u(x))\in N(A,\epsilon) \\
-\Rightarrow \forall \epsilon,\exists \delta,x\in N^*(x_0,\delta) \Rightarrow u(x)\in N(u(x),\delta_1) \\
+\forall \epsilon,\exists \delta, u(x)\in N^*(u(x),\delta_1) \implies G(u(x))\in N(A,\epsilon) \\
+\implies \forall \epsilon,\exists \delta,x\in N^*(x_0,\delta) \implies u(x)\in N(u(x),\delta_1) \\
 \end{gathered}
 $$
 
@@ -1592,7 +1592,7 @@ $$
 $$
 \begin{gathered}
 \arctan'(x)=\dfrac{1}{1+x^2}  \\
-\Rightarrow (1+x^2)\arctan'(x)=1 \\
+\implies (1+x^2)\arctan'(x)=1 \\
 0=((1+x^2)\arctan'(x))^{(n)} \\
 =(1+x^2)\arctan^{(n+1)}(x)+\binom{n}{1}2x\arctan^{(n)}(x)+\binom{n}{2}2\arctan^{(n-1)}(x) \\
 \stackrel{ x=0 }{\Longrightarrow} \arctan^{(n+1)}(0)+n(n-1) \arctan^{(n-1)}(0)=0
@@ -1656,7 +1656,7 @@ $$
 \begin{gathered}
 f'(x_0^-)=\lim_{x \to x_0^-} \dfrac{f(x)-f(x_0)}{x-x_0} \ge 0 \\
 f'(x_0^+)=\lim_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0} \le 0 \\
-\Rightarrow f'(x_0)=f'(x_0^-)=f'(x_0^+)=0
+\implies f'(x_0)=f'(x_0^-)=f'(x_0^+)=0
 \end{gathered}
 $$
 
@@ -1670,10 +1670,10 @@ $$
 \begin{gathered}
 \begin{cases}
 f(x) \in C[a,b] \\
-x\in (a,b) \Rightarrow  \exists f'(x) \\
+x\in (a,b) \implies  \exists f'(x) \\
 f(a)=f(b)
 \end{cases} \\
-\Rightarrow 
+\implies 
 \exists \xi\in (a,b),f'(\xi)=0
 \end{gathered}
 $$
@@ -1694,9 +1694,9 @@ $$
 \begin{gathered}
 \begin{cases}
 f(x) \in C[a,b] \\
-x\in (a,b) \Rightarrow  \exists f'(x)
+x\in (a,b) \implies  \exists f'(x)
 \end{cases} \\
-\Rightarrow \exists \xi\in (a,b),f'(\xi)=\dfrac{f(a)-f(b)}{a-b}
+\implies \exists \xi\in (a,b),f'(\xi)=\dfrac{f(a)-f(b)}{a-b}
 \end{gathered}
 $$
 
@@ -1722,9 +1722,9 @@ $$
 \begin{gathered}
 \begin{cases}
 f(x) \in C[a,b] \\
-x\in (a,b) \Rightarrow  \exists f'(x) \\
+x\in (a,b) \implies  \exists f'(x) \\
 g(x)\in C[a,b] \\
-x\in (a,b) \Rightarrow  \exists g'(x) \\
+x\in (a,b) \implies  \exists g'(x) \\
 \forall (a',b'),x\in (a',b'),g'(x)\not \equiv 0
 \end{cases} \\
 \exists \xi \in (a,b),\dfrac{f'(\xi)}{g'(\xi)} =\dfrac{f(a)-f(b)}{g(a)-g(b)} 
@@ -1753,7 +1753,7 @@ Rolle's Theorem 启动
 
 $$
 \begin{gathered}
-\lim_{x \to +\infty} f'(x)=0 \Rightarrow \lim_{x \to +\infty} \dfrac{f(x)}{x} =0
+\lim_{x \to +\infty} f'(x)=0 \implies \lim_{x \to +\infty} \dfrac{f(x)}{x} =0
 \end{gathered}
 $$
 
@@ -1764,9 +1764,9 @@ $$
 $$
 \begin{gathered}
 x>A>X \\
-\Rightarrow 
+\implies 
 \vert f(x)-f(A) \vert <\epsilon_1(x-A) \\
-\Rightarrow \vert \dfrac{f(x)}{x} \vert  <\dfrac{f(A)-\epsilon_1A}{x} +\epsilon_1
+\implies \vert \dfrac{f(x)}{x} \vert  <\dfrac{f(A)-\epsilon_1A}{x} +\epsilon_1
 \end{gathered}
 $$
 
@@ -1790,7 +1790,7 @@ $$
 
 $$
 \begin{gathered}
-\Rightarrow \dfrac{\dfrac{e^b}{b} -\dfrac{e^a}{a} }{\dfrac{1}{b} -\dfrac{1}{a}} =(1-\xi)e^{\xi}
+\implies \dfrac{\dfrac{e^b}{b} -\dfrac{e^a}{a} }{\dfrac{1}{b} -\dfrac{1}{a}} =(1-\xi)e^{\xi}
 \end{gathered}
 $$
 
@@ -1804,7 +1804,7 @@ $$
 $$
 \begin{gathered}
 \exists \xi\in C[a,b],\exists f''(x) \\
-\Rightarrow \exists \xi \in (a,b), \\
+\implies \exists \xi \in (a,b), \\
 f(b)+f(a)-2f(\dfrac{a+b}{2})=(\dfrac{b-a}{2})^2f''(\xi)
 \end{gathered}
 $$
@@ -1832,7 +1832,7 @@ $$
 \begin{gathered}
 f(x)\in C[1,+\infty),\exists f'(x) \\
 e^{-x}f'(x) \text{ is bounded in } [1,+\infty) \\
-\Rightarrow e^{-x}f(x) \text{ is bounded in }  (1,+\infty)
+\implies e^{-x}f(x) \text{ is bounded in }  (1,+\infty)
 \end{gathered}
 $$
 
@@ -1858,7 +1858,7 @@ $$
 \begin{gathered}
 f(x)\in C(0,1],\exists f'(x) \\
 \exists\lim_{x \to 0^+} \sqrt xf'(x) \\
-\Rightarrow f(x) \in UC(0,1] 
+\implies f(x) \in UC(0,1] 
 \end{gathered}
 $$
 
@@ -1880,7 +1880,7 @@ $$
 \begin{gathered}
 \forall x\in [a,b], \\
 \exists f'(x) \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \forall v\in [f'(a),f'(b)],\exists \xi,f'(\xi)=v \\
 f'(x) \text{ has no discontinuity of first kind} 
 \end{cases}
@@ -1905,7 +1905,7 @@ $$
 
 考虑对一个间断点$x_0$
 
-第一类间断点所以有左右极限$L,R$,那么$\forall \epsilon\exists \delta, x \in (x_0-\delta,x_0) \Rightarrow f'(x_0)\in N(L,\epsilon)$.同理有$\forall x\in(x_0,x_0+\delta) \Rightarrow f'(x)\in N(R,\epsilon)$.
+第一类间断点所以有左右极限$L,R$,那么$\forall \epsilon\exists \delta, x \in (x_0-\delta,x_0) \implies f'(x_0)\in N(L,\epsilon)$.同理有$\forall x\in(x_0,x_0+\delta) \implies f'(x)\in N(R,\epsilon)$.
 
 于是可以取$\epsilon$使得两个邻域不交,则这个小区间上至少越过了一个值.对$[x_0-\dfrac{\delta}{2},x_0+\dfrac{\delta}{2}]$用(1)
 
@@ -1920,7 +1920,7 @@ $$
 \begin{gathered}
 f(x)\in C[a,b],\forall x\in [a,b]-D,f'(x)>0 \\
 D \text{ is finite set}  \\
-\Rightarrow f(x) \text{ is strictly increasing at }[a,b] 
+\implies f(x) \text{ is strictly increasing at }[a,b] 
 \end{gathered}
 $$
 
@@ -1947,7 +1947,7 @@ $$
 $$
 \begin{gathered}
 p,q>1,a,b>0,\dfrac{1}{p} + \dfrac{1}{q} =1 \\
-\Rightarrow \dfrac{a^p}{p} +\dfrac{b^q}{q} \ge ab
+\implies \dfrac{a^p}{p} +\dfrac{b^q}{q} \ge ab
 \end{gathered}
 $$
 
@@ -2013,7 +2013,7 @@ Convex/Concave function
 
 $$
 \begin{gathered}
-f(x) \text{ is convex function} \Leftrightarrow  \\
+f(x) \text{ is convex function} \iff  \\
 \forall x,y\in D,\lambda \in (0,1) \\
 f(\lambda x+(1-\lambda)y)\le \lambda f(x)+(1-\lambda)f(y)
 \end{gathered}
@@ -2025,7 +2025,7 @@ $$
 
 $$
 \begin{gathered}
-f(x) \text{ is convex} \Leftrightarrow  \\
+f(x) \text{ is convex} \iff  \\
 \forall \{ x_n \} ,\{ \lambda_n \},
 f(\dfrac{\sum _{i = 1} ^{n}  \lambda_ix_i}{\sum _{i = 1} ^{n}  \lambda_i} )\le \dfrac{\sum _{i = 1} ^{n}  \lambda_if(x_i)}{\sum _{i = 1} ^{n}  \lambda_i} 
 \end{gathered}
@@ -2044,7 +2044,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is convex} ,\exists f'(x) \\
-\Leftrightarrow f'(x) \text{ is increasing} 
+\iff f'(x) \text{ is increasing} 
 \end{gathered}
 $$
 
@@ -2056,7 +2056,7 @@ $$
 
 $$
 \begin{gathered}
-x_1<x_2<x_3 \Rightarrow  \\
+x_1<x_2<x_3 \implies  \\
 \dfrac{f(x_1)-f(x_2)}{x_1-x_2} <\dfrac{f(x_2)-f(x_3)}{x_2-x_3} 
 \end{gathered}
 $$
@@ -2144,7 +2144,7 @@ $$
 
 $$
 \begin{gathered}
-f(x) \text{ is contraction } \Leftrightarrow  \\
+f(x) \text{ is contraction } \iff  \\
 
 \exists A\in (0,1),\forall x_1,x_2 \\
 \vert f(x_1)-f(x_2) \vert \le A\vert x_1-x_2 \vert 
@@ -2161,7 +2161,7 @@ $$
 \begin{gathered}
 f(x) \text{ is contraction},\{ x_n \} \ s.t.\ 
 x_{n+1}=f(x_n)  \\
-\Rightarrow  \lim_{n \to \infty} x_n=X\land X \text{ is the unique fixed point of }f 
+\implies  \lim_{n \to \infty} x_n=X\land X \text{ is the unique fixed point of }f 
 \end{gathered}
 $$
 
@@ -2195,9 +2195,9 @@ $$
 f\in C^2[a,b],f'(x)\ge \delta>0,f''(x)\in (0,M),f(X)=0 \\
 x_1\in (X,b),x_{n+1}=x_n-\dfrac{f(x_n)}{f'(x_n)} 
 \end{cases} \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \lim_{n \to \infty} x_n=X \\
-\exists N,n>N \Rightarrow (x_n-X)\sim (x_{n-1}-X)^2
+\exists N,n>N \implies (x_n-X)\sim (x_{n-1}-X)^2
 \end{cases}
 
 \end{gathered}
@@ -2229,7 +2229,7 @@ $$
 f,g \in C^1(a,b),g'(x)\ne 0 \\
 \lim_{x \to a^+} f(x)=\lim_{x \to a^+} g(x)=0
 \end{cases} \\
-\Rightarrow \lim_{x \to a^+} \dfrac{f(x)}{g(x)} =\lim_{x \to a^+} \dfrac{f'(x)}{g'(x)}
+\implies \lim_{x \to a^+} \dfrac{f(x)}{g(x)} =\lim_{x \to a^+} \dfrac{f'(x)}{g'(x)}
 \end{gathered}
 $$
 
@@ -2270,7 +2270,7 @@ $$
 $$
 \begin{gathered}
 \dfrac{g}{f} =\dfrac{\dfrac{1}{f} }{\dfrac{1}{g} } = \dfrac{\dfrac{f'}{f^2} }{\dfrac{g'}{g^2} }=\dfrac{g^2f'}{f^2g'}   \\
-\Rightarrow \dfrac{f'}{g'} =\dfrac{f}{g} 
+\implies \dfrac{f'}{g'} =\dfrac{f}{g} 
 \end{gathered}
 $$
 
@@ -2285,7 +2285,7 @@ $$
 f,g \in C^1(a,b),g'(x)\ne 0 \\
 \lim_{x \to a^+} g(x)=+\infty
 \end{cases} \\
-\Rightarrow \lim_{x \to a^+} \dfrac{f(x)}{g(x)} =\lim_{x \to a^+} \dfrac{f'(x)}{g'(x)}
+\implies \lim_{x \to a^+} \dfrac{f(x)}{g(x)} =\lim_{x \to a^+} \dfrac{f'(x)}{g'(x)}
 \end{gathered}
 $$
 
@@ -2322,7 +2322,7 @@ Solution 2
 $$
 \begin{gathered}
 \dfrac{f(x)-f(c)}{g(x)-g(c)} =\dfrac{f'(\xi)}{g'(\xi)}  \\
-\Rightarrow \dfrac{f(x)}{g(x)} =\dfrac{f'(\xi)}{g'(\xi)} -\dfrac{g(c)}{g(x)} \dfrac{f'(\xi)}{g'(\xi)} +\dfrac{f(c)}{g(x)} 
+\implies \dfrac{f(x)}{g(x)} =\dfrac{f'(\xi)}{g'(\xi)} -\dfrac{g(c)}{g(x)} \dfrac{f'(\xi)}{g'(\xi)} +\dfrac{f(c)}{g(x)} 
 \end{gathered}
 $$
 
@@ -2343,7 +2343,7 @@ f\in C^1(a,+\infty),\alpha>0 \\
 \lim_{x \to +\infty} (\alpha f(x)+xf'(x))=\beta \\
 
 \end{cases} \\
-\Rightarrow \lim_{x \to +\infty} f(x)=\dfrac{\alpha}{\beta} 
+\implies \lim_{x \to +\infty} f(x)=\dfrac{\alpha}{\beta} 
 
 \end{gathered}
 $$
@@ -2447,7 +2447,7 @@ f(x)-T_n(x) \\
 \dfrac{f(x)-T_n(x)}{(x-x_0)^{n+1}} \\
 =\dfrac{F(x,x)-F(x_0,x)}{(x-x_0)^{n+1}-(x_0-x_0)^{n+1}} \\
 =\dfrac{\dfrac{\delta F}{\delta t} (\xi)}{(n+1)(\xi-x_0)^n}  \\
-\Rightarrow f(x)-T_n(x)= \dfrac{f^{(n+1)}(\xi)}{(n+1)!} (x-x_0)^{n+1}
+\implies f(x)-T_n(x)= \dfrac{f^{(n+1)}(\xi)}{(n+1)!} (x-x_0)^{n+1}
 \end{gathered}
 $$
 
@@ -2458,7 +2458,7 @@ $$
 $$
 \begin{gathered}
 f\in C^2[0,1],\vert f(x) \vert \le 1,\vert f''(x) \vert \le 2 \\
-\Rightarrow \vert f'(x) \vert \le 3
+\implies \vert f'(x) \vert \le 3
 \end{gathered}
 $$
 
@@ -2487,7 +2487,7 @@ f\in C^3[a,+\infty) \\
 \exists \lim_{x \to +\infty} f(x)=A,\lim_{x \to +\infty} f'''(x)=B \\
 
 \end{cases}
-\Rightarrow  \\
+\implies  \\
 \lim_{x \to +\infty} f'(x)= \lim_{x \to +\infty} f''(x)=\lim_{x \to +\infty} f'''(x)=0
 \end{gathered}
 $$
@@ -2522,7 +2522,7 @@ $$
 
 $$
 \begin{gathered}
-F(x)=\int f(x)dx \Leftrightarrow F'(x)=f(x)
+F(x)=\int f(x)dx \iff F'(x)=f(x)
 \end{gathered}
 $$
 
@@ -2614,7 +2614,7 @@ $$
 \int \sec^3 xdx=\int \sec x d\tan x \\
 =\sec x\tan x-\int \tan^2 x\sec x \\
 =\sec x\tan x-\int \sec^3 xdx+\int \sec xdx \\
-\Rightarrow \int \sec^3 xdx=\dfrac{1}{2} (\sec x\tan x+\int \sec x) \\=\dfrac{1}{2} (\sec x\tan x+\ln (\sec x+\tan x))+C
+\implies \int \sec^3 xdx=\dfrac{1}{2} (\sec x\tan x+\int \sec x) \\=\dfrac{1}{2} (\sec x\tan x+\ln (\sec x+\tan x))+C
 \end{gathered}
 $$
 
@@ -2814,7 +2814,7 @@ f(x) \text{ is integrable on }[a,b]  \\
 F(x)\in C[a,b],D(a,b) \\
 f(x)=F'(x)
 \end{cases} \\
-\Rightarrow \int_a^b f(x)=F(b)-F(a)
+\implies \int_a^b f(x)=F(b)-F(a)
 
 \end{gathered}
 $$
@@ -2844,7 +2844,7 @@ $$
 $$
 \begin{gathered}
 f(x)\in C[a,b],f(x)>0 \\
-\Rightarrow \dfrac{1}{b-a} \int_a^b \ln(f(x))dx\le \ln(\dfrac{1}{b-a} \int_a^b f(x)dx)
+\implies \dfrac{1}{b-a} \int_a^b \ln(f(x))dx\le \ln(\dfrac{1}{b-a} \int_a^b f(x)dx)
 \end{gathered}
 $$
 
@@ -2875,7 +2875,7 @@ $$
 p,q>1,\dfrac{1}{p} +\dfrac{1}{q} \\
 f,g \text{ is integrable} 
 \end{cases} \\
-\Rightarrow \int_a^b f(x)g(x)dx\le (\int_a^b f(x)^pdx)^{\frac{1}{p} }(\int_a^b g(x)^qdx)^{\frac{1}{q} }
+\implies \int_a^b f(x)g(x)dx\le (\int_a^b f(x)^pdx)^{\frac{1}{p} }(\int_a^b g(x)^qdx)^{\frac{1}{q} }
 \end{gathered}
 $$
 
@@ -2902,7 +2902,7 @@ $$
 $$
 \begin{gathered}
 f(x)\in D^2[a,b],f''(x)>0,f(x)\le 0 \\
-\Rightarrow f(x)\ge \dfrac{2}{b-a} \int_a^b f(x)dx
+\implies f(x)\ge \dfrac{2}{b-a} \int_a^b f(x)dx
 \end{gathered}
 $$
 
@@ -2947,7 +2947,7 @@ $$
 $$
 \begin{gathered}
 f(x)\in C[0,1] \\
-\Rightarrow \lim_{n \to \infty} \int_0^1 f(\sqrt[ n ]{ x } )dx =f(1)
+\implies \lim_{n \to \infty} \int_0^1 f(\sqrt[ n ]{ x } )dx =f(1)
 \end{gathered}
 $$
 
@@ -2982,7 +2982,7 @@ $$
 $$
 \begin{gathered}
 f(x) \text{ is integrable on } [a,b] \\
-\Rightarrow F(x)=\int_a^x f(x)dx \in C[a,b]
+\implies F(x)=\int_a^x f(x)dx \in C[a,b]
 \end{gathered}
 $$
 
@@ -3006,7 +3006,7 @@ $$
 
 $$
 \begin{gathered}
-f\in C[a,b] \Rightarrow F(x)=\int_a^x f(x)dx \ s.t.\ 
+f\in C[a,b] \implies F(x)=\int_a^x f(x)dx \ s.t.\ 
 F'(x)=f(x)
 \end{gathered}
 $$
@@ -3033,7 +3033,7 @@ $$
 \begin{gathered}
 g(x)\in D \\
 F(x)=\int_{g(0)}^{g(x)}f(x)dx \\
-\Rightarrow F'(x)=g'(x)f(x)
+\implies F'(x)=g'(x)f(x)
 \end{gathered}
 $$
 
@@ -3050,7 +3050,7 @@ $$
 $$
 \begin{gathered}
 f\in C^1[a,b],f(a)=0 \\
-\Rightarrow \int_a^b f^2(x)dx\le \dfrac{1}{2} (b-a)^2 \int_a^b (f'(x))^2 dx
+\implies \int_a^b f^2(x)dx\le \dfrac{1}{2} (b-a)^2 \int_a^b (f'(x))^2 dx
 \end{gathered}
 $$
 
@@ -3094,7 +3094,7 @@ f(x)\in C^2[0,1] \\
 f(0)=f(1)=0 \\
 \forall x\in(0,1),f(x)\ne 0
 \end{cases} \\
-\Rightarrow \int_0^1 \vert \dfrac{f''(x)}{f(x)}  \vert dx\ge 4
+\implies \int_0^1 \vert \dfrac{f''(x)}{f(x)}  \vert dx\ge 4
 \end{gathered}
 $$
 
@@ -3107,7 +3107,7 @@ $$
 $$
 \begin{gathered}
 f(x)=f(x_0)+(x-x_0)f'(\xi) \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 0=f(0)=f(x_0)+x_0f'(\xi_1) \\
 0=f(1)=f(x_0)+(1-x_0)f'(\xi_2)
 \end{cases}
@@ -3149,7 +3149,7 @@ I_m=\int_0^\frac\pi2 \cos x\cos^{m-1}x dx \\
 =\sin x \cos^{m-1} \vert^{\frac\pi2}_0- \int_0^\frac\pi2 \sin x(m-1) \cos^{m-2} x(-\sin x)dx \\
 =(m-1)\int_0^\frac\pi2 (1-cos^2 x)\cos^{m-2}xdx \\
 =(m-1)I_{m-2}-(m-1)I_m \\
-\Rightarrow I_m=\dfrac{m-1}{m} I_{m-2}
+\implies I_m=\dfrac{m-1}{m} I_{m-2}
 \end{gathered}
 $$
 
@@ -3164,7 +3164,7 @@ $$
 $$
 \begin{gathered}
 f\in C^{n+1} \\
-\Rightarrow f(x)=T_n(f,x_0,x)+\int_{x_0}^x f^{(n+1)}(t)(x-t)^ndt
+\implies f(x)=T_n(f,x_0,x)+\int_{x_0}^x f^{(n+1)}(t)(x-t)^ndt
 \end{gathered}
 $$
 
@@ -3196,7 +3196,7 @@ $$
 \begin{gathered}
 f(x_0)-f(x)=-\sum _{i = 1} ^{n}  \dfrac{f^{(i)}(x_0)}{i!} (x-x_0)^i
 -\int_{x_0}^x f^{(n+1)}(t) \dfrac{(t-x_0)^n}{n!} dt \\
-\Leftrightarrow  \\
+\iff  \\
 f(x)=\sum _{i = 0} ^{n}  \dfrac{f^{(i)}(x_0)}{i!} (x-x_0)^i+\int_{x_0}^x f^{(n+1)}(t) \dfrac{(t-x_0)^n}{n!} dt 
 \end{gathered}
 $$
@@ -3244,7 +3244,7 @@ $g$可逆,$g(c)=a,g(d)=b$
 $$
 \begin{gathered}
 \int_0^1 f(x)dx=1,\int_0^1 xf(x)dx=0 \\
-\Rightarrow \sup_{x\in [0,1]} \vert f(x) \vert \ge \sqrt 2+1
+\implies \sup_{x\in [0,1]} \vert f(x) \vert \ge \sqrt 2+1
 \end{gathered}
 $$
 
@@ -3293,7 +3293,7 @@ g \text{ is decreasing on } [a,b] \\
 g(x)\ge 0 \\
 f\in R[a,b] 
 \end{cases}\\
-\Rightarrow \int_a^b f(x)g(x)dx = g(a)\int_a^c f(x)dx
+\implies \int_a^b f(x)g(x)dx = g(a)\int_a^c f(x)dx
 \end{gathered}
 $$
 
@@ -3337,7 +3337,7 @@ g \text{ is monotonic on } [a,b] \\
 f(x)\in R[a,b] 
 \end{cases}
 \\
-\Rightarrow \exists c,\int_a^b f(x)g(x)dx=g(a)\int_a^cf(x)dx+g(b)\int_c^b f(x)dx
+\implies \exists c,\int_a^b f(x)g(x)dx=g(a)\int_a^cf(x)dx+g(b)\int_c^b f(x)dx
 \end{gathered}
 $$
 
@@ -3356,7 +3356,7 @@ $$
 $$
 \begin{gathered}
 f \text{ is decreasing on } [0,2\pi] \\
-\Rightarrow \forall n\in Z,\int_0^{2\pi} f(x)\sin(nx)dx\ge 0
+\implies \forall n\in Z,\int_0^{2\pi} f(x)\sin(nx)dx\ge 0
 \end{gathered}
 $$
 
@@ -3382,7 +3382,7 @@ $$
 
 $$
 \begin{gathered}
-x>0 \Rightarrow \forall c,\vert \int_x^{x+c} \sin(t^2)dt \vert \le \dfrac{1}{x} 
+x>0 \implies \forall c,\vert \int_x^{x+c} \sin(t^2)dt \vert \le \dfrac{1}{x} 
 \end{gathered}
 $$
 
@@ -3477,7 +3477,7 @@ $$
 $$
 \begin{gathered}
 \forall \epsilon,\exists \delta,\forall x\in [a,b]-D,y\in [a,b],\vert x-y \vert <\delta \\
-\Rightarrow \vert f(x)-f(y) \vert <\epsilon
+\implies \vert f(x)-f(y) \vert <\epsilon
 \end{gathered}
 $$
 

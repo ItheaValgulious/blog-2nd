@@ -101,7 +101,7 @@ $$
 S(x)\in C[0,a],a>0 \\
 S_0(x)=S(x),S_n(x)=\int_0^x S(t)dt \\
 \end{cases} \\
-\Rightarrow S_n\rightrightarrows 0
+\implies S_n\rightrightarrows 0
 \end{gathered}
 $$
 
@@ -181,7 +181,7 @@ S_n(x)=\begin{cases}
 1+x^2,x\ne 0
 \end{cases}\notin C(R) \\
 u_n\in C(R) \\
-\Rightarrow \text{not uniformly continuous} 
+\implies \text{not uniformly continuous} 
 \end{gathered}
 $$
 
@@ -226,7 +226,7 @@ $$
 $$
 \begin{gathered}
 f(x)=\sum _{n = 1} ^{\infty}  \dfrac{\cos(nx)}{n^2+1}  \\
-\Rightarrow f\in C^1[0,\pi]
+\implies f\in C^1[0,\pi]
 \end{gathered}
 $$
 
@@ -359,7 +359,7 @@ $$
 $$
 \begin{gathered}
 \exists \lim_{n \to \infty} \dfrac{a_n}{a_{n-1}}  \\
-\Rightarrow \dfrac{1}{r} = \dfrac{a_n}{a_{n-1}}  
+\implies \dfrac{1}{r} = \dfrac{a_n}{a_{n-1}}  
 \end{gathered}
 $$
 
@@ -374,7 +374,7 @@ $$
 $$
 \begin{gathered}
 |x|<\dfrac{1}{\limsup_{n\to \infty} \sqrt[ n ]{ a_n }}   \\
-\Rightarrow \limsup_{n \to \infty} \sqrt[ n ]{ a_nx^n } =x\limsup_{n \to \infty} \sqrt[n]{a_n}<1
+\implies \limsup_{n \to \infty} \sqrt[ n ]{ a_nx^n } =x\limsup_{n \to \infty} \sqrt[n]{a_n}<1
 \end{gathered}
 $$
 
@@ -618,7 +618,7 @@ $$
 $$
 \begin{gathered}
 \dfrac{(2k-2)!!}{(2k-1)!!} >\dfrac{(2k-1)!!}{(2k)!!} \dfrac\pi2 >\dfrac{(2k)!!}{(2k+1)!!}  \\
-\Rightarrow \begin{cases}
+\implies \begin{cases}
 \dfrac{1}{2n+1} (\dfrac{(2n)!!}{(2n-1)!!})^2=\dfrac{((2k)!!)^2}{(2k+1)!!(2k-1)!!}<\dfrac\pi2 \\
 \dfrac{2k+1}{2k} \dfrac{1}{2k+1} \dfrac{((2k)!!)^2}{((2k-1)!!)^2} =\dfrac{(2k-2)!!(2k)!!}{(2k-1)!!} > \dfrac\pi 2
 \end{cases}
@@ -732,10 +732,10 @@ $$
 $$
 \begin{gathered}
 S=\sum _{m = 1} ^{\infty}  \sum _{n = 1} ^{\infty}  \dfrac{1}{a_m(a_m+a_n)}  \\
-\Rightarrow 2S=\sum _{m = 1} ^{\infty}  \sum _{n = 1} ^{\infty}  \dfrac{1}{a_m(a_m+a_n)} +\dfrac{1}{a_n(a_m+a_n)}  \\
+\implies 2S=\sum _{m = 1} ^{\infty}  \sum _{n = 1} ^{\infty}  \dfrac{1}{a_m(a_m+a_n)} +\dfrac{1}{a_n(a_m+a_n)}  \\
 =\sum _{m = 1} ^{\infty}  \sum _{n = 1} ^{\infty}  \dfrac{1}{a_na_m}  \\
 =(\sum _{i = 1} ^{\infty}  a_i )^2=\dfrac{9}{16}
-\Rightarrow S=\dfrac{9}{32}  
+\implies S=\dfrac{9}{32}  
 \end{gathered}
 $$
 
@@ -753,7 +753,7 @@ a_n,b_n\ge 0 \\
 \lim_{n \to \infty} \dfrac{b_n}{a_n} =\infty \\
 \sum _{n = 1} ^{\infty}  a_nx^n \text{ has convergent radius } 1
 \end{cases}
-\Rightarrow \lim_{x \to 1^-} \dfrac{\sum _{n = 1} ^{\infty} b_nx^n}{\sum _{n = 1} ^{\infty}   a_nx^n} =A
+\implies \lim_{x \to 1^-} \dfrac{\sum _{n = 1} ^{\infty} b_nx^n}{\sum _{n = 1} ^{\infty}   a_nx^n} =A
 \end{gathered}
 $$
 
@@ -800,7 +800,7 @@ $$
 f(x)\in C^\infty[0,R] \\
 \forall x\in [0,R],\forall n,f^{(n)}(x)\ge 0
 \end{cases} \\
-\Rightarrow f\text{ 's taylor series at } x=0 \text{ is convergent to } f
+\implies f\text{ 's taylor series at } x=0 \text{ is convergent to } f
 \end{gathered}
 $$
 

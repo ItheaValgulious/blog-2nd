@@ -226,7 +226,7 @@ $$
 \text{let } \sqrt{x^2+x+1}=x+t \\
 x^2+x+1=x^2+2xt+t^2 \\
 x=\dfrac{t^2-1}{1-2t}  \\
-\Rightarrow ans=\int \dfrac{1}{2\dfrac{t^2-1}{1-2t} +t} \dfrac{2t(1-2t)+2(t^2-1)}{(1-2t)^2} dt \\
+\implies ans=\int \dfrac{1}{2\dfrac{t^2-1}{1-2t} +t} \dfrac{2t(1-2t)+2(t^2-1)}{(1-2t)^2} dt \\
 =\int \dfrac{t^2-t+1}{(t-2)(t-\dfrac{1}{2} )} dt \\
 =\int (1+\dfrac{1}{2} (\dfrac{4}{t-2} -\dfrac{1}{t-\frac12} ))dt \\
 =t+2\ln(t-2)-\dfrac{1}{2} \ln (t-\dfrac{1}{2} )+C \\
@@ -286,7 +286,7 @@ $$
 =\int ((1+x)\ln(1+x)-\ln(1+x)+(1-x)\ln(1-x)-\ln(1-x))dx \\
 \int x\ln xdx=\dfrac{x^2\ln x}{2} -\dfrac{x^2}{4} +C \\
 \int \ln xdx=x\ln x-x+C \\
-\Rightarrow ans=\dfrac{(1+x)^2}{4} (2\ln (1+x)-1)-(1+x)\ln(1+x)+(1+x) \\
+\implies ans=\dfrac{(1+x)^2}{4} (2\ln (1+x)-1)-(1+x)\ln(1+x)+(1+x) \\
 -\dfrac{(1-x)^2}{4} (2\ln(1-x)-1)+(1-x)\ln(1-x)-(1-x) +C\\
 =\dfrac{x^2-1}{2} \ln\dfrac{1+x}{1-x} +x+C
 \end{gathered}
@@ -349,7 +349,7 @@ ans=-\dfrac{x}{1+\tan x} +\int \dfrac{dx}{1+\tan x}  \\
 =\int \dfrac{\cos x}{\cos x+\sin x} dx \\
 =\dfrac{1}{2} \int \dfrac{(\cos x+\sin x)dx+d(\cos x+\sin x)}{\cos x+\sin x}  \\
 =\dfrac{1}{2} \ln(\cos x+\sin x)+\dfrac{1}{2} x+C \\
-\Rightarrow ans=-\dfrac{x}{1+\tan x} +\dfrac{1}{2} \ln(\cos x+\sin x)+\dfrac{1}{2} x+C
+\implies ans=-\dfrac{x}{1+\tan x} +\dfrac{1}{2} \ln(\cos x+\sin x)+\dfrac{1}{2} x+C
 \end{gathered}
 $$
 
@@ -436,7 +436,7 @@ $$
 \begin{gathered}
 f(x)=\ln \dfrac{x+1}{x-1} ,x\ge -1 \\
 f(\phi (x))=\ln x \\
-\Leftrightarrow \dfrac{\phi(x)+1}{\phi(x)-1} =x,\phi (x)=\dfrac{x+1}{x-1}  \\
+\iff \dfrac{\phi(x)+1}{\phi(x)-1} =x,\phi (x)=\dfrac{x+1}{x-1}  \\
 ans=\int \dfrac{x+1}{x-1} dx \\
 =\int (1+\dfrac{2}{x-1}) dx \\
 =x+2\ln(x-1)+C
@@ -457,7 +457,7 @@ $$
 f(x) \text{ is integrable on } [a,b], \\
 \forall [\alpha,\beta]\subset [a,b],\sup_{x\in [\alpha,\beta]}f(x)\ge M
 \end{cases} \\
-\Rightarrow \int_a^b f(x)dx\ge M(b-a)
+\implies \int_a^b f(x)dx\ge M(b-a)
 \end{gathered}
 $$
 
@@ -471,14 +471,14 @@ $$
 \forall T=\{ a=t_0<t_1<t_2\ldots t_n=b \} , \\
 \exists \xi_i\in [t_{i-1},t_i] \ s.t.\ 
 f(\xi_i)>M-\epsilon \\
-\Rightarrow \sum _{i = 1} ^{n}  f(\xi_i)(t_i-t_{i-1}) \\
+\implies \sum _{i = 1} ^{n}  f(\xi_i)(t_i-t_{i-1}) \\
 \ge \sum _{i = 1} ^{n}  (M-\epsilon)(t_i-t_{i-1}) \\
 =(M-\epsilon)(b-a) \\
-f(x) \text{ is integrable} \Rightarrow  \\
+f(x) \text{ is integrable} \implies  \\
 \int _a^bf(x)dx \\
 =\lim_{\vert\vert T \vert\vert \to 0} \sum _{i = 1} ^{n}  f(\xi_i)(t_i-t_{i-1}) \\
 \ge (M-\epsilon)(b-a) \\
-\Rightarrow \int_a^b f(x)dx=\lim_{\epsilon \to 0} \int_a^b f(x)dx\ge M(b-a)
+\implies \int_a^b f(x)dx=\lim_{\epsilon \to 0} \int_a^b f(x)dx\ge M(b-a)
 \end{gathered}
 $$
 
@@ -494,7 +494,7 @@ $$
 f(x)=x(1-x)D(x) \\
 D(x)=[x\in Q]
 \end{cases} \\
-\Rightarrow f(x) \text{ is not integrable on }[0,1] 
+\implies f(x) \text{ is not integrable on }[0,1] 
 \end{gathered}
 $$
 

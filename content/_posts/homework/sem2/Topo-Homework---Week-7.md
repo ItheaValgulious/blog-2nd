@@ -29,10 +29,10 @@ $$
 \begin{gathered}
 \forall V \text{ is open}  \\
 \forall x\in V,\exists x\in U_x ,U_x\text{ is open},f|_{U_x}(x')=f(x) \\
-\Rightarrow f^{-1}(V) \\
+\implies f^{-1}(V) \\
 =\bigcup_{v\in V} f^{-1}(v) \\
 =\bigcup_{v\in V} \bigcup_{ x\in f^{-1}(v) } U_x \text{ is open}  \\
-\Rightarrow f(x) \text{ is continuous} 
+\implies f(x) \text{ is continuous} 
 \end{gathered}
 $$
 

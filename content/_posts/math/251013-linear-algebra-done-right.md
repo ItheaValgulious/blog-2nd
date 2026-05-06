@@ -57,9 +57,9 @@ top: 0
 线性无关组
 
 $$
-\text{Group}  v_1\ldots v_n \in V \text{is linear independet} \Leftrightarrow  \\
+\text{Group}  v_1\ldots v_n \in V \text{is linear independet} \iff  \\
 \forall \{ c_n \} ,c_i \in F, \\
-\sum _{i = 1} ^{n}  c_iv_i = 0 \Leftrightarrow \forall i,c_i=0 
+\sum _{i = 1} ^{n}  c_iv_i = 0 \iff \forall i,c_i=0 
 $$
 
 </div>
@@ -329,7 +329,7 @@ $$
 
 考虑  $\operatorname{null} T$  的基$u_1\ldots u_n$,并添加$v_1\ldots v_m$扩充到$U$的基.
 
-考虑$Tv_1\ldots Tv_m$若线性相关,$\sum _{i = 1} ^{m}  c_iTv_i=0 \Rightarrow T\sum _{i = 1} ^{m}  c_iv_i=0$,则 $w=\sum _{i = 1} ^{m}  c_iv_i\in \operatorname{null} T,w=\sum _{i = 1} ^{m}  c_iv_i=\sum _{i = 1} ^{n}  d_iu_i$,与$u_i,v_i$构成一组基矛盾.
+考虑$Tv_1\ldots Tv_m$若线性相关,$\sum _{i = 1} ^{m}  c_iTv_i=0 \implies T\sum _{i = 1} ^{m}  c_iv_i=0$,则 $w=\sum _{i = 1} ^{m}  c_iv_i\in \operatorname{null} T,w=\sum _{i = 1} ^{m}  c_iv_i=\sum _{i = 1} ^{n}  d_iu_i$,与$u_i,v_i$构成一组基矛盾.
 
 于是$Tv_i$线性无关,且容易注意到任意$w\in U,Tw=\sum_{i=1}^n c_iTu_i+\sum_{i=1}^m d_iTv_i=\sum_{i=1}^md_iTv_i\in \operatorname{span} (Tv_1\ldots TV_m)$故得证.
 
@@ -340,7 +340,7 @@ $$
 
 单射,满射,双射,可逆
 
-- 单射:$Tx\ne Ty \Rightarrow x\ne y$
+- 单射:$Tx\ne Ty \implies x\ne y$
 - 满射: $\forall v\in V,\exists u\in U, Tu=v$ 
 - 双射就是同时有两条
 - 对于双射$T$的定义$T^{-1}$满足$TT^{-1}=T^{-1}T=I$
@@ -479,7 +479,7 @@ $$
 $$
 \begin{gathered}
 p(x)\in \mathcal{P}  \\
-\Rightarrow 
+\implies 
 \operatorname{range} p(T),\operatorname{null} p(T)\text{ is invariant for } T
 \end{gathered}
 $$
@@ -489,10 +489,10 @@ $$
 $$
 \begin{gathered}
 u\in \operatorname{range} p(T) \\
-\Rightarrow \exists v,p(T)v=u \\
+\implies \exists v,p(T)v=u \\
 Tu=Tp(T)v=p(T)Tv\in \operatorname{range} p(T) \\
 u\in \operatorname{null} p(T) \\
-\Rightarrow p(T)u=0 \\
+\implies p(T)u=0 \\
 p(T)Tu=Tp(T)u=T0=0
 \end{gathered}
 $$
@@ -675,8 +675,8 @@ v,Tv,T^2v\ldots T^{n}V \text{ is dependent} \\
 \sum _{i = 0} ^{n} c_iT^iv  =0 \\
 \stackrel{\text{代数基本定理}}{\Longrightarrow}
 (\prod _{i = 1} ^{n} (T-\lambda_i I))v=0
-\Rightarrow \exists i,T-\lambda_i I=0 \\
-\Rightarrow \lambda_i \text{is a eigenvalue of } T \\
+\implies \exists i,T-\lambda_i I=0 \\
+\implies \lambda_i \text{is a eigenvalue of } T \\
 \end{gathered}
 $$
 
@@ -693,8 +693,8 @@ $$
 $$
 \begin{gathered}
 \mathcal M( T,u_1\ldots u_n ) \text{is upper triangular matrix} \\
-\Leftrightarrow \forall i, Tu_i\in \operatorname{span}( u_1\ldots u_i )  \\
-\Leftrightarrow \forall i, \operatorname{span}( u_1\ldots u_i ) \text{is invariant space} 
+\iff \forall i, Tu_i\in \operatorname{span}( u_1\ldots u_i )  \\
+\iff \forall i, \operatorname{span}( u_1\ldots u_i ) \text{is invariant space} 
 \end{gathered}
 $$
 
@@ -713,7 +713,7 @@ $$
 $$
 \begin{gathered}
 \forall T\in \mathcal L( V , V ), V \text{ is complex vector space} \\
-\Rightarrow \exists u_1\ldots u_n,\mathcal M( T,u_1\ldots u_n ) \text{ is upper triangular matrix}
+\implies \exists u_1\ldots u_n,\mathcal M( T,u_1\ldots u_n ) \text{ is upper triangular matrix}
 \end{gathered}
 $$
 
@@ -760,7 +760,7 @@ $T$有逆等价于$T$的上三角矩阵对角线全部非$0$
 
 $$
 \begin{gathered}
-Tv_1=A_{1,1}v_1 \Rightarrow A_{1,1}\ne 0 \\
+Tv_1=A_{1,1}v_1 \implies A_{1,1}\ne 0 \\
 Tv_k=u+A_{k,k}v_k,u\in \operatorname{span}( v_1\ldots v_{k-1} ) \\
 \text{if } A_{k,k}= 0 \\
 Tv_k\in \operatorname{span}( v_1\ldots v_{k-1} ) \\
@@ -834,7 +834,7 @@ $T$在基$v_1\ldots v_n$下为对角矩阵等价于
 
 二元函数<x,y>:($V,V\to F$)满足:
 - 正性: $<v,v>\ge 0$
-- 定性: $<v,v>=0 \Leftrightarrow v=0$
+- 定性: $<v,v>=0 \iff v=0$
 - 第二个位置的线性:$<u,v>$关于$v$是线性的
 - 共轭对称性:$<u,v>=\overline{<v,u>}$ 
 
@@ -906,7 +906,7 @@ $$
 
 正交
 
-$u\perp v \Leftrightarrow <u,v>=0$
+$u\perp v \iff <u,v>=0$
 
 </div>
 
@@ -931,7 +931,7 @@ $$
 \text{let} w=\dfrac{u}{\vert\vert u \vert\vert^2 }<u,v>\\
 
 v=w+(v-w),w\perp v-w \\
-\Rightarrow v^2=w^2+(v-w)^2\le w^2=\dfrac{<u,v>^2}{\vert\vert u \vert\vert ^2} 
+\implies v^2=w^2+(v-w)^2\le w^2=\dfrac{<u,v>^2}{\vert\vert u \vert\vert ^2} 
 \end{gathered}
 $$
 
@@ -1049,7 +1049,7 @@ $U^{\perp}=\{ v \vert <u,v>=0,u\in U,v\in V \}$
 $$
 \begin{gathered}
 \text{let } u=w_1+w_2,w_1\in U,w_2\in U^{\perp} \\
-\Rightarrow P_U=w_1
+\implies P_U=w_1
 \end{gathered}
 $$
 
@@ -1175,9 +1175,9 @@ $T=T^*$
 
 $$
 \begin{gathered}
-T=T^* \Rightarrow T\text{'s eigenvalues}\in R  \\
-T=T^* \Leftrightarrow \forall v,<v,Tv> \in R \\
-T=T^* \Leftrightarrow (<v,Tv>=0 \Rightarrow T=0)
+T=T^* \implies T\text{'s eigenvalues}\in R  \\
+T=T^* \iff \forall v,<v,Tv> \in R \\
+T=T^* \iff (<v,Tv>=0 \implies T=0)
 \end{gathered} 
 $$
 
@@ -1269,7 +1269,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is normal} \Leftrightarrow  TT^*=T^*T
+T \text{ is normal} \iff  TT^*=T^*T
 \end{gathered}
 $$
 
@@ -1279,7 +1279,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is normal} \Leftrightarrow \forall v,\vert\vert Tv \vert\vert = \vert\vert T^*v \vert\vert 
+T \text{ is normal} \iff \forall v,\vert\vert Tv \vert\vert = \vert\vert T^*v \vert\vert 
 \end{gathered}
 $$
 
@@ -1299,7 +1299,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is normal} ,\lambda \text{ is eigen value of } T \Rightarrow T-\lambda I \text{ is normal}  
+T \text{ is normal} ,\lambda \text{ is eigen value of } T \implies T-\lambda I \text{ is normal}  
 \end{gathered}
 $$
 
@@ -1310,7 +1310,7 @@ $$
 $$
 \begin{gathered}
 (T-\lambda I)^*=T^*-\overline{ \lambda } I \\
-\Rightarrow (T-\lambda I)(T-\lambda I)^* \\
+\implies (T-\lambda I)(T-\lambda I)^* \\
 =TT^*-(\lambda+\overline{ \lambda } )T+\lambda \overline{ \lambda } \\
 =(T-\lambda I)^*(T-\lambda I) 
 \end{gathered}
@@ -1324,7 +1324,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is normal}, Tv=\lambda v \Rightarrow T^*v=\overline{ \lambda } v 
+T \text{ is normal}, Tv=\lambda v \implies T^*v=\overline{ \lambda } v 
 \end{gathered}
 $$
 
@@ -1335,8 +1335,8 @@ $$
 $$
 \begin{gathered}
 (T-\lambda I)v=0 \\
-\Rightarrow \vert\vert (T-\lambda I)v \vert\vert =0 \\
-\Rightarrow \vert\vert (T-\lambda I)^*v \vert\vert =0 \\
+\implies \vert\vert (T-\lambda I)v \vert\vert =0 \\
+\implies \vert\vert (T-\lambda I)^*v \vert\vert =0 \\
 T^*v=\overline{\lambda}v
 \end{gathered}
 $$
@@ -1347,7 +1347,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is normal} \Rightarrow \text{eigen vectors of } T \text{ are orthogonal} 
+T \text{ is normal} \implies \text{eigen vectors of } T \text{ are orthogonal} 
 \end{gathered}
 $$
 
@@ -1419,8 +1419,8 @@ $$
 
 $$
 \begin{gathered}
-u\in U \Rightarrow Tu\in U \\
-\Leftrightarrow v\in U^{\perp},Tv\in U^\perp
+u\in U \implies Tu\in U \\
+\iff v\in U^{\perp},Tv\in U^\perp
 \end{gathered}
 $$
 
@@ -1431,9 +1431,9 @@ $$
 $$
 \begin{gathered}
 u\in U,v\in U^{\perp} \\
-\Rightarrow <Tu,v>=0 \\
-\Rightarrow <u,Tv>=0 \\
-\Rightarrow Tv\in U^{\perp}
+\implies <Tu,v>=0 \\
+\implies <u,Tv>=0 \\
+\implies Tv\in U^{\perp}
 \end{gathered}
 $$
 
@@ -1496,7 +1496,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is positive} \Leftrightarrow 
+T \text{ is positive} \iff 
 \begin{cases}
 \forall v,<v,Tv>\ge 0 \\
 T \text{ is self-adjoint} 
@@ -1514,7 +1514,7 @@ $$
 
 $$
 \begin{gathered}
-T=R^2 \Leftrightarrow R \text{ is squre root of T} 
+T=R^2 \iff R \text{ is squre root of T} 
 \end{gathered}
 $$
 
@@ -1563,7 +1563,7 @@ $$
 
 <div class='pbox'>
 
-首先由之前从 $T \text{ is positive} \Rightarrow T=S^2,S \text{ is positive}$中我们会证存在性(对角矩阵然后给每个本征值开根).
+首先由之前从 $T \text{ is positive} \implies T=S^2,S \text{ is positive}$中我们会证存在性(对角矩阵然后给每个本征值开根).
 
 现在考虑已经有一个正平方根$S$,取$S$的本征向量构成的规范正交基$e_1\ldots e_n$,再取$T$的本征向量$v$,有
 
@@ -1573,12 +1573,12 @@ $$
 Tv=\lambda v \\
 v=\sum _{i = 1} ^{n}  <v,e_i>e_i
 \end{cases} \\
-\Rightarrow 
+\implies 
 Tv=\sum _{i = 1} ^{n}  \lambda <v,e_i> \\
 R^2v=\sum _{i = 1} ^{n} \lambda_i^2 <v,e_i>e_i=Tv=\sum _{i = 1} ^{n}  \lambda <v,e_i> \\
-\Rightarrow \sum _{i = 1} ^{n}  (\lambda_i^2-\lambda)<v,e_i>e_i=0 \\
-\Rightarrow \forall i,<v,e_i>\ne 0:\lambda_i^2=\lambda \\
-\Rightarrow Rv=\lambda_i v=\sqrt{\lambda} v
+\implies \sum _{i = 1} ^{n}  (\lambda_i^2-\lambda)<v,e_i>e_i=0 \\
+\implies \forall i,<v,e_i>\ne 0:\lambda_i^2=\lambda \\
+\implies Rv=\lambda_i v=\sqrt{\lambda} v
 \end{gathered}
 $$
 
@@ -1593,7 +1593,7 @@ $$
 
 $$
 \begin{gathered}
-T \text{ is an isometry} \Leftrightarrow \forall v,\vert\vert Tv \vert\vert =\vert\vert v \vert\vert  
+T \text{ is an isometry} \iff \forall v,\vert\vert Tv \vert\vert =\vert\vert v \vert\vert  
 \end{gathered}
 $$
 
@@ -1641,7 +1641,7 @@ $$
 $$
 \begin{gathered}
 T \text{ is an isometry}  \\
-\Leftrightarrow \exists \text{orthonormal base }e, \\
+\iff \exists \text{orthonormal base }e, \\
 \forall i, Te_i=\lambda_i e_i,\vert \lambda_i \vert =1 
 \end{gathered}
 $$
@@ -1692,7 +1692,7 @@ $$
 $$
 \begin{gathered}
 S_1\sqrt{T^*T}(v_1+v_2)=T(v_1+v_2) \\
-\Rightarrow S_1(\sqrt{T^*T}v_1)+S_1(\sqrt{T^*T}v_2)=Tv_1+Tv_2 \\
+\implies S_1(\sqrt{T^*T}v_1)+S_1(\sqrt{T^*T}v_2)=Tv_1+Tv_2 \\
 S_1\sqrt{T^*T}kv_1=kTv_1
 \end{gathered}
 $$
@@ -1703,9 +1703,9 @@ $$
 $$
 \begin{gathered}
 \sqrt{T^*T}v_1= \sqrt{T^*T}v_2 \\
-\Leftrightarrow  \vert\vert \sqrt{T^*T}(v_1-v_2) \vert\vert =0 \\
-\Leftrightarrow  \vert\vert T(v_1-v_2) \vert\vert =0 \\
-\Leftrightarrow  Tv_1=Tv_2
+\iff  \vert\vert \sqrt{T^*T}(v_1-v_2) \vert\vert =0 \\
+\iff  \vert\vert T(v_1-v_2) \vert\vert =0 \\
+\iff  Tv_1=Tv_2
 \end{gathered}
 $$
 
@@ -1716,7 +1716,7 @@ $$
 $$
 \begin{gathered}
 \dim \operatorname{range} \sqrt{T^*T}=\dim \operatorname{range} T \\
-\Rightarrow \dim (\operatorname{range} \sqrt{T^*T})^\perp=\dim (\operatorname{range} T)^\perp
+\implies \dim (\operatorname{range} \sqrt{T^*T})^\perp=\dim (\operatorname{range} T)^\perp
 \end{gathered}
 $$
 
@@ -1782,7 +1782,7 @@ $$
 $$
 \begin{gathered}
 {0}=\operatorname{null} T^0,\operatorname{null} T^i \subset \operatorname{null} T^{i+1} \\
-\operatorname{null} T^i= \operatorname{null} T^{i+1} \Rightarrow \forall j>i,\operatorname{null} T^j=\operatorname{null} T^i \\
+\operatorname{null} T^i= \operatorname{null} T^{i+1} \implies \forall j>i,\operatorname{null} T^j=\operatorname{null} T^i \\
 \operatorname{null} T^{\dim V}=\operatorname{null} T^{\dim V+1}  \\
 \end{gathered}
 $$
@@ -1843,7 +1843,7 @@ $$
 $$
 \begin{gathered}
 \exists n,(T-\lambda I)^nv=0 \\
-\Leftrightarrow v \text{ is generalized eigen vector of } T.
+\iff v \text{ is generalized eigen vector of } T.
 \end{gathered}
 $$
 
@@ -1853,7 +1853,7 @@ $$
 
 $$
 \begin{gathered}
-(T-\lambda I)^n v=0 \Rightarrow \lambda \text{ is eigenvalue of } T
+(T-\lambda I)^n v=0 \implies \lambda \text{ is eigenvalue of } T
 \end{gathered}
 $$
 
@@ -1888,7 +1888,7 @@ $$
 $$
 \begin{gathered}
 v_i\in G(\lambda_i,T) \\
-\Rightarrow \{ v_n \} \text{ is linear independent} 
+\implies \{ v_n \} \text{ is linear independent} 
 \end{gathered}
 $$
 
@@ -1900,13 +1900,13 @@ $$
 \begin{gathered}
 \text{let } k=\max {i\vert (T-\lambda_1 I)^i v_1\ne 0} \\
 \text{let } w=(T-\lambda_1 I)^k v_1 \\
-\Rightarrow Tw=\lambda_1w \\
+\implies Tw=\lambda_1w \\
 \text{let } F=(T-\lambda_1I)^k\prod_i (T-\lambda_iI)^n \\
 \sum _{i = 1} ^{n}  c_iv_i=0 \\
-\Rightarrow F\sum _{i = 1} ^{n}  c_iv_i=0 \\
-\Rightarrow Fc_1v_1=0 \\
-\Rightarrow c_1w=0 \\
-\Rightarrow c_1=0
+\implies F\sum _{i = 1} ^{n}  c_iv_i=0 \\
+\implies Fc_1v_1=0 \\
+\implies c_1w=0 \\
+\implies c_1=0
 \end{gathered}
 $$
 
@@ -1989,7 +1989,7 @@ $$
 $$
 \begin{gathered}
 v_i\in\operatorname{range} N \\
-\Rightarrow \exists u_i,Nu_i=v_i
+\implies \exists u_i,Nu_i=v_i
 \end{gathered}
 $$ 
 
@@ -2097,7 +2097,7 @@ $$
 $$
 \begin{gathered}
 \deg p(z)=\dim V \\
-p(z)=0 \Leftrightarrow z \text{ is eigenvalue of } T
+p(z)=0 \iff z \text{ is eigenvalue of } T
 \end{gathered}
 $$
 
@@ -2145,7 +2145,7 @@ $$
 \begin{gathered}
 \text{assume }p,q \text{ is minimal polynomial}  \\
 p(T)=0,q(T)=0,\deg p=\deg q \\
-\Rightarrow (p-q)(T)=0,\deg p-q<\min(\deg p,\deg q)
+\implies (p-q)(T)=0,\deg p-q<\min(\deg p,\deg q)
 \end{gathered}
 $$
 
@@ -2176,7 +2176,7 @@ $T$的本征值是其极小多项式$p(z)$的零点
 
 若$Tv=\lambda v$,$p(T)=0$,则$p(T)v=p(\lambda)v=0$,于是$p(\lambda)=0$.
 
-若$p(\lambda)=0$且$\lambda$不是本征值,则$T-\lambda I$是满秩的,则设$p(T)=(T-\lambda I)q(T)$,$p(T)=0 \Leftrightarrow q(T)=0$,与$p$极小矛盾.
+若$p(\lambda)=0$且$\lambda$不是本征值,则$T-\lambda I$是满秩的,则设$p(T)=(T-\lambda I)q(T)$,$p(T)=0 \iff q(T)=0$,与$p$极小矛盾.
 
 得证.
 
@@ -2281,7 +2281,7 @@ $\lambda$与 $\overline{ \lambda }$重数相同.
 $$
 \begin{gathered}
 (T-\lambda I)^kv=0 \\
-\Rightarrow \overline{ (T-\lambda I)^k v } =0 \\
+\implies \overline{ (T-\lambda I)^k v } =0 \\
 (T-\overline{\lambda}I)^k \overline{ v }=0
 \end{gathered}
 $$
@@ -2352,7 +2352,7 @@ $$
 $$
 \begin{gathered}
 T \text{ is normal}  \\
-\Leftrightarrow \exists e_1\ldots e_n \text{ is orthonormal basis }, \\
+\iff \exists e_1\ldots e_n \text{ is orthonormal basis }, \\
 \mathcal M( T,e ) = \operatorname{Diag}(A_1\ldots A_k) , \\
 A_k= [x] \text{ or } A=\begin{bmatrix}
     a\ -b \\
@@ -2379,7 +2379,7 @@ $$
 T(c+di)=(a+bi)(c+di) \\
 T(c-di)=(a-bi)(c-di)
 \end{cases} \\
-\Rightarrow 
+\implies 
 \begin{cases}
 Tc=ac-bd \\
 Td=bc+ad
@@ -2411,7 +2411,7 @@ $$
 $$
 \begin{gathered}
 T \text{ is isometry}  \\
-\Leftrightarrow \exists e_1\ldots e_n \text{ is orthonormal basis}  \\
+\iff \exists e_1\ldots e_n \text{ is orthonormal basis}  \\
 \mathcal M( T,e ) =\operatorname{Diag}(A_1\ldots A_k), \\
 A_k=[x] \text{ or } A=\begin{bmatrix}
     \cos\theta\ -\sin\theta \\
@@ -2603,9 +2603,9 @@ $$
 $$
 \begin{gathered}
 \sum_i A_{k,i}v_i=\lambda v_k \\
-\Rightarrow (\lambda-A_{k,k})v_k=\sum_{i\ne k}A_{k,i}v_i \\
-\Rightarrow \vert (\lambda-A_{k,k})v_k \vert =\vert \sum_{i\ne k}A_{k,i}v_i \vert  \\
-\Rightarrow \vert \lambda-A_{k,k} \vert \vert v_k \vert \le \sum_{i\ne k} \vert A_{k,i} \vert  \vert v_k \vert 
+\implies (\lambda-A_{k,k})v_k=\sum_{i\ne k}A_{k,i}v_i \\
+\implies \vert (\lambda-A_{k,k})v_k \vert =\vert \sum_{i\ne k}A_{k,i}v_i \vert  \\
+\implies \vert \lambda-A_{k,k} \vert \vert v_k \vert \le \sum_{i\ne k} \vert A_{k,i} \vert  \vert v_k \vert 
 \end{gathered}
 $$
 
@@ -2619,7 +2619,7 @@ $$
 
 $$
 \begin{gathered}
-AB=BA \Rightarrow E(\lambda,A) \text{ is invariant to } B
+AB=BA \implies E(\lambda,A) \text{ is invariant to } B
 \end{gathered}
 $$
 
@@ -2630,7 +2630,7 @@ $$
 $$
 \begin{gathered}
 ABv=BAV \\
-\Rightarrow A(Bv)=\lambda (Bv)
+\implies A(Bv)=\lambda (Bv)
 \end{gathered}
 $$
 

@@ -120,7 +120,7 @@ $$
 $$
 \begin{gathered}
 x^kI-A^k=(xI-A)(\sum_{i=0}^{k-1} x^iIA^{k-i-1}) \\
-\Rightarrow xI-A \vert x^kI-A^k
+\implies xI-A \vert x^kI-A^k
 \end{gathered}
 $$
 
@@ -129,8 +129,8 @@ $$
 $$
 \begin{gathered}
 f(x)=f(x)-f(A)=\sum_i C_i (x_iI-A^k) \\
-\Rightarrow x_iI-A \vert f(x) \\
-\Rightarrow f(x)=(x_iI-A)Q(x)
+\implies x_iI-A \vert f(x) \\
+\implies f(x)=(x_iI-A)Q(x)
 \end{gathered}
 $$
 

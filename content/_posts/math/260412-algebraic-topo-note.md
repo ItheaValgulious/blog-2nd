@@ -93,7 +93,7 @@ $I$:$[0,1]$.
 
 道路连通分量
 
-定义 $x\sim y \Leftrightarrow \exists p:I\to X,p(0)=x,p(1)=Y$.
+定义 $x\sim y \iff \exists p:I\to X,p(0)=x,p(1)=Y$.
 
 定义 $\pi_0(X)=X/\sim,\forall x,[x]=\pi_0(x)$是$x$所在的等价类.
 
@@ -116,8 +116,8 @@ $$
 
 此时有性质:
 
-- $f\simeq g \Rightarrow f^*=g^*$
-- $f:A\to B,g:B\to C \Rightarrow (g\circ f)^*=g^*\circ f^*$
+- $f\simeq g \implies f^*=g^*$
+- $f:A\to B,g:B\to C \implies (g\circ f)^*=g^*\circ f^*$
 -  $\mathrm{Id}_X^*=\mathrm{Id}_{\pi_0(X)}$
 
 </div>
@@ -131,12 +131,12 @@ $$
 \forall [x]=[y], \\
 \exists p:x\rightsquigarrow y \\
 f\circ p \text{ is }  f(x)\rightsquigarrow f(y) \\
-\Rightarrow [f(x)]=[f(y)]
+\implies [f(x)]=[f(y)]
 \end{gathered}
 $$
 
 性质都比较显然:
-- $f\simeq g \Rightarrow \forall x,p(t)=H(x,t)$是一条$Y$中的路径,于是$[f(x)]=[g(x)]$.
+- $f\simeq g \implies \forall x,p(t)=H(x,t)$是一条$Y$中的路径,于是$[f(x)]=[g(x)]$.
 - 也是随便取个点$x\in A$两边都是$[g\circ f(x)]$.
 - 更显然.
 
@@ -179,7 +179,7 @@ $$
 
 $$
 \begin{gathered}
-[a]=[c],[b]=[d] \Rightarrow [ab]=[cd]
+[a]=[c],[b]=[d] \implies [ab]=[cd]
 \end{gathered}
 $$
 
@@ -197,7 +197,7 @@ H(x,t)=\begin{cases}
 H_1(x,2t),t\in [0,\dfrac12) \\
 H_2(x,2t-1)\in [\dfrac12,1]
 \end{cases} \\
-\Rightarrow (ab)\simeq_H (cd)
+\implies (ab)\simeq_H (cd)
 \end{gathered}
 $$
 
@@ -232,8 +232,8 @@ f^*=\pi_1(f):\pi_1(X,x_0)\to \pi_1(Y,f(x_0)) \\
 $$
 
 类似$\pi_0$,有:
-- $f,g:X\to Y,f\simeq y \Rightarrow f^*=g^*$
-- $f:A\to B,g:B\to C \Rightarrow (g\circ f)^*=g^*\circ f^*$
+- $f,g:X\to Y,f\simeq y \implies f^*=g^*$
+- $f:A\to B,g:B\to C \implies (g\circ f)^*=g^*\circ f^*$
 - $\mathrm{Id}_X^*=\mathrm{Id}_{\pi_1(X,x_0)}$
 
 </div>
@@ -338,7 +338,7 @@ $X\simeq Y$所以 $\exists f:X\to Y,g:Y\to X,f\circ g\simeq \mathrm{Id}_Y,g\circ
 
 若$\tilde f(x)=\tilde f'(x)$,考虑$f(x)$存在邻域$U$,有$p^{-1}(U)=\bigsqcup V_\lambda$,且$\exists ! \lambda,\tilde f(x)=\tilde f'(x)\in V_\lambda$.所以$B=\tilde f^{-1}(V_\lambda)\cap \tilde f'^{-1}(V_\lambda)$中是$x$的邻域满足$\forall x'\in B,\tilde f(x')\in V_\lambda,\tilde f'(x')\in V_\lambda$.即它俩在同一片空间.但这个空间是同胚,只能$\tilde f'(x')=\tilde f(x')=p|_{V_\lambda}^{-1}f(x')$.
 
-所以 $x\in S \Rightarrow f^{-1}(U) \subset S$,是开集.
+所以 $x\in S \implies f^{-1}(U) \subset S$,是开集.
 
 同理,如果$x$处不相等,那么两个提升的值一定在不同的切片里,于是它的邻域也在不同的切片里,从而$Y-S$是开集,从而$S$既开又闭.
 
@@ -456,7 +456,7 @@ Universal Covering Space
 
 考虑先拿过来普遍覆叠空间$\tilde X$,$\pi_1(X,x_0)$同构于$p^{-1}(x_0)$的变换群.这个空间的$\pi_1$是只有一个元素的平凡群:因为它把所有$X$里的大量闭环都拆开的不闭环了.
 
-现在你希望你的空间的基本群长的像$H$,那我们只要要求$H$中这些路径是闭环的,于是你通过粘合上面的覆叠空间,就把原本不是闭环的粘贴成了闭环.所以你想到定义$\tilde X/\sim_H$为你想要的空间,其中$x\sim_H y \Leftrightarrow \exists [h]\in H,\tilde h(0)=x,\tilde h(1)=y$.
+现在你希望你的空间的基本群长的像$H$,那我们只要要求$H$中这些路径是闭环的,于是你通过粘合上面的覆叠空间,就把原本不是闭环的粘贴成了闭环.所以你想到定义$\tilde X/\sim_H$为你想要的空间,其中$x\sim_H y \iff \exists [h]\in H,\tilde h(0)=x,\tilde h(1)=y$.
 
 容易验证它的基本群投影到$X$后就是子群$H$.
 
@@ -543,7 +543,7 @@ $(X,x_0)$有覆叠空间$(\tilde X_i,\tilde x_i)$,对应映射$p_i$.则
 $$
 \begin{gathered}
 p_1\pi_1(\tilde X_1,\tilde x_1)\cong p_2\pi_1(\tilde X_2,\tilde x_2) \\
-\Leftrightarrow \exists! h:\tilde X_1\to \tilde X_2 \text{ is homeomorphism}  \ s.t.\ 
+\iff \exists! h:\tilde X_1\to \tilde X_2 \text{ is homeomorphism}  \ s.t.\ 
 p_1=p_2\circ h
 \end{gathered}
 $$
@@ -601,9 +601,10 @@ Affine Independnece
 </div>
 
 <div class='dbox'>
+
 n-Simplex
 
-对$n+1$个仿射无关的点$\{ v_i \}$,$\sigma=\{ \sum_{i=0}^n c_iv_i | \sum_{i=0}^n c_i=1 \} $是一个simplex.
+对$n+1$个仿射无关的点$\{ v_i \}$,$\sigma=\{ \sum_{i=0}^n c_iv_i | \sum_{i=0}^n c_i\le 1,c_i\ge 0 \} $是一个simplex.
 
 </div>
 
@@ -698,9 +699,17 @@ $|K|=|K^{(k)}|$.
 
 <div class='pbox'>
 
-首先只需要证$k=1$.
+显然只需要证$k=1$.
 
-考虑$\forall x\in |K|,x=\sum_{v\in V_K} v$.
+你发现显然$|K^{(1)}|\le |K|$,因为$|K^{(1)}|$中的每个simplex的点集都:一定是原来一个simplex下的一串点,这些点都可以被原来那个simplex张成,所以他们张成的也可以.
+
+反过来,考虑任意一个$|K|$中的点,要证明可以被细分后的包含.只需找到那个具体的simplex:那
+
+</div>
+
+<div class='pbox'>
+
+todo
 
 </div>
 
@@ -714,8 +723,151 @@ $|K|=|K^{(k)}|$.
 
 </div>
 
+<div class='pbox'>
 
+todo
+
+</div>
 
 
 
 ## Homology
+
+### Definitions and Related Algebra
+
+<div class='dbox'>
+
+Oriented simplex
+
+对一个simplex $<v_1,\ldots v_n>$,规定其符号,且要求任意交换两个点的位置符号相反(即其符号为$(-1)^{\sigma(p)}$)
+
+</div>
+
+
+
+<div class='dbox'>
+
+链群
+
+对simplicial complex$K$,设其中所有$n$-simplex构成集合$S$并任意定向,则$C_n(K)=\{\sum_i c_s s|s\in S\}$.
+
+</div>
+
+<div class='dbox'>
+
+求导映射
+
+定义$d_n:C_n\to C_{n-1},d_n(<v_1,\ldots v_n>)=\sum_i (-1)^i <v_1,\ldots,v_{i-1},v_{i+1},\ldots v_n>$
+
+</div>
+
+我们发现这个求导是把一个图形映射到他的边界.
+
+
+
+
+
+### Mayer
+
+<div class='dbox'>
+
+正和列
+
+</div>
+
+<div class='dbox'>
+
+短正和列
+
+正和列
+
+```commutative
+WzAsNSxbMCwwLCJidWxsZXQiXSxbMiwwLCJBX24iXSxbNCwwLCJCX24iXSxbNiwwLCJDX24iXSxbOCwwLCJidWxsZXQiXSxbMCwxXSxbMSwyLCJpIl0sWzIsMywiaiJdLFszLDRdXQ==
+```
+
+称为短正和列.
+
+</div>
+
+由于正和性质,$i$一定是单射,$j$是满射,且$\ker j=\operatorname{im} i$.所以从群角度我们可以写$C_n\cong B_n/A_n$.
+
+而从空间角度,你会发现
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+C_n\cong \dfrac{(B/A)_n}{*_n} 
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+直觉上,这是因为在链复形上作商就是把一些路径类压成0,而空间作商是压到一点$*$,所以你要把一个单点$*_n$的链复形除掉变成$0$.
+
+todo
+
+</div>
+
+<div class='cbox'>
+
+Snake Lemma
+
+若链复形$A_\bullet,B_\bullet,C_\bullet$在每一层构成短正和列:
+
+```commutative
+WzAsNSxbMCwwLCJidWxsZXQiXSxbMiwwLCJBX24iXSxbNCwwLCJCX24iXSxbNiwwLCJDX24iXSxbOCwwLCJidWxsZXQiXSxbMCwxXSxbMSwyLCJpIl0sWzIsMywiaiJdLFszLDRdXQ==
+```
+
+则其同调群构成长正和列:
+
+```commutative
+WzAsOCxbMCwyLCJIX24oQSkiXSxbMiwyLCJIX24oQikiXSxbNCwyLCJIX24oQykiXSxbMCw0LCJIX3tuLTF9IChBKSJdLFsyLDQsIkhfe24tMX0gKEIpIl0sWzQsNCwiSF97bi0xfSAoQykiXSxbMCw2LCJcXGNkb3RzIl0sWzQsMCwiXFxjZG90cyJdLFswLDEsImlfKiIsMV0sWzEsMiwic18qIiwxXSxbMyw0LCJpXyoiLDFdLFs0LDUsInNfKiIsMV0sWzIsMywiXFxkZWx0YSJdLFs1LDYsIlxcZGVsdGEiXSxbNywwLCJcXGRlbHRhIl1d
+```
+
+</div>
+
+其实我们不想要长正和列,我们希望他们的同调群也构成短正和列就太好了.然后我们发现这做不到:同调群关注的是洞,但除的时候可能产生新洞.
+
+<div class='pbox'>
+
+那么首要任务是构造这个$\delta$.
+
+考虑对$H_n(C)$中一个等价类$[c]$的代表元$c$,有$c\in \ker d_n$.那么因为$s$是满射一定$\exists b,s(b)=c$.且由交换图我们知道$s_{n-1}(d_n(b))=d_n(s_n(b))=d_n(c)=0$.
+
+所以$d_n(b)\in \ker s_{n-1}=\operatorname{im} i_{n-1}$,$\exists !a\in A_{n-1} \ s.t.\ i_{n-1}(a)=d_n(b)$.那么因为$i_{n-2}(d_{n-1}(a))=d_{n-1}(i_{n-1}(a))=d_{n-1}(d_n(b))=0$,而$i$是单射可以推出$d_{n-1}(a)=0$.于是$a$是闭链,$[a]\in H_{n-1}(A)$.
+
+则我们令$\delta([c])=[a]$.下面首先要证明它良定义.需要证明它与选取的$b,c$无关.
+
+假设选取了两个不一样的$b,b'$,那么由$s_n(b-b')=c-c=0$,所以$b-b'\in \ker s_n=\operatorname{im} i_n,\exists \alpha\in A_n,i_n(\alpha)=b-b'$,从而求导得$i_{n-1}(d_n(\alpha))=d(i_n(\alpha))=d(b)-d(b')=i_{n-1}(a)-i_{n-1}(a')$,$i$是单射,所以$d_n(\alpha)=a-a'$,故$a-a'\in \operatorname{im} d_{n}$,差一个高维边界,从而$[a]=[a']$.
+
+假设选取了两个不一样的$c,c'$,那么$[c]=[c']$得$\exists d_{n+1}(\gamma)=c-c'$,则$\exists \beta\in B_{n+1},s_{n+1}(\beta)=\gamma$.于是$c'=c+d_{n+1}(\gamma)=c+d_{n+1}(s_{n+1}\beta)=c+s_n(d_{n+1}\beta)$,那么可以得到$s_n(b+d_{n+1}\beta)=c'$,从而如果选$b'=b+d_{n+1}\beta$,则有$d(b')=d(b)+d(d_{n+1}(\beta))=d(b)$,于是必然得到相同的$a$.
+
+所以$\delta$是良定义的.接下来要证明这个长正和列确实是正和的.
+
+在$H_n(A)$处:即证$\operatorname{im} \delta=\ker i_*$.因为$\delta$的像满足$\delta([c])=[a],i(a)=d(b)$所以容易看出$\operatorname{im} \delta\subset \ker i_*$.又因为每个$\ker i_*$中的$[a]$一定有$i_*(a)=d(b)$,于是$\delta([s(b)])=[a]$,所以$\ker i_*\subset \operatorname{im} \delta$.于是得证.
+
+在$H_n(B)$处:即证$\operatorname{im} i_*=\ker s_*$.因为$s_*\circ i_*=(s\circ i)_*=0_*=0$,所以$\operatorname{im} i_*\subset \ker s_*$.反过来对任意$s_*(b)=0$,这代表$\exists \gamma,s(b)=d(\gamma)$,从而$\exists \beta,s(\beta)=\gamma$.这意味着$s(d(\beta))=d(s(\beta))=s(b)$,从而$s(b-d(\beta))=0$,从而$\exists i(a)=b-d(\beta)$.且因为$i(d(a))=d(i(a))=d(b-d(\beta))=d(b)-d(d(\beta))=0$,所以$[a]\in H_n(A)$.于是$i([a])=[b-d(\beta)]=[b]$,这就说明$\ker s_*\subset \operatorname{im} i_*$.
+
+在$H_n(C)$处:即证$\operatorname{im} s_*=\ker \delta$.因为$\operatorname{im} s_*$中的$[c]$在找$\delta [c]$的过程中先拉回到$[b]\in H_n(B)$,这代表$d(b)=0$,从而找到的$i^{-1}(d(b))=0$.这说明$\operatorname{im} s_*\subset \ker \delta$.而如果$\delta [c]=[a]=0$,则我们先把$\delta$的定义写清楚:$c=s(b),i(a)=d(b)$,则$\exists \alpha,a=d(\alpha)$,于是$d(i(\alpha))=i(d(\alpha))=d(b)$,从而$d(b-i(\alpha))=0$,所以$[b-i(\alpha)]\in H_n(B)$.同时我们有$s(b-i(\alpha))=s(b)-s(i(\alpha))=s(b)=c$.从而得证$\ker \delta\subset \operatorname{im} s_*$.
+
+于是真的是正和的.
+
+</div>
+
+### Homotopy invariance
+
+
+### Applications
+
+#### Sphere
+
+#### Surfaces
+
+### Rational Homology
+
+#### Euler number
+
+#### Lefschetz number

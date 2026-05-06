@@ -110,7 +110,7 @@ $$
 =\dfrac{\sin\dfrac{x}{2^n}\prod _{i = 1} ^{n}  \cos\dfrac{x}{2^i}}{\sin\dfrac{x}{2^n} } \\
 =\dfrac{sin(x)}{2^n\sin\dfrac{x}{2^n} } \\
 \sin\dfrac{x}{2^n} \sim\dfrac{x}{2^n}  \\
-\Rightarrow \lim_{n \to \infty} \dfrac{sin(x)}{2^n\sin\dfrac{x}{2^n} } \\
+\implies \lim_{n \to \infty} \dfrac{sin(x)}{2^n\sin\dfrac{x}{2^n} } \\
 =\dfrac{\sin(x)}{x} 
 \end{gathered}
 $$
@@ -321,7 +321,7 @@ $$
 
 $$
 \begin{gathered}
-f(x_0^-)<f(x_0^+) \Rightarrow \exists \delta>0,\forall x\in (x_0-\delta,x_0),\forall y\in (x_0,x_0+\delta),f(x)<f(y)
+f(x_0^-)<f(x_0^+) \implies \exists \delta>0,\forall x\in (x_0-\delta,x_0),\forall y\in (x_0,x_0+\delta),f(x)<f(y)
 \end{gathered}
 $$
 
@@ -348,7 +348,7 @@ $$
 $$
 \begin{gathered}
 f \text{ is periodic function} ,\lim_{x \to \infty} f(x)=0 \\
-\Rightarrow f(x)=0
+\implies f(x)=0
 \end{gathered}
 $$
 
@@ -361,11 +361,11 @@ $$
 \text{let } T \text{ is a period of } f \\
 \forall x_0,\epsilon,
 \exists X>x_0 \ s.t.\ 
-x>X \Rightarrow f(x)<\epsilon \\
+x>X \implies f(x)<\epsilon \\
 \text{let } n=\lbrack \dfrac{X-x_0}{T} +100 \rbrack  \\
-\Rightarrow  f(x_0)=f(x_0+nT)<\epsilon \\
-\Rightarrow \lim_{x \to x_0} f(x)=0 \\
-\Rightarrow f(x)=0
+\implies  f(x_0)=f(x_0+nT)<\epsilon \\
+\implies \lim_{x \to x_0} f(x)=0 \\
+\implies f(x)=0
 \end{gathered}
 $$
 
@@ -379,10 +379,10 @@ $$
 \begin{gathered}
 \begin{cases}
 f(x),x\in(0,1) \\
-x\to 0^+ \Rightarrow f(x)=o(1) \\
+x\to 0^+ \implies f(x)=o(1) \\
 f(x)-f(\dfrac{x}{2} )=o(x)
 \end{cases}
-\Rightarrow x\to 0^+ ,f(x)=o(x)
+\implies x\to 0^+ ,f(x)=o(x)
 \end{gathered}
 $$
 
@@ -395,7 +395,7 @@ $$
 \forall \epsilon, \\
 \text{let }\epsilon_1=\dfrac{\epsilon}{8}\\
 \exists \delta \ s.t.\ 
-x<\delta \Rightarrow 
+x<\delta \implies 
 \vert f(x)-f(\dfrac{x}{2} )\vert <\epsilon_1x \\
 \therefore
 \vert f(x)\vert = \vert f(\dfrac{x}{2^n} )+\sum _{i = 0} ^{n-1} ( f(\dfrac{x}{2^i} )-f(\dfrac{x}{2^{i+1}} ) )\vert   \\
@@ -407,7 +407,7 @@ x<\delta \Rightarrow
 = 0 + 2\epsilon_1x \\
 = 2\epsilon_1x \\
 < \epsilon x \\ 
-\Rightarrow x\to 0^+ \Rightarrow  f(x)=o(x) 
+\implies x\to 0^+ \implies  f(x)=o(x) 
 \end{gathered}
 $$
 
@@ -423,7 +423,7 @@ $$
 a,b>1,f(x) \text{ is bounded in } N^*(0) \\
 f(ax)=bf(x)
 \end{cases} \\
-\Rightarrow \lim_{x \to 0} f(x)=f(0)
+\implies \lim_{x \to 0} f(x)=f(0)
 \end{gathered}
 $$
 
@@ -434,15 +434,15 @@ $$
 $$
 \begin{gathered}
 f(ax)=bf(x) \\
-\Leftrightarrow f(\dfrac{x}{a} )=\dfrac{f(x)}{b} \\
+\iff f(\dfrac{x}{a} )=\dfrac{f(x)}{b} \\
 a,b>1,f(x) \text{ is bounded in } N^*(0)  \\
-\Rightarrow \exists M,\delta_0,\vert x \vert <\delta_0 \Rightarrow  \vert f(x) \vert <M \\
+\implies \exists M,\delta_0,\vert x \vert <\delta_0 \implies  \vert f(x) \vert <M \\
 \forall \epsilon,\text{let }\delta=\dfrac{\delta_0}{a^n},n=\log_b(\frac{M}{\epsilon})+1 \\
-\Rightarrow x<\delta \Rightarrow f(x)=\dfrac{f(a^nx)}{b^n},\vert a^nx \vert < \delta_0 \\
-\Rightarrow f(a^nx)< M \\
-\Rightarrow f(x)<\dfrac{M}{b^n} <\epsilon \\
-\Rightarrow \lim_{x \to _0}  f(x)=0 \\
-f(a0)=bf(0) \Rightarrow f(0)=0 \\
+\implies x<\delta \implies f(x)=\dfrac{f(a^nx)}{b^n},\vert a^nx \vert < \delta_0 \\
+\implies f(a^nx)< M \\
+\implies f(x)<\dfrac{M}{b^n} <\epsilon \\
+\implies \lim_{x \to _0}  f(x)=0 \\
+f(a0)=bf(0) \implies f(0)=0 \\
 \therefore \lim_{x \to 0} f(x)=0
 \end{gathered}
 $$
@@ -469,15 +469,15 @@ $$
 
 $$
 \begin{gathered}
-x>1 \Rightarrow f(x)=\dfrac{1}{x}   \\
-\Rightarrow \lim_{x \to 1^+} f(x)=1 \\
-x\in (-1,1) \Rightarrow f(x)=ax^2+bx  \\
-\Rightarrow \lim_{x \to 1^-} f(x)=ax^2+bx \\
+x>1 \implies f(x)=\dfrac{1}{x}   \\
+\implies \lim_{x \to 1^+} f(x)=1 \\
+x\in (-1,1) \implies f(x)=ax^2+bx  \\
+\implies \lim_{x \to 1^-} f(x)=ax^2+bx \\
 \therefore f(1)=\dfrac{1+a+b}{2} =1=a+b \\
-x<-1 \Rightarrow f(x)=\dfrac{1}{x}  \\
-\Rightarrow \lim_{x \to -1^-} f(x)=-1 \\
+x<-1 \implies f(x)=\dfrac{1}{x}  \\
+\implies \lim_{x \to -1^-} f(x)=-1 \\
 \lim_{x \to -1^-} f(x)=\lim_{x \to -1^+} f(x)=f(-1) \\
-\Rightarrow -1=a-b=\dfrac{-1+a-b}{2}  \\
+\implies -1=a-b=\dfrac{-1+a-b}{2}  \\
 \therefore
 \begin{cases}
 a=0 \\
@@ -540,7 +540,7 @@ $$
 $$
 \begin{gathered}
 (1+x)(1+2x)(1+3x)-1=6x+o(x) \\
-\Rightarrow \lim_{x \to 0} \dfrac{(1+x)(1+2x)(1+3x)-1}{x}  \\
+\implies \lim_{x \to 0} \dfrac{(1+x)(1+2x)(1+3x)-1}{x}  \\
 =\lim_{x \to 0} \dfrac{6x+o(x)}{x}  \\
 =6
 \end{gathered}
@@ -566,7 +566,7 @@ $$
 \begin{gathered}
 \sqrt[n]{ 1+(x-1) } -1 \\
 =\dfrac{x-1}{n} +o(x-1) \\
-\Rightarrow \lim_{x \to 1} \dfrac{\sqrt[ m ]{ x } -1}{\sqrt[ n ]{ x } -1} =\dfrac{\frac{x-1}{m}+o(x-1)}{\frac{x-1}{n}+o(x-1)} =\dfrac{n}{m} 
+\implies \lim_{x \to 1} \dfrac{\sqrt[ m ]{ x } -1}{\sqrt[ n ]{ x } -1} =\dfrac{\frac{x-1}{m}+o(x-1)}{\frac{x-1}{n}+o(x-1)} =\dfrac{n}{m} 
 \end{gathered}
 $$
 
@@ -696,7 +696,7 @@ $$
 
 $$
 \begin{gathered}
-f\in C(0,+\infty),f(x^2)=f(x) \Rightarrow \exists c,f(x)=c
+f\in C(0,+\infty),f(x^2)=f(x) \implies \exists c,f(x)=c
 \end{gathered}
 $$
 
@@ -708,13 +708,13 @@ $$
 \begin{gathered}
 \forall x_0,\text{let } a_n=x_0^{\frac{1}{2^{n-1}}} \\
 f(a_n)=f(\sqrt{a_{n-1}})=f(a_{n-1}),f(a_1)=f(x_0) \\
-\Rightarrow f(a_n)=f(x_0) \\
+\implies f(a_n)=f(x_0) \\
 \lim_{n \to \infty} a_n=1 \\
-\Rightarrow 
+\implies 
 f(1)=\lim_{x \to 1} f(x)=\lim_{n \to \infty} f(a_n) \\
 =\lim_{n \to \infty} f(x_0)=f(x_0) \\
-\Rightarrow \forall x_0,f(x_0)=f(1) \\
-\Rightarrow f \text{ is constant function} 
+\implies \forall x_0,f(x_0)=f(1) \\
+\implies f \text{ is constant function} 
 \end{gathered}
 $$
 
@@ -727,7 +727,7 @@ $$
 $$
 \begin{gathered}
 f(x+y)=f(x)+f(y),f(x) \text{ is continuous at } x=0 \\
-\Rightarrow f\in C(R)
+\implies f\in C(R)
 \end{gathered}
 $$
 
@@ -737,17 +737,17 @@ $$
 
 $$
 \begin{gathered}
-f(0+0)=f(0)+f(0)\Rightarrow f(0)=0 \\
+f(0+0)=f(0)+f(0)\implies f(0)=0 \\
 f(x) \text{ is continuous at } x=0 \\
-\Rightarrow \forall \epsilon_0,\exists \delta_0,\vert x \vert<\delta_0 \Rightarrow \vert f(x)-f(0) \vert <\epsilon_0 \\
+\implies \forall \epsilon_0,\exists \delta_0,\vert x \vert<\delta_0 \implies \vert f(x)-f(0) \vert <\epsilon_0 \\
 \therefore \forall x_0, \\
-\forall \epsilon,\text{let } \epsilon_0=\dfrac{\epsilon}{2} \Rightarrow \delta:=\delta_0 \\
-\vert x-x_0 \vert <\delta \Rightarrow \\ 
+\forall \epsilon,\text{let } \epsilon_0=\dfrac{\epsilon}{2} \implies \delta:=\delta_0 \\
+\vert x-x_0 \vert <\delta \implies \\ 
 \vert f(x)-f(x_0) \vert =\vert f(x_0+(x-x_0))-f(x_0) \vert \\
 =\vert f(x_0)+f(x-x_0)-f(x_0) \vert  \\
 =\vert f(x-x_0) \vert <\epsilon_0<\epsilon \\
 \therefore \forall x_0, \lim_{x \to x_0} f(x)=f(x_0) \\
-\Rightarrow f\in C(R)
+\implies f\in C(R)
 
 \end{gathered}
 $$
@@ -762,8 +762,8 @@ $$
 
 $$
 \begin{gathered}
-f:[0,+\infty) \Rightarrow R,f(2x)=f(x)\cos(x),f(x) \text{ is continuous at } x=0 \\
-\Rightarrow f(x)=f(0)\dfrac{\sin(x)}{x} ,x\in [0,+\infty)
+f:[0,+\infty) \implies R,f(2x)=f(x)\cos(x),f(x) \text{ is continuous at } x=0 \\
+\implies f(x)=f(0)\dfrac{\sin(x)}{x} ,x\in [0,+\infty)
 \end{gathered}
 $$
 
@@ -776,7 +776,7 @@ $$
 \forall x_0, \\
 \text{let } a_n=\dfrac{x_0}{2^{n-1}},x_0=a_1 \\
 f(a_n)=f(a_{n+1})\cos(a_{n+1}) \\
-\Rightarrow f(x_0)=f(a_1)=f(a_n)\prod _{i = 2} ^{n} \cos(a_i) \\
+\implies f(x_0)=f(a_1)=f(a_n)\prod _{i = 2} ^{n} \cos(a_i) \\
 =f(a_n)\prod_{i=1}^{n-1}\cos \dfrac{x_0}{2^i}  \\
 =f(a_n)\dfrac{\sin(x_0)}{2^{n-1}\sin\frac{x_0}{2^{n-1}}}  \\
 \stackrel{\lim_{n \to \infty} }{\Longrightarrow}

@@ -57,7 +57,7 @@
     "prefix": "t"
   },
   "fromto": {
-    "body": "\\Leftrightarrow ",
+    "body": "\\iff ",
     "prefix": "ft"
   },
   "any": {
@@ -114,7 +114,7 @@
     "prefix": "bbb"
   },
   "from": {
-    "body": "\\Leftarrow ",
+    "body": "\\impliedby ",
     "prefix": "from"
   },
   "fromt": {
@@ -126,7 +126,7 @@
     "prefix": "fromte"
   },
   "to": {
-    "body": "\\Rightarrow ",
+    "body": "\\implies ",
     "prefix": "to"
   },
   "cases": {
@@ -320,13 +320,13 @@
     ],
     "prefix": "$"
   },
-  "Im": {
+  "im": {
     "body": [
-      "\\operatorname{Im} $0"
+      "\\operatorname{im} $0"
     ],
     "prefix": [
-      "Im",
-      "\\Im"
+      "im",
+      "\\im"
     ]
   }
 }

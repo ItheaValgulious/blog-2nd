@@ -236,7 +236,7 @@ $$
 =\lim_{r \to 0} |r^2\sin \dfrac1{r}| \\
 \le \lim_{r \to 0} |r^2| \\
 =0 \\
-\Rightarrow \lim_{(x,y) \to (0,0)} f(x,y)=0=f(0,0)
+\implies \lim_{(x,y) \to (0,0)} f(x,y)=0=f(0,0)
 \end{gathered}
 $$
 
@@ -310,7 +310,7 @@ $$
 \lim_{x \to 0} \dfrac{f(x)}{g(x)} =0 \\
 |g(x)|<M,h(x)\in C[R]
 \end{cases} \\
-\Rightarrow \lim_{x \to 0} \dfrac{h(f(x))}{h(g(x))} =0
+\implies \lim_{x \to 0} \dfrac{h(f(x))}{h(g(x))} =0
 \end{gathered}
 $$
 
@@ -448,8 +448,8 @@ u_x=r\cdot (-\dfrac1{r^2})\dfrac{dr}{dx} \\
 =-\dfrac1r \dfrac{x-a}{r} \\
 u_y=-\dfrac1r \dfrac{y-b}{r} \\
 u_z=-\dfrac1r \dfrac{y-z}{r} \\
-\Rightarrow \nabla u=-r^{-2}(x-a,y-b,z-c) \\
-\|\nabla u\|=1 \Rightarrow r^{-2} \|(x-a,y-b,z-c)\|=r^{-1}=1 \\
+\implies \nabla u=-r^{-2}(x-a,y-b,z-c) \\
+\|\nabla u\|=1 \implies r^{-2} \|(x-a,y-b,z-c)\|=r^{-1}=1 \\
 \end{gathered}
 $$
 
@@ -611,7 +611,7 @@ $$
 $$
 \begin{gathered}
 1=\dfrac{1}{u} -uw_u-\dfrac{w_v}{x} +\dfrac{w_v}{y}  \\
-\Leftrightarrow \dfrac{1}{u} -uw_u+w_vv=1
+\iff \dfrac{1}{u} -uw_u+w_vv=1
 \end{gathered}
 $$
 

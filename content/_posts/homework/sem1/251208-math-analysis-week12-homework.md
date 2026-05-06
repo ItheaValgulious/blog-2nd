@@ -75,10 +75,10 @@ $$ (1) \int_0^{\frac{\pi}{2}} \frac{1}{\sin^\alpha x \cos^\beta x}\mathrm{d}x \q
 
 $$
 \begin{gathered}
-x\to 0 \Rightarrow \dfrac{1}{\sin^\alpha x\cos^\beta x}\sim\dfrac{1}{x^\alpha} \\
-x\to \frac\pi2 \Rightarrow t\to 0,\int_0^{\frac\pi2}\dfrac{1}{\sin^\alpha x\cos^\beta x} dx=\int_0^{\frac\pi2 }\dfrac{1}{\cos^\alpha t\sin^\beta t}dt \\
-\Rightarrow \dfrac{1}{\sin^\beta x\cos^\alpha x} \sim \dfrac{1}{t^\beta}   \\
-\Rightarrow \begin{cases}
+x\to 0 \implies \dfrac{1}{\sin^\alpha x\cos^\beta x}\sim\dfrac{1}{x^\alpha} \\
+x\to \frac\pi2 \implies t\to 0,\int_0^{\frac\pi2}\dfrac{1}{\sin^\alpha x\cos^\beta x} dx=\int_0^{\frac\pi2 }\dfrac{1}{\cos^\alpha t\sin^\beta t}dt \\
+\implies \dfrac{1}{\sin^\beta x\cos^\alpha x} \sim \dfrac{1}{t^\beta}   \\
+\implies \begin{cases}
 \text{convergent} ,\alpha,\beta<1 \\
 \text{not convergent} ,\max (\alpha,\beta) \ge 1
 \end{cases}
@@ -104,7 +104,7 @@ $$
 \int_0^{1} \dfrac{\vert \ln x\vert^p}{x(1+x^2)} dx \\
 +\int_1^{+\infty} \dfrac{\vert \ln x\vert^p}{x(1+x^2)} dx \\
 =I_1+I_2 \\
-\exists N,n>N \Rightarrow I_2=\int_1^{+\infty} \dfrac{\vert \ln p \vert ^p}{x(1+x^2)} dx<\int_1^{+\infty} \dfrac{1}{x^2} dx<\infty \\
+\exists N,n>N \implies I_2=\int_1^{+\infty} \dfrac{\vert \ln p \vert ^p}{x(1+x^2)} dx<\int_1^{+\infty} \dfrac{1}{x^2} dx<\infty \\
 \text{for } I_1,x\to 0,1+x^2 \to 1\\
 \int_0^1 \dfrac{\vert \ln x \vert ^p}{x}dx \\
 =\int_0^\infty t^pdt  \\
@@ -130,9 +130,9 @@ $$ (7) \int_0^{+\infty} \frac{\sin x(1-\cos x)}{x^p}\mathrm{d}x \quad (p \in \ma
 
 $$
 \begin{gathered}
-x\to 0 \Rightarrow \dfrac{\sin x(1-\cos x)}{x^p} \sim \dfrac12x^{3-p}, \\
-\text{convergence } \Leftrightarrow p<4 \\
-x\to \infty \Rightarrow \int_1^{+\infty}\dfrac{\sin x(1-\cos x)}{x^p} dx \\
+x\to 0 \implies \dfrac{\sin x(1-\cos x)}{x^p} \sim \dfrac12x^{3-p}, \\
+\text{convergence } \iff p<4 \\
+x\to \infty \implies \int_1^{+\infty}\dfrac{\sin x(1-\cos x)}{x^p} dx \\
 =\int_1^{+\infty}{\left( \dfrac{\sin x}{x^p} -\dfrac{2^{p-1}\sin(2x)}{(2x)^p}  \right)}  dx \\
 \begin{cases}
 <\infty,p> 0 \\
@@ -304,9 +304,9 @@ $$ (3) \quad \sum_{n=1}^{\infty} \arctan \frac{1}{1+n+n^2} $$
 $$
 \begin{gathered}
 \dfrac{1}{1+n+n^2} =\dfrac{(n+1)-n}{1+(n+1)n} \\
-\Rightarrow \arctan \dfrac{1}{1+n+n^2} =\arctan (n+1) -\arctan(n) \\
-\Rightarrow \sum _{i = 1} ^{n} \frac{1}{1+n+n^2}=\arctan(n+1)-\arctan(1) \\
-\Rightarrow   ans=\dfrac{\pi}{4} 
+\implies \arctan \dfrac{1}{1+n+n^2} =\arctan (n+1) -\arctan(n) \\
+\implies \sum _{i = 1} ^{n} \frac{1}{1+n+n^2}=\arctan(n+1)-\arctan(1) \\
+\implies   ans=\dfrac{\pi}{4} 
 \end{gathered}
 $$
 
@@ -349,8 +349,8 @@ $$ (2) \quad \sum_{n=1}^{\infty}(-1)^{n} \frac{n^{2}+1}{3 n^{2}-2} $$
 $$
 \begin{gathered}
 \lim_{n \to \infty} \dfrac{n^2+1}{3n^2-2} =\dfrac{1}{3}  \\
-\Rightarrow \exists N,n>N \Rightarrow \dfrac{n^2+1}{3n^2-2} > \dfrac{1}{6}  \\
-\Rightarrow \exists \epsilon=\dfrac{1}{7} ,\forall n>N,\vert S_{n+1}-S_{n} \vert =\vert \dfrac{n^2+1}{3n^2-2}  \vert > \epsilon
+\implies \exists N,n>N \implies \dfrac{n^2+1}{3n^2-2} > \dfrac{1}{6}  \\
+\implies \exists \epsilon=\dfrac{1}{7} ,\forall n>N,\vert S_{n+1}-S_{n} \vert =\vert \dfrac{n^2+1}{3n^2-2}  \vert > \epsilon
 \end{gathered}
 $$
 
@@ -372,7 +372,7 @@ $$
 \sum _{i = 1} ^{n}  i(a_i-a_{i+1}) \\
 =-na_{n+1}+\sum _{i = 1} ^{n}  a_i \\
 =-(n+1)a_{n+1}+\sum _{i = 1} ^{n+1}  a_i \\
-\Rightarrow (\sum _{i = 1} ^{n}  a_n)=(\sum _{i = 1} ^{n-1}  n(a_n-a_{n+1}))+(na_n) \\
+\implies (\sum _{i = 1} ^{n}  a_n)=(\sum _{i = 1} ^{n-1}  n(a_n-a_{n+1}))+(na_n) \\
 \end{gathered}
 $$
 
@@ -422,9 +422,9 @@ $$
 
 $$
 \begin{gathered}
-a< 1 \Rightarrow \dfrac{a_{n+1}}{a_n} =a<1 \Rightarrow  \text{ convergent}    \\
-a=1 \Rightarrow  \text{ divergent}  \\
-a>1 \Rightarrow \dfrac{a^n}{1+a^{2n}} <\dfrac{1}{a^n} \Rightarrow \text{convergent} 
+a< 1 \implies \dfrac{a_{n+1}}{a_n} =a<1 \implies  \text{ convergent}    \\
+a=1 \implies  \text{ divergent}  \\
+a>1 \implies \dfrac{a^n}{1+a^{2n}} <\dfrac{1}{a^n} \implies \text{convergent} 
 \end{gathered}
 $$
 
@@ -447,7 +447,7 @@ a_n=n\ln (1+\dfrac{2}{2n-1} )-1 \\
 =\dfrac{1}{2n-1} -\dfrac{2n}{(2n-1)^2} +\dfrac{8n}{3(2n-1)^3} +o(\dfrac{1}{n^2} ) \\
 =\dfrac{2n+3}{3(2n-1)^3} +o(\dfrac{1}{n^2} ) \\
 <\dfrac{100}{n^2} 
-\Rightarrow \text{convergent} 
+\implies \text{convergent} 
 \end{gathered}
 $$
 
@@ -468,7 +468,7 @@ $$
 $$
 \begin{gathered}
 \dfrac{a_{n+1}}{a_n} =\dfrac{a+\sqrt {n+1}}{\sqrt {n+1}} =1+\dfrac{a}{\sqrt {n+1}}  \\
-\Rightarrow \lim_{n \to \infty}  (\dfrac{a_{n+1}}{a_n} -1)n=\lim_{n \to \infty} \dfrac{na}{\sqrt{n+1}}>1 \\
+\implies \lim_{n \to \infty}  (\dfrac{a_{n+1}}{a_n} -1)n=\lim_{n \to \infty} \dfrac{na}{\sqrt{n+1}}>1 \\
 \xRightarrow{\text{ Raabe's test}} \text{convergent} 
 \end{gathered}
 $$
@@ -536,7 +536,7 @@ $$
 \begin{gathered}
 b_n=\dfrac{1}{a_n} ,c_n=\dfrac{n}{\sum _{i = 1} ^{n}  a_i} \\
 \because c_n> b_n \\
-\therefore \sum c_n<\infty \Rightarrow \sum b_n<\infty 
+\therefore \sum c_n<\infty \implies \sum b_n<\infty 
 \end{gathered}
 $$
 
@@ -545,8 +545,8 @@ $$
 $$
 \begin{gathered}
 \sum _{i = 1} ^{n}  a_i> \dfrac{n}{2} a_{\lbrack \frac n2 \rbrack } \\
-\Rightarrow c_n<2\dfrac{1}{a_{\lbrack \frac n2 \rbrack }}  \\
-\Rightarrow \sum c_n\le 2\sum b_n<\infty
+\implies c_n<2\dfrac{1}{a_{\lbrack \frac n2 \rbrack }}  \\
+\implies \sum c_n\le 2\sum b_n<\infty
 \end{gathered}
 $$
 
@@ -575,9 +575,9 @@ $$
 \begin{gathered}
 \forall \epsilon,\exists N,\forall n>N \\
 na_{2n}<\sum _{i = n} ^{2n} a_i<\epsilon   \\
-\Rightarrow 2na_{2n}<2\epsilon \\
-\Rightarrow \lim_{n \to \infty} na_n<2\epsilon \\
-\Rightarrow \lim_{n \to \infty} na_n=0
+\implies 2na_{2n}<2\epsilon \\
+\implies \lim_{n \to \infty} na_n<2\epsilon \\
+\implies \lim_{n \to \infty} na_n=0
 \end{gathered}
 $$
 

@@ -55,7 +55,7 @@ $(-1)^n$部分和有界,$x^n(1-x)$单调递减且趋近于$0$,由迪利克雷判
 $$
 \begin{gathered}
 \text{let } x_n=\dfrac n{n+1} \\
-\Rightarrow 
+\implies 
 |\sum_{i=n}^{2n} x^i(1-x)| \\
 \ge \sum _{i = n} ^{2n}  x_{2n}^{2n}(1-x_{2n}) \\
 =(n+1) (1-\dfrac1{2n+1})^{2n}\dfrac1{2n+1} \\
@@ -207,7 +207,7 @@ $$
 \forall x,y\in \mathbb{R},|x-y|<\delta,|f_n(x)-f_n(y)|<\epsilon_2 \\
 \text{let } \epsilon_1=\epsilon_2=\dfrac \epsilon 3 \\
 \end{cases} \\
-\Rightarrow \forall x,y\in \mathbb{R},|x-y|<\delta \\
+\implies \forall x,y\in \mathbb{R},|x-y|<\delta \\
 |f(x)-f(y)|\le |f(x)-f_n(x)|+|f_n(x)-f_n(y)|+|f_n(y)-f(y)| \\
 <\epsilon_1+\epsilon_2+\epsilon_1=\epsilon
 \end{gathered}
@@ -292,16 +292,16 @@ f_n(x)\in C[a,b] \\
 f_n(x)\rightrightarrows f
 \end{cases}
 \\
-\Rightarrow f\in C[a,b] \\
-\Rightarrow |f|\in C[a,b] \\
+\implies f\in C[a,b] \\
+\implies |f|\in C[a,b] \\
 \because \not \exists x,f(x)=0 \\
 \therefore \exists x_0 \ s.t.\ 
 |f(x)|\ge |f(x_0)|>0
 \text{let } \epsilon=\dfrac{|f(x_0)|}2 \\
 f_n(x)\rightrightarrows f \\
-\Rightarrow \exists N \ s.t.\ 
+\implies \exists N \ s.t.\ 
 \forall n>N,|f_n(x)-f(x)|<\epsilon \\
-\Rightarrow |f_n(x)|\ge |f(x)|-\epsilon>0
+\implies |f_n(x)|\ge |f(x)|-\epsilon>0
 \end{gathered}
 $$
 
@@ -311,8 +311,8 @@ $$
 
 $$
 \begin{gathered}
-f(x)\in C[a,b] \Rightarrow \exists M,m<|f(x)|<M \\
-f_n(x)\rightrightarrows f \Rightarrow 
+f(x)\in C[a,b] \implies \exists M,m<|f(x)|<M \\
+f_n(x)\rightrightarrows f \implies 
 \forall \epsilon_1>0,\exists N \ s.t.\ 
 \forall n>N,|f_n(x)-f(x)|<\epsilon_1 \\
 \therefore \forall x,|\dfrac{1}{f_n(x)}-\dfrac{1}{f(x)}| \\

@@ -195,7 +195,7 @@ $R\times (-\infty,\sqrt 2)\cap Q$和$R\times (\sqrt 2,\infty)\cap Q$是满足不
 
 反证,假设可以被$U\cap V=\varnothing$两个闭集分开.则因为$A,B$连通,不妨设$A\subset U,B\subset V$.
 
-那么 $B\subset V \Rightarrow \operatorname{Cl}B\subset V \Rightarrow U\cap V=\varnothing$,矛盾.得证.
+那么 $B\subset V \implies \operatorname{Cl}B\subset V \implies U\cap V=\varnothing$,矛盾.得证.
 
 </div>
 

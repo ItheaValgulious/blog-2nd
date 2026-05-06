@@ -45,17 +45,17 @@ $W$连通:任意$S^1$上一点$(1,\theta)$都是$A$中点列$\{ (\dfrac{\theta+2
 
 (2):
 
-假设存在一条$\alpha=a\rightsquigarrow b$,则$\alpha:I\to A\cup B$连续.那么$\alpha^{-1}(A),\alpha^{-1}(B)$都是闭集(或开集).且因$\operatorname{Im}\alpha\cap A\cap B=\varnothing$,故$\alpha^{-1}(A)\cap \alpha^{-1}(B)=\varnothing$.同时$\alpha^{-1}(A)\cup \alpha^{-1}(B)=I$且都不为空,则$I$不连通.但我们知道$I$连通.矛盾.故$\alpha$一定经过$A\cap B$的点.
+假设存在一条$\alpha=a\rightsquigarrow b$,则$\alpha:I\to A\cup B$连续.那么$\alpha^{-1}(A),\alpha^{-1}(B)$都是闭集(或开集).且因$\operatorname{im}\alpha\cap A\cap B=\varnothing$,故$\alpha^{-1}(A)\cap \alpha^{-1}(B)=\varnothing$.同时$\alpha^{-1}(A)\cup \alpha^{-1}(B)=I$且都不为空,则$I$不连通.但我们知道$I$连通.矛盾.故$\alpha$一定经过$A\cap B$的点.
 
 (1):
 
 下证$A$道路连通.
 
-那么因为$A\cap B$道路连通.故$\forall a,b\in A,\exists \alpha:I\to A\cup B \ s.t.\ \alpha(0)=a,\alpha(1)=b$.如果$\operatorname{Im} \alpha\subset A$就之间结束了.
+那么因为$A\cap B$道路连通.故$\forall a,b\in A,\exists \alpha:I\to A\cup B \ s.t.\ \alpha(0)=a,\alpha(1)=b$.如果$\operatorname{im} \alpha\subset A$就之间结束了.
 
-否则$\operatorname{Im} \alpha\cap B\ne \varnothing$.那么在$A,B$都为闭集的时候,设$t_a=\inf \{ t|\alpha(t)\in A\cap B \},t_b=\sup \{ t|\alpha(t)\in A\cap B \}$.因为$A\cap B$也为闭集,所以$\alpha(t_a),\alpha(t_b)\in A\cap B$
+否则$\operatorname{im} \alpha\cap B\ne \varnothing$.那么在$A,B$都为闭集的时候,设$t_a=\inf \{ t|\alpha(t)\in A\cap B \},t_b=\sup \{ t|\alpha(t)\in A\cap B \}$.因为$A\cap B$也为闭集,所以$\alpha(t_a),\alpha(t_b)\in A\cap B$
 
-则$\forall t_0,\alpha(t_0)\notin A$一定有$t_0\in [t_a,t_b]$,否则如果$t_0<t_a$,$a\rightsquigarrow \alpha(t_0)$这段路径不经过$A\cap B$与(1)矛盾.$t_0>t_b$同理.所以说$\beta_1=a\rightsquigarrow \alpha(t_a),\beta_2=\alpha(t_b)\rightsquigarrow b$满足$\operatorname{Im} \beta_i\subset A$.最后因为$A\cap B$路径连通,存在$\beta_3:I\to A\cap B,\beta_3(0)=t_a,\beta_3(1)=t_b$.于是令$\beta=\beta_1\beta_3\beta_2$,则它是$A$中的$a\rightsquigarrow b$的路径.所以$A$道路连通.$B$道路连通同理.
+则$\forall t_0,\alpha(t_0)\notin A$一定有$t_0\in [t_a,t_b]$,否则如果$t_0<t_a$,$a\rightsquigarrow \alpha(t_0)$这段路径不经过$A\cap B$与(1)矛盾.$t_0>t_b$同理.所以说$\beta_1=a\rightsquigarrow \alpha(t_a),\beta_2=\alpha(t_b)\rightsquigarrow b$满足$\operatorname{im} \beta_i\subset A$.最后因为$A\cap B$路径连通,存在$\beta_3:I\to A\cap B,\beta_3(0)=t_a,\beta_3(1)=t_b$.于是令$\beta=\beta_1\beta_3\beta_2$,则它是$A$中的$a\rightsquigarrow b$的路径.所以$A$道路连通.$B$道路连通同理.
 
 当$A,B$为开集的时候,你不能直接用上下确界.考虑因为是开集,所以$A$的补集是闭集,存在一个$t_a=\min\{t|\alpha(t)\notin A\}$和$t_b=\max\{t|\alpha(t)\in A\}$.则$<t_a$处一定存在一个$A\cap B$中的点,然后你就可以一样取点了.
 
@@ -116,13 +116,13 @@ $\mathcal{T}=\{ \varnothing, X, \{ a \}, \{ c \}, \{ d \}, \{ a,c \}, \{ a,d \},
 
 <div class="cbox">
 
-**9.** (ER) 在标准 $\mathbb{R}$ 中, 对任意 $x, y \in \mathbb{R}$, 令 $x \sim y \Leftrightarrow x - y \in \mathbb{Q}$. 记商空间 $X = \mathbb{R} / \sim$. 证明 $X$ 中仅有的开集是空集和集合 $X$ 本身. (所以 $X$ 具有非离散拓扑.)
+**9.** (ER) 在标准 $\mathbb{R}$ 中, 对任意 $x, y \in \mathbb{R}$, 令 $x \sim y \iff x - y \in \mathbb{Q}$. 记商空间 $X = \mathbb{R} / \sim$. 证明 $X$ 中仅有的开集是空集和集合 $X$ 本身. (所以 $X$ 具有非离散拓扑.)
 
 </div>
 
 <div class="pbox">
 
-设商映射:$\pi=x\mapsto [x]$,其中$[x]=\{y|y-x\in {\mathbb Q}\}$.$X$同胚于$\operatorname{Im}\pi$,不妨就令$X=\operatorname{Im}\pi$
+设商映射:$\pi=x\mapsto [x]$,其中$[x]=\{y|y-x\in {\mathbb Q}\}$.$X$同胚于$\operatorname{im}\pi$,不妨就令$X=\operatorname{im}\pi$
 
 那么任意开集$S\subset X$,一定有$\pi^{-1}(S)=\bigcup_{x\in T}[x]$.设$S$非平凡,则$\exists r\notin \pi^{-1}(S),[r]\cap \pi^{-1}(S)=\varnothing$.则$\forall x\in \pi^{-1}(S)$,对任意小邻域$U$,存在邻域基元素$N=(x-\epsilon,x+\epsilon)\subset U\subset \pi^{-1}(S)$.但由于$Q$的稠密性,一定存在$q\in {\mathbb Q},q\in (x-\epsilon-t,x+\epsilon-t)$,从而$\exists t+q\in [t],t+q\in N\notin \pi^{-1}(S)$,与上面$N\subset S$矛盾.
 
@@ -148,17 +148,17 @@ $\{{\mathbb Q}\}$稠密等价于$\operatorname{Cl}\{ {\mathbb Q} \} =X$,等价�
 
 <div class="cbox">
 
-**12.** (E) 设 $X$ 和 $Y$ 为拓扑空间, $\tilde{X} = X / \sim$ 和 $\tilde{Y} = Y / \approx$ 为商空间, $p: X \to \tilde{X}$ 和 $q: Y \to \tilde{Y}$ 为商映射. $f: X \to Y$ 是一个映射. 证明存在映射 $\tilde{f}: \tilde{X} \to \tilde{Y}$ 使得 $\tilde{f} \circ p = q \circ f$ 当且仅当 $\forall x_1, x_2 \in X, q(f(x_1)) = q(f(x_2)) \Leftrightarrow x_1 \sim x_2$.
+**12.** (E) 设 $X$ 和 $Y$ 为拓扑空间, $\tilde{X} = X / \sim$ 和 $\tilde{Y} = Y / \approx$ 为商空间, $p: X \to \tilde{X}$ 和 $q: Y \to \tilde{Y}$ 为商映射. $f: X \to Y$ 是一个映射. 证明存在映射 $\tilde{f}: \tilde{X} \to \tilde{Y}$ 使得 $\tilde{f} \circ p = q \circ f$ 当且仅当 $\forall x_1, x_2 \in X, q(f(x_1)) = q(f(x_2)) \iff x_1 \sim x_2$.
 
 </div>
 
 <div class="pbox">
 
-如果$q(f(x_1))=q(f(x_2))\Leftrightarrow x_1\sim x_2$:
+如果$q(f(x_1))=q(f(x_2))\iff x_1\sim x_2$:
 
-那么直接定义$\tilde f=p(x)\mapsto q(f(x))$.由条件,$\forall p(x_1)=p(x_2) \Rightarrow  x_1\sim x_2 \Rightarrow q(f(x_1))=q(f(x_2))$,故良定义.此时显然$\tilde f\circ p=q\circ f$.因为$q,f$连续由商空间泛性质知道$\tilde f$还是连续的.
+那么直接定义$\tilde f=p(x)\mapsto q(f(x))$.由条件,$\forall p(x_1)=p(x_2) \implies  x_1\sim x_2 \implies q(f(x_1))=q(f(x_2))$,故良定义.此时显然$\tilde f\circ p=q\circ f$.因为$q,f$连续由商空间泛性质知道$\tilde f$还是连续的.
 
-反过来,如果存在这样的$\tilde f$,那么任意$x_1\sim x_2$,有$p(x_1)=p(x_2)\Rightarrow q(f(x_1))=\tilde f(p(x_1))=\tilde f(p(x_2))=q(f(x_2))$.
+反过来,如果存在这样的$\tilde f$,那么任意$x_1\sim x_2$,有$p(x_1)=p(x_2)\implies q(f(x_1))=\tilde f(p(x_1))=\tilde f(p(x_2))=q(f(x_2))$.
 
 </div>
 

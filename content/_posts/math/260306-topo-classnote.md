@@ -105,7 +105,7 @@ $$
 $$
 \begin{gathered}
 x\in \operatorname{Cl}A \\
-\Leftrightarrow \forall x\in U,U \text{ is open} \Leftrightarrow  U\cap A\ne \varnothing
+\iff \forall x\in U,U \text{ is open} \iff  U\cap A\ne \varnothing
 \end{gathered}
 $$
 
@@ -187,7 +187,7 @@ $$
 
 <div class='cbox'>
 
-连续的充要条件是把开集拉回开集,即 $U\text{ is open} \Rightarrow   f^{-1}(U) \text{ is open}$
+连续的充要条件是把开集拉回开集,即 $U\text{ is open} \implies   f^{-1}(U) \text{ is open}$
 
 </div>
 

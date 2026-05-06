@@ -19,7 +19,7 @@ $$
 f(x)\in C[0,+\infty) \\
 \forall a>0,\lim_{n \to \infty} f(na)=0
 \end{cases}
-\Rightarrow \lim_{x \to +\infty} f(x)=0
+\implies \lim_{x \to +\infty} f(x)=0
 \end{gathered}
 $$
 

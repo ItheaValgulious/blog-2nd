@@ -46,7 +46,7 @@ $$
 $$
 \begin{gathered}
 \dfrac {df_x}{dx}=GM(s^{-\frac32}-3s^{-\frac52}x^2)=GMs^{-\frac52}(s-3x^2) \\
-\Rightarrow \nabla\cdot f=\sum_x \dfrac{df_x}{dx} =GMs^{-\frac52}(3s-3\sum_x x^2)=0
+\implies \nabla\cdot f=\sum_x \dfrac{df_x}{dx} =GMs^{-\frac52}(3s-3\sum_x x^2)=0
 \end{gathered}
 $$
 

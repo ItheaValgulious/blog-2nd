@@ -21,7 +21,7 @@ top: 0
 
 容易发现$V'\cong F^\kappa$,这是因为线性映射等价于你对基的每一个元素都指定一个$F$中的元素作为值.所以我们实际上是要考虑$F^\kappa$的大小.然后我不会,所以看看万能的AI:
 
-## $\dim V=\kappa \Rightarrow\dim V'=|F|^\kappa$
+## $\dim V=\kappa \implies\dim V'=|F|^\kappa$
 
 我们上面已经知道$V'\cong F^\kappa$.
 

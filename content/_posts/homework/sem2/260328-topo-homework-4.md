@@ -86,7 +86,7 @@ $(0,1)\cap Q=((0,\dfrac{\sqrt 2}{2} )\cap Q)\cup ((\dfrac{\sqrt 2}2,1)\cap Q)$,�
 $$
 \begin{gathered}
 \operatorname{Cl}A=\bigcap_{F \text{ is closed},F \supset A} F \\
-\Rightarrow f(\operatorname{Cl}A)=f(\bigcap_{F \text{ is closed},F \supset A} F) \\
+\implies f(\operatorname{Cl}A)=f(\bigcap_{F \text{ is closed},F \supset A} F) \\
 =\bigcap_{F \text{ is closed},F \supset A} f(F) \\
 =\bigcap_{f(F) \text{ is closed},f(F) \supset f(A)} f(F) \\
 =\operatorname{Cl}f(A)
@@ -118,9 +118,9 @@ $$
 $$
 \begin{gathered}
 A \text{ is a neighborhood of }x  \\
-\Leftrightarrow \exists x\in U\subset A,U \text{ is open}  \\
-\Leftrightarrow \exists f(x) \in f(U)\subset f(A),f(U) \text{ is open}  \\
-\Leftrightarrow f(A) \text{ is a neighborhood of } f(x)
+\iff \exists x\in U\subset A,U \text{ is open}  \\
+\iff \exists f(x) \in f(U)\subset f(A),f(U) \text{ is open}  \\
+\iff f(A) \text{ is a neighborhood of } f(x)
 \end{gathered}
 $$
 
@@ -154,7 +154,7 @@ $$
 
 ${\mathbb Z}$的上的拓扑是离散拓扑,${\mathbb Q}$上的拓扑是开集为所有$(a,b)\cap Q$.
 
-假设$f:Q\to A$是连续双射,其中$A$是$Z$的子空间,那么$\forall S\subset Q$,$f(S) \text{ is open} \Rightarrow S \text{ is open}$,但$Q$中单点集是闭集,矛盾,所以不存在$Q\to A$的连续双射.所以不同胚也不能嵌入.
+假设$f:Q\to A$是连续双射,其中$A$是$Z$的子空间,那么$\forall S\subset Q$,$f(S) \text{ is open} \implies S \text{ is open}$,但$Q$中单点集是闭集,矛盾,所以不存在$Q\to A$的连续双射.所以不同胚也不能嵌入.
 
 
 
