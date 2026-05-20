@@ -1,7 +1,7 @@
 {
   "daily": [
     {
-      "activeMilliseconds": 27352380,
+      "activeMilliseconds": 36160099,
       "documents": [
         {
           "documentId": "article:_posts/math/Math-Story.md",
@@ -34,7 +34,7 @@
       ],
       "periodKey": "2026-05-20",
       "totalNetCharacterDelta": 5499,
-      "updatedAt": "2026-05-20T11:25:20.165Z"
+      "updatedAt": "2026-05-20T15:54:54.260Z"
     },
     {
       "activeMilliseconds": 12198030,
@@ -502,7 +502,7 @@
       "updatedAt": "2026-05-07T07:11:30.088Z"
     }
   ],
-  "totalActiveMilliseconds": 178486201,
+  "totalActiveMilliseconds": 187293920,
   "totalNetCharacterDelta": 21839,
-  "updatedAt": "2026-05-20T11:25:20.165Z"
+  "updatedAt": "2026-05-20T15:54:54.260Z"
 }
