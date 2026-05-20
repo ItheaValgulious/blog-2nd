@@ -1,13 +1,13 @@
 ---
 id: project
 title: extend swap graph
-status: todo
+status: completed
 order: 3
 parentTaskId: ''
 startDate: '2026-04-30'
 dueDate: ''
 createdAt: '2026-04-30T10:31:04.684Z'
-updatedAt: '2026-04-30T14:53:08.342Z'
+updatedAt: '2026-05-16T12:33:13.724Z'
 ---
 
 # 扩展交换图语法

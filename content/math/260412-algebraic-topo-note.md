@@ -764,9 +764,6 @@ Oriented simplex
 我们发现这个求导是把一个图形映射到他的边界.
 
 
-
-
-
 ### Mayer
 
 <div class='dbox'>
@@ -857,7 +854,40 @@ WzAsOCxbMCwyLCJIX24oQSkiXSxbMiwyLCJIX24oQikiXSxbNCwyLCJIX24oQykiXSxbMCw0LCJIX3tu
 
 </div>
 
+<div class='cbox'>
+
+Mayer
+
+对空间$X,Y,X\cap Y,X\cup Y$,定义$i:X\cap Y\to X\times Y:=x\mapsto (x,x),j:X\times Y\to X\cup Y:=(x,y)\mapsto x-y$.则$i,j$诱导链群上的短正和列:
+
+```commutative
+WzAsNSxbMSwwLCJDKFhfblxcY2FwIFlfbikiXSxbMiwwLCJDKFhfbilcXG9wbHVzIEMoWV9uKSJdLFszLDAsIkMoWF9uXFxjdXAgWV9uKSJdLFswLDAsIlxcYnVsbGV0Il0sWzQsMCwiXFxidWxsZXQiXSxbMywwXSxbMCwxLCJpIl0sWzEsMiwiaiJdLFsyLDRdXQ==
+```
+
+从而有长正和列:
+
+```commutative
+WzAsOCxbMCwxLCJIX24oWFxcY2FwIFkpIl0sWzEsMSwiSF9uKFgpXFxvcGx1cyBIX24oWSkiXSxbMiwxLCJIX24oWFxcY2FwIFkpIl0sWzAsMiwiSF97bi0xfShYXFxjYXAgWSkiXSxbMSwyLCJIX3tuLTF9KFgpXFxvcGx1cyBIX3tuLTF9KFkpIl0sWzIsMiwiSF97bi0xfSkoWFxcY2FwIFkpIl0sWzEsMCwiXFxsZG90cyJdLFsxLDMsIlxcbGRvdHMiXSxbMCwxLCJpXipfbiJdLFsxLDIsImpeKl9uIl0sWzMsNCwiaV4qX3tuLTF9Il0sWzQsNSwial4qX3tuLTF9Il0sWzIsMywiXFxkZWx0YSJdLFs1LDddLFs2LDBdXQ==
+```
+
+</div>
+
+<div class='pbox'>
+
+蛇引理的直接应用.
+
+</div>
+
 ### Homotopy invariance
+
+<div class='dbox'>
+
+Contagious map
+
+若对两个simplicial map,
+
+</div>
+
 
 
 ### Applications

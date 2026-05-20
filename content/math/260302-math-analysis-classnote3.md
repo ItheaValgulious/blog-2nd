@@ -855,3 +855,66 @@ $U_x$构成开覆盖,存在有限覆盖,令$\delta=\min_x \delta_x$.那么任意
 另一个方法是当列紧集做,直接反证,存在不满足条件的点对列,然后取收敛子列,就完事了.
 
 </div>
+
+## 20260520
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+(\int_a^b (\int_c^d f(x,y)dy)^p dx)^\frac1p\le \int_c^d (\int_a^b f^p(x,y)dx)^\frac1pdy
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+这个是$L^p$闵可夫斯基不等式的连续推广:
+离散版本是三角不等式$\|u+v\|_p\le \|u\|_p+\|v\|_p$,累加得到$\|\sum_i u_i\|_p\le \sum_i \|u_i\|$,然后取连续就是我们这个式子.(相当于$y$对应了$\sum$那一维).
+
+关于证明Gemini说你要考虑对偶的$q$,利用:
+$$
+\begin{gathered}
+\|u\|_p=\sup_{v\in L^q,\|v\|_q=1} \int u(x)v(x)dx
+\end{gathered}
+$$
+
+从而,任取一个$\|g\|_q\le 1$,设$h(x)=\int_c^d f(x,y)dy$.则左侧是$\|h\|_p$.从而
+
+$$
+\begin{gathered}
+\int_a^b h(x)g(x)dx \\
+=\int_a^b (\int_c^d f(x,y)dy) g(x)dx \\
+=\int_c^d (\int_a^b f(x,y)g(x) dx)dy \\
+\le \int_c^d (\int_a^b f^p(x,y)dx)^\frac1pdy
+\end{gathered}
+$$
+
+从而$\|h\|_p=\sup \int_a^b h(x)g(x)dx\le \text{RHS}$即可.
+
+</div>
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+(\int_a^b f(x)dx)^2\le (b-a)\int_a^b f^2(x)dx
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+这个题就是介绍可以把乘积拆成多元积分的trick.
+
+$$
+\begin{gathered}
+\text{LHS} =\iint_{[a,b]\times [a,b]} f(x)f(y)dxdy \\
+\le \iint_{[a,b]\times [a,b]} \dfrac{f(x)^2+f(y)^2}{2} dxdy \\
+\le \text{RHS} 
+\end{gathered}
+$$
+
+</div>

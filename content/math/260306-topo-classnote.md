@@ -413,8 +413,6 @@ $$
 
 若$(X,T)$是T2空间,令$Y=X\cup \{\infty\},T'=T\cup \{Y-C | C \text{ is compact in X}\}$.
 
-
-
 </div>
 
 <div class='pbox'>
@@ -592,5 +590,61 @@ todo
 <div class='pbox'>
 
 todo
+
+</div>
+
+## 20260507
+
+<div class='dbox'>
+
+多边形表示
+
+</div>
+
+<div class='cbox'>
+
+多边形表示都可化简到标准型
+
+</div>
+
+---
+
+<div class='dbox'>
+
+拓扑流形
+
+T1,T2,C2,且每个点都有一个邻域同胚于$E^n$或$E^N_+$,且这个同胚把$x$映到原点.
+
+</div>
+
+<div class='cbox'>
+
+拓扑流形可度量化
+
+</div>
+
+<div class='pbox'>
+
+T2和局部紧推T3,T3和C2用Uryhson 度量化定理.
+
+</div>
+
+## 感觉该补一手点集拓扑啊
+
+<div class='cbox'>
+
+Uryhson
+
+</div>
+
+<div class='cbox'>
+
+Titchz
+
+</div>
+
+<div class='cbox'>
+
+Uryhson 度量化
 
 </div>

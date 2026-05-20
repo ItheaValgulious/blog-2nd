@@ -4,8 +4,9 @@ tags:
   - math
   - math-analysis
   - homework
-status: draft
+status: published
 top: 0
+date: '2026-05-07T13:20:28.994Z'
 ---
 
 # Math Analysis Homework - Term 2 Week 8
@@ -379,7 +380,7 @@ z=-2
 \end{gathered}
 $$
 
-代入得两个平面分别为$2x+8y+12z=62,-2x-8y-12z=-62$.
+代入得两个平面分别为$x+4y+6z=\pm 21$.
 
 </div>
 
