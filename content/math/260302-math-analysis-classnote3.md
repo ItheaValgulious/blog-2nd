@@ -918,3 +918,30 @@ $$
 $$
 
 </div>
+
+## 20260525
+
+<div class='cbox'>
+
+$$
+\begin{gathered}
+\int_0^\infty e^{-x^2}dx \\
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+$$
+\begin{gathered}
+\text{let } I=\int_0^\infty e^{-x^2}dx \\
+I^2=\int_0^\infty e^{-x^2}dx \int_0^\infty e^{-y^2}dy \\
+=\iint_{\{ (x,y)|x>0,y>0 \} } e^{-(x^2+y^2)}dxdy \\
+=\int_0^{\frac\pi2} \int_0^\infty e^{-r^2}r drd\theta \\
+=\dfrac{\pi}{4}  \\
+\implies I=\dfrac{\sqrt{\pi}}2
+\end{gathered}
+$$
+
+</div>

@@ -3,9 +3,11 @@ title: Physics Note 1
 tags:
   - physics
   - self-study
-status: draft
+status: published
 top: 0
+date: '2026-05-21T08:20:19.596Z'
 ---
+
 # Physics Note 1
 
 自己先读他一遍

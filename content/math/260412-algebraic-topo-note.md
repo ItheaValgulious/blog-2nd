@@ -588,6 +588,8 @@ $$
 
 ## SVK
 
+
+
 ## Simplicial Complex
 
 感觉这一节就是一些语言定义.
@@ -884,7 +886,7 @@ WzAsOCxbMCwxLCJIX24oWFxcY2FwIFkpIl0sWzEsMSwiSF9uKFgpXFxvcGx1cyBIX24oWSkiXSxbMiwx
 
 Contagious map
 
-若对两个simplicial map,
+若对两个simplicial map:$f,g$有$f$
 
 </div>
 

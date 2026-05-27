@@ -79,7 +79,7 @@ todo.
 
 如果有$X$下另一组$\{ \varphi_i:x\to x_i \}$,满足 $\varphi_i=f_{ij}\varphi_j$.且任意满足这个的一族$\phi$满足存在唯一$T$使得$\phi=\varphi(T)$.
 
-则$\varprojlim X_i=\{ (x_i)\in \prod X_i:x_i=f_{ij}(x_j) \} $.
+则$\varprojlim X_i=\{ (x_i)\in \prod X_i:x_i=f_6{ij}(x_j) \} $.
 
 </div>
 
@@ -387,4 +387,3 @@ $$
 Strassman Theorem
 
 </div>
-

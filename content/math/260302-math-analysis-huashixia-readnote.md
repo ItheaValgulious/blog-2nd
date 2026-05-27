@@ -632,7 +632,7 @@ mg(D_1)=\int_{a_n}^{b_n}\ldots\int_{a_1}^{b_1} (1dx_1\ldots dx_n) \\
 =\int\ldots \int(\int_{g(x_1,\ldots,x_{k-1},a_k,x_{k+1},\ldots,x_n)}^{x_1,\ldots,x_{k-1},b_k,x_{k+1},\ldots,x_n}1dx_k)(dx_1\ldots dx_{k-1}dx_{k+1}\ldots dx_n) \\
 =(\prod_{i\ne k}(b_i-a_i))(g(x_1,\ldots ,x_{k-1},b_k,x_{k+1},\ldots,x_n)-g(x_1,\ldots,x_{k-1},a_k,x_{k+1},\ldots,x_n)) \\
 =\prod_i (b_i-a_i) \dfrac {dg}{dx_k} (x_1,\ldots ,x_{k-1},\xi,x_{k+1},\ldots,x_n),\xi \in [a_k,b_k] \\
-=\dfrac {dg}{dx_k} (x_1,\ldots ,x_{k-1},\xi,x_{k+1},\ldots,x_n) mg(D_1) \\
+=\dfrac {dg}{dx_k} (x_1,\ldots ,x_{k-1},\xi,x_{k+1},\ldots,x_n) m(D_1) \\
 \end{gathered}
 $$
 
@@ -648,7 +648,7 @@ $$
 
 我们证明的是小立方体,所以自然要考虑重积分的定义把区域切成小立方体和一些边界的不规则图形,记这些小区域的集合为$\{D_n\}$.
 
-假设现在所有小区域中,那些是小立方体的标号集合是$A$(对应了内部),剩下的小区域的标号集合是$B$.
+假设现在所有小区域中,那些是小立方体的标号集合是$A$(对应了内部),剩下的小区域的标号集合是$B$.对$D_i,i\in B_i$,设$E_i$是$D_i$所在的完整小立方体.
 
 用定义拆开:
 
@@ -663,10 +663,10 @@ $$
 
 $$
 \begin{gathered}
-=\lim_{\|T\| \to 0} \sum_A f(\xi_i) mg(D_i) + \sum_C f(\xi_i) mg(D_i)  \\
-+ (\sum_{C} f(\xi_i) mD_i-\sum_{C}f(\xi_i)mg(D_i)) \\
-=\lim_{\|T\| \to 0} \sum_A f(\xi_i) m(D_i)|J_{g,x}(\xi_i')| + \sum_C f(\xi_i) m(D_i)|J_{g,x}(\xi_i')|  \\
-+ (\sum_{C} f(\xi_i) mD_i-\sum_{C}f(\xi_i)mg(D_i)) \\
+=\lim_{\|T\| \to 0} \sum_A f(\xi_i) mg(D_i) + \sum_B f(\xi_i) mg(E_i)  \\
++ (\sum_{B} f(\xi_i) mg(D_i)-\sum_{B}f(\xi_i)mg(E_i)) \\
+=\lim_{\|T\| \to 0} \sum_A f(\xi_i) m(D_i)|J_{g,x}(\xi_i')| + \sum_B f(\xi_i) m(D_i)|J_{g,x}(\xi_i')|  \\
++ (\sum_{B} f(\xi_i) mg(D_i)-\sum_{B}f(\xi_i)mg(E_i)) \\
 \end{gathered}
 $$
 
@@ -674,7 +674,7 @@ $$
 
 $$
 \begin{gathered}
-=\left(\int\ldots\int\right)_{g(D)}f\cdot J_{g,x} d\Sigma+ \lim_{\|T\| \to 0} (\sum_{C} f(\xi_i) mD_i-\sum_{C}f(\xi_i)mg(D_i))
+=\left(\int\ldots\int\right)_{g(D)}f\cdot J_{g,x} d\Sigma+ \lim_{\|T\| \to 0} (\sum_{B} f(\xi_i) mg(D_i)-\sum_{B}f(\xi_i)mg(E_i))
 \end{gathered}
 $$
 
@@ -682,12 +682,12 @@ $$
 
 $$
 \begin{gathered}
-|\sum_{C} f(\xi_i) mD_i-\sum_{C}f(\xi_i)mg(D_i)| \\
-\le M\sum_C m(D_i)+M^2\sum_C m(D_i)
+|\sum_{B} f(\xi_i) mgD_i-\sum_{B}f(\xi_i)mg(E_i)| \\
+\le M\sum_B m(D_i)+M^2\sum_C m(E_i)
 \end{gathered}
 $$
 
-而显然$\sum_C m(D_i)$是趋近于$0$的,所以这部分最后极限是$0$.
+而显然$\sum_B m(D_i),\sum _{B} m(E_i)$是趋近于$0$的,所以这部分最后极限是$0$.
 
 于是证毕.
 
