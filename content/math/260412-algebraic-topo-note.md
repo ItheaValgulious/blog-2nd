@@ -400,9 +400,7 @@ $X\simeq Y$所以 $\exists f:X\to Y,g:Y\to X,f\circ g\simeq \mathrm{Id}_Y,g\circ
 
 要验证它是良定义,我们需要证明同伦的$p,p'$导出的变换是相同的,那么这时候我们直到这个同伦也可以提升:$\tilde H=\tilde p\simeq_P \tilde p'$,这足以说明$\tilde p$和$\tilde p'$在有相同的起点的时候也有相同的终点.
 
-我们并没有否认,可能存在不同的路径等价类对应了相同的变换.
-
-那么我们想仔细理解这个群的结构,考虑轨道稳定子定理:
+我们并没有否认,可能存在不同的路径等价类对应了相同的变换.(那么如果两条路径$a,b$满足$\tilde a_x(1)=\tilde b_x(1)$,则$ab^{-1}$是一个$\pi_1(\tilde X,\tilde x_0)$中的元素,所以说实际上每个$p^*(\pi_1(\tilde X,\tilde x_0))$在$\pi(X,x_0)$的右陪集对应了一个一个变换/一个$p^{-1}$上的点.或者考虑轨道稳定子定理:
 
 $$
 \begin{gathered}
@@ -410,13 +408,13 @@ $$
 \end{gathered}
 $$
 
-那么现在$G=\pi_1(X,x_0)$,而$\operatorname{Stab}(x)$是其中作用了没用的,那么容易发现这个群是$p(\pi_1(\tilde X,\tilde x_0))$,而$\operatorname{Orb}(x)$就是$x$走一条路能去的地方.当$X$路径联通时:
+那么现在$G=\pi_1(X,x_0)$,而$\operatorname{Stab}(x)$是其中作用了没用的,刚才说过这个群是$p^*(\pi_1(\tilde X,\tilde x_0))$,而$\operatorname{Orb}(x)$就是$x$走一条路能去的地方.当$X$路径联通时:
 
 <div class='bbox'>
 
 $$
 \begin{gathered}
-p^{-1}(x_0)\cong \pi_1(X,x_0)/(\pi_1(p)\pi_1(\tilde X,\tilde x_0))
+p^{-1}(x_0)\cong \pi_1(X,x_0)/(p^*\pi_1(\tilde X,\tilde x_0))
 \end{gathered}
 $$
 
@@ -878,6 +876,8 @@ WzAsOCxbMCwxLCJIX24oWFxcY2FwIFkpIl0sWzEsMSwiSF9uKFgpXFxvcGx1cyBIX24oWSkiXSxbMiwx
 
 蛇引理的直接应用.
 
+不过有一点可以思考一下:此时那个算子$\delta$是什么
+
 </div>
 
 ### Homotopy invariance
@@ -886,10 +886,51 @@ WzAsOCxbMCwxLCJIX24oWFxcY2FwIFkpIl0sWzEsMSwiSF9uKFgpXFxvcGx1cyBIX24oWSkiXSxbMiwx
 
 Contagious map
 
-若对两个simplicial map:$f,g$有$f$
+若对$K\to L$的两个simplicial map:$f,g$有对任意一个$K$中的simplex $\sigma$,$f(\sigma),g(\sigma)$是同一个simplex的面.
 
 </div>
 
+<div class='cbox'>
+
+同一个映射的不同simplicial approximation是contagious的
+
+</div>
+
+<div class='cbox'>
+
+contagious map是同伦的
+
+</div>
+
+<div class='cbox'>
+
+barycentric division不改变同调
+
+</div>
+
+<div class='cbox'>
+
+连续映射诱导同调群的映射
+
+</div>
+
+<div class='cbox'>
+
+同胚不改变同调
+
+</div>
+
+<div class='cbox'>
+
+存在$\delta$使得若$f,g:|K|\to |L|$满足$|f-g|<\delta$则$f_*=g_*:H_n(K)\to H_n(L)$.
+
+</div>
+
+<div class='cbox'>
+
+同伦的$f$诱导相同的$f_*$.
+
+</div>
 
 
 ### Applications

@@ -409,10 +409,107 @@ $I_z=I_x+I_y$
 
 </div>
 
-### 简谐运动的合成
+### 振动与机械波
 
-### 受迫振动,阻尼
+#### 简谐运动的合成
 
-### 波的能量,干涉
+物理好像莫名其妙喜欢考三角函数等差数列求和.也就是:
 
-### 多普勒效应
+$$
+\begin{gathered}
+\sum_{i=L}^R \cos(aix+b) \\
+=\sum_{i=L}^R \dfrac{\sin(ax(i+\dfrac12)+b)-\sin(ax(i-\dfrac12)+b )}{2\sin(\dfrac{ax}{2} )}  \\
+=\dfrac{1}{2\sin(\dfrac{ax}{2} )} (\sin(ax(R+\dfrac12)+b)-\sin(ax(L-\dfrac12)+b)) \\
+=
+\frac{
+\sin\left(\dfrac{(R-L+1)ax}{2}\right)
+}{
+\sin\left(\dfrac{ax}{2}\right)
+}
+\cos\left(
+\dfrac{(L+R)ax}{2}+b
+\right)
+\end{gathered}
+$$
+
+#### 阻尼/受迫振动
+
+微分方程求解的一集.
+
+阻尼振动:
+
+$$
+\begin{gathered}
+m\ddot x=-kx-f\dot x
+\end{gathered}
+$$
+
+常系数齐次线性微分方程.解法是设解$e^{rx}$代入然后比较系数把$r$解出来:
+
+$$
+\begin{gathered}
+mr^2+fr+k=0 \\
+\Delta=f^2-4mk \\
+r=\dfrac{-f\pm \sqrt{f^2-4mk}}{2m} 
+\end{gathered}
+$$
+
+从而$\Delta>0$是过阻尼,解出来两个指数衰减的.$\Delta =0$是临界阻尼.此时$xe^{rx}$也是一个特解.$\Delta<0$是欠阻尼,**此时不一定两个系数相同,因为是共轭的怎么取都是实数,所以是会产生相位的,且$A$是吸收了一个常数$2$,辅助角公式的系数等的**,用欧拉公式展开即得公式:
+
+$$
+\begin{gathered}
+\omega=\dfrac{\sqrt{4mk-f^2}}{2m}  \\
+x=Ae^{\frac{-fx}{2m}}\cos(\omega x+\varphi)
+\end{gathered}
+$$
+
+受迫振动
+
+变成:
+
+$$
+\begin{gathered}
+m\ddot x+f\dot x+kx=F\cos \omega t \\
+\end{gathered}
+$$
+
+改成解$m\ddot x+f\dot x+kx=0$的通解和原方程的任意一个特解.而特解通过复数:
+
+$$
+\begin{gathered}
+m\ddot x+f\dot x+kx=Fe^{i\omega t} \\
+x=Ae^{i\omega t} \\
+\implies A=\dfrac{F}{-\omega^2 m+i\omega f+k} 
+\end{gathered}
+$$
+
+此时可以方便的通过$|A|$得到稳定时的振幅,通过$k-\omega^2 m+\omega fi$的幅角的相反数得到相位.就是稳定时的解.
+
+#### 绳子上的波
+
+这个是讲如何建模一个振动的绳子.
+
+设绳子的力是$T$,绳子的线密度($m/l$)为$\mu$,则波速是什么?
+
+设波的方程是$f(x,t)$,则对一个$x_0$处的小段$dl$,其只受左右两侧的质点对他的拉力,那么比如右侧对他的拉力的竖直分量是$T\sin \theta$,但我们难以知道$\sin \theta$,但可以方便的知道$\sin \theta\sim \tan\theta=\dfrac{\partial f}{\partial x}(x+dl,t)$,而左侧是$\dfrac{\partial f}{\partial x}(x,t)$,所以你得到纵向的力是:
+
+$$
+\begin{gathered}
+T(\dfrac{\partial f}{\partial x}(x+dl,t)-\dfrac{\partial f}{\partial x}(x,t)) \\
+=Tdl \dfrac{\partial^2 f}{(\partial x)^2}  \\
+=dl\mu\dfrac{\partial^2 f}{(\partial t)^2} 
+\end{gathered}
+$$
+
+解出来就得到波速是:
+
+$$
+\begin{gathered}
+v=\sqrt{\dfrac{T}{\mu} }
+\end{gathered}
+$$
+
+#### 波的能量,干涉
+
+
+#### 多普勒效应

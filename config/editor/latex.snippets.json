@@ -278,7 +278,7 @@
     ]
   },
   "Id": {
-    "body": "\\mathrm{Id}",
+    "body": "\\mathrm{id}",
     "prefix": "id"
   },
   "header": {
