@@ -638,3 +638,19 @@ $$
 $$
 
 </div>
+
+## 20260601
+
+<div class='cbox'>
+
+实矩阵若存在酉相似则正交相似
+
+即若$A=PBP^{-1},P \text{ is isometry}$在复空间成立则在实空间成立.
+
+</div>
+
+<div class='pbox'>
+
+
+
+</div>

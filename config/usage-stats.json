@@ -1,7 +1,197 @@
 {
   "daily": [
     {
-      "activeMilliseconds": 29471459,
+      "activeMilliseconds": 10928379,
+      "documents": [
+        {
+          "documentId": "article:math/How-to-divide-a-sandwitch.md",
+          "documentKind": "article",
+          "title": "How to divide a sandwitch",
+          "netCharacterDelta": 3122,
+          "updatedAt": "2026-06-12T04:21:48.618Z"
+        }
+      ],
+      "periodKey": "2026-06-12",
+      "totalNetCharacterDelta": 3122,
+      "updatedAt": "2026-06-12T05:22:49.134Z"
+    },
+    {
+      "activeMilliseconds": 29570626,
+      "documents": [
+        {
+          "documentId": "article:math/260306-topo-classnote.md",
+          "documentKind": "article",
+          "title": "Topo Basic Note",
+          "netCharacterDelta": 1243,
+          "updatedAt": "2026-06-11T12:19:53.366Z"
+        },
+        {
+          "documentId": "article:math/How-to-divide-a-sandwitch.md",
+          "documentKind": "article",
+          "title": "How to divide a sandwitch",
+          "netCharacterDelta": 183,
+          "updatedAt": "2026-06-11T11:04:42.546Z"
+        }
+      ],
+      "periodKey": "2026-06-11",
+      "totalNetCharacterDelta": 1426,
+      "updatedAt": "2026-06-11T15:59:40.703Z"
+    },
+    {
+      "activeMilliseconds": 31558258,
+      "documents": [
+        {
+          "documentId": "article:math/How-to-divide-a-sandwitch.md",
+          "documentKind": "article",
+          "title": "How to divide a sandwitch",
+          "netCharacterDelta": 3584,
+          "updatedAt": "2026-06-10T15:43:20.074Z"
+        },
+        {
+          "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-13.md",
+          "documentKind": "article",
+          "title": "Math Analysis Homework - Sem 2 Week 13",
+          "netCharacterDelta": 2317,
+          "updatedAt": "2026-06-10T03:15:28.985Z"
+        },
+        {
+          "documentId": "article:math/physics-basic-force.md",
+          "documentKind": "article",
+          "title": "Physics Note 1",
+          "netCharacterDelta": 8,
+          "updatedAt": "2026-06-10T02:18:15.702Z"
+        }
+      ],
+      "periodKey": "2026-06-10",
+      "totalNetCharacterDelta": 5909,
+      "updatedAt": "2026-06-10T15:59:47.210Z"
+    },
+    {
+      "activeMilliseconds": 6024856,
+      "documents": [],
+      "periodKey": "2026-06-09",
+      "totalNetCharacterDelta": 0,
+      "updatedAt": "2026-06-09T15:59:50.664Z"
+    },
+    {
+      "activeMilliseconds": 38375708,
+      "documents": [
+        {
+          "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-13.md",
+          "documentKind": "article",
+          "title": "Math Analysis Homework - Sem 2 Week 13",
+          "netCharacterDelta": 2548,
+          "updatedAt": "2026-06-08T13:36:04.126Z"
+        },
+        {
+          "documentId": "article:math/How-to-divide-a-sandwitch.md",
+          "documentKind": "article",
+          "title": "How to divide a sandwitch",
+          "netCharacterDelta": 454,
+          "updatedAt": "2026-06-08T03:39:05.167Z"
+        },
+        {
+          "documentId": "article:math/250915-linear-algebra.md",
+          "documentKind": "article",
+          "title": "Linear Algebra",
+          "netCharacterDelta": 0,
+          "updatedAt": "2026-06-08T00:26:08.687Z"
+        }
+      ],
+      "periodKey": "2026-06-08",
+      "totalNetCharacterDelta": 3002,
+      "updatedAt": "2026-06-08T15:50:14.159Z"
+    },
+    {
+      "activeMilliseconds": 2422273,
+      "documents": [],
+      "periodKey": "2026-06-07",
+      "totalNetCharacterDelta": 0,
+      "updatedAt": "2026-06-07T10:00:58.710Z"
+    },
+    {
+      "activeMilliseconds": 33890018,
+      "documents": [
+        {
+          "documentId": "article:homework/sem2/Topo-Homework---Week-14.md",
+          "documentKind": "article",
+          "title": "Topo Homework - Week 14",
+          "netCharacterDelta": 3982,
+          "updatedAt": "2026-06-05T10:06:46.304Z"
+        }
+      ],
+      "periodKey": "2026-06-05",
+      "totalNetCharacterDelta": 3982,
+      "updatedAt": "2026-06-05T14:35:29.457Z"
+    },
+    {
+      "activeMilliseconds": 13976661,
+      "documents": [
+        {
+          "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-12.md",
+          "documentKind": "article",
+          "title": "Math Analysis Homework - Sem 2 Week 12",
+          "netCharacterDelta": 2377,
+          "updatedAt": "2026-06-03T04:02:44.416Z"
+        }
+      ],
+      "periodKey": "2026-06-03",
+      "totalNetCharacterDelta": 2377,
+      "updatedAt": "2026-06-03T06:03:41.845Z"
+    },
+    {
+      "activeMilliseconds": 415654,
+      "documents": [
+        {
+          "documentId": "article:math/260306-discrete-math-classnote.md",
+          "documentKind": "article",
+          "title": "Discrete Math Note",
+          "netCharacterDelta": 110,
+          "updatedAt": "2026-06-02T06:21:45.957Z"
+        }
+      ],
+      "periodKey": "2026-06-02",
+      "totalNetCharacterDelta": 110,
+      "updatedAt": "2026-06-02T06:31:38.249Z"
+    },
+    {
+      "activeMilliseconds": 30015502,
+      "documents": [
+        {
+          "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-12.md",
+          "documentKind": "article",
+          "title": "Math Analysis Homework - Sem 2 Week 12",
+          "netCharacterDelta": 2467,
+          "updatedAt": "2026-06-01T13:03:53.565Z"
+        },
+        {
+          "documentId": "article:math/260309-higher-linear-algebra-classnote.md",
+          "documentKind": "article",
+          "title": "Maybe Higher Linear Algebra",
+          "netCharacterDelta": 139,
+          "updatedAt": "2026-06-01T03:32:55.814Z"
+        },
+        {
+          "documentId": "article:math/251013-linear-algebra-done-right.md",
+          "documentKind": "article",
+          "title": "Linear Algebra Done Right",
+          "netCharacterDelta": 2,
+          "updatedAt": "2026-06-01T00:35:13.294Z"
+        }
+      ],
+      "periodKey": "2026-06-01",
+      "totalNetCharacterDelta": 2608,
+      "updatedAt": "2026-06-01T13:04:33.612Z"
+    },
+    {
+      "activeMilliseconds": 2578160,
+      "documents": [],
+      "periodKey": "2026-05-30",
+      "totalNetCharacterDelta": 0,
+      "updatedAt": "2026-05-29T17:19:03.036Z"
+    },
+    {
+      "activeMilliseconds": 33996108,
       "documents": [
         {
           "documentId": "article:homework/sem2/Topo-Homework---Week-13.md",
@@ -27,7 +217,7 @@
       ],
       "periodKey": "2026-05-29",
       "totalNetCharacterDelta": 4351,
-      "updatedAt": "2026-05-29T13:05:00.184Z"
+      "updatedAt": "2026-05-29T15:59:56.280Z"
     },
     {
       "activeMilliseconds": 20801025,
@@ -566,6 +756,76 @@
   ],
   "documents": [
     {
+      "documentId": "article:math/How-to-divide-a-sandwitch.md",
+      "documentKind": "article",
+      "title": "How to divide a sandwitch",
+      "netCharacterDelta": 7343,
+      "updatedAt": "2026-06-12T04:21:48.618Z"
+    },
+    {
+      "documentId": "article:math/260306-topo-classnote.md",
+      "documentKind": "article",
+      "title": "Topo Basic Note",
+      "netCharacterDelta": 1243,
+      "updatedAt": "2026-06-11T12:19:53.366Z"
+    },
+    {
+      "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-13.md",
+      "documentKind": "article",
+      "title": "Math Analysis Homework - Sem 2 Week 13",
+      "netCharacterDelta": 4865,
+      "updatedAt": "2026-06-10T03:15:28.985Z"
+    },
+    {
+      "documentId": "article:math/physics-basic-force.md",
+      "documentKind": "article",
+      "title": "Physics Note 1",
+      "netCharacterDelta": 1915,
+      "updatedAt": "2026-06-10T02:18:15.702Z"
+    },
+    {
+      "documentId": "article:math/250915-linear-algebra.md",
+      "documentKind": "article",
+      "title": "Linear Algebra",
+      "netCharacterDelta": 0,
+      "updatedAt": "2026-06-08T00:26:08.687Z"
+    },
+    {
+      "documentId": "article:homework/sem2/Topo-Homework---Week-14.md",
+      "documentKind": "article",
+      "title": "Topo Homework - Week 14",
+      "netCharacterDelta": 3982,
+      "updatedAt": "2026-06-05T10:06:46.304Z"
+    },
+    {
+      "documentId": "article:homework/sem2/Math-Analysis-Homework---Sem-2-Week-12.md",
+      "documentKind": "article",
+      "title": "Math Analysis Homework - Sem 2 Week 12",
+      "netCharacterDelta": 4844,
+      "updatedAt": "2026-06-03T04:02:44.416Z"
+    },
+    {
+      "documentId": "article:math/260306-discrete-math-classnote.md",
+      "documentKind": "article",
+      "title": "Discrete Math Note",
+      "netCharacterDelta": 110,
+      "updatedAt": "2026-06-02T06:21:45.957Z"
+    },
+    {
+      "documentId": "article:math/260309-higher-linear-algebra-classnote.md",
+      "documentKind": "article",
+      "title": "Maybe Higher Linear Algebra",
+      "netCharacterDelta": 139,
+      "updatedAt": "2026-06-01T03:32:55.814Z"
+    },
+    {
+      "documentId": "article:math/251013-linear-algebra-done-right.md",
+      "documentKind": "article",
+      "title": "Linear Algebra Done Right",
+      "netCharacterDelta": 2,
+      "updatedAt": "2026-06-01T00:35:13.294Z"
+    },
+    {
       "documentId": "article:homework/sem2/Topo-Homework---Week-13.md",
       "documentKind": "article",
       "title": "Topo Homework - Week 13",
@@ -585,20 +845,6 @@
       "title": "Algebraic Topology Note",
       "netCharacterDelta": 669,
       "updatedAt": "2026-05-29T00:21:42.500Z"
-    },
-    {
-      "documentId": "article:math/260306-topo-classnote.md",
-      "documentKind": "article",
-      "title": "Topo Basic Note",
-      "netCharacterDelta": 0,
-      "updatedAt": "2026-05-28T10:35:51.084Z"
-    },
-    {
-      "documentId": "article:math/physics-basic-force.md",
-      "documentKind": "article",
-      "title": "Physics Note 1",
-      "netCharacterDelta": 1907,
-      "updatedAt": "2026-05-28T08:45:07.370Z"
     },
     {
       "documentId": "article:others/250902-hello-world.md",
@@ -797,7 +1043,7 @@
       "updatedAt": "2026-05-07T07:11:30.088Z"
     }
   ],
-  "totalActiveMilliseconds": 385100562,
-  "totalNetCharacterDelta": 36590,
-  "updatedAt": "2026-05-29T13:05:00.184Z"
+  "totalActiveMilliseconds": 589381306,
+  "totalNetCharacterDelta": 59126,
+  "updatedAt": "2026-06-12T05:22:49.134Z"
 }

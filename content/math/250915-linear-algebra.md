@@ -658,7 +658,7 @@ $$
 
 ### Sol3
 
-考虑$M=B+(a-b)I$,若$Bv=\lambda v,则显然有$(B+(a-b)I)v=(\lambda+a-b)v$,于是求出$B$的特征值,就可以直接得到$M$的特征值算行列式.
+考虑$M=B+(a-b)I$,若$Bv=\lambda v$,则显然有$(B+(a-b)I)v=(\lambda+a-b)v$,于是求出$B$的特征值,就可以直接得到$M$的特征值算行列式.
 
 </div>
 
@@ -671,7 +671,6 @@ $$
 \vert T \vert =\forall \vert S \vert > a,\det A_{S,T}=0 \\
 \exists \vert S \vert =\vert T \vert =a,\det A_{S,T}\ne 0
 \end{cases}
-
 \end{gathered}
 $$
 

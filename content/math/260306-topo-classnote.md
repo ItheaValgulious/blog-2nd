@@ -648,3 +648,62 @@ Titchz
 Uryhson 度量化
 
 </div>
+
+## SVK
+
+<div class='dbox'>
+
+自由积
+
+</div>
+
+<div class='dbox'>
+
+融合自由积
+
+</div>
+
+<div class='cbox'>
+
+SVK
+
+对$X$的两个开覆盖$X=U\cup V$,若$U,V,X,U\cap V$都道路连通,$U\cap V\ne \varnothing$,则有
+
+$$
+\begin{gathered}
+\pi_1(X)= \pi_1(U)*_{\pi_1(U\cap V)}\pi_1(V)
+\end{gathered}
+$$
+
+</div>
+
+<div class='pbox'>
+
+有全是包含映射组成的交换图
+
+```commutative
+WzAsNSxbMCwxLCJVXFxjYXAgViJdLFsxLDAsIlUiXSxbMSwyLCJWIl0sWzIsMSwiWCJdLFswLDAsIlxcXFwiXSxbMCwxLCJpXzEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsImlfMiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMywial8yIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCJqXzEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==
+```
+
+
+于是有
+
+于是定义映射
+
+$$
+\begin{gathered}
+\varphi:\pi_1(U)*\pi_1(V)\to \pi_1(X) \\
+\prod_i [u_i][v_i]\mapsto \prod_i j_1^*([u_i])j_2^*([v_i])
+\end{gathered}
+$$
+
+证明$\varphi$是满的:
+
+取定$U\cap V$内的基点$x_0$,考虑任何一条$X$中的道路$f=x\rightsquigarrow x$,由勒贝格引理,$f=\prod f_i$,且$\forall i,f_i\subset U\lor f_i\subset V$.
+
+由于路径连通,存在道路$g_i=x_0\rightsquigarrow f_i(1)$,满足若$f_i(1)$所在的集合与$g_i$相同(即,$f_i(1)\subset U \implies g_i\subset U$).
+
+于是$[f]=([f_1][g_1]^{-1})\prod_{i=2}^{n-1}([g_{i-1}][f_i][g_i]^{-1})[g_{n-1}][f_n]$
+
+
+</div>

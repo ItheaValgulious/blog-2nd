@@ -1935,9 +1935,14 @@ $$
 
 归纳,因为$T$有本征值,取一本征值$\lambda$,则 $V=G+\operatorname{range} (T-\lambda I)$, $U=\operatorname{range} T-\lambda I$ 在$T$下不变,于是对$T\vert_U$给出$U$的分解再加上$G(\lambda,T)$即可.
 
+那么你需要证明$G(T|_U,\mu)=G(T,\mu)$.显然换成$\subset$是对的,考虑若$v\in G(T,\mu)$,要说明$v\in \range(T-\lambda I)$.因为不同本征值对应的广义本征向量线性无关,显然$v\notin U$,从而$v\in \range(T-\lambda I)$,于是得证.
+
 显然$T\vert_U$不会有$\lambda$作为本征值.证明是成立的.
 
 第一行成立后第二行第三行是显然的.第四行不需要第一行就是显然的.
+
+第一行还有其他证法:考虑$T$的极小多项式$p(x)$,则$p(T)=\prod_i (T-\lambda_i)$,然后用结论:对任意互素的$f(x),p(x),\ker(f(T)g(T))=\ker f(T)\oplus\ker g(T)$.
+那这个结论怎么证:裴蜀定理,$\exist a(T)f(T)+b(T)g(T)=I$,代入任意$v$容易发现$\ker f(T)\cap \ker g(T)=\varnothing$.
 
 </div>
 
